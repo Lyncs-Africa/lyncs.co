@@ -12,6 +12,7 @@ import Travel from "@/components/core/home/Travel";
 import Testimonials from "@/components/core/home/Testimonials";
 import Strip from "@/components/core/home/Strip";
 import ScrollToTopBtn from "@/components/global/ScrollToTopBtn";
+import Head from 'next/head';
 
 const Index = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -42,6 +43,10 @@ const Index = () => {
 
   return (
     <ClientOnly>
+      <Head>
+        <title>Lyncs Web</title>
+
+      </Head>
       <Navbar scrollTop={scrollTop} />
       <Hero />
       <Access />
