@@ -13,6 +13,7 @@ import Testimonials from "@/components/core/home/Testimonials";
 import Strip from "@/components/core/home/Strip";
 import ScrollToTopBtn from "@/components/global/ScrollToTopBtn";
 import Head from 'next/head';
+import Script from 'next/script';
 
 const Index = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -43,9 +44,10 @@ const Index = () => {
 
   return (
     <ClientOnly>
+
+      <Script crossOrigin src="https://lyncs-web-widget.vercel.app/client.js"></Script>
       <Head>
         <title>Lyncs Web</title>
-
       </Head>
       <Navbar scrollTop={scrollTop} />
       <Hero />

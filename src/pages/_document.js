@@ -8,7 +8,6 @@ export default function Document() {
         <link rel="icon" href="/images/lyncs-logo-blue.png" sizes="any" />
       </Head>
       <body>
-        <script crossorigin src="https://lyncs-web-widget.vercel.app/client.js"></script>
         <Script strategy={'beforeInteractive'} src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></Script>
         <Main />
         <NextScript />
