@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Lora:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Spectral:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .delay-three {
+        animation-delay: 3s;
+    }
+
+    .delay-two {
+        animation-delay: 2s;
+    }
+
+    .delay-four {
+        animation-delay: 4s;
+    }
+
+    .delay-six {
+        animation-delay: 6s;
+    }
+
+    .delay-eight {
+        animation-delay: 8s;
+    }
+
+    .delay-ten {
+        animation-delay: 10s;
+    }
+
+    .area {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        opacity: 0.5;
+        filter: blur(3px);
+    }
+
+    .circles li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        animation: animate 35s linear infinite;
+        bottom: -50px;
+
+    }
+
+    .circles li:nth-child(1) {
+        left: 25%;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 0s;
+        background-image: url("/images/hero-icons/calls.svg");
+    }
+
+
+    .circles li:nth-child(2) {
+        left: 10%;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 15s;
+        animation-duration: 20s;
+        background-image: url("/images/hero-icons/eat.svg");
+    }
+
+
+    .circles li:nth-child(5) {
+        left: 65%;
+        width: 50px;
+        height: 51px;
+        background-size: cover;
+        animation-delay: 0s;
+        background-image: url("/images/hero-icons/cart.svg");
+    }
+
+    .circles li:nth-child(6) {
+        left: 75%;
+        width: 37px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 12s;
+        background-image: url("/images/hero-icons/lightbulb.svg");
+    }
+
+    .circles li:nth-child(7) {
+        left: 35%;
+        width: 40px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 20s;
+        background-image: url("/images/hero-icons/sim.svg");
+    }
+
+    .circles li:nth-child(8) {
+        left: 80%;
+        width: 50px;
+        height: 40px;
+        background-size: cover;
+        animation-delay: 35s;
+        animation-duration: 40s;
+        background-image: url("/images/hero-icons/movie.svg");
+    }
+
+    .circles li:nth-child(9) {
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 28s;
+        animation-duration: 32s;
+        background-image: url("/images/hero-icons/travel.svg");
+    }
+
+    .circles li:nth-child(10) {
+        left: 85%;
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        animation-delay: 0s;
+        animation-duration: 8s;
+        background-image: url("/images/opay.png");
+    }
+
+    .circles li:nth-child(11) {
+        left: 29%;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        animation-delay: 0s;
+        animation-duration: 8s;
+        background-image: url("/images/firstbank.png");
+    }
+
+    @keyframes animate {
+
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+
+        100% {
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 60%;
+        }
+
+    }
+    .circles-two {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        opacity: 0.5;
+        filter: blur(3px);
+    }
+
+    .circles-two li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        animation: animateTwo 35s linear infinite;
+        bottom: -50px;
+
+    }
+
+    .circles-two li:nth-child(1) {
+        left: 25%;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 0s;
+        background-image: url("/images/hero-icons/calls.svg");
+    }
+
+
+    .circles-two li:nth-child(2) {
+        left: 10%;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 15s;
+        animation-duration: 20s;
+        background-image: url("/images/hero-icons/eat.svg");
+    }
+
+
+    .circles-two li:nth-child(5) {
+        left: 65%;
+        width: 50px;
+        height: 51px;
+        background-size: cover;
+        animation-delay: 0s;
+        background-image: url("/images/hero-icons/cart.svg");
+    }
+
+    .circles-two li:nth-child(6) {
+        left: 75%;
+        width: 37px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 12s;
+        background-image: url("/images/hero-icons/lightbulb.svg");
+    }
+
+    .circles-two li:nth-child(7) {
+        left: 35%;
+        width: 40px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 20s;
+        background-image: url("/images/hero-icons/sim.svg");
+    }
+
+    .circles-two li:nth-child(8) {
+        left: 80%;
+        width: 50px;
+        height: 40px;
+        background-size: cover;
+        animation-delay: 35s;
+        animation-duration: 40s;
+        background-image: url("/images/hero-icons/movie.svg");
+    }
+
+    .circles-two li:nth-child(9) {
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        animation-delay: 28s;
+        animation-duration: 32s;
+        background-image: url("/images/hero-icons/travel.svg");
+    }
+
+    .circles-two li:nth-child(10) {
+        left: 85%;
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        animation-delay: 0s;
+        animation-duration: 8s;
+        background-image: url("/images/opay.png");
+    }
+
+    .circles-two li:nth-child(11) {
+        left: 29%;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        animation-delay: 0s;
+        animation-duration: 8s;
+        background-image: url("/images/firstbank.png");
+    }
+
+    @keyframes animateTwo {
+
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+
+        100% {
+            transform: translateY(-2500px) rotate(720deg);
+            opacity: 0;
+            border-radius: 60%;
+        }
+    }
+
+    .bg-clip-text {
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .curved-header {
+        clip-path: url(#wave-hero);
+    }
+
+    .polygon-header {
+        clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+    ) rgb(var(--background-start-rgb));
+}
+
+html {
+    font-size: 14px
+}
+
