@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import Navbar from "@/components/global/navbar/Navbar";
 import Hero from "@/components/core/home/Hero";
 import ClientOnly from "@/components/global/ClientOnly";
@@ -42,12 +42,12 @@ const Index = () => {
 
   return (
     <ClientOnly>
-      <Navbar scrollTop={scrollTop}/>
-      <Hero/>
-      <Access/>
-      <Services/>
-      <Shop/>
-      <BillsPayment/>
+      <Navbar scrollTop={scrollTop} />
+      <Hero />
+      <Access />
+      <Services />
+      <Shop />
+      <BillsPayment />
       <div className="relative">
         <div className="area z-20">
           <ul className="circles-two">
@@ -63,13 +63,13 @@ const Index = () => {
             <li></li>
           </ul>
         </div>
-        <Travel/>
-        <Eat/>
+        <Travel />
+        <Eat />
       </div>
-      <Testimonials/>
-      <Strip/>
-      <Footer dark/>
-      <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop}/>
+      <Testimonials />
+      <Strip />
+      <Footer dark />
+      <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop} />
     </ClientOnly>
   );
 };
