@@ -1,9 +1,9 @@
-import React, {useMemo} from 'react';
-import {easeInOut, motion} from "framer-motion";
+import React, { useMemo } from 'react';
+import { easeInOut, motion } from "framer-motion";
 
 const Travel = () => {
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: {opacity: 0, x: 450},
+    hidden: { opacity: 0, x: 450 },
     visible: {
       opacity: 1, x: 0,
       transition: {
@@ -13,7 +13,7 @@ const Travel = () => {
     }
   }, [])
   const textVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: {opacity: 0, x: -450},
+    hidden: { opacity: 0, x: -450 },
     visible: {
       opacity: 1, x: 0,
       transition: {
@@ -22,7 +22,7 @@ const Travel = () => {
     }
   }, [])
   const btnVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: {opacity: 0},
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
@@ -33,7 +33,7 @@ const Travel = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-lato">
+      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-poppins">
       <div
         className="container mx-auto md:grid grid-cols-12 pt-[100px] md:py-[160px] overflow-hidden md:relative md:z-10 gap-8">
         <div
@@ -64,7 +64,7 @@ const Travel = () => {
           </div>
         </div>
         <div className="col-start-6 col-span-6 flex gap-8">
-          <img src="/images/travel.png"/>
+          <img src="/images/travel.png" />
         </div>
       </div>
     </div>

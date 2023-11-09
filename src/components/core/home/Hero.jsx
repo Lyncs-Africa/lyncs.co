@@ -8,18 +8,19 @@ function Hero() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "shop",
-        "food",
-        "ride",
-        "house",
-        "travel",
-        "airtime & data",
-        "bill payment",
+        "online store",
+        "food ordering ",
+        "flight booking",
+        "delivery",
+        "event booking",
+        "e-hailing ride",
+        // "bill payment",
       ],
       startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 100,
+      typeSpeed: 50,
+      backSpeed: 10,
+      backDelay: 3000,
+      smartBackspace: true,
       loop: true,
       loopCount: Infinity,
       showCursor: false
@@ -38,7 +39,7 @@ function Hero() {
   return (
     <>
       <div
-        className="md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-lato md:relative md:z-10 px-4 md:px-0">
+        className="md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-poppins md:relative md:z-10 px-4 md:px-0">
         <div className="xl:block hidden absolute bottom-[-10rem] w-full z-30">
           <img alt="curve" src="/images/lyncs-hero-curve.svg" />
         </div>
@@ -58,21 +59,21 @@ function Hero() {
         </div>
         <div className="col-span-10 col-start-2 z-30 relative text-center">
           <h2
-            className="text-blue-500 text-[4rem] md:text-[6rem] leading-[1.1] font-bold pt-[50px] relative min-h-[160px]"
+            className="text-blue-500 text-[4rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
           >
             {/* <span className="text-[18px] relative md:text-blue-500 uppercase tracking-wider">
                   For merchants
                 </span><br /> */}
             <span className="relative md:text-black pr-2">
-              Embed
+              Embed<br />
             </span>
             <span ref={el}
               className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:animate-blink after:content-['|'] after:inline after:text-blue-500"> </span><br />
-            <span className="relative text-black">Into your business</span>
+            <span className="relative text-black">into your business</span>
           </h2>
 
           <p className="text-[18px] py-4 text-gray-800 mb-10">
-            Lyncs is an API platform that enables you to embed essential services like shopping, <br /> housing, schooling, traveling, and health services into your product.
+            Add commercial services to your mobile or web app in minutes not <b className="line-through">months</b>
           </p>
 
           <div className="flex flex-row justify-center items-center gap-7 z-30 w-full">

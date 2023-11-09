@@ -1,25 +1,25 @@
 import React from "react";
 import Link from "next/link";
 
-function FooterWeb({mode}) {
+function FooterWeb({ mode }) {
   return (
     <>
-      <footer className={`hidden md:block p-4 ${mode.dark ? 'md:bg-black' : 'md:bg-[#F1F1F8]'} sm:p-6 font-lato`}>
+      <footer className={`hidden md:block p-4 ${mode.dark ? 'md:bg-black' : 'md:bg-[#F1F1F8]'} sm:p-6 font-poppins`}>
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2 col-start-2">
             <Link href="/" className="flex items-center">
               {
                 mode.dark ?
-                    <img
-                        src="/images/lyncs-logo-light.png"
-                        className="h-8 mr-3"
-                        alt="Lyncs Logo"
-                    /> :
-                    <img
-                        src="/images/lyncs-logo-blue.png"
-                        className="h-8 mr-3"
-                        alt="Lyncs Logo"
-                    />
+                  <img
+                    src="/images/lyncs-logo-light.png"
+                    className="h-8 mr-3"
+                    alt="Lyncs Logo"
+                  /> :
+                  <img
+                    src="/images/lyncs-logo-blue.png"
+                    className="h-8 mr-3"
+                    alt="Lyncs Logo"
+                  />
               }
 
             </Link>
@@ -86,7 +86,7 @@ function FooterWeb({mode}) {
           <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
             <h5 className="font-bold text-[18px] uppercase">
               <Link href="/" className="flex items-center">
-               Company
+                Company
               </Link>
             </h5>
             <h5 className="text-[16px]">
@@ -152,7 +152,7 @@ function FooterWeb({mode}) {
               </Link>
             </h5>
             <h5 className="text-[16px]">
-              <Link href="/"className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Security
               </Link>
             </h5>

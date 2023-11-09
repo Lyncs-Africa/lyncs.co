@@ -14,6 +14,8 @@ import Strip from "@/components/core/home/Strip";
 import ScrollToTopBtn from "@/components/global/ScrollToTopBtn";
 import Head from 'next/head';
 import Script from 'next/script';
+import APICoverage from '@/components/core/home/APICoverage';
+import FeaturesWeb from '@/components/core/home/FeaturesWeb';
 
 const Index = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -53,7 +55,9 @@ const Index = () => {
       <Hero />
       <Access />
       <Services />
-      <Shop />
+      <FeaturesWeb />
+      {/* <Shop /> */}
+      <APICoverage />
       <BillsPayment />
       <div className="relative">
         <div className="area z-20">

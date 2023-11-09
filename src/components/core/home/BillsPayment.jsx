@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {particles} from "@/lib/utils";
+import React, { useEffect } from 'react';
+import { particles } from "@/lib/utils";
 import Airtime from "@/components/core/shared/Airtime";
 import Cable from "@/components/core/shared/Cable";
 
@@ -10,7 +10,7 @@ const BillsPayment = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-lato">
+      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-poppins">
       <div className="absolute inset-0" id="particles-js"></div>
       <div
         className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pb-[250px] xl:pt-[100px] overflow-hidden md:relative md:z-10">
@@ -19,7 +19,7 @@ const BillsPayment = () => {
           <h2
             className="text-white leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >
-            Intergrate APIs <br/>for bills payments
+            Intergrate APIs <br />for bills payments
           </h2>
           <p
             className="text-[18px] py-8 text-gray-200">
@@ -44,10 +44,10 @@ const BillsPayment = () => {
           </div>
         </div>
         <div className="animate-bounceTwo absolute right-[7%] top-[5%] hidden md:block">
-          <Airtime/>
+          <Airtime />
         </div>
         <div className="animate-bounceTwo delay-two absolute left-[7%] top-[50%] hidden md:block">
-          <Cable/>
+          <Cable />
         </div>
       </div>
     </div>

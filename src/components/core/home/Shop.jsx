@@ -1,20 +1,20 @@
 import React from 'react';
 import ProductDetails from "@/components/core/shared/ProductDetails";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const Shop = () => {
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover min-h-[100vh] font-lato">
+      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover min-h-[100vh] font-poppins">
       <div className="xl:block hidden absolute bottom-[-5rem] w-full z-30">
         <img alt="curve" src="/images/long-curve.svg" />
       </div>
       <div
         className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pb-[25rem] xl:pt-0 overflow-hidden md:relative md:z-10">
         <motion.div
-          initial={{opacity: 0}}
-          whileInView={{opacity: 1}}
-          transition={{duration: 2, type: "spring", stiffness: 50}}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2, type: "spring", stiffness: 50 }}
           className="md:pt-[50px] px-4 md:px-0 col-span-4 text-left col-start-2 z-50 relative flex flex-col justify-center">
           <h2
             className="text-black leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
@@ -33,7 +33,7 @@ const Shop = () => {
           </div>
         </motion.div>
         <div className="col-span-6 my-10 md:my-0 px-4 md:px-0">
-          <ProductDetails/>
+          <ProductDetails />
         </div>
       </div>
     </div>

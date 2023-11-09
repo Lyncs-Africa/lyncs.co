@@ -60,7 +60,7 @@ function Navbar(mode) {
   return (
     <>
       <div ref={wrapperRef}
-        className={`z-50 md:grid md:grid-cols-12 font-lato ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} w-full`}>
+        className={`z-50 md:grid md:grid-cols-12 font-poppins ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} w-full`}>
         <nav className="border-gray-200 px-2 sm:px-4 rounded col-start-2 col-span-10 py-4 md:py-0">
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <Link className="flex items-center" href="/">

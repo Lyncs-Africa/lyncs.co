@@ -3,7 +3,7 @@ import React from "react";
 function LyncsFooterMobile() {
   return (
     <>
-      <footer className="p-4 bg-[#F1F1F8] sm:p-6 dark:bg-gray-900 px-4 md:hidden font-lato">
+      <footer className="p-4 bg-[#F1F1F8] sm:p-6 dark:bg-gray-900 px-4 md:hidden font-poppins">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
@@ -40,18 +40,18 @@ function LyncsFooterMobile() {
                     SDKs
                   </a>
                 </li> <li>
-                <a href="#" className="hover:underline">
-                    Demo
-                </a>
-              </li>
-                <li>
                   <a href="#" className="hover:underline">
-                      Join Slack
+                    Demo
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:underline">
-                      Consumers
+                    Join Slack
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:underline">
+                    Consumers
                   </a>
                 </li>
 
@@ -78,14 +78,14 @@ function LyncsFooterMobile() {
                     Companies
                   </a>
                 </li>
-                  <li>
-                      <a
-                          href="#"
-                          className="hover:underline"
-                      >
-                          Customers
-                      </a>
-                  </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:underline"
+                  >
+                    Customers
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
@@ -100,7 +100,7 @@ function LyncsFooterMobile() {
                 </li>
                 <li>
                   <a href="#" className="hover:underline">
-                  Partner stories
+                    Partner stories
                   </a>
                 </li>
                 <li>

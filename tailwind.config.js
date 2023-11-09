@@ -52,15 +52,15 @@ module.exports = {
           },
         },
         bounceTwo: {
-          "0%, 4%, 10%, 16%, 20%": {transform: 'translateY(0)'},
-          "8%": {transform: 'translateY(-20px)'},
-          "12%": {transform: 'translateY(-10px)'},
-          "100%": {transform: 'translateY(0)'}
+          "0%, 4%, 10%, 16%, 20%": { transform: 'translateY(0)' },
+          "8%": { transform: 'translateY(-20px)' },
+          "12%": { transform: 'translateY(-10px)' },
+          "100%": { transform: 'translateY(0)' }
         },
-        wide:{
-          "0%":{transform: 'scale(1)'},
-          "50%":{transform: 'scale(1.2)'},
-          "100%":{transform: 'scale(1)'}
+        wide: {
+          "0%": { transform: 'scale(1)' },
+          "50%": { transform: 'scale(1.2)' },
+          "100%": { transform: 'scale(1)' }
         }
       },
 

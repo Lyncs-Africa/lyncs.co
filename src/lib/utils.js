@@ -1,6 +1,6 @@
-import {countries} from "./countries.js";
+import { countries } from "./countries.js";
 
-export function particles (){
+export function particles() {
     window.particlesJS("particles-js", {
         particles: {
             number: {
@@ -126,7 +126,7 @@ export function splitName(name) {
     let split = name.split(" ");
     let firstname = split[0];
     let lastname = split[1]
-    return firstname.concat(" ", lastname )
+    return firstname.concat(" ", lastname)
 }
 export function titleCase(str) {
     var splitStr = str.toLowerCase().split(" ");

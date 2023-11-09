@@ -1,5 +1,5 @@
-import React, {useMemo} from 'react';
-import {easeInOut, motion} from "framer-motion";
+import React, { useMemo } from 'react';
+import { easeInOut, motion } from "framer-motion";
 import SideNav from "@/components/core/shared/SideNav";
 import Shop from "@/components/core/shared/Shop";
 import Ride from "@/components/core/shared/Ride";
@@ -7,7 +7,7 @@ import Travel from "@/components/core/shared/Travel";
 
 const Access = () => {
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: {opacity: 0, x: 450},
+    hidden: { opacity: 0, x: 450 },
     visible: {
       opacity: 1, x: 0,
       transition: {
@@ -17,7 +17,7 @@ const Access = () => {
     }
   }, [])
   const textVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: {opacity: 0, x: -450},
+    hidden: { opacity: 0, x: -450 },
     visible: {
       opacity: 1, x: 0,
       transition: {
@@ -26,7 +26,7 @@ const Access = () => {
     }
   }, [])
   const btnVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: {opacity: 0},
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
@@ -37,7 +37,7 @@ const Access = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover min-h-[100vh] font-lato">
+      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover min-h-[100vh] font-poppins">
       <div
         className="container mx-auto md:grid grid-cols-12 py-[100px] xl:pb-[160px] overflow-hidden md:relative md:z-10">
         <div
@@ -68,13 +68,13 @@ const Access = () => {
           </div>
         </div>
         <div className="col-start-7 col-span-6 flex md:gap-8 gap-4 px-4 mt-10 md:mt-0">
-          <SideNav/>
+          <SideNav />
           <div className="flex flex-col gap-8">
-            <Shop/>
-            <Ride/>
+            <Shop />
+            <Ride />
           </div>
           <div className="flex flex-col justify-center gap-8">
-            <Travel/>
+            <Travel />
           </div>
         </div>
       </div>
