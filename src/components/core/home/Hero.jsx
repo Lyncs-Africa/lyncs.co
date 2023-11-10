@@ -4,7 +4,9 @@ import Typed from "typed.js";
 
 function Hero() {
   const el = useRef(null);
-
+  {/* <div className="flex flex-row justify-center items-center gap-1 flex-nowrap w-full mt-4">
+            <img src="/images/clan-logo.jpg" alt="brand_logo" className="w-20 rounded-full border-2" />
+          </div> */}
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
@@ -73,7 +75,7 @@ function Hero() {
           </h2>
 
           <p className="text-[18px] py-4 text-gray-800 mb-10">
-            Add commercial services to your mobile or web app in minutes not <b className="line-through">months</b>
+            Add commercial services to your mobile or web app in minutes not <b className="line-through text-blue-500">months</b>
           </p>
 
           <div className="flex flex-row justify-center items-center gap-7 z-30 w-full">

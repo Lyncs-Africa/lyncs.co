@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import shopLyncsImg from "/public/images/lyncs-shop.svg"
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,7 +11,7 @@ import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 
 function FeaturesWeb() {
-    SwiperCore.use([Autoplay]);
+    // SwiperCore.use([Autoplay]);
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -28,7 +29,7 @@ function FeaturesWeb() {
                 duration: 1,
                 delay: 0.2,
             });
-            gsap.to(".shop", { opacity: 1, x: 0, duration: 1, delay: 0.3 });
+            gsap.to(".shop", { opacity: 1, x: 0, duration: 0.1, delay: 0.1 });
         }
     }, [inView]);
     return (
@@ -40,11 +41,11 @@ function FeaturesWeb() {
                 <div className="col-start-2 col-span-3 z-30">
                     <h2
                         className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative heading translate-x-[-50px] opacity-0 ">
-                        How Lyncs empower businesses
+                        Explore core products
                     </h2>
-                    <p className="md:text-black text-[18px] py-2">
-                        Connect your customers to :
-                    </p>
+                    <div className="text-lg font-semibold text-blue-500 py-2 mt-4 flex flex-row justify-start items-center gap-2">
+                        See all products <ArrowForwardIcon fontSize="small" className="" />
+                    </div>
 
                     <div className="space-y-6 mt-10">
                         <div className="relative flex items-center ecommerce translate-x-[-50px] opacity-0 ">
@@ -55,7 +56,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[3rem] font-dmSans text-[18px]">Shop</p>
+                            <p className="ml-[2rem] font-dmSans text-gray-700 text-[18px]">Shop</p>
                         </div>
                         <div className="relative flex items-center credit-shopping translate-x-[-50px] opacity-0 ">
                             <div
@@ -65,7 +66,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[3rem] font-dmSans text-[18px]">Eat</p>
+                            <p className="ml-[2rem] font-dmSans text-gray-700 text-[18px]">Eat</p>
                         </div>
                         <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
                             <div
@@ -75,7 +76,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[3rem] font-dmSans text-[18px]">
+                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
                                 Ride
                             </p>
                         </div>
@@ -87,7 +88,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[3rem] font-dmSans text-[18px]">
+                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
                                 Delivery
                             </p>
                         </div>
@@ -99,7 +100,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[3rem] font-dmSans text-[18px]">
+                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
                                 Travel
                             </p>
                         </div>
@@ -111,7 +112,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[3rem] font-dmSans text-[18px]">
+                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
                                 Bus
                             </p>
                         </div>
@@ -123,7 +124,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[3rem] font-dmSans text-[18px]">
+                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
                                 Event
                             </p>
                         </div>
@@ -131,10 +132,10 @@ function FeaturesWeb() {
                 </div>
                 <div className="col-start-6 col-span-6 shadow-lg swipe-up translate-y-[-50px] opacity-0 ">
                     <Swiper
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
+                        // autoplay={{
+                        //     delay: 3000,
+                        //     disableOnInteraction: false,
+                        // }}
                         speed={5000}
                         spaceBetween={30}
                         onSwiper={(swiper) => setSwiper(swiper)}
@@ -142,8 +143,8 @@ function FeaturesWeb() {
                         modules={[Pagination]}
                         className="mySwiper"
                     >
-                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px]">
-                            <div className="p-16">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
+                            <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
                                     Shop
                                 </h2>
@@ -151,120 +152,208 @@ function FeaturesWeb() {
                                     Build a full online store with no backend or database
                                 </p>
                                 <button
-                                    className="bg-blue-500 text-[18px] text-white px-8 py-4 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
                                     Get started
                                 </button>
-                                <img
-                                    className=""
-                                    src={shopLyncsImg}
-                                    alt=""
-                                />
+
+                                <hr className="my-10 w-full" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
+                                    <p>Companies integrating our shop service</p>
+
+                                    <div className="w-full flex flex-row justify-start items-center gap-7">
+                                        <img src="/images/clan.png" className="w-20 rounded-full" />
+                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
+                                    </div>
+                                </div>
+
+                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-yellow-400 h-[120px] overflow-hidden left-[26px]">
+                                    <img src="/images/home-products-pattern.svg" />
+                                </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl">
-                            <div className="px-8 py-[70px] min-h-[750px]">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
+                            <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Build the Future of E-commerce
+                                    Eat
                                 </h2>
                                 <p className="py-[2rem] font-dmSans text-[18px]">
-                                    Your customers get to experience e-commerce at scale, at no extra cost to your business. No Merchant
-                                    Acquisition, No Inventory, No Logistics, Nothing! We’ll handle everything!
+                                    Build a complete food-ordering service within your app
                                 </p>
                                 <button
-                                    className="bg-black text-[18px] text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
                                     Get started
                                 </button>
-                                <img
-                                    className="w-[70%] ml-auto"
-                                    src="/assets/images/card.svg"
-                                    alt=""
-                                />
+
+                                <hr className="my-10 w-full" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
+                                    <p>Companies integrating our shop service</p>
+
+                                    <div className="w-full flex flex-row justify-start items-center gap-7">
+                                        <img src="/images/clan.png" className="w-20 rounded-full" />
+                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
+                                    </div>
+                                </div>
+
+                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
+                                    <img src="/images/home-products-pattern.svg" />
+                                </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl">
-                            <div className="px-8 py-[70px] min-h-[750px]">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
+                            <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Sophisticated Use Cases
+                                    Ride
                                 </h2>
                                 <p className="py-[2rem] font-dmSans text-[18px]">
-                                    Your customers can use our advanced filters to reduce delivery time by searching for products from
-                                    merchants close to where they reside. They can also filter by the prices of listed items, merchant
-                                    ratings, product categories, etc.
+                                    Build an e-hailing service for your customers
                                 </p>
                                 <button
-                                    className="bg-black text-[18px] text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
                                     Get started
                                 </button>
-                                <img
-                                    className="w-[70%] ml-auto"
-                                    src="/assets/images/shopping.svg"
-                                    alt=""
-                                />
+
+                                <hr className="my-10 w-full" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
+                                    <p>Companies integrating our shop service</p>
+
+                                    <div className="w-full flex flex-row justify-start items-center gap-7">
+                                        <img src="/images/clan.png" className="w-20 rounded-full" />
+                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
+                                    </div>
+                                </div>
+
+                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
+                                    <img src="/images/home-products-pattern.svg" />
+                                </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl">
-                            <div className="px-8 py-[70px] min-h-[750px]">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
+                            <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Advanced AI Shopping
+                                    Delivery
                                 </h2>
                                 <p className="py-[2rem] font-dmSans text-[18px]">
-                                    With Lyncs AI, we’ll suggest better deals to you. eg Let’s say you want a TM shirt, and your budget is
-                                    7k. If we can’t find a TM shirt, we’ll suggest other quality shirts for that price that would fit just
-                                    as well as a TM shirt. Crazy right?
+                                    Deliver anything anywhere within your app | Build a full logistics platform end-to-end in minutes
                                 </p>
                                 <button
-                                    className="bg-black text-[18px] text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
                                     Get started
                                 </button>
-                                <img
-                                    className="w-[70%] ml-auto"
-                                    src="/assets/images/Ai-shopping.svg"
-                                    alt=""
-                                />
+
+                                <hr className="my-10 w-full" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
+                                    <p>Companies integrating our shop service</p>
+
+                                    <div className="w-full flex flex-row justify-start items-center gap-7">
+                                        <img src="/images/clan.png" className="w-20 rounded-full" />
+                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
+                                    </div>
+                                </div>
+
+                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
+                                    <img src="/images/home-products-pattern.svg" />
+                                </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl">
-                            <div className="px-8 py-[70px] min-h-[750px]">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
+                            <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Advanced AI Shopping
+                                    Travel
                                 </h2>
                                 <p className="py-[2rem] font-dmSans text-[18px]">
-                                    With Lyncs AI, we’ll suggest better deals to you. eg Let’s say you want a TM shirt, and your budget is
-                                    7k. If we can’t find a TM shirt, we’ll suggest other quality shirts for that price that would fit just
-                                    as well as a TM shirt. Crazy right?
+                                    Build a flight booking and ticket-issuing service
                                 </p>
                                 <button
-                                    className="bg-black text-[18px] text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
                                     Get started
                                 </button>
-                                <img
-                                    className="w-[70%] ml-auto"
-                                    src="/assets/images/Ai-shopping.svg"
-                                    alt=""
-                                />
+
+                                <hr className="my-10 w-full" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
+                                    <p>Companies integrating our shop service</p>
+
+                                    <div className="w-full flex flex-row justify-start items-center gap-7">
+                                        <img src="/images/clan.png" className="w-20 rounded-full" />
+                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
+                                    </div>
+                                </div>
+
+                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
+                                    <img src="/images/home-products-pattern.svg" />
+                                </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl">
-                            <div className="px-8 py-[70px] min-h-[750px]">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
+                            <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Advanced AI Shopping
+                                    Bus
                                 </h2>
                                 <p className="py-[2rem] font-dmSans text-[18px]">
-                                    With Lyncs AI, we’ll suggest better deals to you. eg Let’s say you want a TM shirt, and your budget is
-                                    7k. If we can’t find a TM shirt, we’ll suggest other quality shirts for that price that would fit just
-                                    as well as a TM shirt. Crazy right?
+                                    Build an Inter-state transport service in your app
                                 </p>
                                 <button
-                                    className="bg-black text-[18px] text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
                                     Get started
                                 </button>
-                                <img
-                                    className="w-[70%] ml-auto"
-                                    src="/assets/images/Ai-shopping.svg"
-                                    alt=""
-                                />
+
+                                <hr className="my-10 w-full" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
+                                    <p>Companies integrating our shop service</p>
+
+                                    <div className="w-full flex flex-row justify-start items-center gap-7">
+                                        <img src="/images/clan.png" className="w-20 rounded-full" />
+                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
+                                    </div>
+                                </div>
+
+                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
+                                    <img src="/images/home-products-pattern.svg" />
+                                </div>
                             </div>
                         </SwiperSlide>
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
+                            <div className="px-12 pt-12 relative">
+                                <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
+                                    Event
+                                </h2>
+                                <p className="py-[2rem] font-dmSans text-[18px]">
+                                    Search, Book and Get Tickets for any Event in Africa
+                                </p>
+                                <button
+                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                    Get started
+                                </button>
+
+                                <hr className="my-10 w-full" />
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
+                                    <p>Companies integrating our shop service</p>
+
+                                    <div className="w-full flex flex-row justify-start items-center gap-7">
+                                        <img src="/images/clan.png" className="w-20 rounded-full" />
+                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
+                                    </div>
+                                </div>
+
+                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
+                                    <img src="/images/home-products-pattern.svg" />
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
                     </Swiper>
                 </div>
             </div>

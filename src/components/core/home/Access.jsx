@@ -48,14 +48,14 @@ const Access = () => {
             whileInView="visible"
             className="text-white leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >
-            Access over 100+ APIs to integrate
+            1 API for everything Commerce
           </motion.h2>
           <motion.p
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
             className="text-[18px] py-8 text-gray-200">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, sed!
+            The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel, ride-sharing, food delivery, event management, and bill payment, all within your application
           </motion.p>
           <div>
             <motion.button

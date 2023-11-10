@@ -8,12 +8,17 @@ import OtherHousesTwoToneIcon from '@mui/icons-material/OtherHousesTwoTone';
 import AccountBalanceWalletTwoToneIcon from '@mui/icons-material/AccountBalanceWalletTwoTone';
 import LocalTaxiTwoToneIcon from '@mui/icons-material/LocalTaxiTwoTone';
 import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
+import DirectionsBusTwoToneIcon from '@mui/icons-material/DirectionsBusTwoTone';
 import HealthAndSafetyTwoToneIcon from '@mui/icons-material/HealthAndSafetyTwoTone';
+import LocalShippingTwoToneIcon from '@mui/icons-material/LocalShippingTwoTone';
+
+import { usePathname } from "next/navigation";
 
 export const ProductsDropdown = ({ mode }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
     const closeTimeoutRef = useRef(null);
+    const location = usePathname()
 
     const handleOpenDropdown = () => {
         setIsDropdownOpen(true);
@@ -27,145 +32,166 @@ export const ProductsDropdown = ({ mode }) => {
     };
 
     return (
-        <div
-            className="relative inline-block text-left py-4"
+        <div ref={dropdownRef}>
 
-            ref={dropdownRef}
-        >
+            <div className={`${location === "/" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} flex flex-row justify-start items-center md:text-gray-700 cursor-pointer md:hover:text-blue-700 ease transition-all`} onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
+                <p className={`block py-4 pl-3 pr-4 text-lg rounded md:border-0 `}>
+                    Products
+                </p>
 
-            <div className="pl-3 flex flex-row items-center gap-3 cursor-pointer" onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
-                <p className={`${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} text-lg`}>Products</p>
-                <div className="">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-200 md:text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" onClick={handleOpenDropdown}>
+                <div className={`${isDropdownOpen && "rotate-180"} ease transition-all`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" onClick={handleOpenDropdown}>
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                 </div>
             </div>
 
             {/* Dropdown content */}
-            {isDropdownOpen && (
+
+            <div key={isDropdownOpen}
+                className={`${isDropdownOpen ? "opacity-100 flex" : "opacity-75 hidden"} origin-to-right fixed z-50 top-32 xl:top-20 xl:left-80 w-[200px] md:w-[900px] rounded-xl shadow-lg bg-[#ffffff] ring-2 ring-black ring-opacity-5 transition-opacity opacity-0 duration-300 ease-in-out px-7 py-5`}
+            >
                 <div
-                    className="origin-to-right fixed z-50 top-32 xl:top-20 xl:left-80 w-[200px] md:w-[800px] rounded-md shadow-lg bg-white ring-2 ring-black ring-opacity-5"
+                    className="py-1 dropdown-content w-full flex flex-col xl:grid xl:grid-cols-2 gap-x-10"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="dropdown-menu-button"
+                    onMouseEnter={handleOpenDropdown}
+                    onMouseLeave={handleCloseDropdown}
                 >
-                    <div
-                        className="py-1 dropdown-content w-full flex flex-col xl:grid xl:grid-cols-2"
-                        role="menu"
-                        aria-orientation="vertical"
-                        aria-labelledby="dropdown-menu-button"
-                        onMouseEnter={handleOpenDropdown}
-                        onMouseLeave={handleCloseDropdown}
-                    >
-                        <div className="flex-auto flex flex-row items-center justify-center gap-7 w-full p-4 cursor-pointer">
+                    <div className="flex-auto flex flex-row items-start justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-md bg-blue-100">
                             <StorefrontTwoToneIcon fontSize="large" className="text-blue-500" />
-                            <div>
-                                <Link
-                                    className='text-md font-bold'
-                                    href="/shop"
-                                    role="menuitem"
-                                >
-                                    Shop
-                                </Link>
-                                <p className="text-sm text-gray-500">buy products at the best rates in the market</p>
-                            </div>
+                        </div>
+                        <div>
+                            <Link
+                                className='text-lg text-black font-semibold'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Shop
+                            </Link>
+                            <p className="text-lg text-gray-500 font-light">Build a full online store with no backend or database</p>
+                        </div>
 
-                        </div>
-                        <div className="flex-auto flex flex-row items-center justify-start gap-7 w-full p-4 cursor-pointer">
-                            <HealthAndSafetyTwoToneIcon fontSize="large" className="text-green-500" />
-                            <div>
-                                <Link
-                                    className='text-md font-bold'
-                                    href="/shop"
-                                    role="menuitem"
-                                >
-                                    Health
-                                </Link>
-                                <p className="text-sm text-gray-500">register for health plans, consult medical professionals, or buy drugs</p>
-                            </div>
+                    </div>
 
+                    <div className="flex-auto flex flex-row items-start justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-md bg-blue-100">
+                            <HealthAndSafetyTwoToneIcon fontSize="large" className="text-blue-500" />
                         </div>
-                        <div className="flex-auto flex flex-row items-center justify-start gap-7 p-4 cursor-pointer">
-                            <AccountBalanceWalletTwoToneIcon fontSize="large" className="text-orange-500 w-full" />
-                            <div>
-                                <Link
-                                    className='text-md font-bold w-full'
-                                    href="/shop"
-                                    role="menuitem"
-                                >
-                                    Airtime & Bill Payment
-                                </Link>
-                                <p className="text-sm text-gray-500">Buy airtime, data, cable tv, electricity and more</p>
-                            </div>
+                        <div>
+                            <Link
+                                className='text-lg text-black font-semibold'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Health
+                            </Link>
+                            <p className="text-lg text-gray-500 font-light">register for health plans, consult medical professionals, or buy drugs</p>
+                        </div>
 
-                        </div>
-                        <div className="flex-auto flex flex-row items-center justify-center gap-7 w-full p-4 cursor-pointer">
-                            <LocalTaxiTwoToneIcon fontSize="large" className="text-yellow-500" />
-                            <div>
-                                <Link
-                                    className='text-md font-bold'
-                                    href="/shop"
-                                    role="menuitem"
-                                >
-                                    Ride
-                                </Link>
-                                <p className="text-sm text-gray-500">Ride alone or with friends and split the bill</p>
-                            </div>
+                    </div>
 
+                    <div className="flex-auto flex flex-row items-start justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-md bg-blue-100">
+                            <AccountBalanceWalletTwoToneIcon fontSize="large" className="text-blue-500" />
                         </div>
-                        <div className="flex-auto flex flex-row items-center justify-center gap-7 w-full p-4 cursor-pointer">
-                            <LocalDiningTwoToneIcon fontSize="large" className="text-purple-500" />
-                            <div>
-                                <Link
-                                    className='text-md font-bold'
-                                    href="/shop"
-                                    role="menuitem"
-                                >
-                                    Eat
-                                </Link>
-                                <p className="text-sm text-gray-500">order food or groceries and get them delivered within minutes</p>
-                            </div>
+                        <div>
+                            <Link
+                                className='text-lg text-black font-semibold'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Airtime & Bill Payment
+                            </Link>
+                            <p className="text-lg text-gray-500 font-light">Buy airtime, data, cable tv, electricity and more</p>
                         </div>
-                        <div className="flex-auto flex flex-row items-center justify-center gap-7 w-full p-4 cursor-pointer">
-                            <ModeOfTravelTwoToneIcon fontSize="large" className="text-cyan-500" />
-                            <div>
-                                <Link
-                                    className='text-md font-bold'
-                                    href="/shop"
-                                    role="menuitem"
-                                >
-                                    Travel
-                                </Link>
-                                <p className="text-sm text-gray-500">Book flights or process VISAS and passports in days and not months</p>
-                            </div>
+
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-start justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-md bg-blue-100">
+                            <LocalTaxiTwoToneIcon fontSize="large" className="text-blue-500" />
                         </div>
-                        <div className="flex-auto flex flex-row items-center justify-center gap-7 w-full p-4 cursor-pointer">
-                            <SchoolTwoToneIcon fontSize="large" className="text-green-800" />
-                            <div>
-                                <Link
-                                    className='text-md font-bold'
-                                    href="/shop"
-                                    role="menuitem"
-                                >
-                                    School
-                                </Link>
-                                <p className="text-sm text-gray-500">Pay school fees, buy books, and other school items</p>
-                            </div>
+                        <div>
+                            <Link
+                                className='text-lg text-black font-semibold'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Ride
+                            </Link>
+                            <p className="text-lg text-gray-500 font-light">Build an e-hailing service for your customers</p>
                         </div>
-                        <div className="flex-auto flex flex-row items-center justify-center gap-7 w-full p-4 cursor-pointer">
-                            <OtherHousesTwoToneIcon fontSize="large" className="text-red-500" />
-                            <div>
-                                <Link
-                                    className='text-md font-bold'
-                                    href="/shop"
-                                    role="menuitem"
-                                >
-                                    House
-                                </Link>
-                                <p className="text-sm text-gray-500">register for health plans, consult medical professionals, or buy drugs</p>
-                            </div>
+
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-start justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-md bg-blue-100">
+                            <LocalDiningTwoToneIcon fontSize="large" className="text-blue-500" />
+                        </div>
+                        <div>
+                            <Link
+                                className='text-lg text-black font-semibold'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Eat
+                            </Link>
+                            <p className="text-lg text-gray-500 font-light">order food or groceries and get them delivered within minutes</p>
+                        </div>
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-start justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-md bg-blue-100">
+                            <ModeOfTravelTwoToneIcon fontSize="large" className="text-blue-500" />
+                        </div>
+                        <div>
+                            <Link
+                                className='text-lg text-black font-semibold'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Travel
+                            </Link>
+                            <p className="text-lg text-gray-500 font-light">Build a flight booking and ticket-issuing service </p>
+                        </div>
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-center justify-center gap-7 w-full p-4 cursor-pointer">
+                        <div className="p-3 rounded-md bg-blue-100">
+                            <LocalShippingTwoToneIcon fontSize="large" className="text-blue-500" />
+                        </div>
+                        <div>
+                            <Link
+                                className='text-lg text-black font-semibold'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Delivery
+                            </Link>
+                            <p className="text-lg text-gray-500 font-light">Deliver anything anywhere within your app | Build a full logistics platform end-to-end in minutes</p>
+                        </div>
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-center justify-center gap-7 w-full p-4 cursor-pointer">
+                        <div className="p-3 rounded-md bg-blue-100">
+                            <OtherHousesTwoToneIcon fontSize="large" className="text-blue-500" />
+                        </div>
+                        <div>
+                            <Link
+                                className='text-lg text-black font-semibold'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Bus
+                            </Link>
+                            <p className="text-lg text-gray-500 font-light">register for health plans, consult medical professionals, or buy drugs</p>
                         </div>
                     </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 };
