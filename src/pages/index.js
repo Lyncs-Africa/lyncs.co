@@ -16,6 +16,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import APICoverage from '@/components/core/home/APICoverage';
 import FeaturesWeb from '@/components/core/home/FeaturesWeb';
+import FeaturesMobile from '@/components/core/home/FeaturesMobile';
 
 const Index = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -56,6 +57,7 @@ const Index = () => {
       <Access />
       <Services />
       <FeaturesWeb />
+      <FeaturesMobile />
       {/* <Shop /> */}
       <APICoverage />
       <BillsPayment />

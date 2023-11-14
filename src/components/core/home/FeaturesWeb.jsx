@@ -11,7 +11,7 @@ import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 
 function FeaturesWeb() {
-    // SwiperCore.use([Autoplay]);
+    SwiperCore.use([Autoplay]);
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
