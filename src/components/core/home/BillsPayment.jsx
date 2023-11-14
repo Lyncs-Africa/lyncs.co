@@ -23,7 +23,7 @@ const BillsPayment = () => {
           </h2>
           <p
             className="text-[18px] py-8 text-gray-200">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, sed!
+            Integrate airtime, data, cable tv, electricity services into your business.
           </p>
           <div>
             <button

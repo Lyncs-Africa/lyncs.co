@@ -36,7 +36,7 @@ const Services = () => {
             >
               Explore all <br /> our use cases.
             </motion.h2>
-            <p className="text-[18px] py-8 text-black">
+            <p className="text-[15px] py-8 text-black">
               See all our products and how they can help your business grow
             </p>
             <div className="xl:grid grid-cols-3 gap-8 md:my-10">
@@ -58,8 +58,8 @@ const Services = () => {
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
-                      className="text-[18px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
+                      Build a flight booking and ticket-issuing service.
                     </motion.p>
                   </div>
 
@@ -81,7 +81,7 @@ const Services = () => {
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
-                      className="text-[18px] py-2 text-slate-100 tracking-tight max-w-[500px]">
+                      className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
                       Buy airtime,data and pay for electricity bills, cable tv,etc
                     </motion.p>
                   </div>
@@ -99,8 +99,8 @@ const Services = () => {
                     Shop
                   </motion.p>
                   <p
-                    className="text-[18px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                    Allow your customers to shop within your app
+                    className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
+                    Build a full online store with no backend or database
                   </p>
                 </div>
 
@@ -122,8 +122,8 @@ const Services = () => {
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
-                      className="text-[18px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Buy Groceries or get food at light speed.
+                      className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
+                      Build a complete food-ordering service within your app
                     </motion.p>
                   </div>
 
@@ -147,8 +147,8 @@ const Services = () => {
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 50 }}
-                      className="text-[18px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Get cheap rides at Uber-level comfort.
+                      className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
+                      Build an e-hailing service for your customers.
                     </motion.p>
                   </div>
 
@@ -169,7 +169,7 @@ const Services = () => {
                       Housing
                     </motion.p>
                     <p
-                      className="text-[18px] py-2 text-slate-100 tracking-tight max-w-[500px]">
+                      className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
                       Find a House or Pay Rent upfront or monthly.
                     </p>
                   </div>

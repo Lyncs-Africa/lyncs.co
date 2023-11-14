@@ -61,12 +61,12 @@ function Hero() {
         </div>
         <div className="col-span-10 col-start-2 z-30 relative text-center">
           <h2
-            className="text-blue-500 text-[4rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
+            className="text-blue-500 text-[3.5rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
           >
             {/* <span className="text-[18px] relative md:text-blue-500 uppercase tracking-wider">
                   For merchants
                 </span><br /> */}
-            <span className="relative md:text-black pr-2">
+            <span className="relative text-black">
               Embed<br />
             </span>
             <span ref={el}

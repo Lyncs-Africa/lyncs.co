@@ -375,94 +375,81 @@ html {
 }
 
 .bubble {
-    position: absolute;
-    bottom: -100px;
-    width: 40px;
-    height: 40px;
+    background-color: white;
     border-radius: 50%;
-    animation: rise 40s infinite ease-in;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
+    height: 152px;
+    margin-right: 20px;
+    width: 152px;
+    background-image: url(/images/spritesheet.png);
+    background-size: 1076px 1076px;
+    position: absolute;
+    transition: opacity ease-in-out 1s;
 }
 
-.bubble:nth-child(1) {
-    width: 40px;
-    height: 40px;
-    left: 10%;
-    animation-duration: 18s;
+.bubbles {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
 }
 
-.bubble:nth-child(2) {
-    width: 20px;
-    height: 20px;
-    left: 20%;
-    animation-duration: 15s;
-    animation-delay: 1s;
+.bubbles-wrapper {
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
-.bubble:nth-child(3) {
-    width: 50px;
-    height: 50px;
-    left: 35%;
-    animation-duration: 10s;
-    animation-delay: 2s;
+.company-1 {
+    background-position: -154px 0;
 }
 
-.bubble:nth-child(4) {
-    width: 80px;
-    height: 80px;
-    left: 50%;
-    animation-duration: 15s;
-    animation-delay: 0s;
+.company-2 {
+    background-position: -308px 0;
 }
 
-.bubble:nth-child(5) {
-    width: 35px;
-    height: 35px;
-    left: 55%;
-    animation-duration: 16s;
-    animation-delay: 1s;
+.company-3 {
+    background-position: -462px 0;
 }
 
-.bubble:nth-child(6) {
-    width: 45px;
-    height: 45px;
-    left: 65%;
-    animation-duration: 5s;
-    animation-delay: 3s;
+.company-4 {
+    background-position: -616px 0;
 }
 
-.bubble:nth-child(7) {
-    width: 90px;
-    height: 90px;
-    left: 70%;
-    animation-duration: 2s;
-    animation-delay: 2s;
+.company-5 {
+    background-position: -770px 0;
 }
 
-.bubble:nth-child(8) {
-    width: 25px;
-    height: 25px;
-    left: 80%;
-    animation-duration: 6s;
-    animation-delay: 2s;
+.company-6 {
+    background-position: -924px 0;
 }
 
-.bubble:nth-child(9) {
-    width: 15px;
-    height: 15px;
-    left: 70%;
-    animation-duration: 5s;
-    animation-delay: 1s;
+.company-7 {
+    background-position: -1078px 0;
 }
 
-.bubble:nth-child(10) {
-    width: 90px;
-    height: 90px;
-    left: 25%;
-    animation-duration: 10s;
-    animation-delay: 4s;
+.company-8 {
+    background-position: -1232px 0;
 }
 
-@keyframes rise {
+.company-9 {
+    background-position: -1386px 0;
+}
+
+.company-10 {
+    background-position: -1540px 0;
+}
+
+.company-11 {
+    background-position: -1694px 0;
+}
+
+.company-12 {
+    background-position: -1848px 0;
+}
+
+/* @keyframes rise {
     0% {
         bottom: -100px;
         transform: translateX(0);
@@ -476,7 +463,7 @@ html {
         bottom: 1080px;
         transform: translateX(-200px);
     }
-}
+} */
 
 .heart::after {
     content: "";

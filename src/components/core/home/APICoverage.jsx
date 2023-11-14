@@ -24,7 +24,7 @@ const APICoverage = () => {
     }, [])
     return (
         <div className="w-full font-poppins bg-white flex flex-col justify-center items-center">
-            <div className="grid md:grid-cols-2 grid-cols-1 w-full container max-w-7xl relative h-full">
+            <div className="grid md:grid-cols-2 grid-cols-1 w-full gap-10 container max-w-7xl relative h-full">
                 <div className="my-40 md:p-0 px-5">
 
                     <motion.h2
@@ -33,14 +33,14 @@ const APICoverage = () => {
                         whileInView="visible"
                         className="font-bold text-3xl md:text-4xl text-black leading-snug"
                     >
-                        The largest API coverage <br /> across all commercial<br /> service-offering institutions in Africa
+                        The most extensive API<br /> coverage in African<br /> commercial services.
                     </motion.h2>
 
                     <motion.p
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="text-[18px] py-8 text-gray-800"
+                        className="text-[16px] py-8 text-gray-800 max-w-xl w-full"
                     >
                         Get useful data from all commercial service providers spanning 10 industries aggregated into services in Nigeria. Currently in beta for Kenya, Ghana, and South Africa.
                     </motion.p>
