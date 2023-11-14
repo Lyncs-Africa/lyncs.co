@@ -178,12 +178,14 @@ function Navbar(mode) {
                     </Link> */}
                     <ProductsDropdown mode={mode} />
                     <Link
+                      target="_blank"
                       className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
                       href="https://lyncs.africa"
                     >
                       Use Cases
                     </Link>
                     <Link
+                      target="_blank"
                       className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
                       href="https://lyncs.africa"
                     >

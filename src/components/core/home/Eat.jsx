@@ -19,7 +19,7 @@ const Eat = () => {
           </h2>
           <p
             className="text-[18px] py-8 text-black">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, sed!
+            Build a complete food-ordering service within your app
           </p>
           <div className="flex flex-col gap-16 md:grid grid-cols-4 gap-8 w-[75%] mx-auto my-[5rem]">
             <Food />
