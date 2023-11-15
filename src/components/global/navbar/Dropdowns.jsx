@@ -32,9 +32,9 @@ export const ProductsDropdown = ({ mode }) => {
     };
 
     return (
-        <div ref={dropdownRef}>
+        <div ref={dropdownRef} className="group relative">
 
-            <div className={`${location === "/" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} flex flex-row justify-start items-center md:text-gray-700 cursor-pointer md:hover:text-blue-700 ease transition-all`} onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
+            <div className={`${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} flex flex-row justify-start items-center cursor-pointer md:hover:text-blue-700 ease transition-all`} onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
                 <p className={`block py-4 pl-3 pr-4 text-lg rounded md:border-0 `}>
                     Products
                 </p>
@@ -48,11 +48,11 @@ export const ProductsDropdown = ({ mode }) => {
 
             {/* Dropdown content */}
 
-            <div key={isDropdownOpen}
-                className={`${isDropdownOpen ? "opacity-100 flex" : "opacity-75 hidden"} origin-to-right fixed z-50 top-32 xl:top-20 xl:left-80 w-[200px] md:w-[900px] rounded-xl shadow-lg bg-[#ffffff] ring-2 ring-black ring-opacity-5 transition-opacity opacity-0 duration-300 ease-in-out px-7 py-5`}
+            <div
+                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right fixed z-50 top-32 xl:top-20 xl:left-80 w-[200px] md:w-[900px] rounded-xl shadow-lg bg-[#ffffff] ring-2 ring-black ring-opacity-5 ease-in-out px-7 py-5'
             >
                 <div
-                    className="py-1 dropdown-content w-full flex flex-col xl:grid xl:grid-cols-2 gap-x-10"
+                    className="py-1 dropdown-content w-full grid grid-cols-1 md:grid-cols-2 gap-x-10"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="dropdown-menu-button"

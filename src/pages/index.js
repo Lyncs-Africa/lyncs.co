@@ -56,11 +56,11 @@ const Index = () => {
       <Hero />
       <Access />
       <Services />
+      <Shop />
+      <BillsPayment />
       <FeaturesWeb />
       <FeaturesMobile />
-      {/* <Shop /> */}
       <APICoverage />
-      <BillsPayment />
       <div className="relative">
         <div className="area z-20">
           <ul className="circles-two">
@@ -79,7 +79,7 @@ const Index = () => {
         <Travel />
         <Eat />
       </div>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Strip />
       <Footer dark />
       <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop} />

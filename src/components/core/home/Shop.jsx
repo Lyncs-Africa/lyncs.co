@@ -10,7 +10,7 @@ const Shop = () => {
         <img alt="curve" src="/images/long-curve.svg" />
       </div>
       <div
-        className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pb-[25rem] xl:pt-0 overflow-hidden md:relative md:z-10">
+        className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-0 overflow-hidden md:relative md:z-10">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

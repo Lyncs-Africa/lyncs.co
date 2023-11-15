@@ -36,7 +36,7 @@ function FeaturesWeb() {
         <>
             <div
                 ref={ref}
-                className="hidden md:relative text-black z-20 py-[160px] md:grid grid-cols-12 before:absolute before:right-0 before:top-[100px] before:content-[''] before:bg-[url(/assets/images/6.png)] before:bg-no-repeat before:bg-right-top before:w-full before:h-[955px] after:absolute after:left-0 after:top-[-150px] after:opacity-50 after:content-[''] after:bg-contain after:bg-[url(/assets/images/5.png)] after:bg-no-repeat after:bg-left-top after:w-full after:h-[800px] bg-[#F4F6F8]"
+                className="hidden md:relative text-black z-20 py-[160px] md:grid grid-cols-12 before:absolute before:right-0 before:top-[100px] before:content-[''] before:bg-[url(/assets/images/6.png)] before:bg-no-repeat before:bg-right-top before:w-full before:h-[955px] after:absolute after:left-0 after:top-[-150px] after:opacity-50 after:content-[''] after:bg-contain after:bg-[url(/assets/images/5.png)] after:bg-no-repeat after:bg-left-top after:w-full after:h-[800px] bg-white"
             >
                 <div className="col-start-2 col-span-3 z-30">
                     <h2
@@ -143,7 +143,7 @@ function FeaturesWeb() {
                         modules={[Pagination]}
                         className="mySwiper"
                     >
-                        <SwiperSlide className="bg-white rounded-2xl min-h-[750px] h-full p-0 shadow-md">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] h-full p-0 shadow-md">
                             <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
                                     Shop
@@ -173,7 +173,7 @@ function FeaturesWeb() {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-white rounded-2xl min-h-[750px] p-0">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
                             <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
                                     Eat
@@ -203,7 +203,7 @@ function FeaturesWeb() {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-white rounded-2xl min-h-[750px] p-0">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
                             <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
                                     Ride
@@ -233,7 +233,7 @@ function FeaturesWeb() {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-white rounded-2xl min-h-[750px] p-0">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
                             <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
                                     Delivery
@@ -263,7 +263,7 @@ function FeaturesWeb() {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-white rounded-2xl min-h-[750px] p-0">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
                             <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
                                     Travel
@@ -293,7 +293,7 @@ function FeaturesWeb() {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-white rounded-2xl min-h-[750px] p-0">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
                             <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
                                     Bus
@@ -323,7 +323,7 @@ function FeaturesWeb() {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className="bg-white rounded-2xl min-h-[750px] p-0">
+                        <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
                             <div className="px-12 pt-12 relative">
                                 <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
                                     Event

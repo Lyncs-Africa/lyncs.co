@@ -18,14 +18,11 @@ function Hero() {
         "e-hailing ride",
         // "bill payment",
       ],
-      startDelay: 300,
       typeSpeed: 50,
       backSpeed: 10,
       backDelay: 3000,
       smartBackspace: true,
       loop: true,
-      loopCount: Infinity,
-      showCursor: false
     });
 
     return () => {
@@ -61,7 +58,7 @@ function Hero() {
         </div>
         <div className="col-span-10 col-start-2 z-30 relative text-center">
           <h2
-            className="text-blue-500 text-[3.5rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
+            className="text-blue-500 text-[3.3rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
           >
             {/* <span className="text-[18px] relative md:text-blue-500 uppercase tracking-wider">
                   For merchants
@@ -70,11 +67,14 @@ function Hero() {
               Embed<br />
             </span>
             <span ref={el}
-              className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:animate-blink after:content-['|'] after:inline after:text-blue-500"> </span><br />
+              className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:inline after:text-blue-500"
+            >
+              Online store
+            </span><br />
             <span className="relative text-black">into your business</span>
           </h2>
 
-          <p className="text-[18px] py-4 text-gray-800 mb-10">
+          <p className="sm:text-[16px] text-md py-4 text-gray-800 mb-10 px-4">
             Add commercial services to your mobile or web app in minutes not <b className="line-through text-blue-500">months</b>
           </p>
 

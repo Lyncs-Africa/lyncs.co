@@ -7,6 +7,8 @@ import { useAuth } from "@/hooks/use-auth";
 import { ProductsDropdown } from "../navbar/Dropdowns.jsx";
 import { UseCasesDropdown } from "../navbar/UseCasesDropdown.jsx";
 import { AnimatePresence, easeInOut, motion } from "framer-motion"
+import { useDisclosure } from "@mantine/hooks";
+import MobileNavbar from "./MobileNavbar.jsx";
 
 function Navbar(mode) {
   const { data } = useSignupStore((state) => state)
@@ -14,6 +16,8 @@ function Navbar(mode) {
   const [profile, setProfile] = useState(false);
   const location = usePathname()
   const { logout } = useAuth();
+
+  const [opened, { open, close }] = useDisclosure(false);
 
   function useOutsideAlerter(ref) {
     useEffect(() => {
@@ -59,6 +63,8 @@ function Navbar(mode) {
   }, [])
   return (
     <>
+      <MobileNavbar opened={opened} onClose={close} />
+
       <div ref={wrapperRef}
         className={`z-50 md:grid md:grid-cols-12 font-poppins ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} w-full`}>
         <nav className="border-gray-200 px-2 sm:px-4 rounded col-start-2 col-span-10 py-4 md:py-0">
@@ -105,7 +111,7 @@ function Navbar(mode) {
                         <span
                           className="block text-sm font-light text-gray-500 truncate ">{data?.user?.email}</span>
                       </div>
-                      <ul className="py-1 font-light text-gray-500 " aria-labelledby="dropdown">
+                      <ul className="py-1 font-light text-gray-500" aria-labelledby="dropdown">
                         <Link className="block py-2 px-4 text-sm hover:bg-gray-100"
                           href="/dashboard/overview">
                           Dashboard
@@ -136,7 +142,7 @@ function Navbar(mode) {
               }
 
               <button
-                onClick={() => setToggle(!toggle)}
+                onClick={open}
                 type="button"
                 className="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden focus:text-white hover:bg-gray-400 focus:outline-none"
                 aria-controls="navbar-default"
@@ -158,61 +164,49 @@ function Navbar(mode) {
                 </svg>
               </button>
             </div>
-            <AnimatePresence>
-              {
-                toggle &&
-                <motion.div
-                  variants={containerVariant}
-                  initial="hidden"
-                  animate="visible"
-                  exit={{ y: -50, opacity: 0 }}
-                  className={`items-center justify-between w-full md:flex md:w-auto md:order-1`}
-                >
-                  <ul
-                    className={`flex flex-col p-4 my-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent ${mode.dark || mode.scrollTop >= 100 || mode.transparent ? 'bg-black border-none' : 'bg-black  border-gray-100'}`}>
-                    {/* <Link
-                      className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
-                      href="https://lyncs.africa"
-                    >
-                      Products
-                    </Link> */}
-                    <ProductsDropdown mode={mode} />
-                    <Link
-                      target="_blank"
-                      className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
-                      href="https://lyncs.africa"
-                    >
-                      Use Cases
-                    </Link>
-                    <Link
-                      target="_blank"
-                      className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
-                      href="https://lyncs.africa"
-                    >
-                      Businesses
-                    </Link>
-                    <Link
-                      className={`block py-4 pl-3 pr-4 text-lg ${location === "/developers" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
-                      href="https://docs.lyncs.africa" target="_blank"
-                    >
-                      Developers
-                    </Link>
 
-                    <Link href="/login">
-                      <button
-                        type="button"
-                        className={`mb-4 md:hidden w-full text-white bg-blue-500 hover:bg-blue-800 md:bg-transparent md:border ${location === "/login" ? 'md:bg-blue-500 md::text-white' : ''} ${mode.dark || mode.scrollTop >= 100 ? 'md:border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'}  md:hover:bg-blue-500 md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-3 md:mr-0`}
-                      >
-                        Login
-                        <span className="ml-2">
-                          <i className="fa-solid fa-right-to-bracket"></i>
-                        </span>
-                      </button>
-                    </Link>
-                  </ul>
-                </motion.div>
-              }
-            </AnimatePresence>
+            <div
+
+              className="items-center justify-between w-full hidden md:flex md:w-auto md:order-1"
+            >
+              <ul
+                className={`flex flex-col px-4 py-1 my-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent ${mode.dark || mode.scrollTop >= 100 || mode.transparent ? 'bg-black border-none' : 'bg-black  border-gray-100'}`}>
+
+                <ProductsDropdown mode={mode} />
+                <Link
+                  target="_blank"
+                  className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
+                  href="https://lyncs.africa"
+                >
+                  Use Cases
+                </Link>
+                <Link
+                  target="_blank"
+                  className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
+                  href="https://lyncs.africa"
+                >
+                  Businesses
+                </Link>
+                <Link
+                  className={`block py-4 pl-3 pr-4 text-lg ${location === "/developers" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
+                  href="https://docs.lyncs.africa" target="_blank"
+                >
+                  Developers
+                </Link>
+
+                <Link href="/login">
+                  <button
+                    type="button"
+                    className={`mb-4 md:hidden w-full text-white bg-blue-500 hover:bg-blue-800 md:bg-transparent md:border ${location === "/login" ? 'md:bg-blue-500 md::text-white' : ''} ${mode.dark || mode.scrollTop >= 100 ? 'md:border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'}  md:hover:bg-blue-500 md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-3 md:mr-0`}
+                  >
+                    Login
+                    <span className="ml-2">
+                      <i className="fa-solid fa-right-to-bracket"></i>
+                    </span>
+                  </button>
+                </Link>
+              </ul>
+            </div>
 
           </div>
         </nav>

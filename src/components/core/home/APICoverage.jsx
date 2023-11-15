@@ -23,24 +23,25 @@ const APICoverage = () => {
         }
     }, [])
     return (
-        <div className="w-full font-poppins bg-white flex flex-col justify-center items-center">
-            <div className="grid md:grid-cols-2 grid-cols-1 w-full gap-10 container max-w-7xl relative h-full">
-                <div className="my-40 md:p-0 px-5">
+        <div className="w-full font-poppins bg-white flex flex-col justify-center items-center relative">
+            <div className="grid md:grid-cols-2 grid-cols-1 w-full gap-10 px-0 h-full bg-[#F4F6F8]">
+                <div className="flex flex-col md:justify-start md:py-40 pl-20 md:items-start justify-center items-center w-full px-5">
 
                     <motion.h2
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="font-bold text-3xl md:text-4xl text-black leading-snug"
+                        className="font-bold text-3xl md:text-4xl text-[#222c3b] leading-snug"
                     >
-                        The most extensive API<br /> coverage in African<br /> commercial services.
+                        <p className="pb-4">The most extensive API coverage</p>
+                        <p>in African commercial services.</p>
                     </motion.h2>
 
                     <motion.p
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="text-[16px] py-8 text-gray-800 max-w-xl w-full"
+                        className="text-[16px] py-8 text-[#54667f] max-w-2xl w-full"
                     >
                         Get useful data from all commercial service providers spanning 10 industries aggregated into services in Nigeria. Currently in beta for Kenya, Ghana, and South Africa.
                     </motion.p>
@@ -49,15 +50,31 @@ const APICoverage = () => {
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="flex gap-2 items-center bg-black text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black"
+                        className="flex items-center bg-blue-600 text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black mt-4"
                     >
                         View Coverage
                     </motion.button>
 
                 </div>
 
-                <div className="h-full relative ">
-                    <ImageBubble />
+                <div className="h-full relative w-full ">
+                    {/* <ImageBubble /> */}
+                    <div className="logo-area">
+                        <ul className="logo-circles">
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center  object-center"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,54 +1,83 @@
-import React, { useEffect } from 'react';
 import { particles } from "@/lib/utils";
-import Airtime from "@/components/core/shared/Airtime";
-import Cable from "@/components/core/shared/Cable";
+import React, { useMemo, useEffect } from 'react';
+import { easeInOut, motion } from "framer-motion";
+// import Airtime from "@/components/core/shared/Airtime";
+// import Cable from "@/components/core/shared/Cable";
 
 const BillsPayment = () => {
   useEffect(() => {
     particles()
   }, []);
 
+  const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
+    hidden: { opacity: 0, x: 450 },
+    visible: {
+      opacity: 1, x: 0,
+      transition: {
+        type: 'spring',
+        stiffness: 50
+      }
+    }
+  }, [])
+  const textVariant = useMemo(() => window.innerWidth < 768 ? {} : {
+    hidden: { opacity: 0, x: 450 },
+    visible: {
+      opacity: 1, x: 0,
+      transition: {
+        type: 'spring', stiffness: 50, delay: 0.2
+      }
+    }
+  }, [])
+  const btnVariant = useMemo(() => window.innerWidth < 768 ? {} : {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        ease: easeInOut, delay: 0.3
+      }
+    }
+  }, [])
+
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-poppins">
+      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-poppins py-10">
+
       <div className="absolute inset-0" id="particles-js"></div>
       <div
-        className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pb-[250px] xl:pt-[100px] overflow-hidden md:relative md:z-10">
+        className="container mx-auto grid grid-cols-12 md:pt-[50px] overflow-hidden md:relative md:z-10 gap-10 w-full">
+
+        <div className="col-span-4 flex col-start-2">
+          <img src="/images/mockup.gif" className="h-full w-[300px]" />
+        </div>
+
         <div
-          className="md:pt-[50px] px-4 md:px-0 col-span-10 text-center col-start-2 z-50 relative flex flex-col justify-center">
-          <h2
-            className="text-white leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+          className=" px-4 md:px-0 col-span-6 text-left relative flex flex-col justify-center">
+          <motion.h2
+            variants={headerVariant}
+            initial="hidden"
+            whileInView="visible"
+            className="leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >
-            Intergrate APIs <br />for bills payments
-          </h2>
-          <p
-            className="text-[18px] py-8 text-gray-200">
-            Integrate airtime, data, cable tv, electricity services into your business.
-          </p>
+            API for everything Commerce
+          </motion.h2>
+          <motion.p
+            variants={textVariant}
+            initial="hidden"
+            whileInView="visible"
+            className="text-[15px] py-8 font-normal">
+            The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel, ride-sharing, food delivery, event management, and bill payment, all within your application
+          </motion.p>
           <div>
-            <button
-              className="text-[17px] text-black bg-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-white hover:bg-transparent hover:text-white">
-              Get started
-            </button>
+            <motion.button
+              variants={btnVariant}
+              initial="hidden"
+              whileInView="visible"
+              className="flex gap-2 items-center bg-blue-600 text-[17px] text-white px-10 py-2 rounded-lg font-dmSans hover:bg-blue-600">
+              <p> Get started</p>
+            </motion.button>
           </div>
         </div>
-        <div>
-          <div
-            className="absolute h-[300px] w-[300px] bg-[#77595D] rounded-full left-[0rem] md:left-[30%] blur-[6rem] opacity-40">
-          </div>
-          <div
-            className="absolute h-[300px] w-[300px] bg-[#FBFBFB] rounded-full right-[-1rem] md:right-[30%] top-[10rem] blur-[5.5rem] opacity-20">
-          </div>
-          <div
-            className="absolute h-[150px] w-[150px] bg-[#CE99FF] rounded-full top-[25rem] right-[8rem] md:right-[45%] blur-[5rem] opacity-40">
-          </div>
-        </div>
-        <div className="animate-bounceTwo absolute right-[7%] top-[5%] hidden md:block">
-          <Airtime />
-        </div>
-        <div className="animate-bounceTwo delay-two absolute left-[7%] top-[50%] hidden md:block">
-          <Cable />
-        </div>
+
       </div>
     </div>
 
