@@ -19,6 +19,7 @@ const MobileNavbar = ({ opened, onClose }) => {
     return (
         <Modal
             centered
+            radius="lg"
             title={<img
                 src="/images/lyncs-logo-blues.png"
                 className="h-4"
@@ -31,7 +32,7 @@ const MobileNavbar = ({ opened, onClose }) => {
                         <p className='font-medium text-lg'>Products</p>
                     </Accordion.Control>
                     <Accordion.Panel>
-                        <div className='bg-white p-4 space-y-6'>
+                        <div className='py-4 space-y-6'>
                             <div className="flex-auto flex flex-row items-start justify-start gap-3 w-full cursor-pointer h-fit font-medium">
                                 <StorefrontTwoToneIcon className="text-blue-500" />
                                 <div>

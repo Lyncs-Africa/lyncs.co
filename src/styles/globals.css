@@ -697,3 +697,8 @@ html {
     }
 
 }
+
+/* overriding mantine accordion content background color */
+.m-1b7284a3 {
+    background-color: white !important;
+}

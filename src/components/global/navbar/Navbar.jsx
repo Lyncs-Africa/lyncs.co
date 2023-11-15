@@ -5,10 +5,11 @@ import useSignupStore from "@/store/signup";
 import { splitName } from "@/lib/utils";
 import { useAuth } from "@/hooks/use-auth";
 import { ProductsDropdown } from "../navbar/Dropdowns.jsx";
-import { UseCasesDropdown } from "../navbar/UseCasesDropdown.jsx";
+// import { UseCasesDropdown } from "./DevelopersDropdown.jsx";
 import { AnimatePresence, easeInOut, motion } from "framer-motion"
 import { useDisclosure } from "@mantine/hooks";
 import MobileNavbar from "./MobileNavbar.jsx";
+import { DevelopersDropdown } from "./DevelopersDropdown.jsx";
 
 function Navbar(mode) {
   const { data } = useSignupStore((state) => state)
@@ -187,12 +188,13 @@ function Navbar(mode) {
                 >
                   Businesses
                 </Link>
-                <Link
+                {/* <Link
                   className={`block py-4 pl-3 pr-4 text-lg ${location === "/developers" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
                   href="https://docs.lyncs.africa" target="_blank"
                 >
                   Developers
-                </Link>
+                </Link> */}
+                <DevelopersDropdown mode={mode} />
 
                 <Link href="/login">
                   <button

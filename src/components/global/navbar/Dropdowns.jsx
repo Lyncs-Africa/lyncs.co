@@ -49,8 +49,9 @@ export const ProductsDropdown = ({ mode }) => {
             {/* Dropdown content */}
 
             <div
-                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right fixed z-50 top-32 xl:top-20 xl:left-80 w-[200px] md:w-[900px] rounded-xl shadow-lg bg-[#ffffff] ring-2 ring-black ring-opacity-5 ease-in-out px-7 py-5'
+                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-20 -left-80 w-[200px]  md:w-[900px] rounded-xl shadow-sm bg-[#ffffff] border ease-in-out px-7 py-5'
             >
+
                 <div
                     className="py-1 dropdown-content w-full grid grid-cols-1 md:grid-cols-2 gap-x-10"
                     role="menu"
