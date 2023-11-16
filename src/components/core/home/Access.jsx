@@ -48,7 +48,7 @@ const Access = () => {
             whileInView="visible"
             className="text-white leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >
-            1 API for everything Commerce
+            One API for everything Commerce
           </motion.h2>
           <motion.p
             variants={textVariant}

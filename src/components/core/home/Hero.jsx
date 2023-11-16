@@ -10,13 +10,14 @@ function Hero() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "online store",
-        "food ordering ",
-        "flight booking",
-        "delivery",
-        "event booking",
-        "e-hailing ride",
-        // "bill payment",
+        "Online shopping",
+        "Food ordering",
+        "Package delivery",
+        "Cab hailing",
+        " Flight booking",
+        "Ticket buying",
+        "Hotel booking",
+        "Interstate transportation",
       ],
       typeSpeed: 50,
       backSpeed: 10,
@@ -85,7 +86,7 @@ function Hero() {
             </Link>
             <div onClick={handleOpen}
               className="bg-transparent border border-black text-black text-[16px] px-5 py-4 rounded-[12px] hover:border hover:border-black hover:bg-black cursor-pointer w-max ease transition-all hover:text-white">
-              Get demo
+              See demo
             </div>
           </div>
 

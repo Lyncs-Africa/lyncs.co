@@ -23,9 +23,12 @@ const APICoverage = () => {
         }
     }, [])
     return (
-        <div className="w-full font-poppins bg-white flex flex-col justify-center items-center relative">
-            <div className="grid md:grid-cols-2 grid-cols-1 w-full gap-10 px-0 h-full bg-[#F4F6F8]">
-                <div className="flex flex-col md:justify-start md:py-40 pl-20 md:items-start justify-center items-center w-full px-5">
+        <div className="w-full font-poppins flex flex-col justify-center items-center relative bg-[#F4F6F8]">
+            <div
+                className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-0 overflow-hidden md:relative md:z-10 ">
+
+                {/* className="grid md:grid-cols-5 grid-cols-1 w-full gap-10 px-0 h-" */}
+                <div className="flex flex-col col-span-4 text-left col-start-2 md:justify-start md:py-40 md:items-start justify-center items-center w-full">
 
                     <motion.h2
                         variants={textVariant}
@@ -33,17 +36,18 @@ const APICoverage = () => {
                         whileInView="visible"
                         className="font-bold text-3xl md:text-4xl text-[#222c3b] leading-snug"
                     >
-                        <p className="pb-4">The most extensive API coverage</p>
-                        <p>in African commercial services.</p>
+                        <p className="pb-4">Enjoy Africa's biggest<br /> API for e-commerce<br /> coverage.</p>
+                        {/* <p className="pb-4">The most extensive API coverage</p> */}
+                        {/* <p>in African commercial services.</p> */}
                     </motion.h2>
 
                     <motion.p
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="text-[16px] py-8 text-[#54667f] max-w-2xl w-full"
+                        className="text-[18px] font-medium pb-8 pt-4 text-[#54667f] max-w-2xl w-full"
                     >
-                        Get useful data from all commercial service providers spanning 10 industries aggregated into services in Nigeria. Currently in beta for Kenya, Ghana, and South Africa.
+                        Get live products and APIs from commercial service providers spanning multiple industries aggregated across in Africa.
                     </motion.p>
 
                     <motion.button
@@ -57,7 +61,7 @@ const APICoverage = () => {
 
                 </div>
 
-                <div className="h-full relative w-full ">
+                <div className="h-full relative w-full col-span-6 my-10 md:my-0 px-4 md:px-0">
                     {/* <ImageBubble /> */}
                     <div className="logo-area">
                         <ul className="logo-circles">
@@ -70,9 +74,9 @@ const APICoverage = () => {
                             <li className="rounded-full bg-center  object-center border-4"></li>
                             <li className="rounded-full bg-center  object-center border-4"></li>
                             <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center"></li>
+                            {/* <li className="rounded-full bg-center  object-center border-4"></li> */}
+                            {/* <li className="rounded-full bg-center  object-center border-4"></li> */}
+                            {/* <li className="rounded-full bg-center  object-center"></li> */}
                         </ul>
                     </div>
                 </div>

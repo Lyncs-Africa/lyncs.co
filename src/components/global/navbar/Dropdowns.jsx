@@ -9,6 +9,8 @@ import AccountBalanceWalletTwoToneIcon from '@mui/icons-material/AccountBalanceW
 import LocalTaxiTwoToneIcon from '@mui/icons-material/LocalTaxiTwoTone';
 import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
 import DirectionsBusTwoToneIcon from '@mui/icons-material/DirectionsBusTwoTone';
+import GarageTwoToneIcon from '@mui/icons-material/GarageTwoTone';
+import HotelTwoToneIcon from '@mui/icons-material/HotelTwoTone';
 import DashboardTwoToneIcon from '@mui/icons-material/DashboardTwoTone';
 import HealthAndSafetyTwoToneIcon from '@mui/icons-material/HealthAndSafetyTwoTone';
 import LocalShippingTwoToneIcon from '@mui/icons-material/LocalShippingTwoTone';
@@ -36,7 +38,7 @@ export const ProductsDropdown = ({ mode }) => {
         <div ref={dropdownRef} className="group relative">
 
             <div className={`${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} flex flex-row justify-start items-center cursor-pointer md:hover:text-blue-700 ease transition-all`} onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
-                <p className='block py-7 pl-3 pr-4 text-[15px] rounded md:border-0'>
+                <p className='block py-7 px-4 text-lg rounded md:border-0'>
                     Products
                 </p>
 
@@ -50,7 +52,7 @@ export const ProductsDropdown = ({ mode }) => {
             {/* Dropdown content */}
 
             <div
-                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-20 -left-72 w-[200px]  md:w-[750px] rounded-xl shadow-sm bg-[#ffffff] border ease-in-out px-7 py-5'
+                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-20 -left-72 w-[200px]  md:w-[750px] rounded-xl modal-card bg-[#ffffff]  ease-in-out px-7 py-5'
             >
 
                 <div
@@ -71,11 +73,109 @@ export const ProductsDropdown = ({ mode }) => {
                                 href="/shop"
                                 role="menuitem"
                             >
-                                Shop
+                                Online shopping
                             </Link>
                             <p className="text-gray-500 font-light">Build a full online store with no backend or database</p>
                         </div>
 
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-full bg-red-500">
+                            <HotelTwoToneIcon className="text-white" />
+                        </div>
+                        <div className="space-y-2">
+                            <Link
+                                className='text-[15px] text-black font-medium'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Hotel boking
+                            </Link>
+                            <p className="text-gray-500 font-light">Buy airtime, data, cable tv, electricity and more</p>
+                        </div>
+
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-full bg-orange-400">
+                            <LocalTaxiTwoToneIcon className="text-white" />
+                        </div>
+                        <div className="space-y-2">
+                            <Link
+                                className='text-[15px] text-black font-medium'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Cab hailing
+                            </Link>
+                            <p className="text-gray-500 font-light">Build an e-hailing service for your customers</p>
+                        </div>
+
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-full bg-yellow-500">
+                            <LocalDiningTwoToneIcon className="text-white" />
+                        </div>
+                        <div className="space-y-2">
+                            <Link
+                                className='text-[15px] text-black font-medium'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Food ordering
+                            </Link>
+                            <p className="text-gray-500 font-light">order food or groceries and get them delivered within minutes</p>
+                        </div>
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
+                        <div className="p-3 rounded-full bg-purple-500">
+                            <ModeOfTravelTwoToneIcon className="text-white" />
+                        </div>
+                        <div className="space-y-2">
+                            <Link
+                                className='text-[15px] text-black font-medium'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Flight booking
+                            </Link>
+                            <p className="text-gray-500 font-light">Build a flight booking and ticket-issuing service </p>
+                        </div>
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
+                        <div className="p-3 rounded-full bg-orange-800">
+                            <LocalShippingTwoToneIcon className="text-white" />
+                        </div>
+                        <div className="space-y-2">
+                            <Link
+                                className='text-[15px] text-black font-medium'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Package delivery
+                            </Link>
+                            <p className="text-gray-500 font-light">Build a full logistics platform end-to-end in minutes</p>
+                        </div>
+                    </div>
+
+                    <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
+                        <div className="p-3 rounded-full bg-cyan-500">
+                            <GarageTwoToneIcon className="text-white" />
+                        </div>
+                        <div className="space-y-2">
+                            <Link
+                                className='text-[15px] text-black font-medium'
+                                href="/shop"
+                                role="menuitem"
+                            >
+                                Interstate transportation
+                            </Link>
+                            <p className="text-gray-500 font-light">Build an Inter-state transport service in your app</p>
+                        </div>
                     </div>
 
                     <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
@@ -93,104 +193,6 @@ export const ProductsDropdown = ({ mode }) => {
                             <p className="text-gray-500 font-light">register for health plans, consult medical professionals, or buy drugs</p>
                         </div>
 
-                    </div>
-
-                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
-                        <div className="p-3 rounded-full bg-red-500">
-                            <AccountBalanceWalletTwoToneIcon className="text-white" />
-                        </div>
-                        <div className="space-y-2">
-                            <Link
-                                className='text-[15px] text-black font-medium'
-                                href="/shop"
-                                role="menuitem"
-                            >
-                                Airtime & Bill Payment
-                            </Link>
-                            <p className="text-gray-500 font-light">Buy airtime, data, cable tv, electricity and more</p>
-                        </div>
-
-                    </div>
-
-                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
-                        <div className="p-3 rounded-full bg-orange-400">
-                            <LocalTaxiTwoToneIcon className="text-white" />
-                        </div>
-                        <div className="space-y-2">
-                            <Link
-                                className='text-[15px] text-black font-medium'
-                                href="/shop"
-                                role="menuitem"
-                            >
-                                Ride
-                            </Link>
-                            <p className="text-gray-500 font-light">Build an e-hailing service for your customers</p>
-                        </div>
-
-                    </div>
-
-                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
-                        <div className="p-3 rounded-full bg-yellow-500">
-                            <LocalDiningTwoToneIcon className="text-white" />
-                        </div>
-                        <div className="space-y-2">
-                            <Link
-                                className='text-[15px] text-black font-medium'
-                                href="/shop"
-                                role="menuitem"
-                            >
-                                Eat
-                            </Link>
-                            <p className="text-gray-500 font-light">order food or groceries and get them delivered within minutes</p>
-                        </div>
-                    </div>
-
-                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
-                        <div className="p-3 rounded-full bg-purple-500">
-                            <ModeOfTravelTwoToneIcon className="text-white" />
-                        </div>
-                        <div className="space-y-2">
-                            <Link
-                                className='text-[15px] text-black font-medium'
-                                href="/shop"
-                                role="menuitem"
-                            >
-                                Travel
-                            </Link>
-                            <p className="text-gray-500 font-light">Build a flight booking and ticket-issuing service </p>
-                        </div>
-                    </div>
-
-                    <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
-                        <div className="p-3 rounded-full bg-orange-800">
-                            <LocalShippingTwoToneIcon className="text-white" />
-                        </div>
-                        <div className="space-y-2">
-                            <Link
-                                className='text-[15px] text-black font-medium'
-                                href="/shop"
-                                role="menuitem"
-                            >
-                                Delivery
-                            </Link>
-                            <p className="text-gray-500 font-light">Build a full logistics platform end-to-end in minutes</p>
-                        </div>
-                    </div>
-
-                    <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
-                        <div className="p-3 rounded-full bg-cyan-500">
-                            <OtherHousesTwoToneIcon className="text-white" />
-                        </div>
-                        <div className="space-y-2">
-                            <Link
-                                className='text-[15px] text-black font-medium'
-                                href="/shop"
-                                role="menuitem"
-                            >
-                                Bus
-                            </Link>
-                            <p className="text-gray-500 font-light">Build an Inter-state transport service in your app</p>
-                        </div>
                     </div>
 
                     <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">

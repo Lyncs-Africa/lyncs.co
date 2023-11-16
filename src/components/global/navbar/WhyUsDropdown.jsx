@@ -1,0 +1,110 @@
+import { useState, useRef } from "react";
+import Link from "next/link";
+//Dropdow Icons
+import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
+import LocalOfferTwoToneIcon from '@mui/icons-material/LocalOfferTwoTone';
+import TheatersTwoToneIcon from '@mui/icons-material/TheatersTwoTone';
+
+import { usePathname } from "next/navigation";
+
+export const WhyUsDropdown = ({ mode }) => {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
+    const closeTimeoutRef = useRef(null);
+    const location = usePathname()
+
+    const handleOpenDropdown = () => {
+        setIsDropdownOpen(true);
+        clearTimeout(closeTimeoutRef.current);
+    };
+
+    const handleCloseDropdown = () => {
+        closeTimeoutRef.current = setTimeout(() => {
+            setIsDropdownOpen(false);
+        }, 100);
+    };
+
+    return (
+        <div ref={dropdownRef} className="group relative">
+
+            <div className={`${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} flex flex-row justify-start items-center cursor-pointer md:hover:text-blue-700 ease transition-all`} onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
+                <p className={`block py-7 px-4 text-lg rounded md:border-0 `}>
+                    Why Lyncs
+                </p>
+
+                <div className={`${isDropdownOpen && "rotate-180"} ease transition-all`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" onClick={handleOpenDropdown}>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            </div>
+
+            {/* Dropdown content */}
+
+            <div
+                className='opacity-0 translate-y-10 modal-card pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-24 -left-20 w-[480px] rounded-xl bg-[#ffffff] border ease-in-out p-10'
+            >
+                <div
+                    className="space-y-10 w-full"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="dropdown-menu-button"
+                    onMouseEnter={handleOpenDropdown}
+                    onMouseLeave={handleCloseDropdown}
+                >
+                    <Link href="/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
+                        <div className="bg-blue-400 p-2 rounded-full">
+                            <FavoriteOutlinedIcon fontSize="large" className="text-white" />
+                        </div>
+
+                        <div className="space-y-2">
+                            <p
+                                className='text-black text-[16px]'
+                                href="/shop"
+                            >
+                                Why choose Lyncs
+                            </p>
+
+                            <p className="text-gray-500 font-light text-lg">Here's why 250+ Businesses use Lyncs in their app</p>
+
+                        </div>
+                    </Link>
+
+                    <Link href="/" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
+                        <div className="bg-blue-400 p-2 rounded-full">
+                            <LocalOfferTwoToneIcon fontSize="large" className="text-white" />
+                        </div>
+
+                        <div className="space-y-1">
+                            <p
+                                className='text-black text-[16px]'
+                                role="menuitem"
+                            >
+                                Pricing
+                            </p>
+
+                            <p className="text-gray-500 font-light text-lg">Affordable pricing for developers, SMEs and enterprises</p>
+
+                        </div>
+                    </Link>
+
+                    <Link href="/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
+                        <div className="bg-blue-400 p-2 rounded-full">
+                            <TheatersTwoToneIcon fontSize="large" className="text-white" />
+                        </div>
+
+                        <div className="space-y-1">
+                            <p className='text-black text-[16px]'>
+                                See a Demo
+                            </p>
+
+                            <p className="text-gray-500 font-light text-lg">Experience Lyncs APIs in action</p>
+
+                        </div>
+                    </Link>
+
+                </div>
+            </div>
+        </div>
+    );
+};

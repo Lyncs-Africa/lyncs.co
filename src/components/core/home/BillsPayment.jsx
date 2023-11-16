@@ -5,9 +5,9 @@ import { easeInOut, motion } from "framer-motion";
 // import Cable from "@/components/core/shared/Cable";
 
 const BillsPayment = () => {
-  useEffect(() => {
-    particles()
-  }, []);
+  // useEffect(() => {
+  //   particles()
+  // }, []);
 
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: { opacity: 0, x: 450 },
@@ -40,32 +40,33 @@ const BillsPayment = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-black text-white md:bg-right bg-cover font-poppins py-10">
+      className=" overflow-hidden relative w-full bg-[#F4F6F8] md:bg-right bg-cover font-poppins py-10">
 
-      <div className="absolute inset-0" id="particles-js"></div>
+      {/* <div className="absolute inset-0" id="particles-js"></div> */}
+
       <div
-        className="container mx-auto grid grid-cols-1 md:grid-cols-12 md:pt-[50px] overflow-hidden md:relative md:z-10 gap-10 w-full">
+        className="container mx-auto grid grid-cols-1 md:grid-cols-12 md:py-[150px] overflow-hidden md:relative md:z-10 gap-10 sm:gap-0 w-full">
 
         <div className="col-span-4 flex col-start-2">
-          <img src="/images/mockup.gif" className="h-full w-[300px]" />
+          <img src="/images/mockup.gif" className="h-full w-[290px]" />
         </div>
 
         <div
-          className=" px-4 md:px-0 col-span-6 text-left relative flex flex-col justify-center">
+          className="px-4 md:px-0 col-span-6 text-left relative flex flex-col justify-center">
           <motion.h2
             variants={headerVariant}
             initial="hidden"
             whileInView="visible"
-            className="leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+            className="leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
           >
-            API for everything Commerce
+            Embed AI <br />powered<br /> food ordering
           </motion.h2>
           <motion.p
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
-            className="text-[15px] py-8 font-normal">
-            The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel, ride-sharing, food delivery, event management, and bill payment, all within your application
+            className="text-[20px] py-8 font-normal">
+            We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
           </motion.p>
           <div>
             <motion.button

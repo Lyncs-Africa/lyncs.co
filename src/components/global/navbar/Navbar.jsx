@@ -10,6 +10,7 @@ import { AnimatePresence, easeInOut, motion } from "framer-motion"
 import { useDisclosure } from "@mantine/hooks";
 import MobileNavbar from "./MobileNavbar.jsx";
 import { DevelopersDropdown } from "./DevelopersDropdown.jsx";
+import { WhyUsDropdown } from "./WhyUsDropdown.jsx";
 
 function Navbar(mode) {
   const { data } = useSignupStore((state) => state)
@@ -173,14 +174,10 @@ function Navbar(mode) {
               <ul
                 className={`flex flex-col px-4 py-1 my-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent ${mode.dark || mode.scrollTop >= 100 || mode.transparent ? 'bg-black border-none' : 'bg-black  border-gray-100'}`}>
 
+                <WhyUsDropdown mode={mode} />
+
                 <ProductsDropdown mode={mode} />
-                {/* <Link
-                  target="_blank"
-                  className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
-                  href="https://lyncs.africa"
-                >
-                  Use Cases
-                </Link> */}
+
                 <Link
                   target="_blank"
                   className={`block py-7 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
@@ -199,7 +196,7 @@ function Navbar(mode) {
                 <Link href="/login">
                   <button
                     type="button"
-                    className={`mb-4 md:hidden w-full text-white bg-blue-500 hover:bg-blue-800 md:bg-transparent md:border ${location === "/login" ? 'md:bg-blue-500 md::text-white' : ''} ${mode.dark || mode.scrollTop >= 100 ? 'md:border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'}  md:hover:bg-blue-500 md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-3 md:mr-0`}
+                    className={`md:hidden w-full text-white bg-blue-500 hover:bg-blue-800 md:bg-transparent md:border ${location === "/login" ? 'md:bg-blue-500 md::text-white' : ''} ${mode.dark || mode.scrollTop >= 100 ? 'md:border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'}  md:hover:bg-blue-500 md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-3 md:mr-0`}
                   >
                     Login
                     <span className="ml-2">

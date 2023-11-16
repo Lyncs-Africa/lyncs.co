@@ -580,7 +580,7 @@ html {
     height: 140px;
     background-size: cover;
     animation-delay: 0s;
-    background-image: url("/images/companies/konga.png");
+    background-image: url("/images/countries/nigeria.png");
 }
 
 
@@ -591,7 +591,7 @@ html {
     background-size: cover;
     animation-delay: 5s;
     animation-duration: 40s;
-    background-image: url("/images/companies/dhl.png");
+    background-image: url("/images/countries/kenya.png");
 }
 
 
@@ -602,7 +602,7 @@ html {
     background-size: cover;
     animation-delay: 10s;
     animation-duration: 32s;
-    background-image: url("/images/companies/red-star.png");
+    background-image: url("/images/countries/uganda.png");
 }
 
 .logo-circles li:nth-child(6) {
@@ -612,7 +612,7 @@ html {
     background-size: cover;
     animation-delay: 0s;
     animation-duration: 32s;
-    background-image: url("/images/companies/rida.png");
+    background-image: url("/images/countries/angola.png");
 }
 
 .logo-circles li:nth-child(7) {
@@ -621,7 +621,7 @@ html {
     height: 140px;
     background-size: cover;
     animation-delay: 12s;
-    background-image: url("/images/companies/red-start.jpeg");
+    background-image: url("/images/countries/zambia.svg");
 }
 
 .logo-circles li:nth-child(8) {
@@ -631,7 +631,7 @@ html {
     background-size: cover;
     animation-delay: 20s;
     /* animation-duration: 40s; */
-    background-image: url("/images/companies/travelbeta.png");
+    background-image: url("/images/countries/ghana.png");
 }
 
 .logo-circles li:nth-child(9) {
@@ -640,8 +640,8 @@ html {
     height: 140px;
     background-size: cover;
     animation-delay: 30s;
-    /* animation-duration: 42s; */
-    background-image: url("/images/companies/Wakanow.jpg");
+    animation-duration: 42s;
+    background-image: url("/images/countries/benin.png");
 }
 
 .logo-circles li:nth-child(10) {
@@ -650,11 +650,11 @@ html {
     height: 140px;
     background-size: cover;
     animation-delay: 28s;
-    /* animation-duration: 40s; */
-    background-image: url("/images/companies/kwik.png");
+    animation-duration: 40s;
+    background-image: url("/images/countries/nigeria.png");
 }
 
-.logo-circles li:nth-child(11) {
+/* .logo-circles li:nth-child(11) {
     left: 49%;
     width: 140px;
     height: 140px;
@@ -662,17 +662,17 @@ html {
     animation-delay: 8s;
     animation-duration: 30s;
     background-image: url("/images/companies/indrive.png");
-}
+} */
 
-.logo-circles li:nth-child(12) {
+/* .logo-circles li:nth-child(12) {
     left: 76%;
     width: 140px;
     height: 140px;
-    /* background-size: cover; */
+    background-size: cover;
     animation-delay: 0s;
     animation-duration: 40s;
     background-image: url("/images/companies/Bolt_logo.png");
-}
+} */
 
 .logo-circles li:nth-child(13) {
     /* left: 29%; */
@@ -701,4 +701,9 @@ html {
 /* overriding mantine accordion content background color */
 .mantine-Accordion-content {
     background-color: white !important;
+}
+
+.modal-card {
+    filter: drop-shadow(0 25px 30px rgba(0, 0, 0, .13)) !important;
+    border: 1px solid hsla(0, 0%, 89.8%, .75);
 }

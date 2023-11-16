@@ -57,7 +57,6 @@ const Index = () => {
       <Access />
       <Services />
       <Shop />
-      <Eat />
       <BillsPayment />
       <FeaturesWeb />
       <FeaturesMobile />
@@ -78,6 +77,7 @@ const Index = () => {
           </ul>
         </div>
         <Travel />
+        <Eat />
       </div>
       {/* <Testimonials /> */}
       <Strip />
