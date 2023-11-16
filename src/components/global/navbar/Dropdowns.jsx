@@ -189,7 +189,7 @@ export const ProductsDropdown = ({ mode }) => {
                             >
                                 Bus
                             </Link>
-                            <p className="text-gray-500 font-light">register for health plans, consult medical professionals, or buy drugs</p>
+                            <p className="text-gray-500 font-light">Build an Inter-state transport service in your app</p>
                         </div>
                     </div>
 
