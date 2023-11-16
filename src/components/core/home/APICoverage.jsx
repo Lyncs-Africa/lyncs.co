@@ -65,15 +65,15 @@ const APICoverage = () => {
                     {/* <ImageBubble /> */}
                     <div className="logo-area">
                         <ul className="logo-circles">
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
-                            <li className="rounded-full bg-center  object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
+                            <li className="rounded-full bg-center object-center border-4"></li>
                             {/* <li className="rounded-full bg-center  object-center border-4"></li> */}
                             {/* <li className="rounded-full bg-center  object-center border-4"></li> */}
                             {/* <li className="rounded-full bg-center  object-center"></li> */}

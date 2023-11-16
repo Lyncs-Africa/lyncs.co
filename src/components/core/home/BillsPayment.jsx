@@ -48,7 +48,7 @@ const BillsPayment = () => {
         className="container mx-auto grid grid-cols-1 md:grid-cols-12 md:py-[150px] overflow-hidden md:relative md:z-10 gap-10 sm:gap-0 w-full">
 
         <div className="col-span-4 flex col-start-2">
-          <img src="/images/mockup.gif" className="w-[0px]" />
+          <img src="/images/mockup.gif" className="w-[400px]" />
         </div>
 
         <div
