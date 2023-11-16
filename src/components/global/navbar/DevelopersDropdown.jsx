@@ -28,7 +28,7 @@ export const DevelopersDropdown = ({ mode }) => {
         <div ref={dropdownRef} className="group relative">
 
             <div className={`${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} flex flex-row justify-start items-center cursor-pointer md:hover:text-blue-700 ease transition-all`} onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
-                <p className={`block py-4 pl-3 pr-4 text-lg rounded md:border-0 `}>
+                <p className={`block py-7 pl-3 pr-4 text-lg rounded md:border-0 `}>
                     Developers
                 </p>
 
@@ -42,10 +42,10 @@ export const DevelopersDropdown = ({ mode }) => {
             {/* Dropdown content */}
 
             <div
-                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-14 w-[200px] rounded-xl shadow-sm bg-[#ffffff] border ease-in-out px-7 py-5'
+                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-20 w-[250px] rounded-xl shadow-sm bg-[#ffffff] border ease-in-out px-7 py-5'
             >
                 <div
-                    className="space-y-7 w-full"
+                    className="space-y-8 w-full"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="dropdown-menu-button"
@@ -55,7 +55,7 @@ export const DevelopersDropdown = ({ mode }) => {
                     <div className="flex-auto flex flex-row items-center justify-start gap-2 w-full cursor-pointer h-fit">
                         <FindInPageTwoToneIcon fontSize="large" className="text-blue-500" />
                         <Link
-                            className='text-lg text-black font-medium'
+                            className='text-black text-[14px]'
                             href="/shop"
                             role="menuitem"
                         >
@@ -63,14 +63,14 @@ export const DevelopersDropdown = ({ mode }) => {
                         </Link>
                     </div>
 
-                    <div className="flex-auto flex flex-row items-center justify-start gap-2 w-full cursor-pointer  h-fit">
+                    <div className="flex-auto flex flex-row items-center justify-start gap-2 w-full cursor-pointer h-fit">
                         <IntegrationInstructionsTwoToneIcon fontSize="large" className="text-blue-500" />
                         <Link
-                            className='text-lg text-black font-medium'
-                            href="/shop"
+                            className='text-[14px] text-black'
+                            href="https://doc.lyncs.africa/"
                             role="menuitem"
                         >
-                            Documenation
+                            Documentation
                         </Link>
                     </div>
 

@@ -132,10 +132,10 @@ function FeaturesWeb() {
                 </div>
                 <div className="col-start-6 col-span-6 swipe-up translate-y-[-50px]">
                     <Swiper
-                        // autoplay={{
-                        //     delay: 3000,
-                        //     disableOnInteraction: false,
-                        // }}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
                         speed={5000}
                         spaceBetween={30}
                         onSwiper={(swiper) => setSwiper(swiper)}
@@ -197,7 +197,7 @@ function FeaturesWeb() {
                                     </div>
                                 </div>
 
-                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/lyncs-eat.png")' }} className="bg-no-repeat bg-center object-cover h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
                                     <img src="/images/home-products-pattern.svg" />
                                 </div>
@@ -227,7 +227,7 @@ function FeaturesWeb() {
                                     </div>
                                 </div>
 
-                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/lyncs-ride.svg")' }} className="bg-no-repeat object-cover h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
                                     <img src="/images/home-products-pattern.svg" />
                                 </div>

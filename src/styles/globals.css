@@ -699,6 +699,6 @@ html {
 }
 
 /* overriding mantine accordion content background color */
-.m-1b7284a3 {
+.mantine-Accordion-content {
     background-color: white !important;
 }

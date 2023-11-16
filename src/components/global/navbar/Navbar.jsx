@@ -174,16 +174,16 @@ function Navbar(mode) {
                 className={`flex flex-col px-4 py-1 my-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent ${mode.dark || mode.scrollTop >= 100 || mode.transparent ? 'bg-black border-none' : 'bg-black  border-gray-100'}`}>
 
                 <ProductsDropdown mode={mode} />
-                <Link
+                {/* <Link
                   target="_blank"
                   className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
                   href="https://lyncs.africa"
                 >
                   Use Cases
-                </Link>
+                </Link> */}
                 <Link
                   target="_blank"
-                  className={`block py-4 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
+                  className={`block py-7 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
                   href="https://lyncs.africa"
                 >
                   Businesses
