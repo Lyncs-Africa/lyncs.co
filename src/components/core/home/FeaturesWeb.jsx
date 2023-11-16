@@ -158,15 +158,6 @@ function FeaturesWeb() {
 
                                 <hr className="my-10 w-full" />
 
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
-                                    <p>Companies integrating our shop service</p>
-
-                                    <div className="w-full flex flex-row justify-start items-center gap-7">
-                                        <img src="/images/clan.png" className="w-20 rounded-full" />
-                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
-                                    </div>
-                                </div>
-
                                 <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-yellow-400 h-[120px] overflow-hidden left-[26px]">
                                     <img src="/images/home-products-pattern.svg" />
@@ -188,16 +179,7 @@ function FeaturesWeb() {
 
                                 <hr className="my-10 w-full" />
 
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
-                                    <p>Companies integrating our shop service</p>
-
-                                    <div className="w-full flex flex-row justify-start items-center gap-7">
-                                        <img src="/images/clan.png" className="w-20 rounded-full" />
-                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
-                                    </div>
-                                </div>
-
-                                <div style={{ backgroundImage: 'url("/images/lyncs-eat.png")' }} className="bg-no-repeat bg-center object-cover h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/eat-slide.jpg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
                                     <img src="/images/home-products-pattern.svg" />
                                 </div>
@@ -217,15 +199,6 @@ function FeaturesWeb() {
                                 </button>
 
                                 <hr className="my-10 w-full" />
-
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
-                                    <p>Companies integrating our shop service</p>
-
-                                    <div className="w-full flex flex-row justify-start items-center gap-7">
-                                        <img src="/images/clan.png" className="w-20 rounded-full" />
-                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
-                                    </div>
-                                </div>
 
                                 <div style={{ backgroundImage: 'url("/images/lyncs-ride.svg")' }} className="bg-no-repeat object-cover h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
@@ -248,15 +221,6 @@ function FeaturesWeb() {
 
                                 <hr className="my-10 w-full" />
 
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
-                                    <p>Companies integrating our shop service</p>
-
-                                    <div className="w-full flex flex-row justify-start items-center gap-7">
-                                        <img src="/images/clan.png" className="w-20 rounded-full" />
-                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
-                                    </div>
-                                </div>
-
                                 <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
                                     <img src="/images/home-products-pattern.svg" />
@@ -277,15 +241,6 @@ function FeaturesWeb() {
                                 </button>
 
                                 <hr className="my-10 w-full" />
-
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
-                                    <p>Companies integrating our shop service</p>
-
-                                    <div className="w-full flex flex-row justify-start items-center gap-7">
-                                        <img src="/images/clan.png" className="w-20 rounded-full" />
-                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
-                                    </div>
-                                </div>
 
                                 <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
@@ -308,15 +263,6 @@ function FeaturesWeb() {
 
                                 <hr className="my-10 w-full" />
 
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
-                                    <p>Companies integrating our shop service</p>
-
-                                    <div className="w-full flex flex-row justify-start items-center gap-7">
-                                        <img src="/images/clan.png" className="w-20 rounded-full" />
-                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
-                                    </div>
-                                </div>
-
                                 <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
                                     <img src="/images/home-products-pattern.svg" />
@@ -337,15 +283,6 @@ function FeaturesWeb() {
                                 </button>
 
                                 <hr className="my-10 w-full" />
-
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center">
-                                    <p>Companies integrating our shop service</p>
-
-                                    <div className="w-full flex flex-row justify-start items-center gap-7">
-                                        <img src="/images/clan.png" className="w-20 rounded-full" />
-                                        <img src="/images/BuySimply.jpg" className="w-20 rounded-full" />
-                                    </div>
-                                </div>
 
                                 <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">

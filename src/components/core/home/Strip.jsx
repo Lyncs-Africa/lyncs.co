@@ -13,7 +13,7 @@ const Strip = () => {
               Connect today
             </h2>
             <p className="md:text-[18px] text-gray-300 my-3">
-              Get 100k free API calls when you sign up
+              Get free API calls when you sign up
             </p>
             <div className="ml-auto">
               <button

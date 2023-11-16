@@ -707,3 +707,7 @@ html {
     filter: drop-shadow(0 25px 30px rgba(0, 0, 0, .13)) !important;
     border: 1px solid hsla(0, 0%, 89.8%, .75);
 }
+
+.slanted-bg {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
+}

@@ -25,10 +25,10 @@ const APICoverage = () => {
     return (
         <div className="w-full font-poppins flex flex-col justify-center items-center relative bg-[#F4F6F8]">
             <div
-                className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-0 overflow-hidden md:relative md:z-10 ">
+                className="container mx-auto md:grid grid-cols-12 xl:pt-0 overflow-hidden md:relative md:z-10">
 
                 {/* className="grid md:grid-cols-5 grid-cols-1 w-full gap-10 px-0 h-" */}
-                <div className="flex flex-col col-span-4 text-left col-start-2 md:justify-start md:py-40 md:items-start justify-center items-center w-full">
+                <div className="flex flex-col col-span-4 text-left col-start-2 md:justify-start py-[200px] md:items-start justify-center items-center w-full">
 
                     <motion.h2
                         variants={textVariant}
