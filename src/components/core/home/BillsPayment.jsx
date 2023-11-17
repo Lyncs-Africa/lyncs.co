@@ -45,10 +45,10 @@ const BillsPayment = () => {
       {/* <div className="absolute inset-0" id="particles-js"></div> */}
 
       <div
-        className="container mx-auto grid grid-cols-1 md:grid-cols-12 md:py-[50px] overflow-hidden md:relative md:z-10 gap-10 sm:gap-0 w-full">
+        className="container mx-auto grid grid-cols-1 md:grid-cols-12 py-[50px] overflow-hidden md:relative md:z-10 gap-20 md:gap-0 w-full md:justify-start items-center justify-center">
 
-        <div className="col-span-4 flex col-start-2">
-          <img src="/images/mockup.gif" className="w-[400px]" />
+        <div className="col-span-3 flex col-start-2 md:m-0 mb-10">
+          <img src="/images/food-mockup.gif" />
         </div>
 
         <div
@@ -57,7 +57,7 @@ const BillsPayment = () => {
             variants={headerVariant}
             initial="hidden"
             whileInView="visible"
-            className="leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
+            className="leading-[1] text-[3.5rem] md:text-[5rem] font-bold sm:text-left text-center"
           >
             Embed AI <br />powered<br /> food ordering
           </motion.h2>
@@ -65,7 +65,7 @@ const BillsPayment = () => {
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
-            className="text-[20px] py-8 font-normal">
+            className="text-[20px] py-8 font-normal sm:text-left text-center">
             We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
           </motion.p>
           <div>
@@ -73,7 +73,7 @@ const BillsPayment = () => {
               variants={btnVariant}
               initial="hidden"
               whileInView="visible"
-              className="flex gap-2 items-center bg-blue-600 text-[17px] text-white px-10 py-2 rounded-lg font-dmSans hover:bg-blue-600">
+              className="flex gap-2 items-center bg-blue-600 md:m-0 mx-auto text-[17px] text-white px-10 py-2 rounded-lg font-dmSans hover:bg-blue-600">
               <p> Get started</p>
             </motion.button>
           </div>

@@ -54,51 +54,51 @@ export const WhyUsDropdown = ({ mode }) => {
                 >
                     <Link href="/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
                         <div className="bg-blue-400 p-2 rounded-full">
-                            <FavoriteOutlinedIcon fontSize="large" className="text-white" />
+                            <FavoriteOutlinedIcon className="text-white" />
                         </div>
 
                         <div className="space-y-2">
                             <p
-                                className='text-black text-[16px]'
+                                className='text-black text-[14px]'
                                 href="/shop"
                             >
                                 Why choose Lyncs
                             </p>
 
-                            <p className="text-gray-500 font-light text-lg">Here's why 250+ Businesses use Lyncs in their app</p>
+                            <p className="text-gray-500 font-light text-sm">Here's why 250+ Businesses use Lyncs in their app</p>
 
                         </div>
                     </Link>
 
                     <Link href="/pricing" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
                         <div className="bg-blue-400 p-2 rounded-full">
-                            <LocalOfferTwoToneIcon fontSize="large" className="text-white" />
+                            <LocalOfferTwoToneIcon className="text-white" />
                         </div>
 
                         <div className="space-y-1">
                             <p
-                                className='text-black text-[16px]'
+                                className='text-black text-[14px]'
                                 role="menuitem"
                             >
                                 Pricing
                             </p>
 
-                            <p className="text-gray-500 font-light text-lg">Affordable pricing for developers, SMEs and enterprises</p>
+                            <p className="text-gray-500 font-light">Affordable pricing for developers, SMEs and enterprises</p>
 
                         </div>
                     </Link>
 
                     <Link href="/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
                         <div className="bg-blue-400 p-2 rounded-full">
-                            <TheatersTwoToneIcon fontSize="large" className="text-white" />
+                            <TheatersTwoToneIcon className="text-white" />
                         </div>
 
                         <div className="space-y-1">
-                            <p className='text-black text-[16px]'>
+                            <p className='text-black text-[14px]'>
                                 See a Demo
                             </p>
 
-                            <p className="text-gray-500 font-light text-lg">Experience Lyncs APIs in action</p>
+                            <p className="text-gray-500 font-light">Experience Lyncs APIs in action</p>
 
                         </div>
                     </Link>

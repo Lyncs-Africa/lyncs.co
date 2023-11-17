@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 //Dropdow Icons
-import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
+import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
 import FindInPageTwoToneIcon from '@mui/icons-material/FindInPageTwoTone';
 import IntegrationInstructionsTwoToneIcon from '@mui/icons-material/IntegrationInstructionsTwoTone';
 
@@ -52,13 +52,13 @@ export const DevelopersDropdown = ({ mode }) => {
                     onMouseEnter={handleOpenDropdown}
                     onMouseLeave={handleCloseDropdown}
                 >
-                    <Link href="/" className="flex-auto flex flex-row items-center justify-start gap-2 w-full cursor-pointer h-fit">
-                        <FindInPageTwoToneIcon fontSize="large" className="text-blue-500" />
+                    <Link href="/" className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
+                        <SearchTwoToneIcon className="text-blue-500" />
                         <p className='text-black text-[14px]'>Overview</p>
                     </Link>
 
-                    <Link href="https://doc.lyncs.africa/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-2 w-full cursor-pointer h-fit">
-                        <IntegrationInstructionsTwoToneIcon fontSize="large" className="text-blue-500" />
+                    <Link href="https://doc.lyncs.africa/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
+                        <IntegrationInstructionsTwoToneIcon className="text-blue-500" />
                         <p className='text-[14px] text-black'>Documentation</p>
                     </Link>
 

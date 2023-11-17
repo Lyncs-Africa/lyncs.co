@@ -50,7 +50,7 @@ const Index = () => {
 
       <Script crossOrigin src="https://lyncs-web-widget.vercel.app/client.js"></Script>
       <Head>
-        <title>Lyncs Web</title>
+        <title>Lyncs Africa</title>
       </Head>
       <Navbar scrollTop={scrollTop} />
       <Hero />

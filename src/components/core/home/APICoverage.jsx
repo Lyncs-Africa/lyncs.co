@@ -34,18 +34,25 @@ const APICoverage = () => {
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="font-bold text-3xl md:text-4xl text-[#222c3b] leading-snug"
+                        className="font-bold text-center md:block hidden sm:text-left text-5xl text-[#222c3b] leading-snug"
                     >
                         <p className="pb-4">Enjoy Africa's biggest<br /> API for e-commerce<br /> coverage.</p>
-                        {/* <p className="pb-4">The most extensive API coverage</p> */}
-                        {/* <p>in African commercial services.</p> */}
+                    </motion.h2>
+
+                    <motion.h2
+                        variants={textVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        className="font-bold sm:hidden block text-center sm:text-left text-5xl text-[#222c3b] leading-snug"
+                    >
+                        <p className="pb-4">Enjoy Africa's biggest API for e-commerce coverage.</p>
                     </motion.h2>
 
                     <motion.p
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="text-[18px] font-medium pb-8 pt-4 text-[#54667f] max-w-2xl w-full"
+                        className="text-[18px] font-medium text-center sm:text-left pb-8 pt-4 text-[#54667f] max-w-2xl w-full"
                     >
                         Get live products and APIs from commercial service providers spanning multiple industries aggregated across in Africa.
                     </motion.p>
