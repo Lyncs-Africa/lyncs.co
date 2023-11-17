@@ -70,7 +70,7 @@ export const WhyUsDropdown = ({ mode }) => {
                         </div>
                     </Link>
 
-                    <Link href="/" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
+                    <Link href="/pricing" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
                         <div className="bg-blue-400 p-2 rounded-full">
                             <LocalOfferTwoToneIcon fontSize="large" className="text-white" />
                         </div>

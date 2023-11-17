@@ -90,7 +90,7 @@ export const ProductsDropdown = ({ mode }) => {
                                 href="/shop"
                                 role="menuitem"
                             >
-                                Hotel boking
+                                Hotel booking
                             </Link>
                             <p className="text-gray-500 font-light">Buy airtime, data, cable tv, electricity and more</p>
                         </div>

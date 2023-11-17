@@ -178,13 +178,13 @@ function Navbar(mode) {
 
                 <ProductsDropdown mode={mode} />
 
-                <Link
+                {/* <Link
                   target="_blank"
                   className={`block py-7 pl-3 pr-4 text-lg ${location === "/businesses" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
                   href="https://lyncs.africa"
                 >
                   Businesses
-                </Link>
+                </Link> */}
                 {/* <Link
                   className={`block py-4 pl-3 pr-4 text-lg ${location === "/developers" ? 'text-blue-500 :font-bold' : ''} ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} rounded md:border-0 md:hover:text-blue-700`}
                   href="https://docs.lyncs.africa" target="_blank"
