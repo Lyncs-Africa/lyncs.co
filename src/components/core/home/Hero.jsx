@@ -30,10 +30,7 @@ function Hero() {
     };
   }, []);
 
-  const handleOpen = () => {
-    window.LyncsWidget.open("6a57c8cb21584e478c91d735de8697cca853be3435198181bba2a8")
-
-  }
+  const handleOpen = () => window.LyncsWidget.open("6a57c8cb21584e478c91d735de8697cca853be3435198181bba2a8")
 
   return (
     <>
@@ -60,9 +57,7 @@ function Hero() {
           <h2
             className="text-blue-500 text-[3.3rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
           >
-            {/* <span className="text-[18px] relative md:text-blue-500 uppercase tracking-wider">
-                  For merchants
-                </span><br /> */}
+
             <span className="relative text-black">
               Embed<br />
             </span>

@@ -64,9 +64,8 @@ const Shop = () => {
           <p ref={el}
             className="relative bg-clip-text leading-[1] text-[3.5rem] md:text-[4rem] font-semibold text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:animate-blink after:content-['|'] after:inline after:text-blue-500"
           >
-            Online Shopping
           </p>
-          our use cases.<br />
+          Simplified<br />
           <p className="text-[18px] font-normal pl-3 py-8 text-blue-500">
             100k+ merchants, 10+ live products
           </p>
