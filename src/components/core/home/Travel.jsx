@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { easeInOut, motion } from "framer-motion";
+import Link from "next/link"
 
 const Travel = () => {
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
@@ -53,7 +54,7 @@ const Travel = () => {
             className="text-[18px] py-8 text-gray-800">
             We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
           </motion.p>
-          <div>
+          <Link href="https://app.lyncs.africa/register">
             <motion.button
               variants={btnVariant}
               initial="hidden"
@@ -61,7 +62,7 @@ const Travel = () => {
               className="flex gap-2 items-center bg-black text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
               <p> Get started</p>
             </motion.button>
-          </div>
+          </Link>
         </div>
         <div className="col-start-6 col-span-6 flex gap-8">
           <img src="/images/travel.png" />

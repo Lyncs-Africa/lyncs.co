@@ -121,15 +121,14 @@ function Navbar(mode) {
                       </ul>
                       <ul className="py-1 font-light text-gray-500 " aria-labelledby="dropdown">
                         <button onClick={logout}
-                          className="block py-2 px-4 text-sm hover:bg-gray-100 w-full text-left">Sign
-                          out
+                          className="block py-2 px-4 text-sm hover:bg-gray-100 w-full text-left">Sign out
                         </button>
                       </ul>
                     </div>
                   </>
                   :
                   <>
-                    <Link target="_blank" href="https://lyncs-website.vercel.app">
+                    <Link target="_blank" href="http://app.lyncs.africa">
                       <button
                         type="button"
                         className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border ${location === "/login" ? 'bg-blue-500 md:border-none' : 'md:bg-transparent'} ${mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[16px] px-8 py-2.5 text-center mr-3 md:mr-0`}

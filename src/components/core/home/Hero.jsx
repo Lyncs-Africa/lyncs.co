@@ -74,7 +74,7 @@ function Hero() {
           </p>
 
           <div className="flex flex-row justify-center items-center gap-7 z-30 w-full">
-            <Link target="_blank" href="https://lyncs-website.vercel.app"
+            <Link target="_blank" href="https://app.lyncs.africa/register"
               className="bg-black border text-[16px] text-white px-5 text-center py-4 rounded-[12px] hover:border hover:border-black hover:bg-transparent hover:text-black ease transition-all">
               Get started
             </Link>

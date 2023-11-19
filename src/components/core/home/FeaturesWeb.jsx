@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import shopLyncsImg from "/public/images/lyncs-shop.svg"
+import Link from "next/link"
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -151,10 +152,10 @@ function FeaturesWeb() {
                                 <p className="py-[2rem] font-dmSans text-[18px]">
                                     Build a full online store with no backend or database
                                 </p>
-                                <button
+                                <Link href="https://app.lyncs.africa/register"
                                     className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
                                     Get started
-                                </button>
+                                </Link>
 
                                 <hr className="my-10 w-full" />
 
@@ -172,10 +173,12 @@ function FeaturesWeb() {
                                 <p className="py-[2rem] font-dmSans text-[18px]">
                                     Build a complete food-ordering service within your app
                                 </p>
-                                <button
-                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                    Get started
-                                </button>
+                                <Link href="https://app.lyncs.africa/register">
+                                    <button
+                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                        Get started
+                                    </button>
+                                </Link>
 
                                 <hr className="my-10 w-full" />
 
@@ -193,10 +196,12 @@ function FeaturesWeb() {
                                 <p className="py-[2rem] font-dmSans text-[18px]">
                                     Build an e-hailing service for your customers
                                 </p>
-                                <button
-                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                    Get started
-                                </button>
+                                <Link href="https://app.lyncs.africa/register">
+                                    <button
+                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                        Get started
+                                    </button>
+                                </Link>
 
                                 <hr className="my-10 w-full" />
 
@@ -214,10 +219,12 @@ function FeaturesWeb() {
                                 <p className="py-[2rem] font-dmSans text-[18px]">
                                     Deliver anything anywhere within your app | Build a full logistics platform end-to-end in minutes
                                 </p>
-                                <button
-                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                    Get started
-                                </button>
+                                <Link href="https://app.lyncs.africa/register">
+                                    <button
+                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                        Get started
+                                    </button>
+                                </Link>
 
                                 <hr className="my-10 w-full" />
 
@@ -235,10 +242,12 @@ function FeaturesWeb() {
                                 <p className="py-[2rem] font-dmSans text-[18px]">
                                     Build a flight booking and ticket-issuing service
                                 </p>
-                                <button
-                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                    Get started
-                                </button>
+                                <Link href="https://app.lyncs.africa/register">
+                                    <button
+                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                        Get started
+                                    </button>
+                                </Link>
 
                                 <hr className="my-10 w-full" />
 
@@ -256,10 +265,12 @@ function FeaturesWeb() {
                                 <p className="py-[2rem] font-dmSans text-[18px]">
                                     Build an Inter-state transport service in your app
                                 </p>
-                                <button
-                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                    Get started
-                                </button>
+                                <Link href="https://app.lyncs.africa/register">
+                                    <button
+                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                        Get started
+                                    </button>
+                                </Link>
 
                                 <hr className="my-10 w-full" />
 

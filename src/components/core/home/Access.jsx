@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { easeInOut, motion } from "framer-motion";
+import Link from "next/link"
 import SideNav from "@/components/core/shared/SideNav";
 import Shop from "@/components/core/shared/Shop";
 import Ride from "@/components/core/shared/Ride";
@@ -63,7 +64,7 @@ const Access = () => {
               initial="hidden"
               whileInView="visible"
               className="flex gap-2 items-center bg-white text-[17px] text-black px-5 py-3 rounded-lg font-dmSans hover:border hover:border-white hover:bg-transparent hover:text-white">
-              <p> Get started</p>
+              <Link href="http://app.lyncs.africa"> Get started</Link>
             </motion.button>
           </div>
         </div>

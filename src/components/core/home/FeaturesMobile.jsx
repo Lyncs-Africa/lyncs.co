@@ -75,7 +75,7 @@ function FeaturesMobile() {
                             <h2 className="text-lg font-medium font-urbanist mt-5 mb-10">
                                 Build a full online store with no backend or database
                             </h2>
-                            <Link href="/register"
+                            <Link href="https://app.lyncs.africa/register"
                                 className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
@@ -93,7 +93,7 @@ function FeaturesMobile() {
                             <h2 className="text-lg font-medium font-urbanist mt-5 mb-10">
                                 Build a complete food-ordering service within your app
                             </h2>
-                            <Link href="/register"
+                            <Link href="https://app.lyncs.africa/register"
                                 className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
@@ -111,7 +111,7 @@ function FeaturesMobile() {
                             <h2 className="text-lg font-medium font-urbanist mt-5 mb-10">
                                 Build an e-hailing service for your customers
                             </h2>
-                            <Link href="/register"
+                            <Link href="https://app.lyncs.africa/register"
                                 className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
@@ -129,7 +129,7 @@ function FeaturesMobile() {
                             <h2 className="text-lg font-medium font-urbanist mt-5 mb-10">
                                 Deliver anything anywhere within your app | Build a full logistics platform end-to-end in minutes
                             </h2>
-                            <Link href="/register"
+                            <Link href="https://app.lyncs.africa/register"
                                 className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
@@ -149,7 +149,7 @@ function FeaturesMobile() {
                             <h2 className="text-lg font-meh2dium font-urbanist mt-5 mb-10">
                                 Build a flight booking and ticket-issuing service.
                             </h2>
-                            <Link href="/register"
+                            <Link href="https://app.lyncs.africa/register"
                                 className="bg-black text-[17px] text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
@@ -167,7 +167,7 @@ function FeaturesMobile() {
                             <h2 className="text-lg font-meh2dium font-urbanist mt-5 mb-10">
                                 Build an Inter-state transport service in your app
                             </h2>
-                            <Link href="/register"
+                            <Link href="https://app.lyncs.africa/register"
                                 className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
@@ -186,7 +186,7 @@ function FeaturesMobile() {
                             <h2 className="text-lg font-meh2dium font-urbanist mt-5 mb-10">
                                 Search, Book and Get Tickets for any Event in Africa
                             </h2>
-                            <Link href="/register"
+                            <Link href="https://app.lyncs.africa/register"
                                 className="bg-black text-[17px] text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
