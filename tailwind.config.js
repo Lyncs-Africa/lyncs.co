@@ -40,7 +40,8 @@ module.exports = {
           "linear-gradient(rgb(33 15 47 / 70%),rgb(33 15 47 / 70%)), url(/images/shop.jpg);",
         heroMobile:
           "linear-gradient(rgb(49 31 60 / 40%), rgb(78 57 96 / 40%)), url(/images/access-mobile.jpg);",
-        gradient: "linear-gradient(rgb(0 0 0 / 50%),rgb(0 0 0 / 50%)), url(/images/api.jpg)"
+        gradient: "linear-gradient(rgb(0 0 0 / 50%),rgb(0 0 0 / 50%)), url(/images/api.jpg)",
+        pattern: "url(/images/home-products-pattern.svg)"
       },
       keyframes: {
         blink: {

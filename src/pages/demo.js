@@ -7,7 +7,7 @@ import Script from "next/script";
 import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
 
-const Page = () => {
+const Demo = () => {
     const [scrollTop, setScrollTop] = useState(0);
 
     const handleScroll = (event) => {
@@ -173,4 +173,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default Demo;
