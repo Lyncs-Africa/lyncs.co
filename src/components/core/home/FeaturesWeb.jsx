@@ -12,7 +12,7 @@ import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 
 function FeaturesWeb() {
-    SwiperCore.use([Autoplay]);
+    // SwiperCore.use([Autoplay]);
     const [swiper, setSwiper] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -45,7 +45,7 @@ function FeaturesWeb() {
                         Explore core products
                     </h2>
                     <div className="text-lg font-semibold text-blue-500 py-2 mt-4 flex flex-row justify-start items-center gap-2">
-                        See all products <ArrowForwardIcon fontSize="small" className="" />
+                        See all products <ArrowForwardIcon fontSize="small" />
                     </div>
 
                     <div className="space-y-6 mt-10">
@@ -57,7 +57,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] font-dmSans text-gray-700 text-[18px]">Shop</p>
+                            <p className="ml-[2rem] font-dmSans text-gray-700 font-semibold text-[16px]">Online Shopping</p>
                         </div>
                         <div className="relative flex items-center credit-shopping translate-x-[-50px] opacity-0 ">
                             <div
@@ -67,7 +67,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] font-dmSans text-gray-700 text-[18px]">Eat</p>
+                            <p className="ml-[2rem] font-dmSans text-gray-700 font-semibold text-[16px]">Hotel Booking</p>
                         </div>
                         <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
                             <div
@@ -77,8 +77,8 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
-                                Ride
+                            <p className="ml-[2rem] text-gray-700 font-dmSans font-semibold text-[16px]">
+                                Cab Hailing
                             </p>
                         </div>
                         <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
@@ -89,8 +89,8 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
-                                Delivery
+                            <p className="ml-[2rem] text-gray-700 font-dmSans font-semibold text-[16px]">
+                                Food Ordering
                             </p>
                         </div>
                         <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
@@ -101,8 +101,8 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
-                                Travel
+                            <p className="ml-[2rem] text-gray-700 font-dmSans font-semibold text-[16px]">
+                                Flight Booking
                             </p>
                         </div>
                         <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
@@ -113,11 +113,11 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
-                                Bus
+                            <p className="ml-[2rem] text-gray-700 font-dmSans font-semibold text-[16px]">
+                                Package Delivery
                             </p>
                         </div>
-                        <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
+                        {/* <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
                             <div
                                 onClick={() => swiper.slideTo?.(6)}
                                 className={`relative w-[13px] h-[13px] rounded-full bg-gray-300 py-2 before:cursor-pointer before:content-[''] before:h-[30px] before:w-[30px] before:rounded-full before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 ${activeIndex === 6
@@ -125,18 +125,30 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[18px]">
-                                Event
+                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[16px]">
+                                Food Ordering
                             </p>
-                        </div>
+                        </div> */}
+                        {/* <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
+                            <div
+                                onClick={() => swiper.slideTo?.(6)}
+                                className={`relative w-[13px] h-[13px] rounded-full bg-gray-300 py-2 before:cursor-pointer before:content-[''] before:h-[30px] before:w-[30px] before:rounded-full before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 ${activeIndex === 6
+                                    ? "before:border-[3px] before:border-blue-500"
+                                    : ""
+                                    }`}
+                            ></div>
+                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[16px]">
+                                Health
+                            </p>
+                        </div> */}
                     </div>
                 </div>
-                <div className="col-start-6 col-span-6 swipe-up translate-y-[-50px]">
+                <div className="col-start-5 col-span-6 swipe-up translate-y-[-50px]">
                     <Swiper
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
+                        // autoplay={{
+                        //     delay: 3000,
+                        //     disableOnInteraction: false,
+                        // }}
                         speed={5000}
                         spaceBetween={30}
                         onSwiper={(swiper) => setSwiper(swiper)}
@@ -145,138 +157,162 @@ function FeaturesWeb() {
                         className="mySwiper"
                     >
                         <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] h-full p-0 shadow-md">
-                            <div className="px-12 pt-12 relative">
-                                <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Shop
+                            <div className="px-20 pt-14 relative">
+                                <h2 className="text-xl uppercase text-[#627490] font-medium font-dmSans leading-[1.1] relative">
+                                    Online Shopping
                                 </h2>
-                                <p className="py-[2rem] font-dmSans text-[18px]">
-                                    Build a full online store with no backend or database
+
+                                <p className="py-[1.5rem] text-[#344056] text-[28px] font-bold">
+                                    Speed up your Online E-commerce
+                                </p>
+
+                                <p className="text-xl text-[#627490] mb-10">
+                                    Build a full online store with no backend or database in seconds.
                                 </p>
                                 <Link href="https://app.lyncs.africa/register"
-                                    className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                    Get started
+                                    className="bg-blue-500 text-[16px] font-semibold text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                    Learn More
                                 </Link>
 
                                 <hr className="my-10 w-full" />
 
                                 <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-yellow-400 h-[120px] overflow-hidden left-[26px]">
-                                    <img src="/images/home-products-pattern.svg" />
+                                    <img alt="" src="/images/home-products-pattern.svg" />
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
-                            <div className="px-12 pt-12 relative">
-                                <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Eat
+                            <div className="px-20 pt-14 relative">
+                                <h2 className="text-xl uppercase text-[#627490] font-medium font-dmSans leading-[1.1] relative">
+                                    Hotel Booking
                                 </h2>
-                                <p className="py-[2rem] font-dmSans text-[18px]">
-                                    Build a complete food-ordering service within your app
+
+                                <p className="py-[1.5rem] text-[#344056] text-[28px] font-bold">
+                                    Accelerate your hotel booking platform
                                 </p>
-                                <Link href="https://app.lyncs.africa/register">
-                                    <button
-                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                        Get started
-                                    </button>
+
+                                <p className="text-xl text-[#627490] mb-10">
+                                    Effortlessly build a hotel booking platform for your customers in minutes.
+                                </p>
+
+                                <Link href="https://app.lyncs.africa/register"
+                                    className="bg-blue-500 text-[16px] font-semibold text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                    Learn More
                                 </Link>
 
                                 <hr className="my-10 w-full" />
 
-                                <div style={{ backgroundImage: 'url("/images/eat-slide.jpg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/hotel-booking.jpg")' }} className="bg-no-repeat border-4 border-black bg-center bg-cover rounded-xl h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
-                                    <img src="/images/home-products-pattern.svg" />
+                                    <img alt="" src="/images/housing.jpg" />
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
-                            <div className="px-12 pt-12 relative">
-                                <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Ride
+                            <div className="px-20 pt-14 relative">
+                                <h2 className="text-xl uppercase text-[#627490] font-medium font-dmSans leading-[1.1] relative">
+                                    Cab Hailing
                                 </h2>
-                                <p className="py-[2rem] font-dmSans text-[18px]">
+
+                                <p className="py-[1.5rem] text-[#344056] text-[28px] font-bold">
+                                    Enhance the efficiency of your cab hailing service.
+                                </p>
+
+                                <p className="text-xl text-[#627490] mb-10">
                                     Build an e-hailing service for your customers
                                 </p>
-                                <Link href="https://app.lyncs.africa/register">
-                                    <button
-                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                        Get started
-                                    </button>
+
+                                <Link href="https://app.lyncs.africa/register"
+                                    className="bg-blue-500 text-[16px] font-semibold text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                    Learn More
                                 </Link>
 
                                 <hr className="my-10 w-full" />
 
-                                <div style={{ backgroundImage: 'url("/images/lyncs-ride.svg")' }} className="bg-no-repeat object-cover h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/ride-share.jpg")' }} className="bg-no-repeat border-4 border-black rounded-xl object-cover h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
-                                    <img src="/images/home-products-pattern.svg" />
+                                    <img alt="" src="/images/home-products-pattern.svg" />
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
-                            <div className="px-12 pt-12 relative">
-                                <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Delivery
+                            <div className="px-20 pt-14 relative">
+                                <h2 className="text-xl uppercase text-[#627490] font-medium font-dmSans leading-[1.1] relative">
+                                    Food Ordering
                                 </h2>
-                                <p className="py-[2rem] font-dmSans text-[18px]">
-                                    Deliver anything anywhere within your app | Build a full logistics platform end-to-end in minutes
+
+                                <p className="py-[1.5rem] text-[#344056] text-[28px] font-bold">
+                                    Elevate the efficiency of your food ordering platform.
                                 </p>
-                                <Link href="https://app.lyncs.africa/register">
-                                    <button
-                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                        Get started
-                                    </button>
+
+                                <p className="text-xl text-[#627490] mb-10">
+                                    Create a sweet and swift online food ordering platform for your customers in a matter of seconds
+                                </p>
+
+                                <Link href="https://app.lyncs.africa/register"
+                                    className="bg-blue-500 text-[16px] font-semibold text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                    Learn More
                                 </Link>
 
                                 <hr className="my-10 w-full" />
 
-                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/food-delivery.jpg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10 rounded-md"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
-                                    <img src="/images/home-products-pattern.svg" />
+                                    <img src="/images/home-products-pattern.svg" alt="" />
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
-                            <div className="px-12 pt-12 relative">
-                                <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Travel
+                            <div className="px-20 pt-14 relative">
+                                <h2 className="text-xl uppercase text-[#627490] font-medium font-dmSans leading-[1.1] relative">
+                                    Flight Booking
                                 </h2>
-                                <p className="py-[2rem] font-dmSans text-[18px]">
+
+                                <p className="py-[1.5rem] text-[#344056] text-[28px] font-bold">
                                     Build a flight booking and ticket-issuing service
                                 </p>
-                                <Link href="https://app.lyncs.africa/register">
-                                    <button
-                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                        Get started
-                                    </button>
+
+                                <p className="text-xl text-[#627490] mb-10">
+                                    Craft a seamless and delightful online flight booking experience for your customers in mere seconds.
+                                </p>
+
+                                <Link href="https://app.lyncs.africa/register"
+                                    className="bg-blue-500 text-[16px] font-semibold text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                    Learn More
                                 </Link>
 
                                 <hr className="my-10 w-full" />
 
-                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/flight-booking.jpg")' }} className="bg-no-repeat bg-center rounded-xl bg-contain h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
-                                    <img src="/images/home-products-pattern.svg" />
+                                    <img src="/images/home-products-pattern.svg" alt="" />
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
-                            <div className="px-12 pt-12 relative">
-                                <h2 className="text-[2.5rem] font-[900] font-dmSans leading-[1.1] relative">
-                                    Bus
+                            <div className="px-20 pt-14 relative">
+                                <h2 className="text-xl uppercase text-[#627490] font-medium font-dmSans leading-[1.1] relative">
+                                    Package Delivery
                                 </h2>
-                                <p className="py-[2rem] font-dmSans text-[18px]">
-                                    Build an Inter-state transport service in your app
+
+                                <p className="py-[1.5rem] text-[#344056] text-[28px] font-bold">
+                                    Build a flight booking and ticket-issuing service
                                 </p>
-                                <Link href="https://app.lyncs.africa/register">
-                                    <button
-                                        className="bg-blue-500 text-[16px] text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
-                                        Get started
-                                    </button>
+                                <p className="text-xl text-[#627490] mb-10">
+                                    Develop a seamless and efficient online package delivery platform for your customers in just seconds.
+                                </p>
+
+                                <Link href="https://app.lyncs.africa/register"
+                                    className="bg-blue-500 text-[16px] font-semibold text-white px-8 py-3 rounded-md font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black shadow-md">
+                                    Learn More
                                 </Link>
 
                                 <hr className="my-10 w-full" />
 
-                                <div style={{ backgroundImage: 'url("/images/lyncs-shop.svg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/package-delivery.jpg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10 rounded-xl"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
-                                    <img src="/images/home-products-pattern.svg" />
+                                    <img alt="" src="/images/home-products-pattern.svg" />
                                 </div>
                             </div>
                         </SwiperSlide>

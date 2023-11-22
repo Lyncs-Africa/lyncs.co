@@ -25,9 +25,9 @@ function FeaturesMobile() {
     SwiperCore.use([Autoplay]);
     return (
         <>
-            <div className="md:hidden top-[-3rem] font-urbanist py-10 px-4 relative z-10 bg-[#F4F6F8]">
+            <div className="md:hidden top-[-3rem] font-dmSans py-10 px-4 relative z-10 bg-[#F4F6F8]">
 
-                <h2 className="py-10 text-[2.5rem] font-[900] text-black font-urbanist leading-[1.1] relative heading">
+                <h2 className="py-10 text-[2.5rem] font-[900] text-black font-dmSans leading-[1.1] relative heading">
                     Explore core products
                 </h2>
                 <div className="text-lg font-semibold mb-7 text-blue-500 py-2 flex flex-row justify-start items-center gap-2">
@@ -69,14 +69,14 @@ function FeaturesMobile() {
                                 <StorefrontOutlinedIcon fontSize="inherit" className="text-gray-700 mb-4" />
                             </div>
 
-                            <p className="font-urbanist text-[#54667f]">
+                            <p className="font-dmSans text-[#54667f]">
                                 SHOP
                             </p>
-                            <h2 className="text-lg font-medium font-urbanist mt-5 mb-10">
+                            <h2 className="text-lg font-medium font-dmSans mt-5 mb-10">
                                 Build a full online store with no backend or database
                             </h2>
                             <Link href="https://app.lyncs.africa/register"
-                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
                         </div>
@@ -87,14 +87,14 @@ function FeaturesMobile() {
                                 <div className="heart-2"></div>
                                 <LocalDiningTwoToneIcon fontSize="inherit" className="text-gray-700 mb-4" />
                             </div>
-                            <p className="font-urbanist text-[#54667f]">
+                            <p className="font-dmSans text-[#54667f]">
                                 EAT
                             </p>
-                            <h2 className="text-lg font-medium font-urbanist mt-5 mb-10">
+                            <h2 className="text-lg font-medium font-dmSans mt-5 mb-10">
                                 Build a complete food-ordering service within your app
                             </h2>
                             <Link href="https://app.lyncs.africa/register"
-                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
                         </div>
@@ -105,14 +105,14 @@ function FeaturesMobile() {
                                 <div className="heart-3"></div>
                                 <LocalTaxiTwoToneIcon fontSize="inherit" className="text-gray-700 mb-4" />
                             </div>
-                            <p className="font-urbanist text-[#54667f]">
+                            <p className="font-dmSans text-[#54667f]">
                                 Ride
                             </p>
-                            <h2 className="text-lg font-medium font-urbanist mt-5 mb-10">
+                            <h2 className="text-lg font-medium font-dmSans mt-5 mb-10">
                                 Build an e-hailing service for your customers
                             </h2>
                             <Link href="https://app.lyncs.africa/register"
-                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
                         </div>
@@ -123,14 +123,14 @@ function FeaturesMobile() {
                                 <div className="heart"></div>
                                 <LocalShippingTwoToneIcon fontSize="inherit" className="text-gray-700 mb-4" />
                             </div>
-                            <p className="font-urbanist text-[#54667f]">
+                            <p className="font-dmSans text-[#54667f]">
                                 Delivery
                             </p>
-                            <h2 className="text-lg font-medium font-urbanist mt-5 mb-10">
+                            <h2 className="text-lg font-medium font-dmSans mt-5 mb-10">
                                 Deliver anything anywhere within your app | Build a full logistics platform end-to-end in minutes
                             </h2>
                             <Link href="https://app.lyncs.africa/register"
-                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
                         </div>
@@ -142,15 +142,15 @@ function FeaturesMobile() {
                                 <ModeOfTravelTwoToneIcon fontSize="inherit" className="text-gray-700 mb-4" />
                             </div>
 
-                            <p className="font-urbanist text-[#54667f]">
+                            <p className="font-dmSans text-[#54667f]">
                                 Travel
                             </p>
 
-                            <h2 className="text-lg font-meh2dium font-urbanist mt-5 mb-10">
+                            <h2 className="text-lg font-meh2dium font-dmSans mt-5 mb-10">
                                 Build a flight booking and ticket-issuing service.
                             </h2>
                             <Link href="https://app.lyncs.africa/register"
-                                className="bg-black text-[17px] text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                className="bg-black text-[17px] text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
                         </div>
@@ -161,14 +161,14 @@ function FeaturesMobile() {
                                 <div className="heart-3"></div>
                                 <DirectionsBusTwoToneIcon fontSize="inherit" className="text-gray-700 mb-4" />
                             </div>
-                            <p className="font-urbanist text-[#54667f]">
+                            <p className="font-dmSans text-[#54667f]">
                                 Bus
                             </p>
-                            <h2 className="text-lg font-meh2dium font-urbanist mt-5 mb-10">
+                            <h2 className="text-lg font-meh2dium font-dmSans mt-5 mb-10">
                                 Build an Inter-state transport service in your app
                             </h2>
                             <Link href="https://app.lyncs.africa/register"
-                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                className="bg-black text-md text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
                         </div>
@@ -180,14 +180,14 @@ function FeaturesMobile() {
                                 <EventIcon fontSize="inherit" className="text-gray-700 mb-4" />
                             </div>
 
-                            <p className="font-urbanist text-[#54667f]">
+                            <p className="font-dmSans text-[#54667f]">
                                 Event
                             </p>
-                            <h2 className="text-lg font-meh2dium font-urbanist mt-5 mb-10">
+                            <h2 className="text-lg font-meh2dium font-dmSans mt-5 mb-10">
                                 Search, Book and Get Tickets for any Event in Africa
                             </h2>
                             <Link href="https://app.lyncs.africa/register"
-                                className="bg-black text-[17px] text-white px-8 py-4 rounded-[12px] font-urbanist hover:border hover:border-black hover:bg-transparent hover:text-black">
+                                className="bg-black text-[17px] text-white px-8 py-4 rounded-[12px] font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
                                 Get started
                             </Link>
                         </div>
