@@ -57,7 +57,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] font-dmSans text-gray-700 font-semibold text-[16px]">Online Shopping</p>
+                            <p className="ml-[2rem] font-dmSans text-[#627490] font-semibold text-[16px]">Online Shopping</p>
                         </div>
                         <div className="relative flex items-center credit-shopping translate-x-[-50px] opacity-0 ">
                             <div
@@ -67,7 +67,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] font-dmSans text-gray-700 font-semibold text-[16px]">Hotel Booking</p>
+                            <p className="ml-[2rem] font-dmSans text-[#627490] font-semibold text-[16px]">Hotel Booking</p>
                         </div>
                         <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
                             <div
@@ -77,7 +77,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans font-semibold text-[16px]">
+                            <p className="ml-[2rem] text-[#627490] font-dmSans font-semibold text-[16px]">
                                 Cab Hailing
                             </p>
                         </div>
@@ -89,7 +89,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans font-semibold text-[16px]">
+                            <p className="ml-[2rem] text-[#627490] font-dmSans font-semibold text-[16px]">
                                 Food Ordering
                             </p>
                         </div>
@@ -101,7 +101,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans font-semibold text-[16px]">
+                            <p className="ml-[2rem] text-[#627490] font-dmSans font-semibold text-[16px]">
                                 Flight Booking
                             </p>
                         </div>
@@ -113,7 +113,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans font-semibold text-[16px]">
+                            <p className="ml-[2rem] text-[#627490] font-dmSans font-semibold text-[16px]">
                                 Package Delivery
                             </p>
                         </div>
@@ -125,7 +125,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[16px]">
+                            <p className="ml-[2rem] text-[#627490] font-dmSans text-[16px]">
                                 Food Ordering
                             </p>
                         </div> */}
@@ -137,7 +137,7 @@ function FeaturesWeb() {
                                     : ""
                                     }`}
                             ></div>
-                            <p className="ml-[2rem] text-gray-700 font-dmSans text-[16px]">
+                            <p className="ml-[2rem] text-[#627490] font-dmSans text-[16px]">
                                 Health
                             </p>
                         </div> */}
@@ -203,7 +203,7 @@ function FeaturesWeb() {
 
                                 <hr className="my-10 w-full" />
 
-                                <div style={{ backgroundImage: 'url("/images/hotel-booking.jpg")' }} className="bg-no-repeat border-4 border-black bg-center bg-cover rounded-xl h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/hotel-booking.jpg")' }} className="bg-no-repeat  bg-center bg-cover rounded-xl h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
                                     <img alt="" src="/images/housing.jpg" />
                                 </div>
@@ -230,7 +230,7 @@ function FeaturesWeb() {
 
                                 <hr className="my-10 w-full" />
 
-                                <div style={{ backgroundImage: 'url("/images/ride-share.jpg")' }} className="bg-no-repeat border-4 border-black rounded-xl object-cover h-[400px] w-full mt-10"></div>
+                                <div style={{ backgroundImage: 'url("/images/ride-share.jpg")' }} className="bg-no-repeat  rounded-xl object-cover h-[400px] w-full mt-10"></div>
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
                                     <img alt="" src="/images/home-products-pattern.svg" />
                                 </div>
@@ -257,7 +257,8 @@ function FeaturesWeb() {
 
                                 <hr className="my-10 w-full" />
 
-                                <div style={{ backgroundImage: 'url("/images/food-delivery.jpg")' }} className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10 rounded-md"></div>
+                                <div style={{ backgroundImage: 'url("/images/food-delivery.jpg")' }} className="bg-no-repeat rounded-xl bg-center object-contain h-[400px] w-full mt-10"></div>
+                                
                                 <div className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">
                                     <img src="/images/home-products-pattern.svg" alt="" />
                                 </div>

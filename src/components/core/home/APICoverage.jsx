@@ -28,7 +28,7 @@ const APICoverage = () => {
                 className="container mx-auto md:grid grid-cols-12 xl:pt-0 overflow-hidden md:relative md:z-10">
 
                 {/* className="grid md:grid-cols-5 grid-cols-1 w-full gap-10 px-0 h-" */}
-                <div className="flex flex-col col-span-12 lg:col-span-7 text-left col-start-1 lg:col-start-2 md:justify-start py-[100px] lg:py-[200px] sm:items-start justify-center items-center w-full">
+                <div className="flex flex-col col-span-12 lg:col-span-5 text-left col-start-1 lg:col-start-2 md:justify-start py-[100px] lg:py-[200px] sm:items-start justify-center items-center w-full">
 
                     <motion.h2
                         variants={textVariant}
@@ -68,7 +68,7 @@ const APICoverage = () => {
 
                 </div>
 
-                <div className="h-full relative w-full col-span-5 my-10 md:my-0 md:px-0 lg:block hidden">
+                <div className="h-full relative w-full col-span-6 my-10 md:my-0 md:px-0">
                     {/* <ImageBubble /> */}
                     <div className="logo-area">
                         <ul className="logo-circles">
