@@ -28,6 +28,9 @@ module.exports = {
         quicksand: "Quicksand, sans-serif",
         lora: "Lora, serif",
         urbanist: "Urbanist, sans-serif",
+        satoshiBold: "Satoshi-Bold, sans-serif",
+        satoshiBlack: "Satoshi-Black, sans-serif",
+        satoshiMedium: "Satoshi-Medium, sans-serif",
       },
       backgroundImage: {
         dotted: "url(/assets/images/footer_bg.webp)",

@@ -68,7 +68,7 @@ function Navbar(mode) {
       <MobileNavbar opened={opened} onClose={close} />
 
       <div ref={wrapperRef}
-        className={`z-50 md:grid md:grid-cols-12 font-poppins ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} w-full`}>
+        className={`z-50 md:grid md:grid-cols-12 font-satoshiMedium ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} py-2 w-full`}>
         <nav className="border-gray-200 px-2 sm:px-4 rounded col-start-2 col-span-10 py-4 md:py-0">
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <Link className="flex items-center" href="/">
@@ -100,8 +100,7 @@ function Navbar(mode) {
                       id="user-menu-button" aria-expanded="false"
                       data-dropdown-toggle="dropdown">
                       <span className="sr-only">Open user menu</span>
-                      <img className="w-10 h-10 rounded-full"
-                        src={`https://ui-avatars.com/api/?name=${splitName(data.user.registrar)}`} />
+                      <img className="w-10 h-10 rounded-full" alt="" src={`https://ui-avatars.com/api/?name=${splitName(data.user.registrar)}`} />
                     </button>
 
                     <div
@@ -128,13 +127,13 @@ function Navbar(mode) {
                   </>
                   :
                   <>
-                    <Link target="_blank" href="http://app.lyncs.africa">
+                    <Link target="_blank" href="http://app.lyncs.africa" className="pb-4">
                       <button
                         type="button"
-                        className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border ${location === "/login" ? 'bg-blue-500 md:border-none' : 'md:bg-transparent'} ${mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[16px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+                        className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border ${location === "/login" ? 'bg-blue-500 md:border-none' : 'md:bg-transparent'} ${mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
                       >
-                        Login
-                        <span className="ml-2">
+                        Sign in
+                        <span className="">
                           <i className="fa-solid fa-right-to-bracket"></i>
                         </span>
                       </button>

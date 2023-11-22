@@ -34,7 +34,7 @@ const Travel = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-poppins">
+      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
       <div
         className="container mx-auto md:grid grid-cols-12 pt-[100px] md:py-[160px] overflow-hidden md:relative md:z-10 gap-8">
         <div
@@ -43,7 +43,7 @@ const Travel = () => {
             variants={headerVariant}
             initial="hidden"
             whileInView="visible"
-            className="text-black leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+            className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >
             Robust APIs for ticketing
           </motion.h2>
@@ -65,7 +65,7 @@ const Travel = () => {
           </Link>
         </div>
         <div className="col-start-6 col-span-6 flex gap-8">
-          <img src="/images/travel.png" />
+          <img src="/images/travel.png" alt="" />
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import Food from "@/components/core/shared/Food";
 const Eat = () => {
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover min-h-[100vh] font-poppins">
+      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover min-h-[100vh] font-satoshiMedium">
       <div className="xl:block hidden absolute bottom-[-5rem] w-full z-30">
         <img alt="curve" src="/images/lyncs-hero-curve.svg" />
       </div>
@@ -13,7 +13,7 @@ const Eat = () => {
         <div
           className="px-4 md:px-0 col-span-10 text-center col-start-2 z-50 relative flex flex-col justify-center">
           <h2
-            className="text-black leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+            className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >
             Integrate APIs <br /> for food delivery
           </h2>

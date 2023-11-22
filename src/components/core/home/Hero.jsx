@@ -35,7 +35,7 @@ function Hero() {
   return (
     <>
       <div
-        className="md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-poppins md:relative md:z-10 px-1 md:px-0">
+        className="md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-poppins md:relative md:z-10 px-1 md:px-0">
         <div className="xl:block hidden absolute bottom-[-10rem] w-full z-30">
           <img alt="curve" src="/images/lyncs-hero-curve.svg" />
         </div>
@@ -55,7 +55,7 @@ function Hero() {
         </div>
         <div className="col-span-10 col-start-2 z-30 relative text-center">
           <h2
-            className="text-blue-500 text-[3.3rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
+            className="text-blue-500 font-satoshiBold text-[3.3rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
           >
 
             <span className="relative text-black">

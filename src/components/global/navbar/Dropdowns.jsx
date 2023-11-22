@@ -35,7 +35,7 @@ export const ProductsDropdown = ({ mode }) => {
     };
 
     return (
-        <div ref={dropdownRef} className="group relative">
+        <div ref={dropdownRef} className="group relative font-satoshiMedium">
 
             <div className={`${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'text-white' : 'text-gray-300 md:text-gray-700'} flex flex-row justify-start items-center cursor-pointer md:hover:text-blue-700 ease transition-all`} onMouseEnter={handleOpenDropdown} onMouseLeave={handleCloseDropdown}>
                 <p className='block py-7 px-4 text-lg rounded md:border-0'>
@@ -195,19 +195,33 @@ export const ProductsDropdown = ({ mode }) => {
 
                     </div>
 
-                    <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
-                        <div className="p-3 rounded-full bg-black">
-                            <DashboardTwoToneIcon className="text-white" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 w-full col-span-2 mt-4 border-t pt-4">
+                        <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
+                            <div className="p-3 rounded-full bg-black">
+                                <DashboardTwoToneIcon className="text-white" />
+                            </div>
+                            <div className="space-y-2">
+                                <Link
+                                    className='text-[15px] text-black font-medium'
+                                    href="/shop"
+                                    role="menuitem"
+                                >
+                                    Explore all services
+                                </Link>
+                                <p className="text-gray-500 font-light">Explore all available services lyncs provide</p>
+                            </div>
                         </div>
-                        <div className="space-y-2">
-                            <Link
-                                className='text-[15px] text-black font-medium'
-                                href="/shop"
-                                role="menuitem"
-                            >
-                                Explore all services
+
+                        <div className="flex flex-row justify-center gap-5 w-full items-center">
+                            <Link href="https://app.lyncs.africa/register"
+                                className=" text-[16px] font-medium px-8 py-3 ease transition-all rounded-md font-satoshiMedium  hover:text-blue-500">
+                                Login
                             </Link>
-                            <p className="text-gray-500 font-light">Explore all available services lyncs provide</p>
+
+                            <Link href="https://app.lyncs.africa/register"
+                                className="bg-blue-500 hover:opacity-75 ease transition-all text-[16px] font-medium text-white px-8 py-3 rounded-md font-dmSans shadow-md">
+                                Sign Up
+                            </Link>
                         </div>
                     </div>
                 </div>

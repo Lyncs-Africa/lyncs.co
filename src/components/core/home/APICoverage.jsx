@@ -1,5 +1,6 @@
 import ImageBubble from "@/components/ImageBuble";
 import { motion } from 'framer-motion';
+import Link from "next/link";
 import { useMemo } from "react";
 
 const APICoverage = () => {
@@ -23,7 +24,7 @@ const APICoverage = () => {
         }
     }, [])
     return (
-        <div className="w-full font-poppins flex flex-col justify-center items-center relative bg-[#F4F6F8]">
+        <div className="w-full font-satoshiMedium flex flex-col justify-center items-center relative bg-[#F4F6F8]">
             <div
                 className="container mx-auto md:grid grid-cols-12 xl:pt-0 overflow-hidden md:relative md:z-10">
 
@@ -34,9 +35,9 @@ const APICoverage = () => {
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="font-bold text-center md:block hidden sm:text-left text-5xl text-[#222c3b] leading-snug"
+                        className="font-bold text-center md:block hidden sm:text-left text-[3.5rem] md:text-[4rem] text-[#222c3b] leading-tight"
                     >
-                        <p className="pb-4 lg:block hidden">Enjoy Africa's biggest<br /> API for e-commerce<br /> coverage.</p>
+                        <p className="pb-4 lg:block hidden">Enjoy Africa's biggest API<br /> for e-commerce<br /> coverage.</p>
                     </motion.h2>
 
                     <motion.h2
@@ -57,14 +58,16 @@ const APICoverage = () => {
                         Get live products and APIs from commercial service providers spanning multiple industries aggregated across in Africa.
                     </motion.p>
 
-                    <motion.button
-                        variants={textVariant}
-                        initial="hidden"
-                        whileInView="visible"
-                        className="flex items-center bg-blue-600 text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black mt-4"
-                    >
-                        View Coverage
-                    </motion.button>
+                    <Link href={"#"}>
+                        <motion.button
+                            variants={textVariant}
+                            initial="hidden"
+                            whileInView="visible"
+                            className="flex items-center font-semibold text-md bg-blue-600 text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black mt-4"
+                        >
+                            View Coverage
+                        </motion.button>
+                    </Link>
 
                 </div>
 
@@ -72,17 +75,17 @@ const APICoverage = () => {
                     {/* <ImageBubble /> */}
                     <div className="logo-area">
                         <ul className="logo-circles">
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            <li className="rounded-full bg-center object-center border-4"></li>
-                            {/* <li className="rounded-full bg-center  object-center border-4"></li> */}
-                            {/* <li className="rounded-full bg-center  object-center border-4"></li> */}
+                            <li className="rounded-full bg-center object-center"></li>
+                            <li className="rounded-full bg-center object-center"></li>
+                            <li className="rounded-full bg-center object-center"></li>
+                            <li className="rounded-full bg-center object-center"></li>
+                            <li className="rounded-full bg-center object-center "></li>
+                            <li className="rounded-full bg-center object-center "></li>
+                            <li className="rounded-full bg-center object-center "></li>
+                            <li className="rounded-full bg-center object-center "></li>
+                            <li className="rounded-full bg-center object-center "></li>
+                            {/* <li className="rounded-full bg-center  object-center "></li> */}
+                            {/* <li className="rounded-full bg-center  object-center "></li> */}
                             {/* <li className="rounded-full bg-center  object-center"></li> */}
                         </ul>
                     </div>

@@ -58,7 +58,7 @@ const Shop = () => {
           variants={textVariant}
           initial="hidden"
           whileInView="visible"
-          className="text-black col-span-4 col-start-2 leading-[1] md:px-0 pl-2 text-[3.5rem] md:text-[4.5rem] font-bold"
+          className="text-bold font-satoshiBold col-span-4 col-start-2 leading-[1] md:px-0 pl-2 text-[3.5rem] md:text-[4.5rem] font-bold"
         >
           Embedded <br />
           <p ref={el}

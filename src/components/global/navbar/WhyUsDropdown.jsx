@@ -42,7 +42,7 @@ export const WhyUsDropdown = ({ mode }) => {
             {/* Dropdown content */}
 
             <div
-                className='opacity-0 translate-y-10 modal-card pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-24 -left-40 w-[480px] rounded-xl bg-[#ffffff] border ease-in-out p-10'
+                className='opacity-0 translate-y-10 modal-card pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-20 -left-40 w-[480px] rounded-xl bg-[#ffffff] border ease-in-out p-10'
             >
                 <div
                     className="space-y-10 w-full"

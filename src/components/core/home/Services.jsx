@@ -23,7 +23,7 @@ const Services = () => {
   }, [])
 
   return (
-    <div className="relative w-full overflow-hidden font-poppins bg-white">
+    <div className="relative w-full overflow-hidden font-satoshiMedium bg-white">
       <div className="container mx-auto md:block md:py-[160px] py-[100px] relative">
         <div className="md:grid grid-cols-12 px-4 md:px-0">
           <div
@@ -32,7 +32,7 @@ const Services = () => {
               variants={textVariant}
               initial="hidden"
               whileInView="visible"
-              className="text-black leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+              className="text-black leading-[1] font-satoshiBold text-[3.5rem] md:text-[4.5rem] font-bold"
             >
               Explore all <br /> our use cases.
             </motion.h2>

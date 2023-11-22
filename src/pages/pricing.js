@@ -35,18 +35,19 @@ const Page = () => {
     return (
         <div className="h-full">
             <Navbar scrollTop={scrollTop} />
-            <div className="py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-poppins md:relative">
+
+            <div className="py-[100px] md:py-[160px] xl:pt-[120px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-poppins md:relative">
                 <div className="w-full p-7 flex flex-col justify-center items-center">
-                    <h1 className="text-5xl text-black font-bold">Pricing</h1>
-                    <p className="sm:text-[16px] text-md py-4 text-gray-800 mb-10 px-4">
-                        See the available prices that suit your business</p>
+                    <h1 className="text-4xl text-black font-satoshiBlack">Choose your plan</h1>
+                    <p className="sm:text-[16px] font-satoshiMedium text-md py-4 text-gray-500 mb-10 px-4">
+                        Tailored pricing solutions to align with your business requirements.</p>
                 </div>
 
                 <section className="w-full flex flex-col justify-center items-center">
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-10 container self-center">
-                        <div className="p-10 bg-[#1C1C1C] rounded-lg text-white">
-                            <h2 className="font-medium leading-relaxed text-3xl">Save your<br /> money today </h2>
+                        <div className="p-10  shadow-md rounded-lg bg-white">
+                            <h2 className="font-medium leading-relaxed text-lg font-satoshiMedium">Small Business</h2>
 
                             <p className="py-7 text-lg">
                                 These APIs can be particularly valuable for e-commerce platforms, price comparison websites,
@@ -54,20 +55,27 @@ const Page = () => {
                             </p>
 
                             <div className="self-center">
-                                <img src="/images/save-money.png" className="mx-auto mt-7" />
+                                <img alt="" src="/images/save-money.png" className="mx-auto mt-7" />
                             </div>
                         </div>
 
-                        <div className="p-10 bg-[#1C1C1C] rounded-lg text-white">
-                            <h2 className="font-medium leading-relaxed text-3xl">Save your<br /> money today </h2>
+                        <div className="w-full flex flex-col h-full">
 
-                            <p className="py-7 text-lg">
-                                These APIs can be particularly valuable for e-commerce platforms, price comparison websites,
-                                or any application where real-time pricing information is critical. Developers can use the API to display current prices, compare costs across multiple vendors, or automate pricing updates within their applications.
-                            </p>
+                            <h2 className="font-semibold leading-relaxed  text-xl mb-7">Start your free plan now</h2>
 
-                            <div className="self-center">
-                                <img src="/images/save-money.png" className="mx-auto mt-7" />
+                            <div className="px-10 py-4 bg-[#EE2E31] rounded-lg text-white">
+                                <div className="w-full flex flex-row justify-between items-center">
+                                    <p>Eat</p>
+                                    <p>Free</p>
+                                </div>
+                                <p className="py-7 text-lg">
+                                    These APIs can be particularly valuable for e-commerce platforms, price comparison websites,
+                                    or any application where real-time pricing information is critical. Developers can use the API to display current prices, compare costs across multiple vendors, or automate pricing updates within their applications.
+                                </p>
+
+                                <div className="self-center">
+                                    <img alt="" src="/images/save-money.png" className="mx-auto mt-7" />
+                                </div>
                             </div>
                         </div>
 
