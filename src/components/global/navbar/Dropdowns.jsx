@@ -146,7 +146,7 @@ export const ProductsDropdown = ({ mode }) => {
                         </div>
                     </div>
 
-                    <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
+                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
                         <div className="p-3 rounded-full bg-orange-800">
                             <LocalShippingTwoToneIcon className="text-white" />
                         </div>
@@ -162,7 +162,7 @@ export const ProductsDropdown = ({ mode }) => {
                         </div>
                     </div>
 
-                    <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
+                    <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
                         <div className="p-3 rounded-full bg-cyan-500">
                             <GarageTwoToneIcon className="text-white" />
                         </div>
@@ -196,14 +196,14 @@ export const ProductsDropdown = ({ mode }) => {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 w-full col-span-2 mt-4 border-t pt-4">
-                        <div className="flex-auto flex flex-row items-center justify-center gap-5 w-full p-4 cursor-pointer">
+                        <div className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
                             <div className="p-3 rounded-full bg-black">
                                 <DashboardTwoToneIcon className="text-white" />
                             </div>
                             <div className="space-y-2">
                                 <Link
                                     className='text-[15px] text-black font-medium'
-                                    href="/shop"
+                                    href="/demo"
                                     role="menuitem"
                                 >
                                     Explore all services

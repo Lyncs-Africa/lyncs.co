@@ -4,7 +4,7 @@ import Link from "next/link";
 function FooterWeb({ mode }) {
   return (
     <>
-      <footer className={`hidden md:block p-4 ${mode.dark ? 'md:bg-black' : 'md:bg-[#F1F1F8]'} sm:p-6 font-poppins`}>
+      <footer className={`hidden md:block p-4 ${mode.dark ? 'md:bg-black' : 'md:bg-[#F1F1F8]'} sm:px-6 sm:py-10 font-satoshiMedium`}>
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2 col-start-2">
             <Link href="/" className="flex items-center">
@@ -25,43 +25,33 @@ function FooterWeb({ mode }) {
             </Link>
           </div>
           <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
-            <h5 className="font-bold text-[18px] uppercase">
-              <Link href="/" className="flex items-center">
-                Resources
-              </Link>
+            <h5 className="font-bold text-[18px] uppercase flex items-center">
+              Resources
             </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Developers
-              </Link>
-            </h5>
+            <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+              <h5 className="text-[16px]">
+                Documentation
+              </h5>
+            </Link>
             <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 API Reference
               </Link>
             </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                SDKs
-              </Link>
-            </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+
+            <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+              <h5 className="text-[16px]">
                 Demo
-              </Link>
-            </h5>
-            <h5 className="text-[16px]">
+              </h5>
+            </Link>
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Join Slack
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Consumers
-              </Link>
-            </h5>
+            </h5> */}
+
           </div>
-          <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
+          {/* <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
             <h5 className="font-bold text-[18px] uppercase">
               <Link href="/" className="flex items-center">
                 Products
@@ -72,90 +62,77 @@ function FooterWeb({ mode }) {
                 Merchants
               </Link>
             </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Companies
-              </Link>
-            </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Customers
-              </Link>
-            </h5>
-          </div>
+
+          </div> */}
           <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
-            <h5 className="font-bold text-[18px] uppercase">
-              <Link href="/" className="flex items-center">
-                Company
-              </Link>
+            <h5 className="font-bold text-[18px] uppercase text-center">
+              Company
             </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+            <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+              <h5 className="text-[16px]">
                 About us
-              </Link>
-            </h5>
-            <h5 className="text-[16px]">
+              </h5>
+            </Link>
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Partner stories
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
+            </h5> */}
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Blog
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
+            </h5> */}
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Coverage
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
+            </h5> */}
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Careers
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+            </h5> */}
+            <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+              <h5 className="text-[16px]">
                 Contact
-              </Link>
-            </h5>
+              </h5>
+            </Link>
           </div>
           <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
             <h5 className="font-bold text-[18px] uppercase">
-              <Link href="/" className="flex items-center">
-                Legal
-              </Link>
+              Legal
             </h5>
-            <h5 className="text-[16px]">
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 End-User Policy
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+            </h5> */}
+            <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+              <h5 className="text-[16px]">
                 Privacy Policy
-              </Link>
-            </h5>
-            <h5 className="text-[16px]">
+              </h5>
+            </Link>
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Developer Policy
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
+            </h5> */}
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Terms of Use
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
+            </h5> */}
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Cookies
               </Link>
-            </h5>
-            <h5 className="text-[16px]">
+            </h5> */}
+            {/* <h5 className="text-[16px]">
               <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 Security
               </Link>
-            </h5>
+            </h5> */}
           </div>
         </div>
         <hr className={`my-6 ${mode.dark ? 'md:border-gray-500' : 'md:border-gray-200'} sm:mx-auto lg:my-8`} />

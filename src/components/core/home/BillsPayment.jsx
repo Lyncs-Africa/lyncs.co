@@ -40,7 +40,7 @@ const BillsPayment = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative font-satoshiMedium w-full bg-black text-white md:bg-right bg-cover font-poppins py-10">
+      className="z-10 overflow-hidden relative font-satoshiMedium w-full bg-black text-white md:bg-right bg-cover py-10">
 
       {/* <div className="absolute inset-0" id="particles-js"></div> */}
 
@@ -48,7 +48,7 @@ const BillsPayment = () => {
         className="container mx-auto grid grid-cols-1 md:grid-cols-12 py-[50px] overflow-hidden md:relative md:z-10 gap-20 md:gap-0 w-full md:justify-start items-center justify-center">
 
         <div className="col-span-3 flex col-start-2 md:m-0 mb-10">
-          <img src="/images/food-mockup.gif" />
+          <img src="/images/food-mockup.gif" alt="" />
         </div>
 
         <div

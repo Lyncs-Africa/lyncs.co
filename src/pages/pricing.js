@@ -135,8 +135,8 @@ const Page = () => {
 
                 <section className="w-full max-w-7xl mt-24 p-4">
                     <div className=" md:p-20 p-5 gap-10 relative flex-wrap hidden md:flex flex-row justify-between items-center w-full rounded-lg font-satoshiMedium bg-blue-600 text-white bg-pattern bg-no-repeat bg-right">
-                        <h1 className="font-satoshiBold text-4xl">Get 100 free API calls when<br /> you sign up</h1>
-                        <Link href="https://app.lyncs.africa/register"
+                        <h1 className="font-satoshiBold text-4xl">Get free API calls when<br /> you sign up</h1>
+                        <Link href="https://app.lyncs.africa/register" target="_blank"
                             className="bg-white text-[16px] font-medium border text-black hover:bg-black hover:text-white ease transition-all rounded-md hover:opacity-80">
                             <button className="dropdown-content py-3 px-5">
                                 Get Started

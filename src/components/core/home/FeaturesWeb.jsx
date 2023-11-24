@@ -117,30 +117,6 @@ function FeaturesWeb() {
                                 Package Delivery
                             </p>
                         </div>
-                        {/* <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
-                            <div
-                                onClick={() => swiper.slideTo?.(6)}
-                                className={`relative w-[13px] h-[13px] rounded-full bg-gray-300 py-2 before:cursor-pointer before:content-[''] before:h-[30px] before:w-[30px] before:rounded-full before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 ${activeIndex === 6
-                                    ? "before:border-[3px] before:border-blue-500"
-                                    : ""
-                                    }`}
-                            ></div>
-                            <p className="ml-[2rem] text-[#627490]  text-[16px]">
-                                Food Ordering
-                            </p>
-                        </div> */}
-                        {/* <div className="relative flex items-center shop translate-x-[-50px] opacity-0 ">
-                            <div
-                                onClick={() => swiper.slideTo?.(6)}
-                                className={`relative w-[13px] h-[13px] rounded-full bg-gray-300 py-2 before:cursor-pointer before:content-[''] before:h-[30px] before:w-[30px] before:rounded-full before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 ${activeIndex === 6
-                                    ? "before:border-[3px] before:border-blue-500"
-                                    : ""
-                                    }`}
-                            ></div>
-                            <p className="ml-[2rem] text-[#627490]  text-[16px]">
-                                Health
-                            </p>
-                        </div> */}
                     </div>
                 </div>
                 <div className="col-start-5 col-span-6 swipe-up translate-y-[-50px]">
@@ -216,7 +192,7 @@ function FeaturesWeb() {
                                 </h2>
 
                                 <p className="py-[1.5rem] text-[#344056] text-[28px] font-bold">
-                                    Enhance the efficiency of your cab hailing service.
+                                    Optimize your cab hailing efficiency.
                                 </p>
 
                                 <p className="text-xl text-[#627490] mb-10">
@@ -243,7 +219,7 @@ function FeaturesWeb() {
                                 </h2>
 
                                 <p className="py-[1.5rem] text-[#344056] text-[28px] font-bold">
-                                    Elevate the efficiency of your food ordering platform.
+                                    Boost your food ordering efficiency.
                                 </p>
 
                                 <p className="text-xl text-[#627490] mb-10">

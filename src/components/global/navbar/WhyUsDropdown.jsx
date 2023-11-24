@@ -6,6 +6,7 @@ import LocalOfferTwoToneIcon from '@mui/icons-material/LocalOfferTwoTone';
 import TheatersTwoToneIcon from '@mui/icons-material/TheatersTwoTone';
 
 import { usePathname } from "next/navigation";
+import { LocalOffer, Theaters } from "@mui/icons-material";
 
 export const WhyUsDropdown = ({ mode }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -52,16 +53,13 @@ export const WhyUsDropdown = ({ mode }) => {
                     onMouseEnter={handleOpenDropdown}
                     onMouseLeave={handleCloseDropdown}
                 >
-                    <Link href="/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
+                    <Link href="/whyus" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
                         <div className="bg-blue-400 p-2 rounded-full">
                             <FavoriteOutlinedIcon className="text-white" />
                         </div>
 
                         <div className="space-y-2">
-                            <p
-                                className='text-black text-[14px]'
-                                href="/shop"
-                            >
+                            <p className='text-black text-[14px]'>
                                 Why choose Lyncs
                             </p>
 
@@ -72,7 +70,7 @@ export const WhyUsDropdown = ({ mode }) => {
 
                     <Link href="/pricing" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
                         <div className="bg-blue-400 p-2 rounded-full">
-                            <LocalOfferTwoToneIcon className="text-white" />
+                            <LocalOffer className="text-white" />
                         </div>
 
                         <div className="space-y-1">
@@ -88,9 +86,9 @@ export const WhyUsDropdown = ({ mode }) => {
                         </div>
                     </Link>
 
-                    <Link href="/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
+                    <Link href="/demo" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
                         <div className="bg-blue-400 p-2 rounded-full">
-                            <TheatersTwoToneIcon className="text-white" />
+                            <Theaters className="text-white" />
                         </div>
 
                         <div className="space-y-1">
@@ -104,7 +102,7 @@ export const WhyUsDropdown = ({ mode }) => {
                     </Link>
 
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };

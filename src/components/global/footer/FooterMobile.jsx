@@ -20,11 +20,11 @@ function LyncsFooterMobile() {
                 Resources
               </h2>
               <ul className="text-gray-600 dark:text-gray-400 flex flex-col gap-4">
-                <li>
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Developers
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#" className="hover:underline">
                     Documentation
@@ -35,25 +35,26 @@ function LyncsFooterMobile() {
                     API Reference
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:underline">
                     SDKs
                   </a>
-                </li> <li>
+                </li> */}
+                <li>
                   <a href="#" className="hover:underline">
                     Demo
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Join Slack
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Consumers
                   </a>
-                </li>
+                </li> */}
 
               </ul>
             </div>
@@ -62,30 +63,30 @@ function LyncsFooterMobile() {
                 Products
               </h2>
               <ul className="text-gray-600 dark:text-gray-400 flex flex-col gap-4">
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     className="hover:underline "
                   >
                     Merchants
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a
                     href="#"
                     className="hover:underline"
                   >
                     Companies
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a
                     href="#"
                     className="hover:underline"
                   >
                     Customers
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div>
@@ -98,26 +99,26 @@ function LyncsFooterMobile() {
                     About us
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Partner stories
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Blog
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Coverage
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Careers
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#" className="hover:underline">
                     Contact
@@ -140,26 +141,26 @@ function LyncsFooterMobile() {
                     Privacy policy
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Developer policy
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Terms of Use
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Cookies
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#" className="hover:underline">
                     Security
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

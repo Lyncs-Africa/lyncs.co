@@ -11,7 +11,7 @@ const ProductDetails = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="md:grid md:grid-cols-2 gap-8 flex flex-col py-4">
+    <div className="md:grid md:grid-cols-2 gap-8  font-satoshiMedium flex flex-col py-4">
       <div>
         <Swiper
           spaceBetween={30}
@@ -72,7 +72,7 @@ const ProductDetails = () => {
           Allow your customers shop from live products across Africa.
         </p>
         <button disabled
-          className="my-2 text-[17px] text-white bg-black px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+          className="my-2 text-[17px] text-white bg-black px-5 py-3 rounded-lg hover:border hover:border-black hover:bg-transparent hover:text-black">
           Get started
         </button>
       </div>

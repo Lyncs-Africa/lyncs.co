@@ -10,13 +10,13 @@ function Hero() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Online shopping",
-        "Food ordering",
-        "Cab hailing",
-        "Flight booking",
-        "Ticket buying",
-        "Hotel booking",
-        "Package delivery",
+        "Online Shopping",
+        "Food Ordering",
+        "Cab Hailing",
+        "Flight Booking",
+        "Ticket Buying",
+        "Hotel Booking",
+        "Package Delivery",
       ],
       typeSpeed: 50,
       backSpeed: 10,
@@ -53,23 +53,23 @@ function Hero() {
             <li></li>
           </ul>
         </div>
-        <div className="col-span-10 col-start-2 z-30 relative text-center">
+        <div className="col-span-10 col-start-2 z-30 relative text-center w-full">
           <h2
-            className="text-blue-500 font-satoshiBold text-[3.3rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
+            className="text-blue-500 font-satoshiBold text-[3.5rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
           >
 
             <span className="relative text-black">
               Embed<br />
             </span>
             <span ref={el}
-              className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:inline after:text-blue-500"
+              className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:inline after:text-blue-500 w-max text-left"
             >
               Online store
             </span><br />
             <span className="relative text-black">into your business</span>
           </h2>
 
-          <p className="sm:text-[16px] text-md py-4 text-gray-800 mb-10 px-4">
+          <p className="text-[16px] text-md py-4 text-gray-800 mb-10 px-4">
             Add commercial services to your mobile or web app in minutes not <b className="line-through text-blue-500">months</b>
           </p>
 

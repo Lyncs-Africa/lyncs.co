@@ -1,11 +1,15 @@
-import ClientOnly from "@/components/global/ClientOnly";
 import Footer from "@/components/global/footer/Footer";
 import ScrollToTopBtn from "@/components/global/ScrollToTopBtn";
 import Navbar from "@/components/global/navbar/Navbar";
-import Head from "next/head";
-import Script from "next/script";
 import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
+
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import OtherHousesTwoToneIcon from '@mui/icons-material/OtherHousesTwoTone';
+import AccountBalanceWalletTwoToneIcon from '@mui/icons-material/AccountBalanceWalletTwoTone';
+import LocalTaxiIcon from '@mui/icons-material/LocalTaxi';
+import FlightIcon from '@mui/icons-material/Flight';
+import { LocalDining, LocalShipping, Storefront } from "@mui/icons-material";
 
 const Demo = () => {
     const [scrollTop, setScrollTop] = useState(0);
@@ -33,110 +37,145 @@ const Demo = () => {
         document.scrollingElement.style.overflowY = "auto"
     }, [])
 
+    const launchShopWidget = () => window.LyncsWidget.open("6a57c8cb21584e478c91d735de8697cca853be3435198181bba2a8")
+
     return (
         <div className="h-full">
             <Navbar scrollTop={scrollTop} />
 
             <div className="py-[100px] md:py-[160px] xl:pt-[120px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-satoshiMedium w-full flex flex-col justify-center items-center md:relative">
                 <div className="w-full p-7 flex flex-col justify-center items-center">
-                    <h1 className="text-4xl text-black font-satoshiBlack">Choose your plan</h1>
-                    <p className="sm:text-[16px] font-satoshiMedium text-md py-4 text-gray-500 mb-10 px-4">
-                        Tailored pricing solutions to align with your business requirements.
+                    <h1 className="text-4xl text-black text-center font-satoshiBlack">
+                        Experience the unique lyncs widget
+                    </h1>
+
+                    <p className="sm:text-[16px] font-satoshiMedium text-md py-4 text-gray-500 mb-7 px-4">
+                        See why businesses use lyncs.
                     </p>
+
                 </div>
 
-                <section className="w-full flex flex-col justify-center items-center self-center max-w-7xl relative">
+                <div className="w-full flex flex-col justify-center items-center self-center max-w-7xl relative px-5 md:px-0">
+                    <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                    <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 items-center justify-center gap-10 container self-center md:p-0 p-5">
+                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                            <div className="text-blue-500">
+                                <Storefront fontSize="large" color="inherit" />
+                            </div>
 
-                        <div className="px-14 py-10 rounded-2xl bg-white shadow-xl w-full h-full">
-                            <h2 className="font-medium leading-relaxed text-xl font-satoshiMedium w-full text-center">Small Business</h2>
+                            <h1 className="text-xl mt-5 font-semibold">Online Shopping</h1>
 
-                            <p className="py-7 text-4xl font-black font-satoshiBlack w-full text-center">
-                                $10
+                            <p className="text-[#909090] pt-4">
+                                Discover the convenience of our online shopping platform with a user-friendly design
+                                that streamlines navigation and exploration. Click the launch button to explore how Lyncs enhances your shopping experience.
                             </p>
 
-                            <ul className="w-full list-disc text-gray-500 space-y-4 text-lg mt-7">
-                                <li>Free Setup Cost </li>
-                                <li>Free Live APIs    </li>
-                                <li>Sales Commission </li>
-                                <li>Embed Online Shopping </li>
-                                <li>Embed Food Ordering </li>
-                                <li>Embed Cab Hailing </li>
-                                <li>Embed Package Delivery</li>
-                                <li>Embed Ticket Buying</li>
-                            </ul>
+                            <button onClick={launchShopWidget} className="w-full rounded-full font-semibold shadow-sm bg-blue-500 py-2 mt-10 text-white">
+                                Launch
+                            </button>
 
-                            <Link href="https://app.lyncs.africa/register"
-                                className="bg-blue-600 text-[16px] dropdown-content font-medium text-white py-5 rounded-md hover:opacity-80">
-                                <button className="mt-14 dropdown-content w-full">
-                                    Get Started
-                                </button>
-                            </Link>
                         </div>
+                        {/* Food ordering */}
+                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                            <div className="text-orange-700">
+                                <FastfoodIcon fontSize="large" color="inherit" />
+                            </div>
 
-                        {/* Medium Business */}
-                        <div className="px-14 pb-10 pt-16 rounded-2xl translate-y-0 shadow-2xl md:-translate-y-10 bg-blue-600 text-gray-100 dropdown-content w-full h-full overflow-hidden">
-                            <div className="bg-yellow-500 font-medium absolute left-6 top-0 text-white p-4 rounded-b-lg">Best value</div>
-                            <h2 className="font-medium leading-relaxed text-xl font-satoshiMedium w-full text-center">Medium Business</h2>
+                            <h1 className="text-xl mt-5 font-semibold">Food Ordering</h1>
 
-                            <p className="py-7 text-white text-4xl font-black font-satoshiBlack w-full text-center">
-                                $99/Month
+                            <p className="text-[#909090] pt-4">
+                                Discover the convenience of our food ordering service with a user-friendly design that streamlines navigation
+                                and exploration. Click the launch button to experience how lyncs operates.
                             </p>
 
-                            <ul className="w-full list-disc space-y-4 text-lg mt-7">
-                                <li>Free Setup Cost </li>
-                                <li>Free Live APIs    </li>
-                                <li>Sales Commission </li>
-                                <li>Embed Online Shopping </li>
-                                <li>Embed Food Ordering </li>
-                                <li>Embed Cab Hailing </li>
-                                <li>Embed Package Delivery</li>
-                                <li>Embed Ticket Buying</li>
-                            </ul>
+                            <button className="w-full  text-blue-500 py-2 text-left font-semibold mt-10">
+                                Coming soon
+                            </button>
 
-                            <Link href="https://app.lyncs.africa/register"
-                                className="bg-white text-blue-600 text-[16px] dropdown-content font-medium py-5 rounded-md hover:opacity-95 ease transition-all">
-                                <button className="mt-16 dropdown-content w-full">
-                                    Get Started
-                                </button>
-                            </Link>
                         </div>
+                        {/* Cab Hailing */}
+                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                            <div className="text-orange-700">
+                                <LocalTaxiIcon fontSize="large" color="inherit" />
+                            </div>
 
-                        {/* Large Business */}
-                        <div className="px-14 py-10 rounded-2xl bg-white shadow-xl w-full h-full">
-                            <h2 className="font-medium leading-relaxed text-xl font-satoshiMedium w-full text-center">Large Business</h2>
+                            <h1 className="text-xl mt-5 font-semibold">Cab Hailing</h1>
 
-                            <p className="py-7 text-4xl font-black font-satoshiBlack w-full text-center">
-                                Lets Talk!
+                            <p className="text-[#909090] pt-4">
+                                Experience the simplicity of our cab hailing service through an intuitive
+                                design that makes navigation and exploration effortless. Click the launch button to see how lyncs Cab hailing widget operates.
                             </p>
 
-                            <ul className="w-full list-disc text-gray-500 space-y-4 text-lg mt-7">
-                                <li>Free Setup Cost </li>
-                                <li>Free Live APIs    </li>
-                                <li>Sales Commission </li>
-                                <li>Embed Online Shopping </li>
-                                <li>Embed Food Ordering </li>
-                                <li>Embed Cab Hailing </li>
-                                <li>Embed Package Delivery</li>
-                                <li>Embed Ticket Buying</li>
-                            </ul>
+                            <button className="w-full  text-blue-500 py-3 text-left font-semibold mt-10 ">
+                                Coming soon
+                            </button>
 
-                            <Link href="https://app.lyncs.africa/register"
-                                className="bg-white text-[16px] dropdown-content font-medium border text-black hover:bg-black hover:text-white ease transition-all py-5 rounded-md hover:opacity-80">
-                                <button className="mt-14 dropdown-content w-full">
-                                    Get Started
-                                </button>
-                            </Link>
                         </div>
 
+                        {/* Hotel Booking */}
+                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                            <div className="text-purple-700">
+                                <FlightIcon fontSize="large" color="inherit" />
+                            </div>
+
+                            <h1 className="text-xl mt-5 font-semibold">Hotel Booking</h1>
+
+                            <p className="text-[#909090] pt-4">
+                                Experience the simplicity of our hotel booking service, featuring an intuitive design
+                                for effortless navigation. Click on the launch button to explore how Lyncs transforms your booking experience.
+                            </p>
+
+                            <button className="w-full text-blue-500 py-3 text-left font-semibold mt-10 ">
+                                Coming soon
+                            </button>
+
+                        </div>
+
+                        {/* Package Delivery */}
+                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                            <div className="text-orange-700">
+                                <LocalShipping fontSize="large" color="inherit" />
+                            </div>
+
+                            <h1 className="text-xl mt-5 font-semibold">Package Delivery</h1>
+
+                            <p className="text-[#909090] pt-4">
+                                Discover the convenience of our package delivery service, enhanced with a user-friendly design for easy
+                                navigation. Click the launch button to experience how Lyncs streamlines your delivery process.
+                            </p>
+
+                            <button className="w-full  text-blue-500 py-3 text-left font-semibold mt-10 ">
+                                Coming soon
+                            </button>
+
+                        </div>
+
+                        {/* Interstate Transportation */}
+                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                            <div className="text-cyan-300">
+                                <LocalTaxiIcon fontSize="large" color="inherit" />
+                            </div>
+
+                            <h1 className="text-xl mt-5 font-semibold">Interstate Transportation</h1>
+
+                            <p className="text-[#909090] pt-4">
+                                Streamline your interstate transportation with ease through our seamless and user-friendly service.
+                                Click the launch button to explore the efficiency of Lyncs in simplifying your travel experience.
+                            </p>
+
+                            <button className="w-full text-blue-500 py-3 text-left font-semibold mt-10 ">
+                                Coming soon
+                            </button>
+
+                        </div>
                     </div>
-                </section>
+
+                </div>
 
                 <section className="w-full max-w-7xl mt-24 p-4">
                     <div className=" md:p-20 p-5 gap-10 relative flex-wrap hidden md:flex flex-row justify-between items-center w-full rounded-lg font-satoshiMedium bg-blue-600 text-white bg-pattern bg-no-repeat bg-right">
-                        <h1 className="font-satoshiBold text-4xl">Get 100 free API calls when<br /> you sign up</h1>
-                        <Link href="https://app.lyncs.africa/register"
+                        <h1 className="font-satoshiBold text-4xl">Get free API calls when<br /> you sign up</h1>
+                        <Link href="https://app.lyncs.africa/register" target="_blank"
                             className="bg-white text-[16px] font-medium border text-black hover:bg-black hover:text-white ease transition-all rounded-md hover:opacity-80">
                             <button className="dropdown-content py-3 px-5">
                                 Get Started

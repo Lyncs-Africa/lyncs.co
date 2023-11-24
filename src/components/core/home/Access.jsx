@@ -38,7 +38,7 @@ const Access = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover min-h-[100vh] font-poppins">
+      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover min-h-[100vh] font-satoshiMedium">
       <div
         className="container mx-auto md:grid grid-cols-12 py-[100px] xl:pb-[160px] overflow-hidden md:relative md:z-10">
         <div
