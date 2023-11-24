@@ -1,6 +1,5 @@
 import { Modal, Accordion, CloseIcon } from '@mantine/core';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
+import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
 //Dropdow Icons
 import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
 import ModeOfTravelTwoToneIcon from '@mui/icons-material/ModeOfTravelTwoTone';
@@ -60,40 +59,6 @@ const MobileNavbar = ({ opened, onClose }) => {
                                     </div>
 
                                 </div>
-
-                                {/* <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit">
-                                    <div className="p-1 rounded-full bg-green-500">
-                                        <HealthAndSafetyTwoToneIcon className="text-white" />
-                                    </div>
-                                    <div className='space-y-2'>
-                                        <Link
-                                            className=' text-lg font-medium'
-                                            href="/health"
-                                            role="menuitem"
-                                        >
-                                            Health
-                                        </Link>
-                                        <p className="font-light text-gray-600">register for health plans, consult medical professionals, or buy drugs</p>
-                                    </div>
-
-                                </div> */}
-
-                                {/* <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                                    <div className="p-1 rounded-full bg-red-500">
-                                        <AccountBalanceWalletTwoToneIcon className="text-white" />
-                                    </div>
-                                    <div className='space-y-2'>
-                                        <Link
-                                            className=' text-lg font-medium'
-                                            href="/health"
-                                            role="menuitem"
-                                        >
-                                            Airtime & Bill Payment
-                                        </Link>
-                                        <p className="font-light text-gray-600">Buy airtime, data, cable tv, electricity and more</p>
-                                    </div>
-
-                                </div> */}
 
                                 <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
                                     <div className="p-1 rounded-full bg-orange-500">
@@ -253,19 +218,23 @@ const MobileNavbar = ({ opened, onClose }) => {
                             <p className='text-xl text-gray-600'>Developers</p>
                         </Accordion.Control>
                         <Accordion.Panel>
-                            <div className='py-4 space-y-6 text-gray-600'>
+                            <div className='p-4 space-y-6 text-gray-600'>
 
-                                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
+                                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit">
                                     <IntegrationInstructionsTwoToneIcon className="text-blue-500" />
                                     <div>
-                                        <Link
-                                            className=''
-                                            href="/shop"
-                                            role="menuitem"
-                                        >
+                                        <p className='text-lg font-medium'>
+                                            API Reference
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit">
+                                    <MenuBookTwoToneIcon className="text-blue-500" />
+                                    <div>
+                                        <p className='text-lg font-medium'>
                                             Documentation
-                                        </Link>
-                                        <p className="font-light">Build a full online store with no backend or database</p>
+                                        </p>
                                     </div>
 
                                 </div>

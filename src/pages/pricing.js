@@ -53,7 +53,7 @@ const Page = () => {
                             <h2 className="font-medium leading-relaxed text-xl font-satoshiMedium w-full text-center">Small Business</h2>
 
                             <p className="py-7 text-4xl font-black font-satoshiBlack w-full text-center">
-                                $10
+                                Free
                             </p>
 
                             <ul className="w-full list-disc text-gray-500 space-y-4 text-lg mt-7">
@@ -81,7 +81,7 @@ const Page = () => {
                             <h2 className="font-medium leading-relaxed text-xl font-satoshiMedium w-full text-center">Medium Business</h2>
 
                             <p className="py-7 text-white text-4xl font-black font-satoshiBlack w-full text-center">
-                                $99/Month
+                                Free
                             </p>
 
                             <ul className="w-full list-disc space-y-4 text-lg mt-7">
@@ -108,7 +108,7 @@ const Page = () => {
                             <h2 className="font-medium leading-relaxed text-xl font-satoshiMedium w-full text-center">Large Business</h2>
 
                             <p className="py-7 text-4xl font-black font-satoshiBlack w-full text-center">
-                                Lets Talk!
+                                Free
                             </p>
 
                             <ul className="w-full list-disc text-gray-500 space-y-4 text-lg mt-7">

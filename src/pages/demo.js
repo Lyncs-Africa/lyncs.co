@@ -58,7 +58,7 @@ const Demo = () => {
                 <div className="w-full flex flex-col justify-center items-center self-center max-w-7xl relative px-5 md:px-0">
                     <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                        <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
                             <div className="text-blue-500">
                                 <Storefront fontSize="large" color="inherit" />
                             </div>
@@ -76,7 +76,7 @@ const Demo = () => {
 
                         </div>
                         {/* Food ordering */}
-                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                        <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
                             <div className="text-orange-700">
                                 <FastfoodIcon fontSize="large" color="inherit" />
                             </div>
@@ -94,7 +94,7 @@ const Demo = () => {
 
                         </div>
                         {/* Cab Hailing */}
-                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                        <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
                             <div className="text-orange-700">
                                 <LocalTaxiIcon fontSize="large" color="inherit" />
                             </div>
@@ -113,7 +113,7 @@ const Demo = () => {
                         </div>
 
                         {/* Hotel Booking */}
-                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                        <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
                             <div className="text-purple-700">
                                 <FlightIcon fontSize="large" color="inherit" />
                             </div>
@@ -132,7 +132,7 @@ const Demo = () => {
                         </div>
 
                         {/* Package Delivery */}
-                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                        <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
                             <div className="text-orange-700">
                                 <LocalShipping fontSize="large" color="inherit" />
                             </div>
@@ -151,7 +151,7 @@ const Demo = () => {
                         </div>
 
                         {/* Interstate Transportation */}
-                        <div className="bg-white shadow-sm rounded-xl px-5 py-4">
+                        <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
                             <div className="text-cyan-300">
                                 <LocalTaxiIcon fontSize="large" color="inherit" />
                             </div>

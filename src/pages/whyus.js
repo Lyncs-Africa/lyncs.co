@@ -1,4 +1,4 @@
-import { Timeline, Text } from '@mantine/core';
+import { Timeline, Text, Accordion } from '@mantine/core';
 import Footer from "@/components/global/footer/Footer";
 import ScrollToTopBtn from "@/components/global/ScrollToTopBtn";
 import Navbar from "@/components/global/navbar/Navbar";
@@ -45,8 +45,8 @@ const Page = () => {
                     </p>
                 </div>
 
-                <section className="w-full flex flex-col justify-center items-center self-center max-w-7xl relative">
-                    <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-20'>
+                <section className="w-full flex flex-col justify-center items-center max-w-7xl">
+                    <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-20 md:px-0 px-5'>
 
                         <Timeline color="blue" active={4} lineWidth={2} bulletSize={30}>
                             <Timeline.Item title={<h1 className='font-bold text-xl'>Accessibility</h1>}>
@@ -73,6 +73,20 @@ const Page = () => {
                         </Timeline>
 
                         <img src='/images/lyncs-home.png' alt='' />
+                    </div>
+                </section>
+
+                {/* frequently asked questions */}
+                <section className="bg-white w-full flex flex-col justify-center text-[#222c3b] items-center mt-10 px-10 py-20">
+                    <div className='w-full justify-start items-start max-w-5xl'>
+                        <h1 className='text-3xl pl-20 pb-7 border-b font-medium'>Frequently Asked Questions</h1>
+                        <Accordion defaultValue='1' className='mb-10 bg-white h-full'>
+                            <Accordion.Item value="1" className='py-4'>
+                                <Accordion.Control color='green'>
+                                    <p className='text-xl font-medium'>What is Lyncs?</p>
+                                </Accordion.Control>
+                            </Accordion.Item>
+                        </Accordion>
                     </div>
                 </section>
 

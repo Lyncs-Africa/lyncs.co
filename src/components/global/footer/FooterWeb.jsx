@@ -28,18 +28,18 @@ function FooterWeb({ mode }) {
             <h5 className="font-bold text-[18px] uppercase flex items-center">
               Resources
             </h5>
-            <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+            <Link href="https://doc.lyncs.africa" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
               <h5 className="text-[16px]">
                 Documentation
               </h5>
             </Link>
             <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+              <Link href="https://doc.lyncs.africa/api" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 API Reference
               </Link>
             </h5>
 
-            <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+            <Link href="/demo" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
               <h5 className="text-[16px]">
                 Demo
               </h5>
