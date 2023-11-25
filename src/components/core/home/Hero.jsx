@@ -35,7 +35,7 @@ function Hero() {
   return (
     <>
       <div
-        className="md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-poppins md:relative md:z-10 px-1 md:px-0">
+        className="md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] md:relative md:z-10 px-1 md:px-0">
         <div className="xl:block hidden absolute bottom-[-10rem] w-full z-30">
           <img alt="curve" src="/images/lyncs-hero-curve.svg" />
         </div>

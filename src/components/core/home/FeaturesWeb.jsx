@@ -44,9 +44,12 @@ function FeaturesWeb() {
                         className="text-[2.5rem] font-[900]  leading-[1.1] relative heading translate-x-[-50px] opacity-0 ">
                         Explore core products
                     </h2>
-                    <div className="text-lg font-semibold text-blue-500 py-2 mt-4 flex flex-row justify-start items-center gap-2">
-                        See all products <ArrowForwardIcon fontSize="small" />
-                    </div>
+
+                    <Link href="/demo">
+                        <div className="text-lg font-semibold text-blue-500 py-2 mt-4 flex flex-row justify-start items-center gap-2">
+                            See all products <ArrowForwardIcon fontSize="small" />
+                        </div>
+                    </Link>
 
                     <div className="space-y-6 mt-10">
                         <div className="relative flex items-center ecommerce translate-x-[-50px] opacity-0 ">
@@ -316,7 +319,7 @@ function FeaturesWeb() {
 
                     </Swiper>
                 </div>
-            </div>
+            </div >
         </>
     );
 }

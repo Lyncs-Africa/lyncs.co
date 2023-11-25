@@ -77,7 +77,7 @@ const Demo = () => {
                         </div>
                         {/* Food ordering */}
                         <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
-                            <div className="text-orange-700">
+                            <div className="text-green-700">
                                 <FastfoodIcon fontSize="large" color="inherit" />
                             </div>
 
@@ -95,7 +95,7 @@ const Demo = () => {
                         </div>
                         {/* Cab Hailing */}
                         <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
-                            <div className="text-orange-700">
+                            <div className="text-red-600">
                                 <LocalTaxiIcon fontSize="large" color="inherit" />
                             </div>
 
@@ -133,7 +133,7 @@ const Demo = () => {
 
                         {/* Package Delivery */}
                         <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
-                            <div className="text-orange-700">
+                            <div className="text-orange-500">
                                 <LocalShipping fontSize="large" color="inherit" />
                             </div>
 
@@ -152,7 +152,7 @@ const Demo = () => {
 
                         {/* Interstate Transportation */}
                         <div className="bg-white hover:shadow-md ease transition-all hover:scale-105 rounded-xl px-5 py-4">
-                            <div className="text-cyan-300">
+                            <div className="text-cyan-400">
                                 <LocalTaxiIcon fontSize="large" color="inherit" />
                             </div>
 
