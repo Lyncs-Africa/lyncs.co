@@ -52,12 +52,12 @@ export const DevelopersDropdown = ({ mode }) => {
                     onMouseEnter={handleOpenDropdown}
                     onMouseLeave={handleCloseDropdown}
                 >
-                    <Link href="https://doc.lyncs.africa/api" className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
+                    <Link target="_blank" href="https://doc.lyncs.africa/api" className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
                         <IntegrationInstructionsTwoToneIcon className="text-blue-500" />
                         <p className='text-black text-[14px]'>API References</p>
                     </Link>
 
-                    <Link href="https://doc.lyncs.africa/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
+                    <Link target="_blank" href="https://doc.lyncs.africa/" role="menuitem" className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
                         <MenuBookTwoToneIcon className="text-blue-500" />
                         <p className='text-[14px] text-black'>Documentation</p>
                     </Link>

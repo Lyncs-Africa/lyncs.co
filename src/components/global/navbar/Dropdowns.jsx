@@ -52,7 +52,7 @@ export const ProductsDropdown = ({ mode }) => {
             {/* Dropdown content */}
 
             <div
-                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-20 -left-72 w-[200px] md:w-[750px] rounded-xl modal-card bg-[#ffffff]  ease-in-out px-7 py-5'
+                className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-20 -left-72 w-[200px] md:w-[750px] rounded-xl modal-card bg-[#ffffff] ease-in-out px-7 py-5'
             >
 
                 <div
@@ -213,7 +213,7 @@ export const ProductsDropdown = ({ mode }) => {
                         </div>
 
                         <div className="flex flex-row justify-center gap-5 w-full items-center">
-                            <Link href="https://app.lyncs.africa/register"
+                            <Link href="https://app.lyncs.africa"
                                 className=" text-[16px] font-medium px-8 py-3 ease transition-all rounded-md font-satoshiMedium  hover:text-blue-500">
                                 Login
                             </Link>

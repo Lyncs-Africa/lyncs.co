@@ -30,7 +30,7 @@ function Hero() {
     };
   }, []);
 
-  const handleOpen = () => window.LyncsWidget.open("6a57c8cb21584e478c91d735de8697cca853be3435198181bba2a8")
+  const handleOpen = () => window.LyncsWidget.open("18c4e34b50f04bb68f0cf486cb578ef61fc77ff415db4d02481334")
 
   return (
     <>

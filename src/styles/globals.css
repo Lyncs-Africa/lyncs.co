@@ -148,8 +148,6 @@
          font-display: swap;
          font-style: italic;
   }
-  
-  
 
 body,
 html {
@@ -867,3 +865,15 @@ html {
      conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
     background-repeat: no-repeat;
   } */
+
+
+  /* ImageSwitcher.css */
+.fade-in-out {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-in-out.hidden {
+    opacity: 0;
+  }
+  

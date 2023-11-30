@@ -16,7 +16,6 @@ import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import LocalOfferTwoToneIcon from '@mui/icons-material/LocalOfferTwoTone';
 import TheatersTwoToneIcon from '@mui/icons-material/TheatersTwoTone';
 
-import FindInPageTwoToneIcon from '@mui/icons-material/FindInPageTwoTone';
 import IntegrationInstructionsTwoToneIcon from '@mui/icons-material/IntegrationInstructionsTwoTone';
 
 import Link from 'next/link';

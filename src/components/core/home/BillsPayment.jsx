@@ -1,6 +1,7 @@
 import { particles } from "@/lib/utils";
 import React, { useMemo, useEffect } from 'react';
 import { easeInOut, motion } from "framer-motion";
+import ImageSwitcher from "@/components/ImageSwitcher";
 // import Airtime from "@/components/core/shared/Airtime";
 // import Cable from "@/components/core/shared/Cable";
 
@@ -40,24 +41,28 @@ const BillsPayment = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative font-satoshiMedium w-full bg-black text-white md:bg-right bg-cover py-10">
+      className="z-10 overflow-hidden relative font-satoshiMedium w-full bg-black text-white md:bg-right bg-cover px-5 md:px-0 py-20 md:py-10">
 
       {/* <div className="absolute inset-0" id="particles-js"></div> */}
 
       <div
-        className="container mx-auto grid grid-cols-1 md:grid-cols-12 py-[50px] overflow-hidden md:relative md:z-10 gap-20 md:gap-0 w-full md:justify-start items-center justify-center">
+        className="md:container md:mx-auto grid grid-cols-1 md:grid-cols-12 py-[20px] md:py-[50px] overflow-hidden md:relative gap-28 md:gap-10 w-full justify-start items-center">
 
-        <div className="col-span-3 flex col-start-2 md:m-0 mb-10">
-          <img src="/images/food-mockup.gif" alt="" />
-        </div>
+        <motion.div
+          variants={headerVariant}
+          initial="hidden"
+          whileInView="visible"
+          className="md:col-span-3 flex md:col-start-2 md:m-0">
+          <ImageSwitcher />
+        </motion.div>
 
         <div
-          className="px-4 md:px-0 col-span-6 text-left relative flex flex-col justify-center">
+          className="px-0 sm:px-4 md:px-0 md:col-span-6 text-left relative flex flex-col justify-center text-white">
           <motion.h2
             variants={headerVariant}
             initial="hidden"
             whileInView="visible"
-            className="leading-[1] text-[3.5rem] md:text-[5rem] font-bold sm:text-left text-center"
+            className="leading-[1] text-[4rem] md:text-[5rem] font-bold text-left"
           >
             Embed AI <br />powered<br /> food ordering
           </motion.h2>
@@ -65,7 +70,7 @@ const BillsPayment = () => {
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
-            className="text-[18px] py-8 font-medium sm:text-left text-center">
+            className="text-[18px] py-8 font-medium text-left md:px-0 pr-10">
             We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
           </motion.p>
           <div>
@@ -73,7 +78,7 @@ const BillsPayment = () => {
               variants={btnVariant}
               initial="hidden"
               whileInView="visible"
-              className="flex gap-2 items-center bg-blue-600 md:m-0 mx-auto text-[17px] text-white px-10 py-3 rounded-lg hover:bg-blue-600">
+              className="flex gap-2 items-center bg-blue-600 md:m-0 mt-10 text-[17px] text-white px-10 py-2 rounded-lg hover:bg-blue-600">
               <p> Get started</p>
             </motion.button>
           </div>
