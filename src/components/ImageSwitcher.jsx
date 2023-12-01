@@ -30,7 +30,7 @@ const ImageSwitcher = () => {
             <img
                 src={images[currentImageIndex]}
                 alt={`Image ${currentImageIndex + 1}`}
-                className="fade-in-out md:h-full md:w-full h-[500px]"
+                className="fade-in-out md:h-[570px] md:w-full h-[500px]"
             />
         </div>
     );

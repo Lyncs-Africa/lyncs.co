@@ -35,17 +35,17 @@ const APICoverage = () => {
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="font-bold md:block hidden text-left text-[3.5rem] md:text-[4.5rem] text-[#222c3b] leading-tight"
+                        className="font-bold md:block hidden text-left text-[3.5rem] md:text-[4.1rem] text-[#222c3b] leading-tight"
                     >
                         {/* <p className="pb-4 lg:block hidden">Enjoy Africa's biggest API<br /> for e-commerce<br /> coverage.</p> */}
-                        <p className="pb-4 lg:block hidden">Experience Africa's largest<br /> e-commerce API.</p>
+                        <p className="pb-4 lg:block hidden">Experience<br /> Africa's largest<br /> e-commerce API.</p>
                     </motion.h2>
 
                     <motion.h2
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="font-bold lg:hidden block text-left text-[3.5rem] md:text-[4.5rem] text-[#222c3b] leading-snug"
+                        className="font-bold lg:hidden block text-left text-[3.3rem] text-[#222c3b] leading-snug"
                     >
                         <p className="pb-4">Experience Africa's largest e-commerce API.</p>
                     </motion.h2>
