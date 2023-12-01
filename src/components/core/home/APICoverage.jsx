@@ -26,27 +26,28 @@ const APICoverage = () => {
     return (
         <div className="w-full font-satoshiMedium flex flex-col justify-center items-center relative bg-[#F4F6F8]">
             <div
-                className="md:container md:px-0 px-5 mx-auto md:grid grid-cols-12 xl:pt-0 overflow-hidden md:relative md:z-10">
+                className="md:container md:px-0 pl-5 mx-auto md:grid grid-cols-12 xl:pt-0 overflow-hidden md:relative md:z-10">
 
                 {/* className="grid md:grid-cols-5 grid-cols-1 w-full gap-10 px-0 h-" */}
-                <div className="flex flex-col col-span-12 lg:col-span-5 text-left col-start-1 lg:col-start-2 justify-start py-[100px] lg:py-[200px] items-start  w-full">
+                <div className="flex flex-col col-span-12 lg:col-span-5 text-left col-start-1 lg:col-start-2 justify-start py-[100px] lg:py-[200px] items-start w-full">
 
                     <motion.h2
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="font-bold md:block hidden text-left text-[3.5rem] md:text-[4rem] text-[#222c3b] leading-tight"
+                        className="font-bold md:block hidden text-left text-[3.5rem] md:text-[4.5rem] text-[#222c3b] leading-tight"
                     >
-                        <p className="pb-4 lg:block hidden">Enjoy Africa's biggest API<br /> for e-commerce<br /> coverage.</p>
+                        {/* <p className="pb-4 lg:block hidden">Enjoy Africa's biggest API<br /> for e-commerce<br /> coverage.</p> */}
+                        <p className="pb-4 lg:block hidden">Experience Africa's largest<br /> e-commerce API.</p>
                     </motion.h2>
 
                     <motion.h2
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="font-bold lg:hidden block text-left text-[3.2rem] text-[#222c3b] leading-snug"
+                        className="font-bold lg:hidden block text-left text-[3.5rem] md:text-[4.5rem] text-[#222c3b] leading-snug"
                     >
-                        <p className="pb-4">Enjoy Africa's biggest API for e-commerce coverage.</p>
+                        <p className="pb-4">Experience Africa's largest e-commerce API.</p>
                     </motion.h2>
 
                     <motion.p
@@ -63,7 +64,7 @@ const APICoverage = () => {
                             variants={textVariant}
                             initial="hidden"
                             whileInView="visible"
-                            className="flex items-center font-medium text-md bg-blue-600 text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black mt-4"
+                            className="flex items-center font-medium font-satoshiMedium text-lg bg-blue-600 text-white px-5 py-3 rounded-lg hover:border hover:border-black hover:bg-transparent hover:text-black mt-4"
                         >
                             View Coverage
                         </motion.button>

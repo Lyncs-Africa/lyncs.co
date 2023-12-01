@@ -79,7 +79,7 @@ function Hero() {
               Get started
             </Link>
             <div onClick={handleOpen}
-              className="bg-transparent border border-black text-black text-[16px] px-5 py-4 rounded-[12px] hover:border hover:border-black hover:bg-black cursor-pointer w-max ease transition-all hover:text-white">
+              className="bg-transparent border border-black text-black text-[16px] px-5 py-3 rounded-[12px] hover:border hover:border-black hover:bg-black cursor-pointer w-max ease transition-all hover:text-white">
               See demo
             </div>
           </div>

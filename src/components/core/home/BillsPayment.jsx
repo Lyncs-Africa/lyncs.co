@@ -41,7 +41,7 @@ const BillsPayment = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative font-satoshiMedium w-full bg-black text-white md:bg-right bg-cover px-5 md:px-0 py-20 md:py-10">
+      className="z-10 overflow-hidden relative  w-full bg-black text-white md:bg-right bg-cover px-5 md:px-0 py-20 md:py-10">
 
       {/* <div className="absolute inset-0" id="particles-js"></div> */}
 
@@ -62,7 +62,7 @@ const BillsPayment = () => {
             variants={headerVariant}
             initial="hidden"
             whileInView="visible"
-            className="leading-[1] text-[4rem] md:text-[5rem] font-bold text-left"
+            className="leading-[1] text-[4rem] font-satoshiMedium md:text-[5rem] font-bold text-left"
           >
             Embed AI <br />powered<br /> food ordering
           </motion.h2>
@@ -70,7 +70,7 @@ const BillsPayment = () => {
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
-            className="text-[18px] py-8 font-medium text-left md:px-0 pr-10">
+            className="text-[18px] py-8 font-extralight text-left md:px-0 pr-4 sm:pr-10">
             We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
           </motion.p>
           <div>
@@ -78,7 +78,7 @@ const BillsPayment = () => {
               variants={btnVariant}
               initial="hidden"
               whileInView="visible"
-              className="flex gap-2 items-center bg-blue-600 md:m-0 mt-10 text-[17px] text-white px-10 py-2 rounded-lg hover:bg-blue-600">
+              className="flex gap-2 font-satoshiMedium items-center bg-blue-600 md:m-0 md:mt-10 text-[17px] text-white px-10 py-2 rounded-lg hover:bg-blue-600">
               <p> Get started</p>
             </motion.button>
           </div>

@@ -47,7 +47,7 @@ const Shop = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover min-h-[100vh] font-poppins">
+      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover min-h-[100vh]">
       <div className="xl:block hidden absolute bottom-[-5rem] w-full z-30">
         <img alt="curve" src="/images/long-curve.svg" />
       </div>
@@ -58,7 +58,7 @@ const Shop = () => {
           variants={textVariant}
           initial="hidden"
           whileInView="visible"
-          className="text-bold font-satoshiBold col-span-4 col-start-2 leading-[1] md:px-0 pl-2 text-[3.5rem] md:text-[4.5rem] font-bold"
+          className="text-bold col-span-4 col-start-2 leading-[1] md:px-0 pl-2 text-[3.5rem] md:text-[4.5rem] font-bold"
         >
           Embedded <br />
           <p ref={el}
@@ -66,7 +66,7 @@ const Shop = () => {
           >
           </p>
           Simplified<br />
-          <p className="text-[18px] font-normal pl-3 py-8 text-blue-500">
+          <p className="text-[16px] font-normal text-black pl-3 py-8">
             100k+ merchants, 10+ live products
           </p>
         </motion.h2>
