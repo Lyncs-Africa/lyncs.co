@@ -54,7 +54,7 @@ const APICoverage = () => {
                         variants={textVariant}
                         initial="hidden"
                         whileInView="visible"
-                        className="text-[16px] font-medium text-left pb-8 pt-4 text-[#54667f] max-w-2xl w-full"
+                        className="sm:text-[17px] text-[16px] font-medium text-left pb-8 pt-4 text-[#54667f] max-w-2xl w-full"
                     >
                         Get live products and APIs from commercial service providers spanning multiple industries aggregated across in Africa.
                     </motion.p>

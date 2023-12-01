@@ -69,7 +69,7 @@ function Hero() {
             <span className="relative text-black">into your business</span>
           </h2>
 
-          <p className="text-[16px] text-md py-4 text-gray-800 mb-10 px-4">
+          <p className="sm:text-[17px] text-[16px] py-5 text-gray-700 mb-10 px-4">
             Add commercial services to your mobile or web app in minutes not <b className="line-through text-blue-500">months</b>
           </p>
 

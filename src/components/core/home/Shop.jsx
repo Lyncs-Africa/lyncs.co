@@ -58,15 +58,17 @@ const Shop = () => {
           variants={textVariant}
           initial="hidden"
           whileInView="visible"
-          className="text-bold font-satoshiBold col-span-4 col-start-2 leading-[1] md:px-0 pl-2 text-[3.5rem] md:text-[4.5rem] font-bold"
+          className="text-bold font-satoshiBold col-span-4 col-start-2 leading-tight md:px-0 pl-2 text-[3.5rem] md:text-[4.5rem] font-bold"
         >
           Embedded <br />
+          
           <p ref={el}
-            className="relative bg-clip-text leading-[1] text-[3.5rem] md:text-[4rem] font-semibold text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:animate-blink after:content-['|'] after:inline after:text-blue-500"
+            className="relative bg-clip-text text-[3.5rem] md:text-[4rem] font-semibold text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:animate-blink after:content-['|'] after:inline after:text-blue-500"
           >
+            Shopping
           </p>
           Simplified<br />
-          <p className="text-[16px] font-normal text-black pl-3 py-8">
+          <p className="sm:text-[17px] text-[16px] text-gray-500 font-extralight pl-3 py-8">
             100k+ merchants, 10+ live products
           </p>
         </motion.h2>

@@ -55,7 +55,7 @@ const Access = () => {
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
-            className="text-[18px] font-normal py-8 text-gray-200">
+            className="sm:text-[17px] text-[16px] font-extralight py-8 text-gray-300">
             The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel, ride-sharing, food delivery, event management, and bill payment, all within your application
           </motion.p>
           <div>
@@ -63,7 +63,7 @@ const Access = () => {
               variants={btnVariant}
               initial="hidden"
               whileInView="visible"
-              className="flex gap-2 items-center bg-white text-[17px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
+              className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
               <Link href="http://app.lyncs.africa"> Get started</Link>
             </motion.button>
           </div>
