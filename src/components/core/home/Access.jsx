@@ -55,7 +55,7 @@ const Access = () => {
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
-            className="sm:text-[17px] text-[16px] font-extralight py-8 text-gray-300">
+            className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
             The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel, ride-sharing, food delivery, event management, and bill payment, all within your application
           </motion.p>
           <div>

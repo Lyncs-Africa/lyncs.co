@@ -24,7 +24,7 @@ const Services = () => {
 
   return (
     <div className="relative w-full overflow-hidden font-satoshiMedium bg-white">
-      <div className="container mx-auto md:block md:py-[160px] py-[100px] relative">
+      <div className="container mx-auto md:block md:py-[160px] xl:pb-[70px] py-[100px] relative">
         <div className="md:grid grid-cols-12 px-4 md:px-0">
           <div
             className="col-start-2 col-span-10 relative">
@@ -36,7 +36,7 @@ const Services = () => {
             >
               Explore all <br /> our use cases.
             </motion.h2>
-            <p className="text-[15px] py-8 text-black">
+            <p className="text-[16px] md:text-[17px] py-8 text-slate-800">
               See all our products and how they can help your business grow
             </p>
             <div className="xl:grid grid-cols-3 gap-8 md:my-10">

@@ -35,8 +35,11 @@ const Travel = () => {
   return (
     <div
       className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
+      <div className="xl:block hidden absolute bottom-[-5rem] w-full z-30">
+        <img alt="curve" src="/images/long-curve.svg"/>
+      </div>
       <div
-        className="container mx-auto md:grid grid-cols-12 pt-[100px] md:py-[160px] overflow-hidden md:relative md:z-10 gap-8">
+        className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-0 xl:pb-[250px] overflow-hidden md:relative md:z-10">
         <div
           className="md:pt-[50px] px-4 md:px-0 col-span-4 text-left col-start-2 z-50 relative flex flex-col justify-center">
           <motion.h2
