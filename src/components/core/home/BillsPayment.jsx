@@ -2,6 +2,7 @@ import { particles } from "@/lib/utils";
 import React, { useMemo, useEffect } from 'react';
 import { easeInOut, motion } from "framer-motion";
 import ImageSwitcher from "@/components/ImageSwitcher";
+import Link from "next/link";
 // import Airtime from "@/components/core/shared/Airtime";
 // import Cable from "@/components/core/shared/Cable";
 
@@ -70,16 +71,16 @@ const BillsPayment = () => {
             variants={textVariant}
             initial="hidden"
             whileInView="visible"
-            className="text-[18px] py-8 font-extralight text-left md:px-0 pr-4 sm:pr-10">
-            We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
+            className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
+            We are the only API you will ever need to integarate every form of airline, <br/> bus and ride ticketing.
           </motion.p>
           <div>
             <motion.button
               variants={btnVariant}
               initial="hidden"
               whileInView="visible"
-              className="flex gap-2 font-satoshiMedium items-center bg-blue-600 md:m-0 md:mt-10 text-[17px] text-white px-10 py-2 rounded-lg hover:bg-blue-600">
-              <p> Get started</p>
+              className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
+              <Link href="http://app.lyncs.africa"> Get started</Link>
             </motion.button>
           </div>
         </div>

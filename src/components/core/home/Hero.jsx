@@ -69,13 +69,13 @@ function Hero() {
             <span className="relative text-black">into your business</span>
           </h2>
 
-          <p className="sm:text-[17px] text-[16px] py-5 text-gray-700 mb-10 px-4">
-            Add commercial services to your mobile or web app in minutes not <b className="line-through text-blue-500">months</b>
+          <p className="md:text-[17px] text-[16px] py-5 text-slate-800 mb-10 px-4">
+            Add commercial services to your mobile or web app in <b className="line-through">months</b> minutes
           </p>
 
           <div className="flex flex-row justify-center items-center gap-7 z-30 w-full">
             <Link target="_blank" href="https://app.lyncs.africa/register"
-              className="bg-black border text-[16px] text-white px-5 text-center py-4 rounded-[12px] hover:border hover:border-black hover:bg-transparent hover:text-black ease transition-all">
+              className="bg-black border text-[16px] text-white px-5 text-center py-4 rounded-[12px] ease transition-all">
               Get started
             </Link>
             <div onClick={handleOpen}

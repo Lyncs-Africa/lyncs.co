@@ -36,7 +36,7 @@ const Services = () => {
             >
               Explore all <br /> our use cases.
             </motion.h2>
-            <p className="text-[15px] py-8 text-black">
+            <p className="text-[16px] md:text-[17px] py-8 text-slate-800">
               See all our products and how they can help your business grow
             </p>
             <div className="xl:grid grid-cols-3 gap-8 md:my-10">

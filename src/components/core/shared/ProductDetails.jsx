@@ -57,7 +57,7 @@ const ProductDetails = () => {
               <i className="fa-solid fa-heart"></i></p>
           </div>
         </div>
-        <div className="my-4">
+        <div className="">
           <p className="my-4">
             <span className={`p-2 rounded-lg bg-green-200 text-green-500`}>
               Delivered
@@ -68,13 +68,6 @@ const ProductDetails = () => {
         <p className="text-black text-2xl my-2 font-bold">
           ₦500,000
         </p>
-        <p className="text-gray-500 text-[18px] my-2">
-          Allow your customers shop from live products across Africa.
-        </p>
-        <button disabled
-          className="my-2 text-[17px] text-white bg-black px-5 py-3 rounded-lg hover:border hover:border-black hover:bg-transparent hover:text-black">
-          Get started
-        </button>
       </div>
     </div>
   );
