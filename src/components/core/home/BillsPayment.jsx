@@ -2,6 +2,7 @@ import React, {useMemo} from 'react';
 import {easeInOut, motion} from "framer-motion";
 import CabHailing from "@/components/core/shared/CabHailing";
 import Link from "next/link";
+import Link from "next/link";
 // import Airtime from "@/components/core/shared/Airtime";
 // import Cable from "@/components/core/shared/Cable";
 
@@ -64,7 +65,7 @@ const BillsPayment = () => {
             initial="hidden"
             whileInView="visible"
             className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, minima!
+            We are the only API you will ever need to integarate every form of airline, <br/> bus and ride ticketing.
           </motion.p>
           <div>
             <motion.button
