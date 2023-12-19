@@ -59,11 +59,8 @@ const Shop = () => {
   return (
     <div
       className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover min-h-[100vh]">
-      <div className="xl:block hidden absolute bottom-[-5rem] w-full z-30">
-        <img alt="curve" src="/images/long-curve.svg"/>
-      </div>
       <div
-        className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-0 overflow-hidden md:relative md:z-10">
+        className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] md:pb-0 overflow-hidden md:relative md:z-10">
         <motion.div
           variants={textVariant}
           initial="hidden"

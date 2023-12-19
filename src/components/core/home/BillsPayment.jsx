@@ -2,15 +2,8 @@ import React, {useMemo} from 'react';
 import {easeInOut, motion} from "framer-motion";
 import CabHailing from "@/components/core/shared/CabHailing";
 import Link from "next/link";
-import Link from "next/link";
-// import Airtime from "@/components/core/shared/Airtime";
-// import Cable from "@/components/core/shared/Cable";
 
 const BillsPayment = () => {
-  // useEffect(() => {
-  //   particles()
-  // }, []);
-
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: {opacity: 0, x: 450},
     visible: {

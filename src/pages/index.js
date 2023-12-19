@@ -57,8 +57,8 @@ const Index = () => {
       <Access />
       <Services />
       <Travel />
-      {/*<Shop />*/}
       <BillsPayment />
+      <Shop />
       <FeaturesWeb />
       <FeaturesMobile />
       <APICoverage />
