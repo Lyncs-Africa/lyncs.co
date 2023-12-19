@@ -37,7 +37,7 @@ const Demo = () => {
         document.scrollingElement.style.overflowY = "auto"
     }, [])
 
-    const launchShopWidget = () => window.LyncsWidget.open("18c4e34b50f04bb68f0cf486cb578ef61fc77ff415db4d02481334")
+    const launchShopWidget = () => window.LyncsWidget.open("1ec3cb72732640deb028528452106a04c6a35f44eeaacd09265a8c")
 
     return (
         <div className="h-full">

@@ -4,9 +4,7 @@ import Typed from "typed.js";
 
 function Hero() {
   const el = useRef(null);
-  {/* <div className="flex flex-row justify-center items-center gap-1 flex-nowrap w-full mt-4">
-            <img src="/images/clan-logo.jpg" alt="brand_logo" className="w-20 rounded-full border-2" />
-          </div> */}
+
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
@@ -30,7 +28,7 @@ function Hero() {
     };
   }, []);
 
-  const handleOpen = () => window.LyncsWidget.open("18c4e34b50f04bb68f0cf486cb578ef61fc77ff415db4d02481334")
+  const handleOpen = () => window.LyncsWidget.open("1ec3cb72732640deb028528452106a04c6a35f44eeaacd09265a8c")
 
   return (
     <>
