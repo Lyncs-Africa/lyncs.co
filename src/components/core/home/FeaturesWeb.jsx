@@ -48,7 +48,7 @@ function FeaturesWeb() {
     <>
       <div
         ref={ref}
-        className="hidden md:relative font-satoshiMedium text-black z-20 py-[160px] md:grid grid-cols-12 before:absolute before:right-0 before:top-[100px] before:content-[''] before:bg-[url(/assets/images/6.png)] before:bg-no-repeat before:bg-right-top before:w-full before:h-[955px] after:absolute after:left-0 after:top-[-150px] after:opacity-50 after:content-[''] after:bg-contain after:bg-[url(/assets/images/5.png)] after:bg-no-repeat after:bg-left-top after:w-full after:h-[800px] bg-white"
+        className="hidden md:relative font-satoshiMedium text-black z-20 py-[160px] xl:pt-[70px] md:grid grid-cols-12 bg-white"
       >
         <div className="col-start-2 col-span-3 z-30">
           <h2
