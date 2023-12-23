@@ -97,32 +97,84 @@ const Shop = () => {
         <div className="col-span-4 col-start-8 my-10 md:my-0 px-4 md:px-0">
           <div className="grid grid-cols-2 gap-4">
             <div
-              className="bg-transparent min-h-[100px] rounded-lg text-black p-6 relative border border-gray-200 xl:flex flex-col justify-center items-center">
-              <div className="absolute inset-0 bg-blue-200 opacity-20 z-[-1] rounded-lg"></div>
+              className="bg-transparent min-h-[100px] rounded-lg text-black p-6 relative border border-gray-200 xl:flex flex-col justify-center items-center cursor-pointer group">
+              <motion.div
+                whileInView={{
+                  backgroundColor: ['#a0baea', '#000000', '#a0baea']
+                }}
+                transition={{duration: 2.5, repeat: Infinity, repeatDelay: 12.5}}
+                className="absolute inset-0 z-[-1] rounded-lg"></motion.div>
               <img className="w-[50%]" src="/images/products/1.png"/>
-              <p className="text-black xl:text-[20px] text-[18px] leading-[1] pt-4">One seater sofa</p>
-              <p className="text-black text-[16px]">₦5,000</p>
+              <motion.p
+                whileInView={{
+                  color: ['#333', '#fff']
+                }}
+                className="xl:text-[20px] text-[18px] leading-[1] pt-4">One seater sofa</motion.p>
+              <motion.p
+                whileInView={{
+                  color: ['#333', '#fff']
+                }}
+                className="text-[16px] group-hover:text-gray-400">₦5,000</motion.p>
             </div>
             <div
-              className="bg-transparent min-h-[100px] rounded-lg text-black p-6 relative border border-gray-200 xl:flex flex-col justify-center items-center">
-              <div className="absolute inset-0 bg-blue-200 opacity-20 z-[-1] rounded-lg"></div>
+              className="bg-transparent min-h-[100px] rounded-lg p-6 relative border border-gray-200 xl:flex flex-col justify-center items-center">
+              <motion.div
+                whileInView={{
+                  backgroundColor: ['#a0baea', '#000000', '#a0baea']
+                }}
+                transition={{delay: 3, duration: 2.5, repeat: Infinity, repeatDelay: 12.5}}
+                className="absolute inset-0 z-[-1] rounded-lg"></motion.div>
               <img className="w-[30%]" src="/images/products/9.png"/>
-              <p className="text-black xl:text-[20px] text-[18px] leading-[1] pt-4">iPhone 11</p>
-              <p className="text-black text-[16px]">₦440,000</p>
+              <motion.p
+                whileInView={{
+                  color: ['#333', '#fff']
+                }}
+                className="xl:text-[20px] text-[18px] leading-[1] pt-4">iPhone 11</motion.p>
+              <motion.p
+                whileInView={{
+                  color: ['#333', '#fff']
+                }}
+                className="text-[16px]">₦440,000</motion.p>
             </div>
             <div
               className="bg-transparent min-h-[100px] rounded-lg text-black p-6 relative border border-gray-200 xl:flex flex-col justify-center items-center">
-              <div className="absolute inset-0 bg-blue-200 opacity-20 z-[-1] rounded-lg"></div>
+              <motion.div
+                whileInView={{
+                  backgroundColor: ['#a0baea', '#000000', '#a0baea']
+                }}
+                transition={{delay: 7, duration: 2.5, repeat: Infinity, repeatDelay: 12.5}}
+                className="absolute inset-0 z-[-1] rounded-lg"></motion.div>
               <img className="w-[25%]" src="/images/products/10.png"/>
-              <p className="text-black xl:text-[20px] text-[18px] leading-[1] pt-4">Pair of blue heels</p>
-              <p className="text-black text-[16px]">₦37,500</p>
+              <motion.p
+                whileInView={{
+                  color: ['#333', '#fff']
+                }}
+                className="xl:text-[20px] text-[18px] leading-[1] pt-4">Pair of blue heels</motion.p>
+              <motion.p
+                whileInView={{
+                  color: ['#333', '#fff']
+                }}
+                className="text-[16px]">₦37,500</motion.p>
             </div>
             <div
-              className="bg-transparent min-h-[100px] rounded-lg text-black p-6 relative border border-gray-200 xl:flex flex-col justify-center items-center">
-              <div className="absolute inset-0 bg-blue-200 opacity-20 z-[-1] rounded-lg"></div>
+              className="bg-transparent min-h-[100px] rounded-lg p-6 relative border border-gray-200 xl:flex flex-col justify-center items-center">
+              <motion.div
+                whileInView={{
+                  backgroundColor: ['#a0baea', '#000000', '#a0baea']
+                }}
+                transition={{delay: 11, duration: 2.5, repeat: Infinity, repeatDelay: 12.5}}
+                className="absolute inset-0 z-[-1] rounded-lg"></motion.div>
               <img className="w-[30%]" src="/images/products/11.png"/>
-              <p className="text-black xl:text-[20px] text-[18px] leading-[1] pt-4">Checkers dress</p>
-              <p className="text-black text-[16px]">₦18,300</p>
+              <motion.p
+                whileInView={{
+                  color: ['#333', '#fff']
+                }}
+                className="xl:text-[20px] text-[18px] leading-[1] pt-4">Checkers dress</motion.p>
+              <motion.p
+                whileInView={{
+                  color: ['#333', '#fff']
+                }}
+                className="text-[16px]">₦18,300</motion.p>
             </div>
           </div>
         </div>
