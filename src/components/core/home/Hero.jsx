@@ -8,13 +8,13 @@ function Hero() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Online Shopping",
-        "Food Ordering",
-        "Cab Hailing",
-        "Flight Booking",
-        "Ticket Buying",
-        "Hotel Booking",
-        "Package Delivery",
+        "Online <br class='block md:hidden'/> Shopping",
+        "Food <br class='block md:hidden'/> Ordering",
+        "Cab <br class='block md:hidden'/> Hailing",
+        "Flight <br class='block md:hidden'/> Booking",
+        "Ticket <br class='block md:hidden'/> Buying",
+        "Hotel <br class='block md:hidden'/> Booking",
+        "Package <br class='block md:hidden'/> Delivery",
       ],
       typeSpeed: 50,
       backSpeed: 10,
@@ -51,27 +51,29 @@ function Hero() {
             <li></li>
           </ul>
         </div>
-        <div className="col-span-10 col-start-2 z-30 relative text-center w-full">
+        <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0">
           <h2
-            className="text-blue-500 font-satoshiBold text-[3.5rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
+            className="text-blue-500 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
           >
 
             <span className="relative text-black">
               Embed<br />
             </span>
-            <span ref={el}
-              className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:inline after:text-blue-500 w-max text-left"
-            >
+            <p className="min-h-[125px] md:min-h-0">
+               <span ref={el}
+                     className="min-h-[100px] relative bg-clip-text text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:inline after:text-blue-500 w-max text-left"
+               >
               Online store
-            </span><br />
+            </span>
+            </p>
             <span className="relative text-black">into your business</span>
           </h2>
 
-          <p className="md:text-[17px] text-[16px] py-5 text-slate-800 mb-10 px-4">
+          <p className="md:text-[17px] text-[16px] py-5 text-slate-800 mb-10 md:px-4">
             Add commercial services to your mobile or web app in <b className="line-through">months</b> minutes
           </p>
 
-          <div className="flex flex-row justify-center items-center gap-7 z-30 w-full">
+          <div className="flex flex-row md:justify-center items-center gap-7 z-30 w-full">
             <Link target="_blank" href="https://app.lyncs.africa/register"
               className="bg-black border text-[16px] text-white px-5 text-center py-4 rounded-[12px] ease transition-all">
               Get started
