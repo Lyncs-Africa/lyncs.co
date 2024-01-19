@@ -8,10 +8,10 @@ function Hero() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
+        "Flight <br class='block md:hidden'/> Booking",
+        "Cab <br class='block md:hidden'/> Hailing",
         "Online <br class='block md:hidden'/> Shopping",
         "Food <br class='block md:hidden'/> Ordering",
-        "Cab <br class='block md:hidden'/> Hailing",
-        "Flight <br class='block md:hidden'/> Booking",
         "Ticket <br class='block md:hidden'/> Buying",
         "Hotel <br class='block md:hidden'/> Booking",
         "Package <br class='block md:hidden'/> Delivery",
