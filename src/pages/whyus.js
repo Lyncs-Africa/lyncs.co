@@ -38,7 +38,7 @@ const Page = () => {
 
             <div className="py-[100px] md:py-[160px] xl:pt-[120px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] font-satoshiMedium w-full flex flex-col justify-center items-center md:relative">
                 <div className="w-full p-7 flex flex-col justify-center items-center">
-                    <h1 className="text-4xl text-black font-satoshiBlack">Wy choose us?</h1>
+                    <h1 className="text-4xl text-black font-satoshiBlack">Why choose us?</h1>
                     <p className="sm:text-[16px] font-satoshiMedium max-w-2xl text-center w-full text-md py-4 text-gray-500 mb-10 px-4">
                         Lyncs often come equipped with search features and filters that make it easy for users to find specific
                         products or narrow down options based on preferences, saving time and effort.

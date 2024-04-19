@@ -35,13 +35,18 @@ module.exports = {
       backgroundImage: {
         dotted: "url(/assets/images/footer_bg.webp)",
         space: "linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/images/space.jpg)",
+        businesses: "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)), url(/images/businesses.jpg)",
+        individuals: "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)), url(/images/individuals.jpg)",
+        affiliates: "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)), url(/images/affiliates.jpg)",
+        'view-one': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/5.jpg)",
+        'view-two': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/20.jpg)",
         desktop: "url(/img/image-access-desktop.png)",
         future:
           "linear-gradient(rgb(33 15 47 / 70%),rgb(33 15 47 / 70%)), url(/images/shop.jpg);",
         heroMobile:
           "linear-gradient(rgb(49 31 60 / 40%), rgb(78 57 96 / 40%)), url(/images/access-mobile.jpg);",
         gradient: "linear-gradient(rgb(0 0 0 / 50%),rgb(0 0 0 / 50%)), url(/images/api.jpg)",
-        pattern: "url(/images/home-products-pattern.svg)"
+        pattern: "url(/images/forBusiness-products-pattern.svg)"
       },
       keyframes: {
         blink: {

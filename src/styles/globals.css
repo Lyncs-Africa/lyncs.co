@@ -16,6 +16,7 @@
         animation: wrep 7s infinite linear;
         max-width: unset;
     }
+
     @keyframes wrep {
         0% {
             border-radius: 55% 45% 38% 62% / 52% 57% 43% 48%;
@@ -30,149 +31,244 @@
             border-radius: 55% 45% 38% 62% / 52% 57% 43% 48%;
         }
     }
+
+    .blocked-text {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: #fff;
+        -webkit-background-clip: text;
+        font-size: 8rem;
+        line-height: 1.1;
+        -webkit-text-stroke-width: 1px;
+        /*background-image: url('/images/pop.png');*/
+        background-size: 62%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .card:hover .inner-background {
+        transform: scale(1.2);
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
+    }
+
+    .accordion {
+        counter-reset: acc_item;
+        padding-left: 20px;
+    }
+
+    .accordion input {
+        display: none;
+    }
+
+    .accordion-item {
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+    .accordion-item:before {
+        counter-increment: acc_item;
+        content: counter(acc_item);
+        position: absolute;
+        left: -20px;
+        top: 12px;
+        background: #000;
+        color: #fff;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-size: 0.7rem;
+        line-height: 20px;
+        transition: all 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input:checked + .accordion-item:before {
+        background: #000000;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .accordion-header {
+        display: block;
+        background: transparent;
+        text-transform: uppercase;
+        /* border-bottom: 1px solid #ccc; */
+        padding: 12px 12px 12px 0;
+        font-size: 18px;
+        position: relative;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    input:checked + .accordion-item .accordion-content {
+        max-height: 5000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .accordion-item:not(:last-child):after {
+        content: "";
+        width: 6px;
+        position: absolute;
+        height: 73%;
+        background: #93c5fd;
+        left: -9px;
+        top: 48px;
+        border-radius: 30px;
+        transition: all 0.5s ease;
+    }
+
+    input:checked + .accordion-item:after {
+        height: calc(100% - 13px);
+    }
+
 }
 
 @font-face {
     font-family: 'Satoshi-Variable';
     src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
-         url('/fonts/Satoshi-Variable.woff') format('woff'),
-         url('/fonts/Satoshi-Variable.ttf') format('truetype');
-         font-weight: 300 900;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  /**
-  * This is a variable font
-  * You can controll variable axes as shown below:
-  * font-variation-settings: 'wght' 900.0;
-  *
-  * available axes:
-  
-  * 'wght' (range from 300.0 to 900.0)
-  
-  */
-  
-  @font-face {
+    url('/fonts/Satoshi-Variable.woff') format('woff'),
+    url('/fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+@font-face {
     font-family: 'Satoshi-VariableItalic';
     src: url('/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
-         url('/fonts/Satoshi-VariableItalic.woff') format('woff'),
-         url('/fonts/Satoshi-VariableItalic.ttf') format('truetype');
-         font-weight: 300 900;
-         font-display: swap;
-         font-style: italic;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-VariableItalic.woff') format('woff'),
+    url('/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
     font-family: 'Satoshi-Light';
     src: url('/fonts/Satoshi-Light.woff2') format('woff2'),
-         url('/fonts/Satoshi-Light.woff') format('woff'),
-         url('/fonts/Satoshi-Light.ttf') format('truetype');
-         font-weight: 300;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-Light.woff') format('woff'),
+    url('/fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Satoshi-LightItalic';
     src: url('/fonts/Satoshi-LightItalic.woff2') format('woff2'),
-         url('/fonts/Satoshi-LightItalic.woff') format('woff'),
-         url('/fonts/Satoshi-LightItalic.ttf') format('truetype');
-         font-weight: 300;
-         font-display: swap;
-         font-style: italic;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-LightItalic.woff') format('woff'),
+    url('/fonts/Satoshi-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
     font-family: 'Satoshi-Regular';
     src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
-         url('/fonts/Satoshi-Regular.woff') format('woff'),
-         url('/fonts/Satoshi-Regular.ttf') format('truetype');
-         font-weight: 400;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-Regular.woff') format('woff'),
+    url('/fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Satoshi-Italic';
     src: url('/fonts/Satoshi-Italic.woff2') format('woff2'),
-         url('/fonts/Satoshi-Italic.woff') format('woff'),
-         url('/fonts/Satoshi-Italic.ttf') format('truetype');
-         font-weight: 400;
-         font-display: swap;
-         font-style: italic;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-Italic.woff') format('woff'),
+    url('/fonts/Satoshi-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
     font-family: 'Satoshi-Medium';
     src: url('/fonts/Satoshi-Medium.woff2') format('woff2'),
-         url('/fonts/Satoshi-Medium.woff') format('woff'),
-         url('/fonts/Satoshi-Medium.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-Medium.woff') format('woff'),
+    url('/fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Satoshi-MediumItalic';
     src: url('/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
-         url('/fonts/Satoshi-MediumItalic.woff') format('woff'),
-         url('/fonts/Satoshi-MediumItalic.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: italic;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-MediumItalic.woff') format('woff'),
+    url('/fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
     font-family: 'Satoshi-Bold';
     src: url('/fonts/Satoshi-Bold.woff2') format('woff2'),
-         url('/fonts/Satoshi-Bold.woff') format('woff'),
-         url('/fonts/Satoshi-Bold.ttf') format('truetype');
-         font-weight: 700;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-Bold.woff') format('woff'),
+    url('/fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Satoshi-BoldItalic';
     src: url('/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
-         url('/fonts/Satoshi-BoldItalic.woff') format('woff'),
-         url('/fonts/Satoshi-BoldItalic.ttf') format('truetype');
-         font-weight: 700;
-         font-display: swap;
-         font-style: italic;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-BoldItalic.woff') format('woff'),
+    url('/fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
     font-family: 'Satoshi-Black';
     src: url('/fonts/Satoshi-Black.woff2') format('woff2'),
-         url('/fonts/Satoshi-Black.woff') format('woff'),
-         url('/fonts/Satoshi-Black.ttf') format('truetype');
-         font-weight: 900;
-         font-display: swap;
-         font-style: normal;
-  }
-  
-  
-  @font-face {
+    url('/fonts/Satoshi-Black.woff') format('woff'),
+    url('/fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Satoshi-BlackItalic';
     src: url('/fonts/Satoshi-BlackItalic.woff2') format('woff2'),
-         url('/fonts/Satoshi-BlackItalic.woff') format('woff'),
-         url('/fonts/Satoshi-BlackItalic.ttf') format('truetype');
-         font-weight: 900;
-         font-display: swap;
-         font-style: italic;
-  }
+    url('/fonts/Satoshi-BlackItalic.woff') format('woff'),
+    url('/fonts/Satoshi-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
 
 body,
 html {
@@ -866,7 +962,6 @@ html {
 
 }
 
-/* overriding mantine accordion content background color */
 .mantine-Accordion-content {
     background-color: white !important;
 }
@@ -880,25 +975,11 @@ html {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%) !important;
 }
 
-/* .heart {
-    --c: rgba(128, 128, 128, 0.205);
-    width: 200px;
-    aspect-ratio: 1;
-    background:
-     radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
-     radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
-     conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
-    background-repeat: no-repeat;
-  } */
-
-
-  /* ImageSwitcher.css */
 .fade-in-out {
     opacity: 1;
     transition: opacity 1s ease-in-out;
-  }
-  
-  .fade-in-out.hidden {
+}
+
+.fade-in-out.hidden {
     opacity: 0;
-  }
-  
+}

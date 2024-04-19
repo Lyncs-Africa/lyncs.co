@@ -56,7 +56,7 @@ function FeaturesWeb() {
             Explore core products
           </h2>
 
-          <Link href="/demo">
+          <Link href="/services">
             <div
               className="text-lg font-semibold text-slate-800 py-2 mt-4 flex flex-row justify-start items-center gap-2">
               See all products <ArrowForwardIcon fontSize="small"/>

@@ -1,23 +1,24 @@
 import React from "react";
 import Link from "next/link";
 
-function FooterWeb({ mode }) {
+function FooterWeb({mode}) {
   return (
     <>
-      <footer className={`hidden md:block p-4 ${mode.dark ? 'md:bg-black' : 'md:bg-[#F1F1F8]'} sm:px-6 sm:py-10 font-satoshiMedium`}>
+      <footer
+        className={`hidden md:block p-4 ${mode.dark ? 'md:bg-black' : 'md:bg-[#F1F1F8]'} sm:px-6 sm:py-10 font-satoshiMedium`}>
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2 col-start-2">
             <Link href="/" className="flex items-center">
               {
                 mode.dark ?
                   <img
-                    src="/images/lyncs-logo-light.png"
-                    className="h-8 mr-3"
+                    src="/images/logo-light.svg"
+                    className="h-12 mr-3 xl:h-16"
                     alt="Lyncs Logo"
                   /> :
                   <img
-                    src="/images/lyncs-logo-blue.png"
-                    className="h-8 mr-3"
+                    src="/images/logo.svg"
+                    className="h-12 mr-3 xl:h-16"
                     alt="Lyncs Logo"
                   />
               }
@@ -28,42 +29,25 @@ function FooterWeb({ mode }) {
             <h5 className="font-bold text-[18px] uppercase flex items-center">
               Resources
             </h5>
-            <Link href="https://doc.lyncs.africa" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+            <Link href="https://doc.lyncs.africa"
+                  className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
               <h5 className="text-[16px]">
                 Documentation
               </h5>
             </Link>
             <h5 className="text-[16px]">
-              <Link href="https://doc.lyncs.africa/api" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+              <Link href="https://doc.lyncs.africa/api"
+                    className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
                 API Reference
               </Link>
             </h5>
 
-            <Link href="/demo" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+            <Link href="/services" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
               <h5 className="text-[16px]">
                 Demo
               </h5>
             </Link>
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Join Slack
-              </Link>
-            </h5> */}
-
           </div>
-          {/* <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
-            <h5 className="font-bold text-[18px] uppercase">
-              <Link href="/" className="flex items-center">
-                Products
-              </Link>
-            </h5>
-            <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Merchants
-              </Link>
-            </h5>
-
-          </div> */}
           <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
             <h5 className="font-bold text-[18px] uppercase text-center">
               Company
@@ -73,26 +57,6 @@ function FooterWeb({ mode }) {
                 About us
               </h5>
             </Link>
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Partner stories
-              </Link>
-            </h5> */}
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Blog
-              </Link>
-            </h5> */}
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Coverage
-              </Link>
-            </h5> */}
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Careers
-              </Link>
-            </h5> */}
             <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
               <h5 className="text-[16px]">
                 Contact
@@ -103,39 +67,14 @@ function FooterWeb({ mode }) {
             <h5 className="font-bold text-[18px] uppercase">
               Legal
             </h5>
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                End-User Policy
-              </Link>
-            </h5> */}
             <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
               <h5 className="text-[16px]">
                 Privacy Policy
               </h5>
             </Link>
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Developer Policy
-              </Link>
-            </h5> */}
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Terms of Use
-              </Link>
-            </h5> */}
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Cookies
-              </Link>
-            </h5> */}
-            {/* <h5 className="text-[16px]">
-              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
-                Security
-              </Link>
-            </h5> */}
           </div>
         </div>
-        <hr className={`my-6 ${mode.dark ? 'md:border-gray-500' : 'md:border-gray-200'} sm:mx-auto lg:my-8`} />
+        <hr className={`my-6 ${mode.dark ? 'md:border-gray-500' : 'md:border-gray-200'} sm:mx-auto lg:my-8`}/>
         <div className="grid grid-cols-12">
           <span className="col-start-2 col-span-5 text-sm text-gray-500">
             © 2023{" "}
@@ -146,7 +85,7 @@ function FooterWeb({ mode }) {
           </span>
           <div className="col-span-5 flex mt-4 space-x-6 sm:justify-end sm:mt-0">
             <Link href="/"
-              className="text-gray-500 hover:text-gray-900"
+                  className="text-gray-500 hover:text-gray-900"
             >
               <svg
                 className="w-5 h-5"
@@ -163,7 +102,7 @@ function FooterWeb({ mode }) {
               <span className="sr-only">Facebook page</span>
             </Link>
             <Link href="/"
-              className="text-gray-500 hover:text-gray-900"
+                  className="text-gray-500 hover:text-gray-900"
             >
               <svg
                 className="w-5 h-5"
@@ -180,7 +119,7 @@ function FooterWeb({ mode }) {
               <span className="sr-only">Instagram page</span>
             </Link>
             <Link href="/"
-              className="text-gray-500 hover:text-gray-900"
+                  className="text-gray-500 hover:text-gray-900"
             >
               <svg
                 className="w-5 h-5"
@@ -188,12 +127,13 @@ function FooterWeb({ mode }) {
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
               </svg>
               <span className="sr-only">Twitter page</span>
             </Link>
             <Link href="/"
-              className="text-gray-500 hover:text-gray-900"
+                  className="text-gray-500 hover:text-gray-900"
             >
               <svg
                 className="w-5 h-5"
@@ -210,7 +150,7 @@ function FooterWeb({ mode }) {
               <span className="sr-only">GitHub account</span>
             </Link>
             <Link href="/"
-              className="text-gray-500 hover:text-gray-900"
+                  className="text-gray-500 hover:text-gray-900"
             >
               <svg
                 className="w-5 h-5"

@@ -1,93 +1,148 @@
-import React, { useEffect, useRef } from "react";
+import React from 'react';
 import Link from "next/link";
-import Typed from "typed.js";
+import {Swiper, SwiperSlide} from "swiper/react";
+import SwiperCore from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import {Autoplay, Pagination} from "swiper/modules";
 
-function Hero() {
-  const el = useRef(null);
 
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: [
-        "Flight <br class='block md:hidden'/> Booking",
-        "Cab <br class='block md:hidden'/> Hailing",
-        "Online <br class='block md:hidden'/> Shopping",
-        "Food <br class='block md:hidden'/> Ordering",
-        "Ticket <br class='block md:hidden'/> Buying",
-        "Hotel <br class='block md:hidden'/> Booking",
-        "Package <br class='block md:hidden'/> Delivery",
-      ],
-      typeSpeed: 50,
-      backSpeed: 10,
-      backDelay: 3000,
-      smartBackspace: true,
-      loop: true,
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
-  const handleOpen = () => window.LyncsWidget.open("1ec3cb72732640deb028528452106a04c6a35f44eeaacd09265a8c")
-
+const Hero = () => {
+  SwiperCore.use([Autoplay]);
   return (
     <>
-      <div
-        className="md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fbfbfb] md:relative md:z-10 px-1 md:px-0">
-        <div className="xl:block hidden absolute bottom-[-10rem] w-full z-30">
-          <img alt="curve" src="/images/lyncs-hero-curve.svg" />
-        </div>
-        <div className="area">
-          <ul className="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0">
-          <h2
-            className="text-blue-500 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
-          >
-
-            <span className="relative text-black">
-              Embed<br />
-            </span>
-            <p className="min-h-[125px] md:min-h-0">
-               <span ref={el}
-                     className="min-h-[100px] relative bg-clip-text text-transparent bg-gradient-to-r from-[#00AFEF] to-[#0915BA] after:inline after:text-blue-500 w-max text-left"
-               >
-              Online store
-            </span>
-            </p>
-            <span className="relative text-black">into your business</span>
-          </h2>
-
-          <p className="md:text-[17px] text-[16px] py-5 text-slate-800 mb-10 md:px-4">
-            Add commercial services to your mobile or web app in <b className="line-through">months</b> minutes
-          </p>
-
-          <div className="flex flex-row md:justify-center items-center gap-7 z-30 w-full">
-            <Link target="_blank" href="https://app.lyncs.africa/register"
-              className="bg-black border text-[16px] text-white px-5 text-center py-4 rounded-[12px] ease transition-all">
-              Get started
-            </Link>
-            <div onClick={handleOpen}
-              className="bg-transparent border border-black text-black text-[16px] px-5 py-3 rounded-[12px] hover:border hover:border-black hover:bg-black cursor-pointer w-max ease transition-all hover:text-white">
-              See demo
+      <div className="md:hidden block">
+        <Swiper
+          loop={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: true,
+          }}
+          speed={1000}
+          spaceBetween={0}
+          modules={[Pagination]}
+          slidesPerView={1}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="min-h-screen relative font-satoshi">
+              <div className="inner-background bg-individuals bg-cover bg-[75%] absolute inset-0"></div>
+              <div className="min-h-[60%] absolute w-[75%] bottom-0 right-0 p-6 rounded-tl-lg">
+                <div className="bg-black opacity-40 rounded-tl-lg inset-0 absolute"></div>
+                <div className="relative">
+                  <h2
+                    className="text-white font-satoshiBold text-[3rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+                    For Individuals
+                  </h2>
+                  <p className="text-[17px] py-5 text-slate-300 mb-4 md:px-4">
+                    Book flights, shop online, access cleaning services and other amazing services all in one place
+                  </p>
+                  <Link href="/individuals">
+                    <button
+                      className="cursor-pointer bg-white border text-[17px] text-black text-center py-3 px-8 rounded border ease transition-all hover:border-white hover:bg-transparent hover:text-white">
+                      Get started
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
-          </div>
 
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="min-h-screen relative font-satoshi">
+              <div className="inner-background bg-businesses bg-cover bg-center absolute inset-0"></div>
+              <div className="min-h-[60%] absolute w-[75%] bottom-0 right-0 p-6 rounded-tl-lg">
+                <div className="bg-black opacity-40 rounded-tl-lg inset-0 absolute"></div>
+                <div className="relative">
+                  <h2
+                    className="text-white font-satoshiBold text-[3rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+                    For Businesses
+                  </h2>
+                  <p className="text-[17px] py-5 text-slate-300 mb-4 md:px-4">
+                    Add commercial services to your mobile or web app in minutes
+                  </p>
+                  <Link href="/businesses">
+                    <button
+                      className="cursor-pointer bg-white border text-[17px] text-black text-center py-3 px-8 rounded border ease transition-all hover:border-white hover:bg-transparent hover:text-white">
+                      Get started
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="min-h-screen relative font-satoshi">
+              <div className="inner-background bg-affiliates bg-cover bg-[60%] absolute inset-0"></div>
+              <div className="min-h-[60%] absolute w-[75%] bottom-0 right-0 p-6 rounded-tl-lg">
+                <div className="bg-black opacity-40 rounded-tl-lg inset-0 absolute"></div>
+                <div className="relative">
+                  <h2
+                    className="text-white font-satoshiBold text-[3rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+                    For Affiliates
+                  </h2>
+                  <p className="text-[17px] py-5 text-slate-300 mb-4 md:px-4">
+                    Make some extra cash everyday by signing up as an affiliate
+                  </p>
+                  <Link href="/affilates">
+                    <button
+                      className="cursor-pointer bg-white border text-[17px] text-black text-center py-3 px-8 rounded border ease transition-all hover:border-white hover:bg-transparent hover:text-white">
+                      Get started
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <div className="hidden md:grid grid-cols-3 min-h-screen">
+        <div className="card p-6 flex items-center relative overflow-hidden">
+          <Link href="/individuals">
+            <div className="inner-background bg-individuals bg-cover bg-center absolute inset-0"></div>
+            <h2
+              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+              For
+            </h2>
+            <h2
+              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+              Individuals
+            </h2>
+          </Link>
+        </div>
+        <div className="card p-6 flex items-center relative overflow-hidden bg-slate-950">
+          <Link href="/businesses">
+            <div
+              className="opacity-70 inner-background bg-businesses bg-cover bg-center absolute inset-0 ease-in-out"></div>
+            <h2
+              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+              For
+            </h2>
+            <h2
+              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+              Businesses
+            </h2>
+          </Link>
+        </div>
+        <div className="card p-6 flex items-center relative overflow-hidden">
+          <Link href="/affilates">
+            <div className="inner-background bg-affiliates bg-cover bg-center absolute inset-0 ease-in-out"></div>
+            <h2
+              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+              For
+            </h2>
+            <h2
+              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+              Affiliates
+            </h2>
+          </Link>
         </div>
       </div>
     </>
+
   );
-}
+};
 
 export default Hero;

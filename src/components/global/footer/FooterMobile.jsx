@@ -8,8 +8,8 @@ function LyncsFooterMobile() {
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
               <img
-                src="/images/lyncs-logo-blue.png"
-                className="h-6 mr-3"
+                src="/images/logo-light.svg"
+                className="h-12 xl:h-16 mr-3"
                 alt="Lyncs Logo"
               />
             </a>
