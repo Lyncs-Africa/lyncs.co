@@ -21,6 +21,7 @@ const Hero = () => {
           speed={1000}
           spaceBetween={0}
           modules={[Pagination]}
+          pagination={true}
           slidesPerView={1}
           className="mySwiper"
         >
