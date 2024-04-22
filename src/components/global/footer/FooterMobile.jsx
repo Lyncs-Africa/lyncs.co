@@ -1,6 +1,8 @@
 import React from "react";
 
 function LyncsFooterMobile() {
+  let date = new Date()
+  let year = date.getFullYear()
   return (
     <>
       <footer className="p-4 bg-[#F1F1F8] sm:p-6 dark:bg-gray-900 px-4 md:hidden font-poppins">
@@ -8,7 +10,7 @@ function LyncsFooterMobile() {
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
               <img
-                src="/images/logo-light.svg"
+                src="/images/logo.svg"
                 className="h-12 xl:h-16 mr-3"
                 alt="Lyncs Logo"
               />
@@ -168,7 +170,7 @@ function LyncsFooterMobile() {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
+            © {year}{" "}
             <a href="#" className="hover:underline">
               Lyncs™
             </a>

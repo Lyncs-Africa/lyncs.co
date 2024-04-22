@@ -12,16 +12,12 @@ const Food = () => {
         <div className="absolute right-[25%] top-[-4rem]">
           <img className="w-[100px]" src="/images/food/1.png" />
         </div>
-        <p className="mt-10 text-[18px] text-gray-200">Beef Meat <br />Stew</p>
+        <p className="mt-10 text-[18px] text-gray-200">Beef Stew</p>
         <div className="border-t border-b border-gray-600 py-2 mt-2 flex gap-4 items-center justify-center">
-          <p className="text-gray-500">60 Calories</p>
-          <div className="flex items-center gap-2">
-            <p className="w-[10px] h-[10px] bg-yellow-600 rounded-full"></p>
-            <p className="text-gray-500">4 Persons</p>
-          </div>
+          <p className="text-gray-500">Papa Cass Restaurant</p>
         </div>
         <div className="flex mt-5 justify-between">
-          <p className="text-[18px] text-gray-200 text-left">&#8358;2, 000</p>
+          <p className="text-[18px] text-gray-200 text-left">&#8358;2,000</p>
           <div className="text-white p-2 bg-yellow-600 rounded-lg">
             <AiOutlinePlus />
           </div>
@@ -36,14 +32,10 @@ const Food = () => {
         </div>
         <p className="mt-10 text-[18px] text-gray-200">Tuna Sala <br /></p>
         <div className="border-t border-b border-gray-600 py-2 mt-2 flex gap-4 items-center justify-center">
-          <p className="text-gray-500">6 Calories</p>
-          <div className="flex items-center gap-2">
-            <p className="w-[10px] h-[10px] bg-yellow-600 rounded-full"></p>
-            <p className="text-gray-500">1 Person</p>
-          </div>
+          <p className="text-gray-500">Veggies Restaurant </p>
         </div>
         <div className="flex mt-5 justify-between">
-          <p className="text-[18px] text-gray-200 text-left">&#8358;1,200</p>
+          <p className="text-[18px] text-gray-200 text-left">&#8358;2,800</p>
           <div className="text-white p-2 bg-yellow-600 rounded-lg">
             <AiOutlinePlus />
           </div>
@@ -58,14 +50,10 @@ const Food = () => {
         </div>
         <p className="mt-10 text-[18px] text-gray-200">Sargam Food <br /></p>
         <div className="border-t border-b border-gray-600 py-2 mt-2 flex gap-4 items-center justify-center">
-          <p className="text-gray-500">60 Calories</p>
-          <div className="flex items-center gap-2">
-            <p className="w-[10px] h-[10px] bg-yellow-600 rounded-full"></p>
-            <p className="text-gray-500">4 Persons</p>
-          </div>
+          <p className="text-gray-500">Chinese College</p>
         </div>
         <div className="flex mt-5 justify-between">
-          <p className="text-[18px] text-gray-200 text-left">&#8358;2.55</p>
+          <p className="text-[18px] text-gray-200 text-left">&#8358;5,500</p>
           <div className="text-white p-2 bg-yellow-600 rounded-lg">
             <AiOutlinePlus />
           </div>
@@ -80,14 +68,10 @@ const Food = () => {
         </div>
         <p className="mt-10 text-[18px] text-gray-200">Kings Delight <br />Fried Rice</p>
         <div className="border-t border-b border-gray-600 py-2 mt-2 flex gap-4 items-center justify-center">
-          <p className="text-gray-500">60 Calories</p>
-          <div className="flex items-center gap-2">
-            <p className="w-[10px] h-[10px] bg-yellow-600 rounded-full"></p>
-            <p className="text-gray-500">4 Persons</p>
-          </div>
+          <p className="text-gray-500">The Second place</p>
         </div>
         <div className="flex mt-5 justify-between">
-          <p className="text-[18px] text-gray-200 text-left">&#8358;6,550</p>
+          <p className="text-[18px] text-gray-200 text-left">&#8358;10,200</p>
           <div className="text-white p-2 bg-yellow-600 rounded-lg">
             <AiOutlinePlus />
           </div>

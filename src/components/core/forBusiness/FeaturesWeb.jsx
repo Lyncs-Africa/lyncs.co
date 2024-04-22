@@ -48,7 +48,7 @@ function FeaturesWeb() {
     <>
       <div
         ref={ref}
-        className="hidden md:relative font-satoshiMedium text-black z-20 py-[160px] xl:pt-[70px] md:grid grid-cols-12 bg-white"
+        className="hidden md:relative font-satoshiMedium text-black z-20 py-[160px] md:grid grid-cols-12 bg-white"
       >
         <div className="col-start-2 col-span-3 z-30">
           <h2
@@ -137,7 +137,7 @@ function FeaturesWeb() {
               ></div>
               <p
                 className={`ml-[2rem] font-semibold text-[16px] ${activeIndex === 5 ? 'text-slate-800' : 'text-slate-500'}`}>
-                Package Delivery
+                Stream Share
               </p>
             </div>
           </div>
@@ -326,15 +326,14 @@ function FeaturesWeb() {
             <SwiperSlide className="bg-[#F4F6F8] rounded-2xl min-h-[750px] p-0">
               <div className="px-20 pt-14 relative">
                 <p className="text-[16px] md:text-[17px] text-slate-800 font-medium  leading-[1.1] relative">
-                  Package Delivery
+                  Stream share
                 </p>
 
                 <h2 className="py-[1.5rem] text-black text-[3rem] font-bold leading-[1]">
-                  Efficient Logistics Integration.
+                 Access to multiple movie streaming platforms
                 </h2>
                 <p className="text-[17px] md:text-[16px] text-slate-800 mb-8">
-                  Empower your platform with our seamless package delivery API for swift and reliable logistics
-                  integration.
+                  Enjoy access to Netflix, Prime and Showmax for just ₦3,900
                 </p>
 
                 <div>
@@ -349,7 +348,7 @@ function FeaturesWeb() {
 
                 <hr className="my-10 w-full"/>
 
-                <div style={{backgroundImage: 'url("/images/package-delivery.jpg")'}}
+                <div style={{backgroundImage: 'url("/images/stream.jpg")'}}
                      className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10 rounded-xl"></div>
                 <div
                   className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-green-400 h-[120px] overflow-hidden left-[26px]">

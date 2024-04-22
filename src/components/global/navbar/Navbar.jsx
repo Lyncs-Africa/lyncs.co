@@ -127,9 +127,8 @@ function Navbar(mode) {
               >
                 <span className="sr-only">Open main menu</span>
                 <svg
-                  className="w-6 h-6"
+                  className={`w-6 h-6 ${mode.transparent ? 'fill-white' : ''} ${mode.scrollTop >= 200 ? 'fill-white' : ''}`}
                   aria-hidden="true"
-                  fill={`${location === '/individuals' ? '#fff' : 'currentColor'}`}
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
                 >

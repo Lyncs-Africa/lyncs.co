@@ -3,7 +3,7 @@ import { easeInOut, motion } from "framer-motion";
 import Link from "next/link"
 import SideNav from "@/components/core/shared/SideNav";
 import Shop from "@/components/core/shared/Shop";
-import Ride from "@/components/core/shared/Ride";
+import StreamShare from "@/components/core/shared/StreamShare";
 import Travel from "@/components/core/shared/Travel";
 
 const Access = () => {
@@ -56,7 +56,7 @@ const Access = () => {
             initial="hidden"
             whileInView="visible"
             className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
-            The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel, ride-sharing, food delivery, event management, and bill payment, all within your application
+            The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel, ride-sharing, food delivery, event management, and bill payment, all within your application
           </motion.p>
           <div>
             <motion.button
@@ -72,7 +72,7 @@ const Access = () => {
           <SideNav />
           <div className="flex flex-col gap-8">
             <Shop />
-            <Ride />
+            <StreamShare />
           </div>
           <div className="flex flex-col justify-center gap-8">
             <Travel />

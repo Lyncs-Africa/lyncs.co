@@ -12,6 +12,7 @@ const Hero = () => {
   return (
     <>
       <div className="md:hidden block">
+        <div className="absolute top-10 z-10 top-4 left-0 w-full gap-4 pagination-bullet flex items-center justify-center my-5"></div>
         <Swiper
           loop={true}
           autoplay={{
@@ -21,7 +22,13 @@ const Hero = () => {
           speed={1000}
           spaceBetween={0}
           modules={[Pagination]}
-          pagination={true}
+          pagination={{
+            el: '.pagination-bullet', // Specify the container element for pagination bullets
+            clickable: true, // Make pagination bullets clickable
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '"></span>'; // Custom bullet rendering
+            }
+          }}
           slidesPerView={1}
           className="mySwiper"
         >
@@ -99,7 +106,7 @@ const Hero = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="hidden md:grid grid-cols-3 min-h-screen">
+      <div className="hidden md:grid xl:grid-cols-3 md:grid-cols-2 min-h-screen bg-slate-900">
         <div className="card p-6 flex items-center relative overflow-hidden">
           <Link href="/individuals">
             <div className="inner-background bg-individuals bg-cover bg-center absolute inset-0"></div>

@@ -55,7 +55,7 @@ const Travel = () => {
             initial="hidden"
             whileInView="visible"
             className="text-[18px] py-8 text-gray-800">
-            We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
+            We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
           </motion.p>
           <Link href="https://app.lyncs.africa/register">
             <motion.button

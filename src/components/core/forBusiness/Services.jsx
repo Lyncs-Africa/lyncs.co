@@ -39,20 +39,20 @@ const Services = () => {
             <p className="text-[16px] md:text-[17px] py-8 text-slate-800">
               See all our products and how they can help your business grow
             </p>
-            <div className="xl:grid grid-cols-3 gap-8 md:my-10">
+            <div className="md:grid xl:grid-cols-3 grid-cols-2 gap-8 md:my-10">
               <div className="flex flex-col gap-5">
                 <motion.div
                   variant={slideVariant}
-                  className="md:min-h-[200px] rounded-lg bg-black w-full relative md:my-0">
+                  className="md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
                   <div
-                    className="absolute inset bg-[url('/images/travel.jpg')] w-full h-full rounded-lg opacity-40 bg-cover bg-right"></div>
+                    className="absolute inset bg-[url('/images/travel.jpg')] w-full h-full rounded-lg opacity-30 bg-cover bg-right"></div>
                   <div className="p-6 relative">
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
                       className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
-                      Travel
+                      Flight Booking
                     </motion.p>
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
@@ -66,16 +66,16 @@ const Services = () => {
                 </motion.div>
                 <motion.div
                   variant={slideVariant}
-                  className="md:min-h-[200px] rounded-lg bg-slate-800 w-full relative md:my-0">
+                  className="md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
                   <div
-                    className="absolute inset w-full h-full rounded-lg opacity-40 bg-cover"></div>
+                    className="absolute inset bg-[url('/images/shopping-bag.jpg')] w-full h-full rounded-lg opacity-30 bg-cover bg-center"></div>
                   <div className="p-6 relative">
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
                       className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
-                      Bills payment
+                      Online Shopping
                     </motion.p>
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
@@ -89,14 +89,14 @@ const Services = () => {
                 </motion.div>
 
               </div>
-              <div className="rounded-lg bg-black w-full relative my-10 md:my-0">
+              <div className="rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
                 <div
-                  className="absolute inset bg-[url('/images/shopping-bag.jpg')] w-full h-full rounded-lg opacity-40 bg-cover bg-center"></div>
+                  className="absolute inset bg-[url('/images/stream.jpg')] w-full h-full rounded-lg opacity-30 bg-cover bg-center"></div>
                 <div className="p-6 relative">
                   <motion.p
                     variants={textVariant}
                     className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
-                    Shop
+                    Stream Share
                   </motion.p>
                   <p
                     className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
@@ -107,9 +107,9 @@ const Services = () => {
               </div>
               <div className="md:grid grid-cols-2 gap-5 my-8 xl:my-0">
                 <motion.div
-                  className="rounded-lg bg-black w-full relative my-10 md:my-0">
+                  className="rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
                   <div
-                    className="absolute inset bg-[url('/images/eat.jpg')] w-full h-full rounded-lg opacity-40 bg-cover"></div>
+                    className="absolute inset bg-[url('/images/eat.jpg')] w-full h-full rounded-lg opacity-30 bg-cover"></div>
                   <div className="p-6 relative">
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
@@ -157,16 +157,16 @@ const Services = () => {
                   initial={{ opacity: 0, y: 200 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ type: 'spring', stiffness: 50 }}
-                  className="col-span-2 rounded-lg bg-black w-full relative my-10 md:my-0">
+                  className="col-span-2 rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
                   <div
-                    className="absolute inset bg-[url('/images/housing.jpg')] w-full h-full rounded-lg opacity-40 bg-cover"></div>
+                    className="absolute inset bg-[url('/images/laundry.jpg')] w-full h-full rounded-lg opacity-20 bg-cover"></div>
                   <div className="p-6 relative">
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
                       className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
-                      Housing
+                      Washing & Cleaning
                     </motion.p>
                     <p
                       className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">

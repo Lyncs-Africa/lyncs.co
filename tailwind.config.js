@@ -35,11 +35,13 @@ module.exports = {
       backgroundImage: {
         dotted: "url(/assets/images/footer_bg.webp)",
         space: "linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(/images/space.jpg)",
-        businesses: "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)), url(/images/businesses.jpg)",
-        individuals: "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)), url(/images/individuals.jpg)",
-        affiliates: "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)), url(/images/affiliates.jpg)",
+        businesses: "linear-gradient(rgb(38 25 51 / 50%),rgb(25 25 51 / 50%)), url(/images/businesses.jpg)",
+        individuals: "linear-gradient(rgb(38 25 51 / 50%),rgb(25 25 51 / 50%)), url(/images/individuals.jpg)",
+        affiliates: "linear-gradient(rgb(38 25 51 / 50%),rgb(25 25 51 / 50%)), url(/images/affiliates.jpg)",
         'view-one': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/5.jpg)",
         'view-two': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/20.jpg)",
+        'view-three': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/1.jpg)",
+        stream: "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/stream-share.jpg)",
         desktop: "url(/img/image-access-desktop.png)",
         future:
           "linear-gradient(rgb(33 15 47 / 70%),rgb(33 15 47 / 70%)), url(/images/shop.jpg);",

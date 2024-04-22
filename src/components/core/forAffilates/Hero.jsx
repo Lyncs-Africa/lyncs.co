@@ -28,9 +28,8 @@ function Hero() {
   return (
     <>
       <div
-        className="min-h-screen md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-900 md:gap-8 overflow-hidden md:relative md:z-10 px-1 md:px-0">
+        className="min-h-screen md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-900 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
         <div className="bg-view-two bg-cover bg-center absolute opacity-50 inset-0">
-
         </div>
         <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">
           <img alt="curve" src="/images/lyncs-hero-curve-light.svg"/>
@@ -53,7 +52,7 @@ function Hero() {
           </h2>
 
           <p className="md:text-[17px] text-[16px] py-5 text-slate-300 mb-10 md:px-4">
-            Add commercial services to your mobile or web app in <b className="line-through">months</b> minutes
+            Earn passive income by becoming an affiliate with lyncs
           </p>
 
           <div className="flex flex-row md:justify-center items-center gap-7 z-30 w-full">

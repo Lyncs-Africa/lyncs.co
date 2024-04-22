@@ -53,7 +53,7 @@ function Hero() {
         </div>
         <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0">
           <h2
-                 className="text-blue-500 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
+                 className="text-blue-500 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
                >
 
             <span className="relative text-black">

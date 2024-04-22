@@ -93,7 +93,7 @@ const CabHailing = () => {
                   </div>
                   <input disabled type="text" name="email" id="topbar-search"
                          className="bg-gray-900 text-sm text-gray-500 rounded-lg block w-full pl-10 p-2.5 my-2"
-                         placeholder="Ride link"/>
+                         placeholder="StreamShare link"/>
                 </div>
               </div>
             </SwiperSlide>

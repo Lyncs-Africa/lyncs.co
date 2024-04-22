@@ -17,6 +17,7 @@ import Script from 'next/script';
 import APICoverage from '@/components/core/forBusiness/APICoverage';
 import FeaturesWeb from '@/components/core/forBusiness/FeaturesWeb';
 import FeaturesMobile from '@/components/core/forBusiness/FeaturesMobile';
+import Stream from "@/components/core/forBusiness/Stream";
 
 const Index = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -49,7 +50,7 @@ const Index = () => {
     <ClientOnly>
       <Script crossOrigin src="https://lyncs-web-widget.vercel.app/client.js"></Script>
       <Head>
-        <title>Lyncs Africa</title>
+        <title>Lyncs Africa - For Businesses</title>
       </Head>
       <Navbar scrollTop={scrollTop} />
       <Hero />
@@ -57,10 +58,10 @@ const Index = () => {
       <Services />
       <Travel />
       <BillsPayment />
-      <Shop />
       <FeaturesWeb />
       <FeaturesMobile />
       <APICoverage />
+      <Stream/>
       <div className="relative">
         <div className="area z-20">
           <ul className="circles-two">
@@ -78,7 +79,6 @@ const Index = () => {
         </div>
         <Eat />
       </div>
-      {/* <Testimonials /> */}
       <Strip />
       <Footer dark />
       <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop} />

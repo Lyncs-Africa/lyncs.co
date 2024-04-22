@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 
 function FooterWeb({mode}) {
+  let date = new Date()
+  let year = date.getFullYear()
   return (
     <>
       <footer
@@ -77,7 +79,7 @@ function FooterWeb({mode}) {
         <hr className={`my-6 ${mode.dark ? 'md:border-gray-500' : 'md:border-gray-200'} sm:mx-auto lg:my-8`}/>
         <div className="grid grid-cols-12">
           <span className="col-start-2 col-span-5 text-sm text-gray-500">
-            © 2023{" "}
+            © {year}{" "}
             <Link href="/" className="hover:underline">
               Lyncs™
             </Link>

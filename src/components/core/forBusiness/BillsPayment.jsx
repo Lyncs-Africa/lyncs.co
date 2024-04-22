@@ -58,7 +58,7 @@ const BillsPayment = () => {
             initial="hidden"
             whileInView="visible"
             className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
-            We are the only API you will ever need to integarate every form of airline, <br/> bus and ride ticketing.
+            We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
           </motion.p>
           <div>
             <motion.button
