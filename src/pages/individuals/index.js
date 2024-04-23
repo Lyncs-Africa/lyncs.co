@@ -6,6 +6,10 @@ import ScrollToTopBtn from "@/components/global/ScrollToTopBtn";
 import Head from 'next/head';
 import Script from 'next/script';
 import Hero from "@/components/core/forIndividuals/Hero";
+import Services from "@/components/core/forIndividuals/Services";
+import FlightBooking from "@/components/core/forIndividuals/FlightBooking";
+import Stream from "@/components/core/forIndividuals/Stream";
+import Eat from "@/components/core/forIndividuals/Eat";
 
 const Index = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
@@ -63,6 +67,12 @@ const Index = () => {
       </Head>
       <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop}/>
       <Hero isOpen={isWidgetOpen}/>
+      <Services/>
+      <FlightBooking/>
+      <Stream/>
+      <Eat/>
+      <Footer/>
+      <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop} />
     </ClientOnly>
   );
 };

@@ -8,7 +8,7 @@ const StreamShare = () => {
         <div className="h-[20px] w-[150px] bg-gray-200 rounded"></div>
         <div className="h-[20px] w-[100px] bg-gray-200 rounded"></div>
         <div
-          className="absolute bg-[#FBFBFB] shadow-lg rounded-lg w-[150px] bottom-[-7rem] right-[-7rem] p-4">
+          className="absolute bg-[#FBFBFB] shadow-lg rounded-lg w-[150px] bottom-[-6.5rem] md:bottom-[-7rem] right-[-3rem] md:right-[-7rem] p-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-black rounded-lg p-2 flex items-center">
               <img src="/images/showmax.svg" className="ride-logo w-full" alt="logo"/>

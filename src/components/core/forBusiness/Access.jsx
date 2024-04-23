@@ -17,15 +17,6 @@ const Access = () => {
       }
     }
   }, [])
-  const textVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: { opacity: 0, x: -450 },
-    visible: {
-      opacity: 1, x: 0,
-      transition: {
-        type: 'spring', stiffness: 50, delay: 0.2
-      }
-    }
-  }, [])
   const btnVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: { opacity: 0 },
     visible: {
@@ -52,9 +43,6 @@ const Access = () => {
             One API for everything Commerce
           </motion.h2>
           <motion.p
-            variants={textVariant}
-            initial="hidden"
-            whileInView="visible"
             className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
             The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel, ride-sharing, food delivery, event management, and bill payment, all within your application
           </motion.p>

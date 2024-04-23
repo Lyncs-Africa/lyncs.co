@@ -54,7 +54,7 @@ function Hero({isOpen}) {
         }
         <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0 z-10">
           <h2
-            className="text-blue-300 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
+            className="mt-[50px] md:mt-0 text-blue-300 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
           >
             <span
               className={`${isOpen ? 'text-black' : 'text-white'} min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}>

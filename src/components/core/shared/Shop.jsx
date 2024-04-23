@@ -8,7 +8,7 @@ import {Autoplay, Pagination} from "swiper/modules";
 const Shop = () => {
   SwiperCore.use([Autoplay]);
   return (
-    <div className="w-[300px] md:h-[200px] rounded-lg bg-[#FBFBFB] shadow-lg p-6">
+    <div className="w-[240px] md:w-[300px] md:h-[200px] rounded-lg bg-[#FBFBFB] shadow-lg p-6">
       <p className="text-gray-800 text-2xl font-bold">Shop</p>
       <div className="my-2 flex flex-col gap-2">
         <div className="h-[20px] w-[150px] bg-gray-200 rounded"></div>

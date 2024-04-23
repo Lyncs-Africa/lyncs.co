@@ -5,16 +5,6 @@ import Travel from "@/components/core/shared/Travel";
 
 
 const SectionTwo = () => {
-  const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: { opacity: 0, x: 450 },
-    visible: {
-      opacity: 1, x: 0,
-      transition: {
-        type: 'spring',
-        stiffness: 50
-      }
-    }
-  }, [])
   const textVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: { opacity: 0, x: -450 },
     visible: {
@@ -45,9 +35,6 @@ const SectionTwo = () => {
         <div
           className="col-span-5 px-4 md:px-0 z-50 relative flex flex-col justify-center">
           <motion.h2
-            variants={headerVariant}
-            initial="hidden"
-            whileInView="visible"
             className="text-black leading-[1] text-[3.5rem] md:text-[4rem] font-bold"
           >
             Manage and customize services as you like

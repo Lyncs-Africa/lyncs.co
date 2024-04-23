@@ -1,9 +1,10 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react';
-import Hero from "@/components/core/home/Hero";
+import MultiSecton from "@/components/core/home/MultiSecton";
 import ClientOnly from "@/components/global/ClientOnly";
 import Head from 'next/head';
 import Script from 'next/script';
-import Link from "next/link";
+import Navbar from "@/components/global/navbar/Navbar";
+import Hero from "@/components/core/home/Hero";
 
 const Index = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -38,16 +39,9 @@ const Index = () => {
       <Head>
         <title>Lyncs Africa</title>
       </Head>
-      <div className="absolute top-4 left-4 z-50">
-        <Link className="flex items-center" href="/">
-          <img
-            src="/images/logo-light.svg"
-            className="h-12 xl:h-16 mr-3"
-            alt="Lyncs Logo"
-          />
-        </Link>
-      </div>
+      <Navbar dark scrollTop={scrollTop}/>
       <Hero/>
+      <MultiSecton/>
     </ClientOnly>
   );
 };

@@ -24,7 +24,7 @@ const Services = () => {
 
   return (
     <div className="relative w-full overflow-hidden font-satoshiMedium bg-white">
-      <div className="container mx-auto md:block md:pt-[160px] xl:pb-[70px] py-[70px] relative">
+      <div className="container mx-auto md:block md:pt-[160px] xl:py-[70px] py-[70px] relative">
         <div className="md:grid grid-cols-12 px-4 md:px-0">
           <div
             className="col-start-2 col-span-10 relative">
@@ -34,10 +34,10 @@ const Services = () => {
               whileInView="visible"
               className="text-black leading-[1] font-satoshiBold text-[3.5rem] md:text-[4.5rem] font-bold"
             >
-              Explore all <br /> our use cases.
+              Explore all <br /> our services.
             </motion.h2>
             <p className="text-[16px] md:text-[17px] py-8 text-slate-800">
-              See all our products and how they can help your business grow
+              Access a range of services all in one place
             </p>
             <div className="md:grid xl:grid-cols-3 grid-cols-2 gap-8 md:my-10">
               <div className="flex flex-col gap-5">
@@ -59,7 +59,7 @@ const Services = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
                       className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Build a flight booking and ticket-issuing service.
+                      Book flights both local and internationally at the best rates & filter by a bunch of factors
                     </motion.p>
                   </div>
 
@@ -82,7 +82,7 @@ const Services = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
                       className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Buy airtime,data and pay for electricity bills, cable tv,etc
+                      Shop for items from multiple stores and get teh best deals for each item
                     </motion.p>
                   </div>
 
@@ -100,7 +100,7 @@ const Services = () => {
                   </motion.p>
                   <p
                     className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                    Build a full online store with no backend or database
+                    Watch Netflix, Prime and Showmax for ₦3,900
                   </p>
                 </div>
 
@@ -123,7 +123,7 @@ const Services = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
                       className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Build a complete food-ordering service within your app
+                      Order food online and have it delivered to you
                     </motion.p>
                   </div>
 
@@ -148,7 +148,7 @@ const Services = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 50 }}
                       className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Build an e-hailing service for your customers.
+                      Get discounts on bolt rides
                     </motion.p>
                   </div>
 
@@ -170,7 +170,7 @@ const Services = () => {
                     </motion.p>
                     <p
                       className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Find a House or Pay Rent upfront or monthly.
+                      Order for dry cleaning & house cleaning services for affordable rates
                     </p>
                   </div>
 
