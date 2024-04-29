@@ -52,7 +52,7 @@ const Travel = () => {
           </div>
         </div>
         <div className="px-6 flex flex-col items-center">
-          <img className="hidden block h-[30px] w-full object-cover" src="/images/serial-number.png"/>
+          <img className="hidden md:block h-[30px] w-full object-cover" src="/images/serial-number.png"/>
           <p ref={el} className="text-gray-200 pt-2 tracking-[7px] text-sm min-h-[25px]">87J27309FTQ</p>
         </div>
       </div>
