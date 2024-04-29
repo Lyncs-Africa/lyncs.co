@@ -23,8 +23,10 @@ const FlightBooking = () => {
     }
   }, [])
 
-  const handleOpen = () => window.LyncsWidget.open("a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0")
-
+  const handleOpen = () => window.LyncsWidget.open({
+    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+    path: '/flights/one-way-trip'
+  })
   return (
     <div
       className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
@@ -56,7 +58,7 @@ const FlightBooking = () => {
           </div>
         </div>
         <div className="col-start-6 col-span-6 flex gap-8">
-          <img className="md:object-contain" src="/images/travel.png" alt=""/>
+          <img className="md:object-contain" src="/images/plane.svg" alt=""/>
         </div>
       </div>
     </div>

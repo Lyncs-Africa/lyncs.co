@@ -36,7 +36,6 @@ const Index = () => {
 
   return (
     <ClientOnly>
-      <Script crossOrigin src="https://lyncs-web-widget.vercel.app/client.js"></Script>
       <Head>
         <title>Lyncs Africa</title>
       </Head>

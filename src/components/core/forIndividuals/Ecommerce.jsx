@@ -6,6 +6,50 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+
+const categories = [
+  {
+    name: "Fashion",
+    imgSrc: "/images/categories/fashion.jpg",
+    path: '/shop/categories/fashion'
+  },
+  {
+    name: "Home appliances",
+    imgSrc: "/images/categories/appliances.jpg",
+    path: '/shop/categories/appliances'
+  },
+  {
+    name: "Home & office",
+    imgSrc: "/images/categories/home.jpg",
+    path: '/shop/categories/home-and-office'
+  },
+  {
+    name: "Musical instruments",
+    imgSrc: "/images/categories/music.jpg",
+    path: '/shop/categories/musical-instruments'
+  },
+  {
+    name: "Phones & tablets",
+    imgSrc: "/images/categories/phones.jpg",
+    path: '/shop/categories/phones-and-tablets'
+  },
+  {
+    name: "Health and beauty",
+    imgSrc: "/images/categories/beauty.png",
+    path: '/shop/categories/health-and-beauty'
+  },
+  {
+    name: "Books",
+    imgSrc: "/images/categories/books.jpg",
+    path: '/shop/categories/books'
+  },
+  {
+    name: "Sporting goods",
+    imgSrc: "/images/categories/sporting.jpg",
+    path: '/shop/categories/sporting-goods'
+  }
+].map((item, i) => ({...item, id: i + 1}))
+
 const Ecommerce = () => {
   SwiperCore.use([Autoplay]);
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
@@ -28,7 +72,10 @@ const Ecommerce = () => {
     }
   }, [])
 
-  const handleOpen = () => window.LyncsWidget.open("a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0")
+  const handleOpen = (path) => window.LyncsWidget.open({
+    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+    path: path
+  })
 
   return (
     <div
@@ -65,97 +112,26 @@ const Ecommerce = () => {
             }}
             className=""
           >
-            <SwiperSlide>
-              <div className="relative h-full">
-                <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
-                <div className="h-full">
-                  <img className="object-cover rounded-lg h-full w-full" src="/images/categories/beauty.png" alt=""/>
-                </div>
-                <div className="absolute  bottom-0 left-8">
-                  <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] py-8 text-white">Health & Beauty</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative h-full">
-                <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
-                <div className="h-full">
-                  <img className="object-cover rounded-lg h-full w-full" src="/images/categories/books.jpg" alt=""/>
-                </div>
-                <div className="absolute  bottom-0 left-8">
-                  <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] py-8 text-white">Books</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative h-full">
-                <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
-                <div className="h-full">
-                  <img className="object-cover rounded-lg h-full w-full" src="/images/categories/sporting.jpg"
-                       alt=""/>
-                </div>
-                <div className="absolute  bottom-0 left-8">
-                  <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] py-8 text-white">Sporting goods</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative h-full">
-                <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
-                <div className="h-full">
-                  <img className="object-cover rounded-lg h-full w-full" src="/images/categories/fashion.jpg"
-                       alt=""/>
-                </div>
-                <div className="absolute  bottom-0 left-8">
-                  <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] py-8 text-white">Fashion</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative h-full">
-                <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
-                <div className="h-full">
-                  <img className="object-cover rounded-lg h-full w-full" src="/images/categories/appliances.jpg"
-                       alt=""/>
-                </div>
-                <div className="absolute  bottom-0 left-8">
-                  <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] py-8 text-white">Home appliances</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative h-full">
-                <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
-                <div className="h-full">
-                  <img className="object-cover rounded-lg h-full w-full" src="/images/categories/home.jpg" alt=""/>
-                </div>
-                <div className="absolute  bottom-0 left-8">
-                  <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] py-8 text-white">Home & office</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative h-full">
-                <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
-                <div className="h-full">
-                  <img className="object-cover rounded-lg h-full w-full" src="/images/categories/music.jpg" alt=""/>
-                </div>
-                <div className="absolute bottom-0 left-8">
-                  <p className="md:text-[2.5rem] text-[2rem] leading-[1.1] font-quicksand py-8 text-white">Musical instruments</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative h-full">
-                <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
-                <div className="h-full">
-                  <img className="object-cover rounded-lg h-full w-full" src="/images/categories/phones.jpg" alt=""/>
-                </div>
-                <div className="absolute  bottom-0 left-8">
-                  <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] py-8 text-white">Phones & tablets</p>
-                </div>
-              </div>
-            </SwiperSlide>
+            {
+              categories.map((category) => (
+                <SwiperSlide key={category.id}>
+                  <div className="relative h-full group">
+                    <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
+                    <div className="h-full">
+                      <img className="object-cover rounded-lg h-full w-full" src={category.imgSrc} alt=""/>
+                    </div>
+                    <div className="absolute bottom-0 left-8 space-y-2 my-8">
+                      <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] text-white">{category.name}</p>
+                      <button onClick={() => handleOpen(category.path)}
+                        className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-3 px-8 rounded border ease transition-all border-white bg-transparent">
+                        Shop now
+                      </button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))
+            }
+
           </Swiper>
 
         </div>
@@ -175,7 +151,7 @@ const Ecommerce = () => {
           </motion.p>
           <div>
             <motion.button
-              onClick={handleOpen}
+              onClick={() => handleOpen('/shop')}
               variants={btnVariant}
               initial="hidden"
               whileInView="visible"

@@ -32,7 +32,9 @@ const Eat = () => {
     }
   }, [])
 
-  const handleOpen = () => window.LyncsWidget.open("a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0")
+  const handleOpen = () => window.LyncsWidget.open({
+    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0'
+  })
 
   return (
     <div
