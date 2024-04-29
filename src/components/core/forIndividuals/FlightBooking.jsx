@@ -29,9 +29,9 @@ const FlightBooking = () => {
     <div
       className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
       <div
-        className="container mx-auto md:grid grid-cols-12 pb-[70px] md:pb-[160px] xl:pt-0 overflow-hidden md:relative md:z-10">
+        className="container mx-auto md:grid grid-cols-12 py-[70px] md:pb-[160px] xl:pt-0 overflow-hidden md:relative md:z-10">
         <div
-          className="md:pt-[50px] px-4 md:px-0 col-span-4 text-left col-start-2 z-50 relative flex flex-col justify-center">
+          className="px-4 md:px-0 col-span-4 text-left col-start-2 z-50 relative flex flex-col justify-center">
           <motion.h2
             variants={headerVariant}
             initial="hidden"

@@ -7,19 +7,19 @@ function Hero({isOpen}) {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Book flight tickets,",
-        "Stream share,",
-        "Shop online,",
-        "Buy data,",
-        "Buy airtime,",
-        "Pay for cleaning,",
-        "Pay for laundry,",
-        "Pay for rides,",
-        "Buy bus tickets,",
-        "Buy online courses,",
-        "Pay for meals,",
+        "Book flight tickets",
+        "Stream share",
+        "Shop online",
+        "Purchase airtime",
+        "Purchase data",
+        "Pay for cleaning",
+        "Pay for laundry",
+        "Pay for rides",
+        "Buy bus tickets",
+        "Buy online courses",
+        "Pay for meals",
         "Book hotels",
-        "Buy event tickets,",
+        "Buy event tickets",
       ],
       typeSpeed: 50,
       backSpeed: 10,
@@ -56,10 +56,6 @@ function Hero({isOpen}) {
           <h2
             className="mt-[50px] md:mt-0 text-blue-300 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
           >
-            <span
-              className={`${isOpen ? 'text-black' : 'text-white'} min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}>
-           Don't just
-            </span>
             <p className="min-h-[125px] md:min-h-0">
             <span ref={el}
                   className={`${isOpen ? 'from-[#00AFEF] to-[#0915BA]' : 'from-[#00AFEF] to-blue-500'} bg-gradient-to-r text-transparent min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}
@@ -69,7 +65,7 @@ function Hero({isOpen}) {
             </p>
             <span
               className={`${isOpen ? 'text-black' : 'text-white'} min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}>
-           Go and prosper
+            In Elegant Fashion
             </span>
           </h2>
 

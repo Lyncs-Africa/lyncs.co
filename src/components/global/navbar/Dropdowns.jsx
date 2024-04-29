@@ -45,8 +45,6 @@ export const ProductsDropdown = ({mode}) => {
         </div>
       </div>
 
-      {/* Dropdown content */}
-
       <div
         className='opacity-0 translate-y-10 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 group-hover:translate-y-0 transition-display transition-all duration-300 origin-to-right absolute z-50 top-20 -left-72 w-[200px] md:w-[750px] rounded-xl modal-card bg-[#ffffff] ease-in-out px-7 py-5'
       >
@@ -167,7 +165,8 @@ export const ProductsDropdown = ({mode}) => {
               >
                 Bus Ticketing
               </Link>
-              <p className="text-gray-500 font-light text-[13px]">Book bus tickets for Inter state & Inter country trips</p>
+              <p className="text-gray-500 font-light text-[13px]">Book bus tickets for Inter state & Inter country
+                trips</p>
             </div>
           </div>
 
@@ -189,17 +188,21 @@ export const ProductsDropdown = ({mode}) => {
               </div>
             </div>
 
-            <div className="flex flex-row justify-center gap-5 w-full items-center">
-              <Link href="https://app.lyncs.africa"
-                    className=" text-[16px] font-medium px-8 py-3 ease transition-all rounded-md font-satoshiMedium  hover:text-blue-500">
-                Login
-              </Link>
+            {
+              location !== '/individuals' && (
+                <div className="flex flex-row justify-center gap-5 w-full items-center">
+                  <Link href="https://app.lyncs.africa"
+                        className=" text-[16px] font-medium px-8 py-3 ease transition-all rounded-md font-satoshiMedium  hover:text-blue-500">
+                    Login
+                  </Link>
 
-              <Link href="https://app.lyncs.africa/register"
-                    className="bg-blue-500 hover:opacity-75 ease transition-all text-[16px] font-medium text-white px-8 py-3 rounded-md font-dmSans shadow-md">
-                Sign Up
-              </Link>
-            </div>
+                  <Link href="https://app.lyncs.africa/register"
+                        className="bg-blue-500 hover:opacity-75 ease transition-all text-[16px] font-medium text-white px-8 py-3 rounded-md font-dmSans shadow-md">
+                    Sign Up
+                  </Link>
+                </div>
+              )
+            }
           </div>
         </div>
       </div>

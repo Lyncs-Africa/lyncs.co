@@ -10,6 +10,7 @@ import Services from "@/components/core/forIndividuals/Services";
 import FlightBooking from "@/components/core/forIndividuals/FlightBooking";
 import Stream from "@/components/core/forIndividuals/Stream";
 import Eat from "@/components/core/forIndividuals/Eat";
+import Ecommerce from "@/components/core/forIndividuals/Ecommerce";
 
 const Index = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
@@ -67,10 +68,11 @@ const Index = () => {
       </Head>
       <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop}/>
       <Hero isOpen={isWidgetOpen}/>
-      <Services/>
       <FlightBooking/>
+      <Ecommerce/>
       <Stream/>
       <Eat/>
+      <Services/>
       <Footer/>
       <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop} />
     </ClientOnly>

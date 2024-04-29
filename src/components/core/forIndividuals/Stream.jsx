@@ -15,7 +15,7 @@ const Stream = () => {
   return (
     <motion.div
       ref={ref}
-      className="z-10 overflow-hidden relative w-full md:bg-black bg-slate-900 md:bg-right bg-cover min-h-[100vh] font-satoshiMedium">
+      className="z-10 overflow-hidden relative w-full md:bg-black bg-slate-900 md:bg-right bg-cover md:min-h-[100vh] font-satoshiMedium">
       <div className="md:hidden bg-stream bg-cover bg-center opacity-40 absolute inset-0"></div>
       <div
         className="px-4 md:px-0 container py-[100px] md:py-0 mx-auto md:grid grid-cols-12 overflow-hidden md:relative md:z-10">

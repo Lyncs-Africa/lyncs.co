@@ -24,7 +24,18 @@ const Services = () => {
 
   return (
     <div className="relative w-full overflow-hidden font-satoshiMedium bg-white">
-      <div className="container mx-auto md:block md:pt-[160px] xl:py-[70px] py-[70px] relative">
+      <div className="container mx-auto md:block pb-[100px] md:pt-[100px] md:pb-[160px] xl:pb-[250px] relative">
+        <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">
+          <svg fill="#F1F1F8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path className="cls-1"
+                      d="M.17,10.74C43.4,20,87.41,29.54,125.87,51.36c49.88,28.29,86.24,81.56,141.49,99.85a115.56,115.56,0,0,0,71,.33c20.72-6.65,39.05-19,57.45-30.63,34.42-21.75,71.93-40,112.69-45.4,83.85-11.09,164.77,46.12,248.13,17.9,44.46-15,78-52.21,120.65-71.76A236.83,236.83,0,0,1,1000,1.25l-1.71,264.09H.2C.2,180.48-.23,95.6.17,10.74Z"/>
+              </g>
+            </g>
+          </svg>
+
+        </div>
         <div className="md:grid grid-cols-12 px-4 md:px-0">
           <div
             className="col-start-2 col-span-10 relative">
@@ -34,7 +45,7 @@ const Services = () => {
               whileInView="visible"
               className="text-black leading-[1] font-satoshiBold text-[3.5rem] md:text-[4.5rem] font-bold"
             >
-              Explore all <br /> our services.
+              Explore our <br /> other services.
             </motion.h2>
             <p className="text-[16px] md:text-[17px] py-8 text-slate-800">
               Access a range of services all in one place
@@ -45,37 +56,14 @@ const Services = () => {
                   variant={slideVariant}
                   className="md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
                   <div
-                    className="absolute inset bg-[url('/images/travel.jpg')] w-full h-full rounded-lg opacity-30 bg-cover bg-right"></div>
+                    className="absolute inset bg-[url('/images/bus.jpg')] w-full h-full rounded-lg opacity-20 bg-cover bg-right-bottom"></div>
                   <div className="p-6 relative">
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
                       className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
-                      Flight Booking
-                    </motion.p>
-                    <motion.p
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ type: 'spring', stiffness: 100 }}
-                      className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
-                      Book flights both local and internationally at the best rates & filter by a bunch of factors
-                    </motion.p>
-                  </div>
-
-                </motion.div>
-                <motion.div
-                  variant={slideVariant}
-                  className="md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
-                  <div
-                    className="absolute inset bg-[url('/images/shopping-bag.jpg')] w-full h-full rounded-lg opacity-30 bg-cover bg-center"></div>
-                  <div className="p-6 relative">
-                    <motion.p
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ type: 'spring', stiffness: 100 }}
-                      className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
-                      Online Shopping
+                      Bus Ticketing
                     </motion.p>
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
@@ -87,16 +75,38 @@ const Services = () => {
                   </div>
 
                 </motion.div>
+                <motion.div
+                  variant={slideVariant}
+                  className="md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
+                  <div
+                    className="absolute inset w-full h-full rounded-lg opacity-30 bg-cover bg-right"></div>
+                  <div className="p-6 relative">
+                    <motion.p
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ type: 'spring', stiffness: 100 }}
+                      className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
+                      Bills Payment
+                    </motion.p>
+                    <motion.p
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ type: 'spring', stiffness: 100 }}
+                      className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
+                      Book flights both local and internationally at the best rates & filter by a bunch of factors
+                    </motion.p>
+                  </div>
 
+                </motion.div>
               </div>
               <div className="rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
                 <div
-                  className="absolute inset bg-[url('/images/stream.jpg')] w-full h-full rounded-lg opacity-30 bg-cover bg-center"></div>
+                  className="absolute inset bg-[url('/images/events.jpg')] w-full h-full rounded-lg opacity-30 bg-cover bg-center"></div>
                 <div className="p-6 relative">
                   <motion.p
                     variants={textVariant}
                     className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
-                    Stream Share
+                    Event Booking
                   </motion.p>
                   <p
                     className="text-[15px] py-2 text-slate-100 tracking-tight max-w-[500px]">
@@ -109,14 +119,14 @@ const Services = () => {
                 <motion.div
                   className="rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
                   <div
-                    className="absolute inset bg-[url('/images/eat.jpg')] w-full h-full rounded-lg opacity-30 bg-cover"></div>
+                    className="absolute inset bg-[url('/images/hotel.jpg')] bg-center w-full h-full rounded-lg opacity-20 bg-cover"></div>
                   <div className="p-6 relative">
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ type: 'spring', stiffness: 100 }}
                       className="md:text-[3rem] text-[2.5rem] leading-[1] py-2 text-white tracking-tight max-w-[700px]">
-                      Eat
+                      Hotel Booking
                     </motion.p>
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}
@@ -134,7 +144,7 @@ const Services = () => {
                   transition={{ type: 'spring', stiffness: 50, delay: 0.3 }}
                   className="rounded-lg bg-slate-800 w-full relative mt-10 md:my-0">
                   <div
-                    className="absolute inset w-full h-full rounded-lg opacity-40 bg-cover"></div>
+                    className="absolute inset w-full h-full rounded-lg bg-cover"></div>
                   <div className="p-6 relative">
                     <motion.p
                       initial={{ opacity: 0, x: -20 }}

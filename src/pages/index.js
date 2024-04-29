@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import Navbar from "@/components/global/navbar/Navbar";
 import Hero from "@/components/core/home/Hero";
+import Footer from "@/components/global/footer/Footer";
 
 const Index = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -39,9 +40,10 @@ const Index = () => {
       <Head>
         <title>Lyncs Africa</title>
       </Head>
-      <Navbar dark scrollTop={scrollTop}/>
+      <Navbar logo dark scrollTop={scrollTop}/>
       <Hero/>
       <MultiSecton/>
+      <Footer dark/>
     </ClientOnly>
   );
 };

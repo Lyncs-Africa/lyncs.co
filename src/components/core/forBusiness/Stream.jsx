@@ -22,7 +22,7 @@ const Stream = () => {
           <motion.h2
             className="text-white leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >
-            API to watch Netflix, Prime & Showmax movies for ₦3,900
+            API to bundle Netflix, Prime & Showmax in one place
           </motion.h2>
           <p
             className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">

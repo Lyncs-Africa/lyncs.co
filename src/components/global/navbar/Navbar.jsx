@@ -4,7 +4,6 @@ import {usePathname} from 'next/navigation';
 import useSignupStore from "@/store/signup";
 import {useAuth} from "@/hooks/use-auth";
 import {ProductsDropdown} from "../navbar/Dropdowns.jsx";
-// import { UseCasesDropdown } from "./DevelopersDropdown.jsx";
 import {easeInOut} from "framer-motion"
 import {useDisclosure} from "@mantine/hooks";
 import MobileNavbar from "./MobileNavbar.jsx";
@@ -64,19 +63,18 @@ function Navbar(mode) {
   return (
     <>
       <MobileNavbar opened={opened} onClose={close}/>
-
       <div ref={wrapperRef}
            className={`z-50 md:grid md:grid-cols-12 font-satoshiMedium ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} py-2 w-full`}>
         <nav className="border-gray-200 px-2 sm:px-4 rounded col-start-2 col-span-10 py-4 md:py-0">
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <Link className="flex items-center" href="/">
-              {mode.scrollTop >= 100 || mode.dark || mode.transparent ? <>
+              {mode.scrollTop >= 100 || mode.dark || mode.transparent ? <div className={`${mode.logo ? 'py-4' : ''}`}>
                   <img
                     src="/images/logo-light.svg"
                     className="h-12 mr-3 xl:h-16"
                     alt="Lyncs Logo"
                   />
-                </>
+                </div>
 
                 : <>
                   <img
@@ -88,85 +86,92 @@ function Navbar(mode) {
               }
             </Link>
 
-            <div className="flex md:order-2">
-              {
-                location === '/individuals' ?
-                  <>
-                    <button onClick={handleOpen}
-                            type="button"
-                            className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+            {
+              !mode.logo && (
+                <>
+                  <div className="flex md:order-2">
+                    {
+                      location === '/individuals' ?
+                        <>
+                          <button onClick={handleOpen}
+                                  type="button"
+                                  className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+                          >
+                            Get Started
+                            <span className="">
+                          <i className="fa-solid fa-right-to-bracket"></i>
+                        </span>
+                          </button>
+                        </>
+                        :
+                        <>
+                          <Link target="_blank" href="http://app.lyncs.africa">
+                            <button
+                              type="button"
+                              className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+                            >
+                              Sign in
+                              <span className="">
+                          <i className="fa-solid fa-right-to-bracket"></i>
+                        </span>
+                            </button>
+                          </Link>
+                        </>
+                    }
+
+                    <button
+                      onClick={open}
+                      type="button"
+                      className="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden bg-transparent focus:outline-none"
+                      aria-controls="navbar-default"
+                      aria-expanded="false"
                     >
-                      Get Started
-                      <span className="">
-                          <i className="fa-solid fa-right-to-bracket"></i>
-                        </span>
-                    </button>
-                  </>
-                  :
-                  <>
-                    <Link target="_blank" href="http://app.lyncs.africa">
-                      <button
-                        type="button"
-                        className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+                      <span className="sr-only">Open main menu</span>
+                      <svg
+                        className={`w-6 h-6 ${mode.transparent ? 'fill-white' : ''} ${mode.scrollTop >= 200 ? 'fill-white' : ''}`}
+                        aria-hidden="true"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Sign in
-                        <span className="">
-                          <i className="fa-solid fa-right-to-bracket"></i>
-                        </span>
-                      </button>
-                    </Link>
-                  </>
-              }
+                        <path
+                          fillRule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
 
-              <button
-                onClick={open}
-                type="button"
-                className="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden bg-transparent focus:outline-none"
-                aria-controls="navbar-default"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                <svg
-                  className={`w-6 h-6 ${mode.transparent ? 'fill-white' : ''} ${mode.scrollTop >= 200 ? 'fill-white' : ''}`}
-                  aria-hidden="true"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+                  <div
 
-            <div
-
-              className="items-center justify-between w-full hidden md:flex md:w-auto md:order-1"
-            >
-              <ul
-                className={`flex flex-col px-4 py-1 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent ${mode.dark || mode.scrollTop >= 100 || mode.transparent ? 'bg-black border-none' : 'bg-black  border-gray-100'}`}>
-
-                <WhyUsDropdown mode={mode}/>
-
-                <ProductsDropdown mode={mode}/>
-
-                <DevelopersDropdown mode={mode}/>
-
-                <Link target="_blank" href="http://app.lyncs.africa">
-                  <button
-                    type="button"
-                    className={`md:hidden w-full text-white bg-blue-500 hover:bg-blue-800 md:bg-transparent md:border ${location === "/login" ? 'md:bg-blue-500 md::text-white' : ''} ${mode.dark || mode.scrollTop >= 100 ? 'md:border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'}  md:hover:bg-blue-500 md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-3 md:mr-0`}
+                    className="items-center justify-between w-full hidden md:flex md:w-auto md:order-1"
                   >
-                    Login
-                    <span className="ml-2">
+                    <ul
+                      className={`flex flex-col px-4 py-1 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent ${mode.dark || mode.scrollTop >= 100 || mode.transparent ? 'bg-black border-none' : 'bg-black  border-gray-100'}`}>
+
+                      <WhyUsDropdown mode={mode}/>
+
+                      <ProductsDropdown mode={mode}/>
+
+                      <DevelopersDropdown mode={mode}/>
+
+                      <Link target="_blank" href="http://app.lyncs.africa">
+                        <button
+                          type="button"
+                          className={`md:hidden w-full text-white bg-blue-500 hover:bg-blue-800 md:bg-transparent md:border ${location === "/login" ? 'md:bg-blue-500 md::text-white' : ''} ${mode.dark || mode.scrollTop >= 100 ? 'md:border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'}  md:hover:bg-blue-500 md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-3 md:mr-0`}
+                        >
+                          Login
+                          <span className="ml-2">
                       <i className="fa-solid fa-right-to-bracket"></i>
                     </span>
-                  </button>
-                </Link>
-              </ul>
-            </div>
+                        </button>
+                      </Link>
+                    </ul>
+                  </div>
+                </>
+              )
+            }
+
 
           </div>
         </nav>

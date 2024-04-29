@@ -107,44 +107,62 @@ const MultiSecton = () => {
         </Swiper>
       </div>
       <div className="hidden md:grid xl:grid-cols-3 md:grid-cols-2 min-h-screen bg-slate-900">
-        <div className="card p-6 flex items-center relative overflow-hidden">
-          <Link href="/individuals">
+        <div className="card p-6 flex flex-col justify-center gap-5 relative overflow-hidden group">
             <div className="inner-background bg-individuals bg-cover bg-center absolute inset-0"></div>
-            <h2
-              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
-              For
-            </h2>
-            <h2
-              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
-              Individuals
-            </h2>
+            <div>
+              <h2
+                className="text-white font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative">
+                For
+              </h2>
+              <h2
+                className="text-white font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative">
+                Individuals
+              </h2>
+            </div>
+          <Link href="/individuals">
+            <button
+              className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-3 px-8 rounded border ease transition-all border-white bg-transparent">
+              Get started
+            </button>
           </Link>
         </div>
-        <div className="card p-6 flex items-center relative overflow-hidden bg-slate-950">
-          <Link href="/businesses">
+        <div className="card p-6 flex flex-col justify-center gap-5 relative overflow-hidden bg-slate-950 group">
             <div
               className="opacity-70 inner-background bg-businesses bg-cover bg-center absolute inset-0 ease-in-out"></div>
-            <h2
-              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
-              For
-            </h2>
-            <h2
-              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
-              Businesses
-            </h2>
+           <div>
+             <h2
+               className="text-white font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative">
+               For
+             </h2>
+             <h2
+               className="text-white font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative">
+               Businesses
+             </h2>
+           </div>
+          <Link href="/businesses">
+            <button
+              className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-3 px-8 rounded border ease transition-all border-white bg-transparent">
+              Get started
+            </button>
           </Link>
         </div>
-        <div className="card p-6 flex items-center relative overflow-hidden">
-          <Link href="/affilates">
-            <div className="inner-background bg-affiliates bg-cover bg-center absolute inset-0 ease-in-out"></div>
+        <div className="card p-6 flex flex-col justify-center gap-5 relative overflow-hidden group">
+          <div className="inner-background bg-affiliates bg-cover bg-top absolute inset-0 ease-in-out"></div>
+          <div>
             <h2
-              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+              className="text-white font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative">
               For
             </h2>
             <h2
-              className="text-white font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold relative">
+              className="text-white font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative">
               Affiliates
             </h2>
+          </div>
+          <Link href="/affilates">
+            <button
+              className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-3 px-8 rounded border ease transition-all border-white bg-transparent">
+              Get started
+            </button>
           </Link>
         </div>
       </div>
