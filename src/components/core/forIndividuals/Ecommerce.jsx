@@ -123,7 +123,7 @@ const Ecommerce = () => {
                     <div className="absolute bottom-0 left-8 space-y-2 my-8">
                       <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] text-white">{category.name}</p>
                       <button onClick={() => handleOpen(category.path)}
-                        className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-3 px-8 rounded border ease transition-all border-white bg-transparent">
+                        className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-2 md:py-3 px-5 md:px-8 rounded border ease transition-all border-white bg-transparent">
                         Shop now
                       </button>
                     </div>

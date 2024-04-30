@@ -9,7 +9,7 @@ import {motion} from "framer-motion";
 const SideNav = () => {
   return (
     <div
-      className="rounded-lg shadow-lg bg-[#FBFBFB] w-[70px] h-[500px] py-10 px-1 xl:px-0 flex flex-col items-center justify-between">
+      className="rounded-lg shadow-lg bg-[#FBFBFB] h-[500px] py-10 px-4 flex flex-col items-center justify-between">
       <motion.div
         animate={{y:[0, 10, -10, 10, 0]}}
         transition={{duration: 1.5, repeat: Infinity, repeatDelay: 13}}

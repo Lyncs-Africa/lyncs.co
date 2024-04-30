@@ -125,10 +125,10 @@ const Access = () => {
               <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Events Booking</p>
               <div className="space-y-2 my-2">
                 <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
-                <div className="xl:w-[200px] bg-[#1C1D22] h-[15px]"></div>
+                <div className="xl:w-full bg-[#1C1D22] h-[15px]"></div>
               </div>
             </div>
-            <div className="xl:h-[50px] bg-[#282A30] rounded p-4">
+            <div className="bg-[#282A30] rounded p-4">
               <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Good afternoon Nebechi</p>
             </div>
             <div className="xl:h-[250px] bg-[#282A30] rounded py-4 xl:py-0">
