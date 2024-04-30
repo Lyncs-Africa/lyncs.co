@@ -38,7 +38,7 @@ const Access = () => {
     <div
       className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-satoshiMedium">
       <div
-        className="px-4 md:px-0 container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pt-[100px] overflow-hidden md:relative md:z-10">
+        className="px-4 md:px-0 container mx-auto md:grid grid-cols-12 py-[100px] gap-10 md:py-[160px] xl:pt-[100px] overflow-hidden md:relative md:z-10">
         <div
           className="col-span-4 text-left col-start-2 z-50 relative flex flex-col justify-center">
           <motion.h2
@@ -64,7 +64,7 @@ const Access = () => {
             </motion.button>
           </div>
         </div>
-        <motion.div  ref={ref} className="col-start-7 col-span-6 grid grid-cols-2 xl:grid-cols-3 gap-4">
+        <motion.div  ref={ref} className="col-start-6 col-span-7 grid grid-cols-2 xl:grid-cols-3 gap-4">
           <div className="flex flex-col gap-4 justify-center">
             <motion.div
               style={window.innerWidth > 768 ? {
@@ -137,7 +137,7 @@ const Access = () => {
             <div className="h-[120px] bg-[#282A30] rounded p-4">
               <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">iPhone 11</p>
               <p className="text-small font-extralight text-gray-400">₦750,000</p>
-              <div className="my-2 flex gap-2">
+              <div className="my-2 grid grid-cols-3 md:grid-cols-6 gap-2">
                 <div className="w-[30px] h-[30px] rounded-full bg-white"></div>
                 <div className="w-[30px] h-[30px] rounded-full bg-red-300"></div>
                 <div className="w-[30px] h-[30px] rounded-full bg-purple-300"></div>
