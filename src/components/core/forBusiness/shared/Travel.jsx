@@ -32,7 +32,7 @@ const Travel = () => {
         <div className="flex items-center gap-4 p-6">
           <img className="w-[50px]" src="/images/face-three.png"/>
           <div>
-            <p className="text-gray-50 text-2xl flex gap-2"><span className="hidden md:block">Chidera</span> Ezeh</p>
+            <p className="text-gray-50 text-2xl flex gap-2"><span className="hidden xl:block">Chidera</span> Ezeh</p>
             <p className="text-gray-200">Passenger</p>
           </div>
         </div>

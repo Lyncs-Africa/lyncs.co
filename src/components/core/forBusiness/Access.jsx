@@ -64,7 +64,7 @@ const Access = () => {
             </motion.button>
           </div>
         </div>
-        <motion.div  ref={ref} className="col-start-7 col-span-6 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <motion.div  ref={ref} className="col-start-7 col-span-6 grid grid-cols-2 xl:grid-cols-3 gap-4">
           <div className="flex flex-col gap-4 justify-center">
             <motion.div
               style={window.innerWidth > 768 ? {
@@ -74,7 +74,7 @@ const Access = () => {
               <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Washing & Cleaning</p>
               <div className="space-y-2 my-2">
                 <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
-                <div className="hidden md:block md:w-[200px] bg-[#1C1D22] h-[15px]"></div>
+                <div className="hidden md:block xl:w-full bg-[#1C1D22] h-[15px]"></div>
               </div>
             </motion.div>
             <div className="h-[150px] bg-[#282A30] rounded p-4">
@@ -125,13 +125,13 @@ const Access = () => {
               <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Events Booking</p>
               <div className="space-y-2 my-2">
                 <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
-                <div className="md:w-[200px] bg-[#1C1D22] h-[15px]"></div>
+                <div className="xl:w-[200px] bg-[#1C1D22] h-[15px]"></div>
               </div>
             </div>
-            <div className="md:h-[50px] bg-[#282A30] rounded p-4">
+            <div className="xl:h-[50px] bg-[#282A30] rounded p-4">
               <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Good afternoon Nebechi</p>
             </div>
-            <div className="md:h-[250px] bg-[#282A30] rounded py-4 md:py-0">
+            <div className="xl:h-[250px] bg-[#282A30] rounded py-4 xl:py-0">
               <Travel/>
             </div>
             <div className="h-[120px] bg-[#282A30] rounded p-4">
@@ -141,13 +141,13 @@ const Access = () => {
                 <div className="w-[30px] h-[30px] rounded-full bg-white"></div>
                 <div className="w-[30px] h-[30px] rounded-full bg-red-300"></div>
                 <div className="w-[30px] h-[30px] rounded-full bg-purple-300"></div>
-                <div className="hidden md:block w-[30px] h-[30px] rounded-full bg-green-300"></div>
-                <div className="hidden md:block w-[30px] h-[30px] rounded-full bg-black"></div>
-                <div className="hidden md:block w-[30px] h-[30px] rounded-full bg-yellow-300"></div>
+                <div className="hidden xl:block w-[30px] h-[30px] rounded-full bg-green-300"></div>
+                <div className="hidden xl:block w-[30px] h-[30px] rounded-full bg-black"></div>
+                <div className="hidden xl:block w-[30px] h-[30px] rounded-full bg-yellow-300"></div>
               </div>
             </div>
           </div>
-          <div className="hidden md:flex flex-col gap-4 justify-center">
+          <div className="hidden xl:flex flex-col gap-4 justify-center">
             <motion.div
               style={window.innerWidth > 768 ? {
                 translateX: reverseScaleXProgress,
