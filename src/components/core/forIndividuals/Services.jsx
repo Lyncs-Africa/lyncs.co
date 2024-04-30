@@ -24,7 +24,7 @@ const Services = () => {
 
   return (
     <div className="relative w-full overflow-hidden font-satoshiMedium bg-white">
-      <div className="container mx-auto md:block pb-[100px] md:pt-[100px] md:pb-[160px] xl:pb-[250px] relative">
+      <div className="mx-auto md:block pb-[100px] md:pt-[100px] md:pb-[160px] xl:pb-[250px] relative">
         <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">
           <svg fill="#F1F1F8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
             <g id="Layer_2" data-name="Layer 2">
@@ -34,7 +34,6 @@ const Services = () => {
               </g>
             </g>
           </svg>
-
         </div>
         <div className="md:grid grid-cols-12 px-4 md:px-0">
           <div
