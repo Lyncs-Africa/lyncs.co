@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import {motion, useScroll, useTransform} from "framer-motion";
 
-const Stream = () => {
+const Stream = ({handleIsWidgetLoading}) => {
   const ref = useRef(null)
   const {scrollYProgress} = useScroll({
     target: ref,
@@ -10,10 +10,18 @@ const Stream = () => {
   const scaleYProgress = useTransform(scrollYProgress, [0, 1], [-50, -300])
   const reverseScaleYProgress = useTransform(scrollYProgress, [0, 1], [-150, 180])
 
-  const handleOpen = () => window.LyncsWidget.open({
-    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
-    path: '/streamshare'
-  })
+  const handleOpen = () => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        path: '/streamshare',
+        onReady: () => {
+          handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
 
   return (
     <motion.div

@@ -11,9 +11,11 @@ import FlightBooking from "@/components/core/forIndividuals/FlightBooking";
 import Stream from "@/components/core/forIndividuals/Stream";
 import Eat from "@/components/core/forIndividuals/Eat";
 import Ecommerce from "@/components/core/forIndividuals/Ecommerce";
+import {BounceLoader} from "react-spinners";
 
 const Index = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
+  const [isWidgetLoading, setIsWidgetLoading] = useState(false)
   const [scrollTop, setScrollTop] = useState(0);
 
   const handleScroll = (event) => {
@@ -59,23 +61,38 @@ const Index = () => {
     };
   }, []);
 
+  const handleIsWidgetLoading = (e) => {
+    setIsWidgetLoading(e)
+  }
 
   return (
-    <ClientOnly>
-      <Script crossOrigin src="https://lyncs-web-widget.vercel.app/client.js"></Script>
-      <Head>
-        <title>Lyncs Africa</title>
-      </Head>
-      <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop}/>
-      <Hero isOpen={isWidgetOpen}/>
-      <FlightBooking/>
-      <Ecommerce/>
-      <Stream/>
-      <Eat/>
-      <Services/>
-      <Footer/>
-      <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop} />
-    </ClientOnly>
+    <div>
+      {
+        isWidgetLoading && (
+          <div className="fixed inset-0 min-h-screen w-full flex justify-center z-50 items-center">
+            <div className="inset-0 absolute bg-white"></div>
+           <div className="relative"> <BounceLoader color="#2563EB"/></div>
+          </div>
+        )
+      }
+      <ClientOnly>
+        <Script crossOrigin src="https://lyncs-web-widget.vercel.app/client.js"></Script>
+        <Head>
+          <title>Lyncs Africa</title>
+        </Head>
+        <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop}/>
+        <Hero isOpen={isWidgetOpen}
+              handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <FlightBooking handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Ecommerce handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Eat handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Services/>
+        <Footer/>
+        <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop}/>
+      </ClientOnly>
+    </div>
+
   );
 };
 

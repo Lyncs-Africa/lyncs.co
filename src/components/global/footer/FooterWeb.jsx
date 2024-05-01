@@ -7,7 +7,7 @@ function FooterWeb({mode}) {
   return (
     <>
       <footer
-        className={`hidden md:block p-4 ${mode.dark ? 'md:bg-black' : 'md:bg-[#F1F1F8]'} sm:px-6 sm:py-10 font-satoshiMedium`}>
+        className={`hidden md:block p-4 ${mode.dark ? 'md:bg-black' : 'md:bg-[#F1F1F8]'} sm:px-6 sm:py-16 font-satoshiMedium`}>
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-2 col-start-2">
             <Link href="/" className="flex items-center">

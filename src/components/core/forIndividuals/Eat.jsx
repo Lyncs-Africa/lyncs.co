@@ -1,10 +1,9 @@
 import React, {useMemo} from 'react';
 import {easeInOut, motion} from "framer-motion";
-import Link from "next/link";
 
-const Eat = () => {
+const Eat = ({handleIsWidgetLoading}) => {
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: { opacity: 0, x: 450 },
+    hidden: {opacity: 0, x: 450},
     visible: {
       opacity: 1, x: 0,
       transition: {
@@ -14,7 +13,7 @@ const Eat = () => {
     }
   }, [])
   const textVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: { opacity: 0, x: -450 },
+    hidden: {opacity: 0, x: -450},
     visible: {
       opacity: 1, x: 0,
       transition: {
@@ -23,7 +22,7 @@ const Eat = () => {
     }
   }, [])
   const btnVariant = useMemo(() => window.innerWidth < 768 ? {} : {
-    hidden: { opacity: 0 },
+    hidden: {opacity: 0},
     visible: {
       opacity: 1,
       transition: {
@@ -32,9 +31,17 @@ const Eat = () => {
     }
   }, [])
 
-  const handleOpen = () => window.LyncsWidget.open({
-    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0'
-  })
+  const handleOpen = () => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        onReady: () => {
+          handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
 
   return (
     <div
@@ -67,7 +74,7 @@ const Eat = () => {
           </div>
         </div>
         <div className="col-start-7 col-span-5">
-          <img className="object-contain mt-16 md:mt-0" src="/images/man with food.png" alt="" />
+          <img className="object-contain mt-16 md:mt-0" src="/images/man with food.png" alt=""/>
         </div>
       </div>
     </div>

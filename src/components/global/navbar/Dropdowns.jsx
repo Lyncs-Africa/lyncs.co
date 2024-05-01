@@ -97,7 +97,7 @@ export const ProductsDropdown = ({mode}) => {
 
           <div
             className="flex-auto flex flex-row items-center justify-start gap-5 w-full p-4 cursor-pointer hover:bg-gray-50 transition-all ease-in-out rounded-md h-fit">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512"
                  className="fill-pink-950 mx-auto w-[52px] h-[52px] rounded-full bg-pink-100 p-3" height="1em"
                  width="1em" xmlns="http://www.w3.org/2000/svg">
               <path

@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
 import {easeInOut, motion} from "framer-motion";
 
-const FlightBooking = () => {
+const FlightBooking = ({handleIsWidgetLoading}) => {
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: {opacity: 0, x: 450},
     visible: {
@@ -23,10 +23,19 @@ const FlightBooking = () => {
     }
   }, [])
 
-  const handleOpen = () => window.LyncsWidget.open({
-    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
-    path: '/flights/one-way-trip'
-  })
+  const handleOpen = () => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        path: '/flights/one-way-trip',
+        onReady: () => {
+          handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
+
   return (
     <div
       className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">

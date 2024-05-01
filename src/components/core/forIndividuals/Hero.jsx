@@ -1,8 +1,10 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Typed from "typed.js";
+import {BounceLoader} from "react-spinners";
 
-function Hero({isOpen}) {
+function Hero({isOpen, handleIsWidgetLoading}) {
   const el = useRef(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
@@ -33,9 +35,16 @@ function Hero({isOpen}) {
     };
   }, []);
 
-  const handleOpen = () => window.LyncsWidget.open({
-    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0'
-  })
+  const handleOpen = () => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0', onReady: () => {
+          handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
 
   return (
     <>
@@ -77,14 +86,15 @@ function Hero({isOpen}) {
           </p>
 
           <div className="flex flex-row md:justify-center items-center gap-7 z-30 w-full">
-            <div onClick={handleOpen}
-                 className={`${isOpen ? 'bg-black text-white' : 'bg-white text-black hover:border-white hover:bg-transparent hover:text-white'} cursor-pointer border text-[17px] px-8 text-center py-3 rounded border ease transition-all`}>
+            <button onClick={handleOpen}
+                    className={`${isOpen ? 'bg-black text-white' : 'bg-white text-black hover:border-white hover:bg-transparent hover:text-white'} cursor-pointer border text-[17px] px-8 text-center py-3 rounded border ease transition-all`}>
               Get started
-            </div>
+            </button>
           </div>
 
         </div>
       </div>
+
     </>
   );
 }

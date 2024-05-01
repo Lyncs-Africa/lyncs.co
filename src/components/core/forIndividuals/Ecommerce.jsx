@@ -50,7 +50,7 @@ const categories = [
   }
 ].map((item, i) => ({...item, id: i + 1}))
 
-const Ecommerce = () => {
+const Ecommerce = ({handleIsWidgetLoading}) => {
   SwiperCore.use([Autoplay]);
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: {opacity: 0, x: 450},
@@ -72,10 +72,19 @@ const Ecommerce = () => {
     }
   }, [])
 
-  const handleOpen = (path) => window.LyncsWidget.open({
-    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
-    path: path
-  })
+
+  const handleOpen = (path) => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        path: path,
+        onReady: () => {
+          handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
 
   return (
     <div
@@ -121,9 +130,10 @@ const Ecommerce = () => {
                       <img className="object-cover rounded-lg h-full w-full" src={category.imgSrc} alt=""/>
                     </div>
                     <div className="absolute bottom-0 left-8 space-y-2 my-8">
-                      <p className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] text-white">{category.name}</p>
+                      <p
+                        className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] text-white">{category.name}</p>
                       <button onClick={() => handleOpen(category.path)}
-                        className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-2 md:py-3 px-5 md:px-8 rounded border ease transition-all border-white bg-transparent">
+                              className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-2 md:py-3 px-5 md:px-8 rounded border ease transition-all border-white bg-transparent">
                         Shop now
                       </button>
                     </div>

@@ -147,7 +147,7 @@ const MultiSecton = () => {
           </Link>
         </div>
         <div className="card p-6 flex flex-col justify-center gap-5 relative overflow-hidden group">
-          <div className="inner-background bg-affiliates bg-cover bg-top absolute inset-0 ease-in-out"></div>
+          <div className="inner-background bg-affiliates bg-cover bg-center absolute inset-0 ease-in-out"></div>
           <div>
             <h2
               className="text-white font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative">

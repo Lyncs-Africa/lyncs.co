@@ -64,8 +64,8 @@ function Navbar(mode) {
     <>
       <MobileNavbar opened={opened} onClose={close}/>
       <div ref={wrapperRef}
-           className={`z-50 md:grid md:grid-cols-12 font-satoshiMedium ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} py-2 w-full`}>
-        <nav className="border-gray-200 px-2 sm:px-4 rounded col-start-2 col-span-10 py-4 md:py-0">
+           className={`z-40 md:grid md:grid-cols-12 font-satoshiMedium ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} py-2 w-full`}>
+        <nav className="border-gray-200 px-2 md:px-0 rounded col-start-2 col-span-10 py-4 md:py-0">
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <Link className="flex items-center" href="/">
               {mode.scrollTop >= 100 || mode.dark || mode.transparent ? <div className={`${mode.logo ? 'py-4' : ''}`}>
