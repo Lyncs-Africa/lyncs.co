@@ -1,10 +1,8 @@
 import React, {useEffect, useRef, useState} from "react";
 import Typed from "typed.js";
-import {BounceLoader} from "react-spinners";
 
 function Hero({isOpen, handleIsWidgetLoading}) {
   const el = useRef(null);
-  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const typed = new Typed(el.current, {

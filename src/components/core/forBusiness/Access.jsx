@@ -64,7 +64,7 @@ const Access = () => {
             </motion.button>
           </div>
         </div>
-        <motion.div  ref={ref} className="col-start-6 col-span-7 grid grid-cols-2 xl:grid-cols-3 gap-4">
+        <motion.div ref={ref} className="col-start-6 col-span-7 grid grid-cols-2 xl:grid-cols-3 gap-4">
           <div className="flex flex-col gap-4 justify-center">
             <motion.div
               style={window.innerWidth > 768 ? {
