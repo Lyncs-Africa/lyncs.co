@@ -37,7 +37,7 @@ function Hero({isOpen, handleIsWidgetLoading}) {
     handleIsWidgetLoading(true)
     window.LyncsWidget.open(
       {
-        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0/', onReady: () => {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0/?isSelectOpen=true&view=view-one', onReady: () => {
           handleIsWidgetLoading(false)
         }
       },
