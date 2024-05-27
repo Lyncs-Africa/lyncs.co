@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef} from "react";
 import Typed from "typed.js";
 
 function Hero({isOpen, handleIsWidgetLoading}) {
@@ -50,17 +50,17 @@ function Hero({isOpen, handleIsWidgetLoading}) {
         className="min-h-screen md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-900 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
         <div className={`${isOpen ? 'bg-white' : 'bg-view-one bg-cover bg-center opacity-20'} absolute inset-0`}>
         </div>
-        {
-          isOpen ? (
-            <div className="xl:block hidden absolute bottom-[-10rem] w-full z-30">
-              <img alt="curve" src="/images/lyncs-hero-curve.svg"/>
-            </div>
-          ) : (
-            <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">
-              <img alt="curve" src="/images/lyncs-hero-curve-light.svg"/>
-            </div>
-          )
-        }
+        <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">
+          <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path className="cls-1"
+                      d="M.17,10.74C43.4,20,87.41,29.54,125.87,51.36c49.88,28.29,86.24,81.56,141.49,99.85a115.56,115.56,0,0,0,71,.33c20.72-6.65,39.05-19,57.45-30.63,34.42-21.75,71.93-40,112.69-45.4,83.85-11.09,164.77,46.12,248.13,17.9,44.46-15,78-52.21,120.65-71.76A236.83,236.83,0,0,1,1000,1.25l-1.71,264.09H.2C.2,180.48-.23,95.6.17,10.74Z"/>
+              </g>
+            </g>
+          </svg>
+
+        </div>
         <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0 z-10">
           <h2
             className="mt-[50px] md:mt-0 text-blue-300 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
