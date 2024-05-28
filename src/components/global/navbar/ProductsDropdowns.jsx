@@ -70,8 +70,15 @@ export const ProductsDropdown = ({mode}) => {
               >
                 Flights Booking
               </Link>
-              <p className="text-gray-500 font-light text-[13px]">Book flights both local and internationally at the
-                best rates & filter by a bunch of factors </p>
+              {
+                location === '/businesses' ? (
+                  <p className="text-gray-500 font-light text-[13px]">Api to book flights both local and internationally at the
+                    best rates & filter by a bunch of factors </p>
+                ) : (
+                  <p className="text-gray-500 font-light text-[13px]">Book flights both local and internationally at the
+                    best rates & filter by a bunch of factors </p>
+                )
+              }
             </div>
 
           </div>
@@ -89,8 +96,15 @@ export const ProductsDropdown = ({mode}) => {
               >
                 Online Shopping
               </Link>
-              <p className="text-gray-500 font-light text-[13px]">Shop for items from multiple stores and get teh best
-                deals for each item</p>
+              {
+                location === '/businesses' ? (
+                  <p className="text-gray-500 font-light text-[13px]">Api to shop for items from multiple stores and get the best
+                    deals for each item</p>
+                ) : (
+                  <p className="text-gray-500 font-light text-[13px]">Shop for items from multiple stores and get teh best
+                    deals for each item</p>
+                )
+              }
             </div>
 
           </div>
@@ -111,7 +125,13 @@ export const ProductsDropdown = ({mode}) => {
               >
                 Stream Share
               </Link>
-              <p className="text-gray-500 font-light text-[13px]">Watch Netflix, Prime and Showmax for ₦3,900</p>
+              {
+                location === '/businesses' ? (
+                  <p className="text-gray-500 font-light text-[13px]">Api to Watch Netflix, Prime and Showmax</p>
+                ) : (
+                  <p className="text-gray-500 font-light text-[13px]">Watch Netflix, Prime and Showmax for ₦3,900</p>
+                )
+              }
             </div>
 
           </div>
@@ -129,7 +149,13 @@ export const ProductsDropdown = ({mode}) => {
               >
                 Cab Hailing
               </Link>
-              <p className="text-gray-500 font-light text-[13px]">Get good discounts on Bolt rides</p>
+              {
+                location === '/businesses' ? (
+                  <p className="text-gray-500 font-light text-[13px]">Api to get good discounts on Bolt rides</p>
+                ) : (
+                  <p className="text-gray-500 font-light text-[13px]">Get good discounts on Bolt rides</p>
+                )
+              }
             </div>
           </div>
 
@@ -147,8 +173,15 @@ export const ProductsDropdown = ({mode}) => {
               >
                 Washing & Cleaning
               </Link>
-              <p className="text-gray-500 font-light text-[13px]">Order for dry cleaning & house cleaning
-                services for affordable rates</p>
+              {
+                location === '/businesses' ? (
+                  <p className="text-gray-500 font-light text-[13px]">Api to order for dry cleaning & house cleaning
+                    services for affordable rates</p>
+                ) : (
+                  <p className="text-gray-500 font-light text-[13px]">Order for dry cleaning & house cleaning
+                    services for affordable rates</p>
+                )
+              }
             </div>
           </div>
 
@@ -165,8 +198,15 @@ export const ProductsDropdown = ({mode}) => {
               >
                 Bus Ticketing
               </Link>
-              <p className="text-gray-500 font-light text-[13px]">Book bus tickets for Inter state & Inter country
-                trips</p>
+              {
+                location === '/businesses' ? (
+                  <p className="text-gray-500 font-light text-[13px]">Api to book bus tickets for Inter state & Inter country
+                    trips</p>
+                ) : (
+                  <p className="text-gray-500 font-light text-[13px]">Book bus tickets for Inter state & Inter country
+                    trips</p>
+                )
+              }
             </div>
           </div>
 

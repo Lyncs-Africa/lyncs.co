@@ -3,7 +3,7 @@ import Link from "next/link";
 import {usePathname} from 'next/navigation';
 import useSignupStore from "@/store/signup";
 import {useAuth} from "@/hooks/use-auth";
-import {ProductsDropdown} from "../navbar/Dropdowns.jsx";
+import {ProductsDropdown} from "./ProductsDropdowns.jsx";
 import {easeInOut} from "framer-motion"
 import {useDisclosure} from "@mantine/hooks";
 import MobileNavbar from "./MobileNavbar.jsx";
