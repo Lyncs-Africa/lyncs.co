@@ -36,6 +36,7 @@ const Eat = ({handleIsWidgetLoading}) => {
     window.LyncsWidget.open(
       {
         key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        path: '/waitlist/?service=food%20ordering&launchDate=2024-07-01T00:00:00',
         onReady: () => {
           handleIsWidgetLoading(false)
         }
