@@ -87,7 +87,7 @@ const Index = () => {
         <Ecommerce handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <Eat handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Services/>
+        <Services handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <Footer/>
         <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop}/>
       </ClientOnly>
