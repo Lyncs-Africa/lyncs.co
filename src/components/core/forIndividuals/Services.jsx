@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
-const Services = () => {
+const Services = ({handleIsWidgetLoading}) => {
   const textVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: { opacity: 0, x: -20 },
     visible: {
@@ -21,6 +21,19 @@ const Services = () => {
       }
     }
   }, [])
+
+  const handleOpen = (service) => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        path: `/waitlist/?service=${service}&launchDate=2024-07-01T00:00:00`,
+        onReady: () => {
+          handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
 
   return (
     <div className="relative w-full overflow-hidden font-satoshiMedium bg-white">
@@ -52,8 +65,9 @@ const Services = () => {
             <div className="md:grid xl:grid-cols-3 grid-cols-2 gap-8 md:my-10">
               <div className="flex flex-col gap-5">
                 <motion.div
+                  onClick={() => handleOpen('bus ticketing')}
                   variant={slideVariant}
-                  className="md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
+                  className="cursor-pointer md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
                   <div
                     className="absolute inset bg-[url('/images/bus.jpg')] w-full h-full rounded-lg opacity-20 bg-cover bg-right-bottom"></div>
                   <div className="p-6 relative">
@@ -75,8 +89,9 @@ const Services = () => {
 
                 </motion.div>
                 <motion.div
+                  onClick={() => handleOpen('bills payment')}
                   variant={slideVariant}
-                  className="md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
+                  className="cursor-pointer md:min-h-[200px] rounded-lg bg-slate-900 w-full relative md:my-0">
                   <div
                     className="absolute inset w-full h-full rounded-lg opacity-30 bg-cover bg-right"></div>
                   <div className="p-6 relative">
@@ -98,7 +113,7 @@ const Services = () => {
 
                 </motion.div>
               </div>
-              <div className="rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
+              <div  onClick={() => handleOpen('events booking')} className="cursor-pointer rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
                 <div
                   className="absolute inset bg-[url('/images/events.jpg')] w-full h-full rounded-lg opacity-30 bg-cover bg-center"></div>
                 <div className="p-6 relative">
@@ -116,7 +131,8 @@ const Services = () => {
               </div>
               <div className="md:grid grid-cols-2 gap-5 my-8 xl:my-0">
                 <motion.div
-                  className="rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
+                  onClick={() => handleOpen('hotel booking')}
+                  className="cursor-pointer rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
                   <div
                     className="absolute inset bg-[url('/images/hotel.jpg')] bg-center w-full h-full rounded-lg opacity-20 bg-cover"></div>
                   <div className="p-6 relative">
@@ -138,10 +154,11 @@ const Services = () => {
 
                 </motion.div>
                 <motion.div
+                  onClick={() => handleOpen('ride booking')}
                   initial={{ opacity: 0, x: 200 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ type: 'spring', stiffness: 50, delay: 0.3 }}
-                  className="rounded-lg bg-slate-800 w-full relative mt-10 md:my-0">
+                  className="cursor-pointer rounded-lg bg-slate-800 w-full relative mt-10 md:my-0">
                   <div
                     className="absolute inset w-full h-full rounded-lg bg-cover"></div>
                   <div className="p-6 relative">
@@ -163,10 +180,11 @@ const Services = () => {
 
                 </motion.div>
                 <motion.div
+                  onClick={() => handleOpen('washing%20%26%20cleaning')}
                   initial={{ opacity: 0, y: 200 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ type: 'spring', stiffness: 50 }}
-                  className="col-span-2 rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
+                  className="cursor-pointer col-span-2 rounded-lg bg-slate-900 w-full relative my-10 md:my-0">
                   <div
                     className="absolute inset bg-[url('/images/laundry.jpg')] w-full h-full rounded-lg opacity-20 bg-cover"></div>
                   <div className="p-6 relative">

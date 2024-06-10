@@ -15,7 +15,7 @@ const Stream = ({handleIsWidgetLoading}) => {
     window.LyncsWidget.open(
       {
         key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
-        path: '/streamshare',
+        path: '/waitlist/?service=stream%20share&launchDate=2024-07-01T00:00:00',
         onReady: () => {
           handleIsWidgetLoading(false)
         }
