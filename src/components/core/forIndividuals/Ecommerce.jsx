@@ -91,7 +91,7 @@ const Ecommerce = ({handleIsWidgetLoading}) => {
       className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
       <div
         className="container mx-auto flex flex-col md:grid grid-cols-12 gap-10 pb-[70px] md:pb-[160px] overflow-hidden md:relative md:z-10">
-        <div className="col-span-7 flex gap-8 md:h-[400px] h-[150px]">
+        <div className="col-span-7 flex gap-8 md:h-[400px] h-[150px] w-full">
           <Swiper
             loop={true}
             autoplay={{
@@ -119,7 +119,7 @@ const Ecommerce = ({handleIsWidgetLoading}) => {
                 spaceBetween: 20,
               },
             }}
-            className=""
+            className="w-full"
           >
             {
               categories.map((category) => (
