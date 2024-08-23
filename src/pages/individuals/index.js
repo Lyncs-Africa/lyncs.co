@@ -71,7 +71,7 @@ const Index = () => {
         isWidgetLoading && (
           <div className="fixed inset-0 min-h-screen w-full flex justify-center z-50 items-center">
             <div className="inset-0 absolute bg-white"></div>
-           <div className="relative"> <BounceLoader color="#2563EB"/></div>
+            <div className="relative"><BounceLoader color="#2563EB"/></div>
           </div>
         )
       }
@@ -80,7 +80,8 @@ const Index = () => {
         <Head>
           <title>Lyncs Africa</title>
         </Head>
-        <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop}/>
+        <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop} isOpen={isWidgetOpen}
+                handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <Hero isOpen={isWidgetOpen}
               handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <FlightBooking handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
