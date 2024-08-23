@@ -40,34 +40,36 @@ const FlightBooking = ({handleIsWidgetLoading}) => {
     <div
       className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
       <div
-        className="container mx-auto md:grid grid-cols-12 py-[70px] md:pb-[160px] xl:pt-0 overflow-hidden md:relative md:z-10">
-        <div
-          className="px-4 md:px-0 col-span-4 text-left col-start-2 z-50 relative flex flex-col justify-center">
-          <motion.h2
-            variants={headerVariant}
-            initial="hidden"
-            whileInView="visible"
-            className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
-          >
-            Book local & International flights
-          </motion.h2>
-          <motion.p
-            className="text-[18px] py-8 text-gray-800">Book flights both local and internationally at the best rates &
-            filter by a bunch of factors
-          </motion.p>
-          <div>
-            <motion.button
-              onClick={handleOpen}
-              variants={btnVariant}
+        className="md:grid grid-cols-12 py-[70px] md:pb-[160px] xl:pt-0 overflow-hidden md:relative md:z-10">
+        <div className="container mx-auto col-span-10 col-start-2 grid grid-cols-12">
+          <div
+            className="px-4 md:px-0 col-span-4 text-left z-50 relative flex flex-col justify-center">
+            <motion.h2
+              variants={headerVariant}
               initial="hidden"
               whileInView="visible"
-              className="flex gap-2 items-center bg-black text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
-              <p> Get started</p>
-            </motion.button>
+              className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+            >
+              Book local & International flights
+            </motion.h2>
+            <motion.p
+              className="text-[18px] py-8 text-gray-800">Book flights both local and internationally at the best rates &
+              filter by a bunch of factors
+            </motion.p>
+            <div>
+              <motion.button
+                onClick={handleOpen}
+                variants={btnVariant}
+                initial="hidden"
+                whileInView="visible"
+                className="flex gap-2 items-center bg-black text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+                <p> Get started</p>
+              </motion.button>
+            </div>
           </div>
-        </div>
-        <div className="col-start-6 col-span-6 flex gap-8">
-          <img className="md:object-contain" src="/images/plane.svg" alt=""/>
+          <div className="col-span-8 flex gap-8">
+            <img className="md:object-contain" src="/images/plane.svg" alt=""/>
+          </div>
         </div>
       </div>
     </div>

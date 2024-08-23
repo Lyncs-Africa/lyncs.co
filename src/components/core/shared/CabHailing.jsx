@@ -10,7 +10,7 @@ const CabHailing = () => {
   SwiperCore.use([Autoplay]);
 
   return (
-    <div className="relative font-satoshiMedium">
+    <div className="relative font-satoshiMedium w-full">
       <div>
         <div className="hidden md:block absolute py-6 px-4 bg-[#1A2747] rounded-lg w-[50%] top-[2rem] left-[-5rem] md:text-[17px] text-[15px]">
           <Swiper

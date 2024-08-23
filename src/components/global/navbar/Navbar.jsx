@@ -1,22 +1,15 @@
-import React, {useEffect, useLayoutEffect, useMemo, useRef, useState} from "react";
+import React, {useEffect, useLayoutEffect, useRef, useState} from "react";
 import Link from "next/link";
 import {usePathname} from 'next/navigation';
-import useSignupStore from "@/store/signup";
-import {useAuth} from "@/hooks/use-auth";
 import {ProductsDropdown} from "./ProductsDropdowns.jsx";
-import {easeInOut} from "framer-motion"
 import {useDisclosure} from "@mantine/hooks";
 import MobileNavbar from "./MobileNavbar.jsx";
 import {DevelopersDropdown} from "./DevelopersDropdown.jsx";
 import {WhyUsDropdown} from "./WhyUsDropdown.jsx";
 
 function Navbar(mode) {
-  const {data} = useSignupStore((state) => state)
   const [toggle, setToggle] = useState(false);
-  const [profile, setProfile] = useState(false);
   const location = usePathname()
-  const {logout} = useAuth();
-
   const [opened, {open, close}] = useDisclosure(false);
 
   function useOutsideAlerter(ref) {
@@ -48,17 +41,17 @@ function Navbar(mode) {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
 
-  const containerVariant = useMemo(() => typeof window !== "undefined" && window.innerWidth > 768 ? {} : {
-    hidden: {y: -50, opacity: 0},
-    visible: {
-      y: 0, opacity: 1,
-      transition: {
-        duration: 0.5, ease: easeInOut
-      }
-    }
-  }, [])
 
-  const handleOpen = () => window.LyncsWidget.open("a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0")
+  const handleOpen = () => {
+    mode.handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0/?isSelectOpen=true&view=view-one', onReady: () => {
+          mode.handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
 
   return (
     <>
@@ -71,7 +64,7 @@ function Navbar(mode) {
               {mode.scrollTop >= 100 || mode.dark || mode.transparent ? <div className={`${mode.logo ? 'py-4' : ''}`}>
                   <img
                     src="/images/logo-light.svg"
-                    className="h-12 mr-3 xl:h-16"
+                    className="h-12 mr-3 xl:h-14"
                     alt="Lyncs Logo"
                   />
                 </div>
@@ -79,7 +72,7 @@ function Navbar(mode) {
                 : <>
                   <img
                     src="/images/logo.svg"
-                    className="h-12 mr-3 xl:h-16"
+                    className="h-12 mr-3 xl:h-14"
                     alt="Lyncs Logo"
                   />
                 </>

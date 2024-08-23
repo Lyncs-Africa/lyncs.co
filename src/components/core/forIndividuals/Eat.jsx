@@ -48,35 +48,37 @@ const Eat = ({handleIsWidgetLoading}) => {
     <div
       className="z-10 overflow-hidden relative w-full font-satoshiMedium">
       <div
-        className="container mx-auto md:grid grid-cols-12 md:pt-[160px] py-[70px] overflow-hidden md:relative md:z-10">
-        <div
-          className="px-4 md:px-0 col-span-4 text-left col-start-2 z-50 relative flex flex-col justify-center">
-          <motion.h2
-            variants={headerVariant}
-            initial="hidden"
-            whileInView="visible"
-            className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
-          >
-            Satisfy your cravings with just a few clicks
-          </motion.h2>
-          <motion.p
-            className="text-[18px] py-8 text-gray-800">
-            Order meals online and have them delivered right to your doorstep.
-          </motion.p>
-          <div>
-            <motion.button
-              onClick={handleOpen}
-              variants={btnVariant}
-              initial="hidden"
-              whileInView="visible"
-              className="flex gap-2 items-center bg-black text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
-              <p> Get started</p>
-            </motion.button>
-          </div>
-        </div>
-        <div className="col-start-7 col-span-5">
-          <img className="object-contain mt-16 md:mt-0" src="/images/man with food.png" alt=""/>
-        </div>
+        className="md:grid grid-cols-12 md:pt-[160px] py-[70px] overflow-hidden md:relative md:z-10">
+       <div className="container mx-auto col-span-10 col-start-2 grid grid-cols-12">
+         <div
+           className="px-4 md:px-0 col-span-5 text-left z-50 relative flex flex-col justify-center">
+           <motion.h2
+             variants={headerVariant}
+             initial="hidden"
+             whileInView="visible"
+             className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+           >
+             Satisfy your cravings with just a few clicks
+           </motion.h2>
+           <motion.p
+             className="text-[18px] py-8 text-gray-800">
+             Order meals online and have them delivered right to your doorstep.
+           </motion.p>
+           <div>
+             <motion.button
+               onClick={handleOpen}
+               variants={btnVariant}
+               initial="hidden"
+               whileInView="visible"
+               className="flex gap-2 items-center bg-black text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
+               <p> Get started</p>
+             </motion.button>
+           </div>
+         </div>
+         <div className="col-span-5 col-start-7">
+           <img className="object-contain mt-16 md:mt-0" src="/images/man with food.png" alt=""/>
+         </div>
+       </div>
       </div>
     </div>
   );

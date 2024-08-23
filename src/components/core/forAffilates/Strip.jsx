@@ -3,7 +3,7 @@ import React from 'react';
 const Strip = () => {
   return (
     <div
-      className="md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-950 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
+      className="min-h-screen md:min-h-full xl:min-h-[80vh] 2xl:min-h-[70vh] md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-950 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
       <div className="bg-view-three bg-cover bg-bottom absolute opacity-50 inset-0"></div>
       <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">
         <svg fill="#F1F1F8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
@@ -18,7 +18,7 @@ const Strip = () => {
       </div>
       <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0 z-10">
         <h2
-          className="text-blue-300 font-satoshiBold text-[4rem] md:text-[4rem] leading-[1.1] font-semibold pt-[50px] relative min-h-[160px]"
+          className="text-blue-300 font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative min-h-[160px]"
         >
                <span
                      className="min-h-[100px] relative bg-clip-text text-white after:inline after:text-blue-500 w-max text-left"

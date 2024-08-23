@@ -28,7 +28,7 @@ function Hero() {
   return (
     <>
       <div
-        className="min-h-screen md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-900 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
+        className="min-h-screen md:min-h-full xl:min-h-[80vh] 2xl:min-h-[70vh] md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-900 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
         <div className="bg-view-two bg-cover bg-center absolute opacity-50 inset-0">
         </div>
         <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">

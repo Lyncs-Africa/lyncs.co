@@ -24,10 +24,10 @@ const Services = () => {
 
   return (
     <div className="relative w-full overflow-hidden font-satoshiMedium bg-white">
-      <div className="container mx-auto md:block md:pt-[160px] xl:pb-[70px] py-[70px] relative">
+      <div className="md:block md:pt-[160px] xl:pb-[70px] py-[70px] relative">
         <div className="md:grid grid-cols-12 px-4 md:px-0">
           <div
-            className="col-start-2 col-span-10 relative">
+            className="container mx-auto col-start-2 col-span-10 relative">
             <motion.h2
               variants={textVariant}
               initial="hidden"

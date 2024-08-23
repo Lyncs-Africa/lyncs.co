@@ -9,9 +9,9 @@ const Eat = () => {
         <img alt="curve" src="/images/lyncs-hero-curve.svg" />
       </div>
       <div
-        className="container mx-auto md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pb-[25rem] overflow-hidden md:relative md:z-10">
+        className="md:grid grid-cols-12 py-[100px] md:py-[160px] xl:pb-[25rem] overflow-hidden md:relative md:z-10">
         <div
-          className="px-4 md:px-0 col-span-10 text-center col-start-2 z-50 relative flex flex-col justify-center">
+          className="container mx-auto px-4 md:px-0 col-span-10 text-center col-start-2 z-50 relative flex flex-col justify-center">
           <h2
             className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >

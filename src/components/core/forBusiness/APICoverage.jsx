@@ -36,59 +36,58 @@ const APICoverage = () => {
   return (
     <div className="w-full font-satoshiMedium flex flex-col justify-center items-center relative bg-[#F4F6F8] px-4 md:px-0">
       <div
-        className="md:container md:px-0 mx-auto md:grid grid-cols-12 xl:pt-0 overflow-hidden md:relative md:z-10">
+        className="md:px-0 mx-auto md:grid grid-cols-12 xl:pt-0 overflow-hidden md:relative md:z-10">
+        <div className="container mx-auto col-span-10 col-start-2 grid grid-cols-12">
+          <div
+            className="flex flex-col col-span-12 lg:col-span-5 text-left justify-start py-[100px] lg:py-[200px] items-start w-full">
 
-        {/* className="grid md:grid-cols-5 grid-cols-1 w-full gap-10 px-0 h-" */}
-        <div
-          className="flex flex-col col-span-12 lg:col-span-5 text-left col-start-1 lg:col-start-2 justify-start py-[100px] lg:py-[200px] items-start w-full">
-
-          <motion.h2
-            variants={textVariant}
-            initial="hidden"
-            whileInView="visible"
-            className="font-bold text-left text-[3.5rem] md:text-[4.5rem] text-black leading-[1]"
-          >
-            Experience<br/> Africa's largest<br/> e-commerce API.
-          </motion.h2>
-          <motion.p
-            variants={textVariant}
-            initial="hidden"
-            whileInView="visible"
-            className="md:text-[17px] text-[16px] font-medium text-left pb-8 pt-4 text-slate-800"
-          >
-            Get live products and APIs from commercial service providers spanning multiple industries aggregated across
-            in Africa.
-          </motion.p>
-
-          <div>
-            <motion.button
-              variants={btnVariant}
+            <motion.h2
+              variants={textVariant}
               initial="hidden"
               whileInView="visible"
-              className="flex gap-2 items-center bg-black text-[16px] text-white px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-black hover:bg-transparent hover:text-black">
-              <Link href="https://app.lyncs.africa/"> View coverage</Link>
-            </motion.button>
+              className="font-bold text-left text-[3.5rem] md:text-[4.5rem] text-black leading-[1]"
+            >
+              Experience<br/> Africa's largest<br/> e-commerce API.
+            </motion.h2>
+            <motion.p
+              variants={textVariant}
+              initial="hidden"
+              whileInView="visible"
+              className="md:text-[17px] text-[16px] font-medium text-left pb-8 pt-4 text-slate-800"
+            >
+              Get live products and APIs from commercial service providers spanning multiple industries aggregated across
+              in Africa.
+            </motion.p>
+
+            <div>
+              <motion.button
+                variants={btnVariant}
+                initial="hidden"
+                whileInView="visible"
+                className="flex gap-2 items-center bg-black text-[16px] text-white px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-black hover:bg-transparent hover:text-black">
+                <Link href="https://app.lyncs.africa/"> View coverage</Link>
+              </motion.button>
+            </div>
+
           </div>
-
-        </div>
-
-        <div className="h-full relative w-full col-span-6 my-10 md:my-0 md:px-0">
-          {/* <ImageBubble /> */}
-          <div className="logo-area">
-            <ul className="logo-circles">
-              <li className="rounded-full bg-center object-center"></li>
-              <li className="rounded-full bg-center object-center"></li>
-              <li className="rounded-full bg-center object-center"></li>
-              <li className="rounded-full bg-center object-center"></li>
-              <li className="rounded-full bg-center object-center "></li>
-              <li className="rounded-full bg-center object-center "></li>
-              <li className="rounded-full bg-center object-center "></li>
-              <li className="rounded-full bg-center object-center "></li>
-              <li className="rounded-full bg-center object-center "></li>
-              {/* <li className="rounded-full bg-center  object-center "></li> */}
-              {/* <li className="rounded-full bg-center  object-center "></li> */}
-              {/* <li className="rounded-full bg-center  object-center"></li> */}
-            </ul>
+          <div className="h-full relative w-full col-span-7 my-10 md:my-0 md:px-0">
+            {/* <ImageBubble /> */}
+            <div className="logo-area">
+              <ul className="logo-circles">
+                <li className="rounded-full bg-center object-center"></li>
+                <li className="rounded-full bg-center object-center"></li>
+                <li className="rounded-full bg-center object-center"></li>
+                <li className="rounded-full bg-center object-center"></li>
+                <li className="rounded-full bg-center object-center "></li>
+                <li className="rounded-full bg-center object-center "></li>
+                <li className="rounded-full bg-center object-center "></li>
+                <li className="rounded-full bg-center object-center "></li>
+                <li className="rounded-full bg-center object-center "></li>
+                {/* <li className="rounded-full bg-center  object-center "></li> */}
+                {/* <li className="rounded-full bg-center  object-center "></li> */}
+                {/* <li className="rounded-full bg-center  object-center"></li> */}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

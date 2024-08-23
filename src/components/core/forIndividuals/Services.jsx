@@ -50,7 +50,7 @@ const Services = ({handleIsWidgetLoading}) => {
         </div>
         <div className="md:grid grid-cols-12 px-4 md:px-0">
           <div
-            className="col-start-2 col-span-10 relative">
+            className="container mx-auto col-start-2 col-span-10 relative min-h-screen md:min-h-full 2xl:min-h-[90vh]">
             <motion.h2
               variants={textVariant}
               initial="hidden"

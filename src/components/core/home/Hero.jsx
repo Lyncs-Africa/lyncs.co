@@ -70,11 +70,12 @@ const Hero = () => {
 
   return (
     <div
-      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover min-h-[100vh] font-satoshiMedium">
+      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-satoshiMedium">
       <div
-        className="container mx-auto md:grid grid-cols-12 py-[100px] xl:py-[160px] overflow-hidden md:relative md:z-10">
+        className="md:grid grid-cols-12 py-[100px] xl:py-[160px] overflow-hidden md:relative md:z-10">
+        <div className="container mx-auto col-span-10 col-start-2 grid grid-cols-2">
         <div
-          className="px-4 md:px-0 col-span-5 text-left col-start-2 z-50 relative flex flex-col justify-center">
+          className="px-4 md:px-0 text-left z-50 relative flex flex-col justify-center">
           <motion.h2
             variants={headerVariant}
             initial="hidden"
@@ -115,7 +116,7 @@ const Hero = () => {
             </motion.button>
           </div>
         </div>
-        <div className="col-start-7 col-span-6 flex md:gap-8 gap-4 px-4 mt-10 md:mt-0">
+        <div className="flex md:gap-8 gap-4 px-4 mt-10 md:mt-0">
           <SideNav/>
           <div className="flex flex-col gap-8">
             <Shop/>
@@ -124,6 +125,7 @@ const Hero = () => {
           <div className="flex flex-col justify-center gap-8">
             <Travel/>
           </div>
+        </div>
         </div>
       </div>
     </div>

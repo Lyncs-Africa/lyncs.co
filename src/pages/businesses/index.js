@@ -4,7 +4,7 @@ import Hero from "@/components/core/forBusiness/Hero";
 import ClientOnly from "@/components/global/ClientOnly";
 import Access from "@/components/core/forBusiness/Access";
 import Services from "@/components/core/forBusiness/Services";
-import BillsPayment from "@/components/core/forBusiness/BillsPayment";
+import Ride from "@/components/core/forBusiness/Ride";
 import Shop from "@/components/core/forBusiness/Shop";
 import Eat from "@/components/core/forBusiness/Eat";
 import Footer from "@/components/global/footer/Footer";
@@ -57,7 +57,7 @@ const Index = () => {
       <Access />
       <Services />
       <Travel />
-      <BillsPayment />
+      <Ride />
       <FeaturesWeb />
       <FeaturesMobile />
       <APICoverage />

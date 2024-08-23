@@ -34,20 +34,24 @@ function Hero({isOpen, handleIsWidgetLoading}) {
   }, []);
 
   const handleOpen = () => {
-    handleIsWidgetLoading(true)
-    window.LyncsWidget.open(
-      {
-        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0/?isSelectOpen=true&view=view-one', onReady: () => {
-          handleIsWidgetLoading(false)
+    handleIsWidgetLoading(true);
+    try {
+      window.LyncsWidget.open({
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0/?isSelectOpen=true&view=view-one',
+        onReady: () => {
+          handleIsWidgetLoading(false);
         }
-      },
-    );
+      });
+    } catch (error) {
+      console.error("Failed to open widget", error);
+      handleIsWidgetLoading(false); // Ensure loading state is reset in case of error
+    }
   };
 
   return (
     <>
       <div
-        className="min-h-screen md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-900 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
+        className="min-h-screen md:min-h-full 2xl:min-h-[90vh] md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-900 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
         <div className={`${isOpen ? 'bg-white' : 'bg-view-one bg-cover bg-center opacity-20'} absolute inset-0`}>
         </div>
         <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">
