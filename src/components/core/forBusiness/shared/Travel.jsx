@@ -29,7 +29,7 @@ const Travel = () => {
   return (
     <div>
       <div>
-        <div className="flex items-center gap-4 p-6">
+        <div className="md:flex items-center gap-4 p-6">
           <img className="w-[50px]" src="/images/face-three.png"/>
           <div>
             <p className="text-gray-50 text-2xl flex gap-2"><span className="hidden xl:block">Chidera</span> Ezeh</p>
@@ -37,7 +37,7 @@ const Travel = () => {
           </div>
         </div>
         <hr className="border-[1px] border-dotted border-gray-500"/>
-        <div className="grid grid-cols-4 gap-2 p-6">
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-2 p-6">
           <div>
             <p className="text-gray-200 text-sm">Gate</p>
             <p className="text-gray-50 text-[17px]">B2</p>
@@ -53,7 +53,7 @@ const Travel = () => {
         </div>
         <div className="px-6 flex flex-col items-center">
           <img className="hidden md:block h-[30px] w-full object-cover" src="/images/serial-number.png"/>
-          <p ref={el} className="text-gray-200 pt-2 tracking-[7px] text-sm min-h-[25px]">87J27309FTQ</p>
+          <p ref={el} className="text-gray-200 pt-2 tracking-[7px] md:text-sm min-h-[25px] text-[9px]">87J27309FTQ</p>
         </div>
       </div>
     </div>

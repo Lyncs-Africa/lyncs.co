@@ -17,7 +17,7 @@ const Stream = () => {
       className="z-10 overflow-hidden relative w-full md:bg-black bg-slate-900 md:bg-right bg-cover min-h-[100vh] font-satoshiMedium">
       <div className="md:hidden bg-stream bg-cover bg-center opacity-40 absolute inset-0"></div>
       <div className="px-4 md:px-0 py-[100px] md:py-0 md:grid grid-cols-12 overflow-hidden md:relative md:z-10">
-        <div className="col-start-2 col-span-10 grid grid-cols-12 container mx-auto">
+        <div className="col-start-2 col-span-10 md:grid grid-cols-12 container mx-auto">
           <div
             className="md:pt-[50px] col-span-5 text-left z-50 relative flex flex-col justify-center">
             <motion.h2

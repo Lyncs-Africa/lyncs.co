@@ -49,7 +49,7 @@ const Eat = ({handleIsWidgetLoading}) => {
       className="z-10 overflow-hidden relative w-full font-satoshiMedium">
       <div
         className="md:grid grid-cols-12 md:pt-[160px] py-[70px] overflow-hidden md:relative md:z-10">
-       <div className="container mx-auto col-span-10 col-start-2 grid grid-cols-12">
+       <div className="container mx-auto col-span-10 col-start-2 md:grid grid-cols-12">
          <div
            className="px-4 md:px-0 col-span-5 text-left z-50 relative flex flex-col justify-center">
            <motion.h2

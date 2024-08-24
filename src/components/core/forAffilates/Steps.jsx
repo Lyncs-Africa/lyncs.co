@@ -25,7 +25,7 @@ const Steps = () => {
   return (
     <div className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
       <div className="md:grid grid-cols-12 pt-[100px] overflow-hidden md:relative md:z-10">
-        <div className="container mx-auto col-span-10 grid grid-cols-12 col-start-2">
+        <div className="container mx-auto col-span-10 md:grid grid-cols-12 col-start-2">
           <div className="px-4 md:px-0 col-span-5 text-left z-50 relative flex flex-col justify-center">
             <motion.h2
               variants={headerVariant}

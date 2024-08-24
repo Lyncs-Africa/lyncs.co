@@ -39,7 +39,7 @@ const Access = () => {
       className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-satoshiMedium">
       <div
         className="px-4 md:px-0 md:grid grid-cols-12 py-[100px] gap-10 md:py-[160px] xl:pt-[100px] overflow-hidden md:relative md:z-10">
-        <div className="container mx-auto col-start-2 col-span-10 grid grid-cols-12">
+        <div className="container mx-auto col-start-2 col-span-10 md:grid grid-cols-12">
           <div
             className="col-span-4 text-left z-50 relative flex flex-col justify-center">
             <motion.h2

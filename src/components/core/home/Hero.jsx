@@ -73,7 +73,7 @@ const Hero = () => {
       className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-satoshiMedium">
       <div
         className="md:grid grid-cols-12 py-[100px] xl:py-[160px] overflow-hidden md:relative md:z-10">
-        <div className="container mx-auto col-span-10 col-start-2 grid grid-cols-2">
+        <div className="container mx-auto col-span-10 col-start-2 md:grid grid-cols-2">
         <div
           className="px-4 md:px-0 text-left z-50 relative flex flex-col justify-center">
           <motion.h2

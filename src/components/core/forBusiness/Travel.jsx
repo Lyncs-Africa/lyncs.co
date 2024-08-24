@@ -31,7 +31,7 @@ const Travel = () => {
       </div>
       <div
         className="md:grid grid-cols-12 pb-[70px] md:pb-[160px] xl:pt-0 xl:pb-[250px] overflow-hidden md:relative md:z-10">
-       <div className="container mx-auto col-start-2 col-span-10 grid grid-cols-12">
+       <div className="container mx-auto col-start-2 col-span-10 md:grid grid-cols-12">
          <div
            className="md:pt-[50px] px-4 md:px-0 col-span-5 text-left z-50 relative flex flex-col justify-center">
            <motion.h2
@@ -56,7 +56,7 @@ const Travel = () => {
              </motion.button>
            </Link>
          </div>
-         <div className="col-start-6 col-span-7 flex gap-8">
+         <div className="col-start-6 col-span-7 flex gap-8 px-4 md:px-0 pt-[50px] md:pt-0">
            <img className="md:object-contain" src="/images/travel.png" alt="" />
          </div>
        </div>
