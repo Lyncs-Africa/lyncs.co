@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap");
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Lora:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Spectral:wght@200;300;400;500;600;700;800&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
@@ -138,18 +136,6 @@
     font-style: normal;
 }
 
-
-/**
-* This is a variable font
-* You can controll variable axes as shown below:
-* font-variation-settings: 'wght' 900.0;
-*
-* available axes:
-
-* 'wght' (range from 300.0 to 900.0)
-
-*/
-
 @font-face {
     font-family: 'Satoshi-VariableItalic';
     src: url('/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
@@ -159,7 +145,6 @@
     font-display: swap;
     font-style: italic;
 }
-
 
 @font-face {
     font-family: 'Satoshi-Light';
@@ -171,7 +156,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Satoshi-LightItalic';
     src: url('/fonts/Satoshi-LightItalic.woff2') format('woff2'),
@@ -181,7 +165,6 @@
     font-display: swap;
     font-style: italic;
 }
-
 
 @font-face {
     font-family: 'Satoshi-Regular';
@@ -193,7 +176,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Satoshi-Italic';
     src: url('/fonts/Satoshi-Italic.woff2') format('woff2'),
@@ -203,7 +185,6 @@
     font-display: swap;
     font-style: italic;
 }
-
 
 @font-face {
     font-family: 'Satoshi-Medium';
@@ -215,7 +196,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Satoshi-MediumItalic';
     src: url('/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
@@ -225,7 +205,6 @@
     font-display: swap;
     font-style: italic;
 }
-
 
 @font-face {
     font-family: 'Satoshi-Bold';
@@ -237,7 +216,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Satoshi-BoldItalic';
     src: url('/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
@@ -248,7 +226,6 @@
     font-style: italic;
 }
 
-
 @font-face {
     font-family: 'Satoshi-Black';
     src: url('/fonts/Satoshi-Black.woff2') format('woff2'),
@@ -258,7 +235,6 @@
     font-display: swap;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Satoshi-BlackItalic';

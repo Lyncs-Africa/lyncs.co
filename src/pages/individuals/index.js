@@ -78,7 +78,28 @@ const Index = () => {
       <ClientOnly>
         <Script crossOrigin src="https://lyncs-web-widget.vercel.app/client.js"></Script>
         <Head>
-          <title>Lyncs Africa</title>
+          <title>Lyncs Africa </title>
+          <meta name="description"
+                content="Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+
+          <meta property="og:title"
+                content="Lyncs Africa | Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+          <meta property="og:description"
+                content="Lyncs Africa - Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+          {/*<meta property="og:image" content="/images/440-socials.png"/>*/}
+          <meta property="og:url" content="https://www.lyncs.africa"/>
+          <meta property="og:type" content="website"/>
+
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:title"
+                content="Lyncs Africa | Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+          <meta name="twitter:description"
+                content="Lyncs Africa Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+          {/*<meta name="twitter:image" content="/images/440-socials.png"/>*/}
+          {/*<meta name="twitter:site" content="@440app"/>*/}
+
+          <link rel="canonical" href="https://www.lyncs.africa"/>
+          <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
         </Head>
         <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop} isOpen={isWidgetOpen}
                 handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
