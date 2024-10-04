@@ -76,7 +76,7 @@ const Index = () => {
         )
       }
       <ClientOnly>
-        <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
+        <Script crossOrigin src="https://lyncs-web-widget.onrender.com/client.js"></Script>
         <Head>
           <title>Lyncs Africa </title>
           <meta name="description"
