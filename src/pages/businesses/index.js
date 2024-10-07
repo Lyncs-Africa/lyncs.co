@@ -50,7 +50,28 @@ const Index = () => {
     <ClientOnly>
       <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
       <Head>
-        <title>Lyncs Africa - For Businesses</title>
+        <title>Lyncs | For Businesses</title>
+        <meta name="description"
+              content="Maximize your revenue by integrating our APIs for travel, e-commerce, bus/event tickets, hotels, and subscriptions into your mobile app or website. You provide the customers; we bring the services. Upsell and cross-sell with ease, offering the right service to enhance your customers’ experience."/>
+
+        <meta property="og:title"
+              content="Lyncs | Maximize your revenue by integrating our APIs for travel, e-commerce, bus/event tickets, hotels, and subscriptions into your mobile app or website. You provide the customers; we bring the services. Upsell and cross-sell with ease, offering the right service to enhance your customers’ experience."/>
+        <meta property="og:description"
+              content="Lyncs - Maximize your revenue by integrating our APIs for travel, e-commerce, bus/event tickets, hotels, and subscriptions into your mobile app or website. You provide the customers; we bring the services. Upsell and cross-sell with ease, offering the right service to enhance your customers’ experience."/>
+        {/*<meta property="og:image" content="/images/440-socials.png"/>*/}
+        <meta property="og:url" content="https://www.lyncs.africa"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title"
+              content="Lyncs | Maximize your revenue by integrating our APIs for travel, e-commerce, bus/event tickets, hotels, and subscriptions into your mobile app or website. You provide the customers; we bring the services. Upsell and cross-sell with ease, offering the right service to enhance your customers’ experience."/>
+        <meta name="twitter:description"
+              content="Lyncs | Maximize your revenue by integrating our APIs for travel, e-commerce, bus/event tickets, hotels, and subscriptions into your mobile app or website. You provide the customers; we bring the services. Upsell and cross-sell with ease, offering the right service to enhance your customers’ experience."/>
+        {/*<meta name="twitter:image" content="/images/440-socials.png"/>*/}
+        {/*<meta name="twitter:site" content="@440app"/>*/}
+
+        <link rel="canonical" href="https://www.lyncs.africa"/>
+        <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
       </Head>
       <Navbar scrollTop={scrollTop} />
       <Hero />

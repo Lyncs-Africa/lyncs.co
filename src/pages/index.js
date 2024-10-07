@@ -37,7 +37,28 @@ const Index = () => {
   return (
     <ClientOnly>
       <Head>
-        <title>Lyncs Africa</title>
+        <title>Lyncs</title>
+        <meta name="description"
+              content="Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
+
+        <meta property="og:title"
+              content="Lyncs | Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
+        <meta property="og:description"
+              content="Lyncs - Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
+        {/*<meta property="og:image" content="/images/440-socials.png"/>*/}
+        <meta property="og:url" content="https://www.lyncs.africa"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title"
+              content="Lyncs | Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
+        <meta name="twitter:description"
+              content="Lyncs | Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
+        {/*<meta name="twitter:image" content="/images/440-socials.png"/>*/}
+        {/*<meta name="twitter:site" content="@440app"/>*/}
+
+        <link rel="canonical" href="https://www.lyncs.africa"/>
+        <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
       </Head>
       <Navbar logo dark scrollTop={scrollTop}/>
       <Hero/>

@@ -78,23 +78,23 @@ const Index = () => {
       <ClientOnly>
         <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
         <Head>
-          <title>Lyncs Africa </title>
+          <title>Lyncs | For Individuals</title>
           <meta name="description"
-                content="Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+                content="Discover a world of convenience at your fingertips! Book flights, stream your favorite shows, purchase bus tickets, shop online, and much more—all from one platform."/>
 
           <meta property="og:title"
-                content="Lyncs Africa | Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+                content="Lyncs | Discover a world of convenience at your fingertips! Book flights, stream your favorite shows, purchase bus tickets, shop online, and much more—all from one platform."/>
           <meta property="og:description"
-                content="Lyncs Africa - Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+                content="Lyncs - Discover a world of convenience at your fingertips! Book flights, stream your favorite shows, purchase bus tickets, shop online, and much more—all from one platform."/>
           {/*<meta property="og:image" content="/images/440-socials.png"/>*/}
           <meta property="og:url" content="https://www.lyncs.africa"/>
           <meta property="og:type" content="website"/>
 
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:title"
-                content="Lyncs Africa | Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+                content="Lyncs | Discover a world of convenience at your fingertips! Book flights, stream your favorite shows, purchase bus tickets, shop online, and much more—all from one platform."/>
           <meta name="twitter:description"
-                content="Lyncs Africa Access a range of services - flights booking, stream share, bus ticketing, e-commerce shopping and more, all in one place"/>
+                content="Lyncs | Discover a world of convenience at your fingertips! Book flights, stream your favorite shows, purchase bus tickets, shop online, and much more—all from one platform."/>
           {/*<meta name="twitter:image" content="/images/440-socials.png"/>*/}
           {/*<meta name="twitter:site" content="@440app"/>*/}
 
