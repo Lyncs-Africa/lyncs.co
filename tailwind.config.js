@@ -38,9 +38,9 @@ module.exports = {
         businesses: "linear-gradient(rgb(38 25 51 / 30%),rgb(25 25 51 / 30%)), url(/images/businesses.jpg)",
         individuals: "linear-gradient(rgb(38 25 51 / 30%),rgb(25 25 51 / 30%)), url(/images/individuals.jpg)",
         affiliates: "linear-gradient(rgb(38 25 51 / 30%),rgb(25 25 51 / 30%)), url(/images/affiliate.jpg)",
-        'view-one': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/5.jpg)",
+        'view-one': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/bg-individuals.jpg)",
         'view-two': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/20.jpg)",
-        'view-three': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/1.jpg)",
+        'view-three': "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/bg-affilates.jpg)",
         stream: "linear-gradient(rgb(38 25 51 / 70%),rgb(25 25 51 / 70%)),url(/images/stream-share.jpg)",
         desktop: "url(/img/image-access-desktop.png)",
         future:
