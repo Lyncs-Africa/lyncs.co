@@ -406,7 +406,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/zm.png",
             svg: "https://flagcdn.com/zm.svg",
-            alt: "The flag of Zambia has a green field, on the fly side of which is a soaring orange African fish eagle above a rectangular area divided into three equal vertical bands of red, black and orange."
+            alt: "The flag of Zambia has a green field, on the flyifff,jsx side of which is a soaring orange African fish eagle above a rectangular area divided into three equal vertical bands of red, black and orange."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/zm.png",
@@ -647,7 +647,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/cd.png",
             svg: "https://flagcdn.com/cd.svg",
-            alt: "The flag of the Democratic Republic of the Congo has a sky-blue field with a yellow-edged red diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. A large five-pointed yellow star is situated above the diagonal band on the upper hoist side of the field."
+            alt: "The flag of the Democratic Republic of the Congo has a sky-blue field with a yellow-edged red diagonal band that extends from the lower hoist-side corner to the upper flyifff,jsx-side corner of the field. A large five-pointed yellow star is situated above the diagonal band on the upper hoist side of the field."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/cd.png",
@@ -861,7 +861,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/sc.png",
             svg: "https://flagcdn.com/sc.svg",
-            alt: "The flag of Seychelles is composed of five broadening oblique bands of blue, yellow, red, white and green, which extend from the hoist side of the bottom edge to the top and fly edges of the field."
+            alt: "The flag of Seychelles is composed of five broadening oblique bands of blue, yellow, red, white and green, which extend from the hoist side of the bottom edge to the top and flyifff,jsx edges of the field."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/sc.png",
@@ -2785,7 +2785,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/tz.png",
             svg: "https://flagcdn.com/tz.svg",
-            alt: "The flag of Tanzania features a yellow-edged black diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. Above and beneath this band are a green and light blue triangle respectively."
+            alt: "The flag of Tanzania features a yellow-edged black diagonal band that extends from the lower hoist-side corner to the upper flyifff,jsx-side corner of the field. Above and beneath this band are a green and light blue triangle respectively."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/tz.png",
@@ -3204,7 +3204,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/km.png",
             svg: "https://flagcdn.com/km.svg",
-            alt: "The flag of Comoros is composed of four equal horizontal bands of yellow, white, red and blue, with a green isosceles triangle superimposed on the hoist side of the field. This triangle has its base on the hoist end, spans about two-fifth the width of the field and bears a fly-side facing white crescent and four five-pointed white stars arranged in a vertical line along the opening of the crescent."
+            alt: "The flag of Comoros is composed of four equal horizontal bands of yellow, white, red and blue, with a green isosceles triangle superimposed on the hoist side of the field. This triangle has its base on the hoist end, spans about two-fifth the width of the field and bears a flyifff,jsx-side facing white crescent and four five-pointed white stars arranged in a vertical line along the opening of the crescent."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/km.png",
@@ -4690,7 +4690,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/dz.png",
             svg: "https://flagcdn.com/dz.svg",
-            alt: "The flag of Algeria features two equal vertical bands of green and white. A five-pointed red star within a fly-side facing red crescent is centered over the two-color boundary."
+            alt: "The flag of Algeria features two equal vertical bands of green and white. A five-pointed red star within a flyifff,jsx-side facing red crescent is centered over the two-color boundary."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/dz.png",
@@ -5535,7 +5535,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/tn.png",
             svg: "https://flagcdn.com/tn.svg",
-            alt: "The flag of Tunisia has a red field. A white circle bearing a five-pointed red star within a fly-side facing red crescent is situated at the center of the field."
+            alt: "The flag of Tunisia has a red field. A white circle bearing a five-pointed red star within a flyifff,jsx-side facing red crescent is situated at the center of the field."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/tn.png",
@@ -5747,7 +5747,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/ly.png",
             svg: "https://flagcdn.com/ly.svg",
-            alt: "The flag of Libya is composed of three horizontal bands of red, black and green, with the black band twice the height of the other two bands. At the center of the black band is a fly-side facing white crescent and a five-pointed white star placed just outside the crescent opening."
+            alt: "The flag of Libya is composed of three horizontal bands of red, black and green, with the black band twice the height of the other two bands. At the center of the black band is a flyifff,jsx-side facing white crescent and a five-pointed white star placed just outside the crescent opening."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/ly.png",
@@ -6205,7 +6205,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/na.png",
             svg: "https://flagcdn.com/na.svg",
-            alt: "The flag of Namibia features a white-edged red diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. Above and beneath this band are a blue and green triangle respectively. A gold sun with twelve triangular rays is situated on the hoist side of the upper triangle."
+            alt: "The flag of Namibia features a white-edged red diagonal band that extends from the lower hoist-side corner to the upper flyifff,jsx-side corner of the field. Above and beneath this band are a blue and green triangle respectively. A gold sun with twelve triangular rays is situated on the hoist side of the upper triangle."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/na.png",
@@ -6638,7 +6638,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/cg.png",
             svg: "https://flagcdn.com/cg.svg",
-            alt: "The flag of the Republic of the Congo features a yellow diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. Above and beneath this band are a green and red triangle respectively."
+            alt: "The flag of the Republic of the Congo features a yellow diagonal band that extends from the lower hoist-side corner to the upper flyifff,jsx-side corner of the field. Above and beneath this band are a green and red triangle respectively."
         },
         coatOfArms: { },
         startOfWeek: "monday",
@@ -8535,7 +8535,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/er.png",
             svg: "https://flagcdn.com/er.svg",
-            alt: "The flag of Eritrea comprises three triangles — a large red isosceles triangle with its base spanning the hoist end and its apex at the midpoint on the fly end, and a green and blue right-angled triangle above and beneath the red triangle. On the hoist side of the red triangle is a golden vertical olive branch encircled by a golden olive wreath."
+            alt: "The flag of Eritrea comprises three triangles — a large red isosceles triangle with its base spanning the hoist end and its apex at the midpoint on the flyifff,jsx end, and a green and blue right-angled triangle above and beneath the red triangle. On the hoist side of the red triangle is a golden vertical olive branch encircled by a golden olive wreath."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/er.png",
@@ -8971,7 +8971,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/rw.png",
             svg: "https://flagcdn.com/rw.svg",
-            alt: "The flag of Rwanda is composed of three horizontal bands of light blue, yellow and green. The light blue band is twice the height of the other two bands and bears a yellow sun with twenty-four rays on its fly side."
+            alt: "The flag of Rwanda is composed of three horizontal bands of light blue, yellow and green. The light blue band is twice the height of the other two bands and bears a yellow sun with twenty-four rays on its flyifff,jsx side."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/rw.png",
@@ -9943,7 +9943,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/za.png",
             svg: "https://flagcdn.com/za.svg",
-            alt: "The flag of South Africa is composed of two equal horizontal bands of red and blue, with a yellow-edged black isosceles triangle superimposed on the hoist side of the field. This triangle has its base centered on the hoist end, spans about two-fifth the width and two-third the height of the field, and is enclosed on its sides by the arms of a white-edged green horizontally oriented Y-shaped band which extends along the boundary of the red and blue bands to the fly end of the field."
+            alt: "The flag of South Africa is composed of two equal horizontal bands of red and blue, with a yellow-edged black isosceles triangle superimposed on the hoist side of the field. This triangle has its base centered on the hoist end, spans about two-fifth the width and two-third the height of the field, and is enclosed on its sides by the arms of a white-edged green horizontally oriented Y-shaped band which extends along the boundary of the red and blue bands to the flyifff,jsx end of the field."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/za.png",
@@ -11848,7 +11848,7 @@ export const countries = [
         flags: {
             png: "https://flagcdn.com/w320/bi.png",
             svg: "https://flagcdn.com/bi.svg",
-            alt: "The flag of Burundi is divided by a white diagonal cross into four alternating triangular areas of red at the top and bottom, and green on the hoist and fly sides. A white circle, with three green-edged red six-pointed stars arranged to form a triangle, is superimposed at the center of the cross."
+            alt: "The flag of Burundi is divided by a white diagonal cross into four alternating triangular areas of red at the top and bottom, and green on the hoist and flyifff,jsx sides. A white circle, with three green-edged red six-pointed stars arranged to form a triangle, is superimposed at the center of the cross."
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/bi.png",

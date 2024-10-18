@@ -19,7 +19,7 @@ import FeaturesWeb from '@/components/core/forBusiness/FeaturesWeb';
 import FeaturesMobile from '@/components/core/forBusiness/FeaturesMobile';
 import Stream from "@/components/core/forBusiness/Stream";
 
-const Index = () => {
+const Businesses = () => {
   const [scrollTop, setScrollTop] = useState(0);
 
   const handleScroll = (event) => {
@@ -107,4 +107,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Businesses;

@@ -9,7 +9,7 @@ import Steps from "@/components/core/forAffilates/Steps";
 import Strip from "@/components/core/forAffilates/Strip";
 import Footer from "@/components/global/footer/Footer";
 
-const Index = () => {
+const Affilates = () => {
   const [scrollTop, setScrollTop] = useState(0);
 
   const handleScroll = (event) => {
@@ -52,4 +52,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Affilates;

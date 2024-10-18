@@ -13,7 +13,7 @@ import Eat from "@/components/core/forIndividuals/Eat";
 import Ecommerce from "@/components/core/forIndividuals/Ecommerce";
 import {BounceLoader} from "react-spinners";
 
-const Index = () => {
+const Individuals = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
   const [isWidgetLoading, setIsWidgetLoading] = useState(false)
   const [scrollTop, setScrollTop] = useState(0);
@@ -118,4 +118,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Individuals;
