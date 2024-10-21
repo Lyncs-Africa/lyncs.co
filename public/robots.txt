@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.lyncs.africa/
+
+# Sitemaps
+Sitemap: https://www.lyncs.africa/sitemap.xml
