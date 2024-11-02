@@ -9,45 +9,35 @@ import "swiper/css/pagination";
 
 const categories = [
   {
-    name: "Fashion",
-    imgSrc: "/images/categories/fashion.jpg",
+    name: "Lagos to Abuja",
+    imgSrc: "/images/locations/abuja.jpg",
     path: '/shop/categories/fashion'
   },
   {
-    name: "Home appliances",
-    imgSrc: "/images/categories/appliances.jpg",
+    name: "Abuja to Lagos",
+    imgSrc: "/images/locations/lagos.jpg",
     path: '/shop/categories/appliances'
   },
   {
-    name: "Home & office",
-    imgSrc: "/images/categories/home.jpg",
-    path: '/shop/categories/home-and-office'
-  },
-  {
-    name: "Musical instruments",
-    imgSrc: "/images/categories/music.jpg",
+    name: "Lagos to Accra",
+    imgSrc: "/images/locations/accra.jpg",
     path: '/shop/categories/musical-instruments'
   },
   {
-    name: "Phones & tablets",
-    imgSrc: "/images/categories/phones.jpg",
+    name: "Lagos to Warri",
+    imgSrc: "/images/locations/warri.jpeg",
     path: '/shop/categories/phones-and-tablets'
   },
   {
-    name: "Health and beauty",
-    imgSrc: "/images/categories/beauty.png",
+    name: "Lagos to Benin",
+    imgSrc: "/images/locations/benin.jpg",
     path: '/shop/categories/health-and-beauty'
   },
   {
-    name: "Books",
-    imgSrc: "/images/categories/books.jpg",
+    name: "Lagos to Enugu",
+    imgSrc: "/images/locations/enugu.jpg",
     path: '/shop/categories/books'
   },
-  {
-    name: "Sporting goods",
-    imgSrc: "/images/categories/sporting.jpg",
-    path: '/shop/categories/sporting-goods'
-  }
 ].map((item, i) => ({...item, id: i + 1}))
 
 const Ecommerce = ({handleIsWidgetLoading}) => {
@@ -132,9 +122,9 @@ const Ecommerce = ({handleIsWidgetLoading}) => {
                     <div className="absolute bottom-0 left-8 space-y-2 my-8">
                       <p
                         className="md:text-[2.5rem] text-[2rem] font-quicksand leading-[1.1] text-white">{category.name}</p>
-                      <button onClick={() => handleOpen(category.path)}
-                              className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-2 md:py-3 px-5 md:px-8 rounded border ease transition-all border-white bg-transparent">
-                        Shop now
+                      <button onClick={() => handleOpen('/bus')}
+                              className="opacity-70 group-hover:opacity-100 relative cursor-pointer border text-[17px] text-white text-center py-2 px-5 md:px-8 rounded border ease transition-all border-white bg-transparent">
+                        Book trip
                       </button>
                     </div>
                   </div>
@@ -153,15 +143,15 @@ const Ecommerce = ({handleIsWidgetLoading}) => {
             whileInView="visible"
             className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
           >
-            Elevating Ecommerce Accessibility
+            Book Inter City Bus tickets
           </motion.h2>
           <motion.p
             className="text-[18px] py-8 text-gray-800">
-            Shop from multiple market places all in one place and filter items
+            Book bus tickets locally and nationwide at the best rates. Filter by multiple options to find the perfect ride for you.
           </motion.p>
           <div>
             <motion.button
-              onClick={() => handleOpen('/shop')}
+              onClick={() => handleOpen('/bus')}
               variants={btnVariant}
               initial="hidden"
               whileInView="visible"

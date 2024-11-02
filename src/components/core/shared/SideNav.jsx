@@ -31,12 +31,6 @@ const SideNav = () => {
         </motion.div>
         <motion.div
           animate={{y:[0, 10, -10, 10, 0]}}
-          transition={{delay: 6.5, duration: 1.5, repeat: Infinity, repeatDelay: 13}}
-          className="h-[25px] w-[25px] text-gray-800">
-          <AiOutlineShoppingCart size="25px"/>
-        </motion.div>
-        <motion.div
-          animate={{y:[0, 10, -10, 10, 0]}}
           transition={{delay: 8.5, duration: 1.5, repeat: Infinity, repeatDelay: 13}}
           className="h-[25px] w-[25px] rounded-lg text-gray-800">
           <FaPlaneDeparture size="25px"/>
@@ -46,12 +40,6 @@ const SideNav = () => {
           transition={{delay: 10.5, duration: 1.5, repeat: Infinity, repeatDelay: 13}}
           className="h-[25px] w-[25px] rounded-lg text-gray-800">
           <FaMoneyBills size="25px"/>
-        </motion.div>
-        <motion.div
-          animate={{y:[0, 10, -10, 10, 0]}}
-          transition={{delay: 12.5, duration: 1.5, repeat: Infinity, repeatDelay: 13}}
-          className="h-[25px] w-[25px] rounded-lg text-gray-800">
-          <IoFastFoodOutline size="25px"/>
         </motion.div>
       </div>
     </div>

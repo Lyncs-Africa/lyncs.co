@@ -4,7 +4,6 @@ import Link from "next/link";
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 
 import {usePathname} from "next/navigation";
-import {LocalOffer} from "@mui/icons-material";
 
 export const WhyUsDropdown = ({mode}) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -64,26 +63,7 @@ export const WhyUsDropdown = ({mode}) => {
                 Why choose Lyncs
               </p>
 
-              <p className="text-gray-500 font-light text-[13px]">Here's why 250+ Businesses use Lyncs in their app</p>
-
-            </div>
-          </Link>
-
-          <Link href="/pricing"
-                className="flex-auto flex flex-row items-center justify-start gap-7 w-full cursor-pointer h-fit">
-            <div className="bg-blue-400 p-2 rounded-full">
-              <LocalOffer className="text-white"/>
-            </div>
-
-            <div className="space-y-1">
-              <p
-                className='text-black text-[14px]'
-                role="menuitem"
-              >
-                Pricing
-              </p>
-
-              <p className="text-gray-500 font-light text-[13px]">Affordable pricing for developers, SMEs and enterprises</p>
+              <p className="text-gray-500 font-light text-[13px]">Here's why 10k+ Africans use Lyncs to travel</p>
 
             </div>
           </Link>

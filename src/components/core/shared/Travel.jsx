@@ -35,7 +35,7 @@ const Travel = () => {
           <div className="h-[20px] w-[150px] bg-gray-200 rounded"></div>
         </div>
       </div>
-      <div className="py-4 rounded-t-[34px] bg-slate-900">
+      <div className="py-4 rounded-t-[34px] bg-[#282A30]">
         <div className="flex items-center gap-4 p-6">
           <img className="w-[50px]" src="/images/face-three.png"/>
           <div>

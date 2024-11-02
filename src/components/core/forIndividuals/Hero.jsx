@@ -7,19 +7,12 @@ function Hero({isOpen, handleIsWidgetLoading}) {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Book flight tickets",
-        "Stream share",
-        "Shop online",
-        "Pay for cleaning",
-        "Pay for laundry",
-        "Pay for rides",
-        "Buy bus tickets",
-        "Buy online courses",
-        "Pay for meals",
-        "Book hotels",
-        "Buy event tickets",
-        "Purchase airtime",
-        "Purchase data",
+        "Simplifying Mobility",
+        "Simplifying Flight Booking",
+        "Simplifying Mobility",
+        "Simplifying Bus Ticketing",
+        "Simplifying Mobility",
+        "Simplifying Travel Tours",
       ],
       typeSpeed: 50,
       backSpeed: 10,
@@ -67,24 +60,24 @@ function Hero({isOpen, handleIsWidgetLoading}) {
         </div>
         <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0 z-10">
           <h2
-            className="mt-[50px] md:mt-0 text-blue-300 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
+            className="mt-[20px] md:mt-0 text-blue-300 font-satoshiBold text-[4rem] md:text-[6rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
           >
             <p className="min-h-[125px] md:min-h-0">
             <span ref={el}
                   className={`${isOpen ? 'from-[#00AFEF] to-[#0915BA]' : 'from-[#00AFEF] to-blue-500'} bg-gradient-to-r text-transparent min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}
             >
-            Book flight tickets,
+            Simplifying Mobility
             </span>
             </p>
             <span
               className={`${isOpen ? 'text-black' : 'text-white'} min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}>
-            In Elegant Fashion
+            One Journey at a Time
             </span>
           </h2>
 
           <p
             className={`${isOpen ? 'text-slate-800' : 'text-slate-300'} md:text-[17px] text-[16px] py-5 mb-10 md:px-4`}>
-            Access a range of services, all in one place
+            Experience the ease of booking, travel, and support in one streamlined platform.
           </p>
 
           <div className="flex flex-row md:justify-center items-center gap-7 z-30 w-full">

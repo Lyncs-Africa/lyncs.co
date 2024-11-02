@@ -9,9 +9,9 @@ import Hero from "@/components/core/forIndividuals/Hero";
 import Services from "@/components/core/forIndividuals/Services";
 import FlightBooking from "@/components/core/forIndividuals/FlightBooking";
 import Stream from "@/components/core/forIndividuals/Stream";
-import Eat from "@/components/core/forIndividuals/Eat";
 import Ecommerce from "@/components/core/forIndividuals/Ecommerce";
 import {BounceLoader} from "react-spinners";
+import Eat from "@/components/core/forBusiness/Eat";
 
 const Individuals = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
@@ -106,9 +106,8 @@ const Individuals = () => {
         <Hero isOpen={isWidgetOpen}
               handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <FlightBooking handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Ecommerce handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <Eat handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <Services handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
         <Footer/>
         <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop}/>

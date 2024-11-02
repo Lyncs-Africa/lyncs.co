@@ -148,7 +148,7 @@ function Navbar(mode) {
 
                       <WhyUsDropdown mode={mode}/>
 
-                      <ProductsDropdown mode={mode}/>
+                      {/*<ProductsDropdown mode={mode}/>*/}
 
                       <DevelopersDropdown mode={mode}/>
 

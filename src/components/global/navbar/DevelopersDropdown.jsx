@@ -1,11 +1,10 @@
 import {useRef, useState} from "react";
 import Link from "next/link";
 import PeopleIcon from '@mui/icons-material/People';
-import BusinessIcon from '@mui/icons-material/Business';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
 
 import {usePathname} from "next/navigation";
+import {BsLuggage} from "react-icons/bs";
 
 export const DevelopersDropdown = ({mode}) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -58,28 +57,15 @@ export const DevelopersDropdown = ({mode}) => {
           onMouseEnter={handleOpenDropdown}
           onMouseLeave={handleCloseDropdown}
         >
-          <Link href="/businesses"
-                className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
-            <BusinessIcon className="text-blue-500"/>
-            <p className='text-black text-[14px]'>For Businesses</p>
-          </Link>
-
-          <Link href="/affilates" role="menuitem"
-                className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
-            <PeopleIcon className="text-red-950"/>
-            <p className='text-[14px] text-black'>For Affiliates</p>
-          </Link>
-
           <Link href="/individuals" role="menuitem"
                 className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
-            <ShoppingCartIcon className="text-orange-500"/>
+            <BsLuggage size="20" className="text-blue-500"/>
             <p className='text-[14px] text-black'>For Individuals</p>
           </Link>
-
-          <Link target="_blank" href="https://doc.lyncs.africa/" role="menuitem"
+          <Link href="/affilates" role="menuitem"
                 className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
-            <IntegrationInstructionsIcon className="text-teal-500"/>
-            <p className='text-[14px] text-black'>For Developers</p>
+            <PeopleIcon className="text-purple-500"/>
+            <p className='text-[14px] text-black'>For Affiliates</p>
           </Link>
 
         </div>
