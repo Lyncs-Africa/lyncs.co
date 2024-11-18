@@ -25,7 +25,7 @@ export const DevelopersDropdown = ({mode}) => {
 
   const locationText = {
     '/affilates': 'For Affiliates',
-    '/individuals': 'For Individuals',
+    '/': 'For Individuals',
     '/businesses': 'For Businesses'
   };
   return (
@@ -57,7 +57,7 @@ export const DevelopersDropdown = ({mode}) => {
           onMouseEnter={handleOpenDropdown}
           onMouseLeave={handleCloseDropdown}
         >
-          <Link href="/individuals" role="menuitem"
+          <Link href="/" role="menuitem"
                 className="flex-auto flex flex-row items-center justify-start gap-4 w-full cursor-pointer h-fit">
             <BsLuggage size="20" className="text-blue-500"/>
             <p className='text-[14px] text-black'>For Individuals</p>

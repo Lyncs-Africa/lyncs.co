@@ -1,13 +1,24 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react';
-import MultiSecton from "@/components/core/home/MultiSecton";
+import Navbar from "@/components/global/navbar/Navbar";
 import ClientOnly from "@/components/global/ClientOnly";
+import Footer from "@/components/global/footer/Footer";
+import ScrollToTopBtn from "@/components/global/ScrollToTopBtn";
 import Head from 'next/head';
 import Script from 'next/script';
-import Navbar from "@/components/global/navbar/Navbar";
+import Services from "@/components/core/forIndividuals/Services";
+import FlightBooking from "@/components/core/forIndividuals/FlightBooking";
+import Stream from "@/components/core/forIndividuals/Stream";
+import {BounceLoader} from "react-spinners";
 import Hero from "@/components/core/home/Hero";
-import Footer from "@/components/global/footer/Footer";
+import SectionTwo from "@/components/core/home/SectionTwo";
+import Ride from "@/components/core/forBusiness/Ride";
+import Access from "@/components/core/forBusiness/Access";
+import Testimonials from "@/components/core/home/Testimonials";
+import Strip from "@/components/core/forBusiness/Strip";
 
 const Index = () => {
+  const [isWidgetOpen, setIsWidgetOpen] = useState(false)
+  const [isWidgetLoading, setIsWidgetLoading] = useState(false)
   const [scrollTop, setScrollTop] = useState(0);
 
   const handleScroll = (event) => {
@@ -33,38 +44,99 @@ const Index = () => {
     document.scrollingElement.style.overflowY = "auto"
   }, [])
 
+  useEffect(() => {
+    const handleWidgetOpen = () => {
+      setIsWidgetOpen(true)
+    };
+    window.addEventListener('lyncsWidgetOpened', handleWidgetOpen);
+    return () => {
+      window.removeEventListener('lyncsWidgetOpened', handleWidgetOpen);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleWidgetClose = () => {
+      setIsWidgetOpen(false)
+    };
+    window.addEventListener('lyncsWidgetClosed', handleWidgetClose);
+    return () => {
+      window.removeEventListener('lyncsWidgetClosed', handleWidgetClose);
+    };
+  }, []);
+
+  const handleIsWidgetLoading = (e) => {
+    setIsWidgetLoading(e)
+  }
 
   return (
-    <ClientOnly>
-      <Head>
-        <title>Lyncs</title>
-        <meta name="description"
-              content="Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
+    <div>
+      {
+        isWidgetLoading && (
+          <div className="fixed inset-0 min-h-screen w-full flex justify-center z-50 items-center">
+            <div className="inset-0 absolute bg-white"></div>
+            <div className="relative"><BounceLoader color="#2563EB"/></div>
+          </div>
+        )
+      }
+      <ClientOnly>
+        <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
+        <Head>
+          <title>Lyncs | Simplifying Travel & Mobility Solutions – Lyncs Africa</title>
+          <meta name="description" content="Lyncs simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <meta property="og:title"
-              content="Lyncs | Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
-        <meta property="og:description"
-              content="Lyncs - Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
-        {/*<meta property="og:image" content="/images/440-socials.png"/>*/}
-        <meta property="og:url" content="https://www.lyncs.africa"/>
-        <meta property="og:type" content="website"/>
+          <meta name="keywords" content="travel, tours, flexible bookings, mobility solutions, bus tickets, delivery bikes, payment plans, Lyncs, Lyncs Africa"/>
+          <meta property="og:title" content="Lyncs | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+          <meta property="og:description" content="Lyncs simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+          <meta property="og:url" content="https://www.lyncs.africa"/>
+          <meta property="og:type" content="website"/>
 
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:title"
-              content="Lyncs | Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
-        <meta name="twitter:description"
-              content="Lyncs | Make smarter choices when it comes to travel, shopping, entertainment, and lodging. We offer affordable luxury travel, top-quality discounted products, budget-friendly bus tickets, premium hotels, streaming subscriptions, and much more—all in one place."/>
-        {/*<meta name="twitter:image" content="/images/440-socials.png"/>*/}
-        {/*<meta name="twitter:site" content="@440app"/>*/}
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:title" content="Lyncs | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+          <meta name="twitter:description" content="Lyncs simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+          <link rel="canonical" href="https://www.lyncs.africa"/>
+          <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
 
-        <link rel="canonical" href="https://www.lyncs.africa"/>
-        <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
-      </Head>
-      <Navbar logo dark scrollTop={scrollTop}/>
-      <Hero/>
-      <MultiSecton/>
-      <Footer dark/>
-    </ClientOnly>
+          <script type="application/ld+json">
+            {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Lyncs Africa",
+              "url": "https://www.lyncs.africa",
+              "logo": "https://www.lyncs.africa/path/to/logo.jpg",
+              "description": "Lyncs simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution.",
+              "sameAs": [
+                "https://www.instagram.com/lyncsafrica/",
+                "https://www.twitter.com/lyncsafrica/"
+              ]
+            }
+          `}
+          </script>
+
+        </Head>
+        <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop} isOpen={isWidgetOpen}
+                handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Hero isOpen={isWidgetOpen}
+              handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <FlightBooking handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Ride isOpen={isWidgetOpen}
+              handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <SectionTwo isOpen={isWidgetOpen}
+                    handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Access isOpen={isWidgetOpen}
+                handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Services isOpen={isWidgetOpen}
+                  handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Testimonials/>
+        <Strip isOpen={isWidgetOpen}
+               handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+        <Footer dark/>
+        <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop}/>
+      </ClientOnly>
+    </div>
+
   );
 };
 

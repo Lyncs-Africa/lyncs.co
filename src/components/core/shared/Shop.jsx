@@ -4,17 +4,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SwiperCore from "swiper";
 import {Autoplay, Pagination} from "swiper/modules";
+import {GiCommercialAirplane} from "react-icons/gi";
 
 const Shop = () => {
   SwiperCore.use([Autoplay]);
   return (
-    <div className="w-[240px] md:w-[300px] md:h-[200px] rounded-lg bg-[#FBFBFB] shadow-lg p-6">
-      <p className="text-gray-800 text-2xl font-bold">Shop</p>
-      <div className="my-2 flex flex-col gap-2">
-        <div className="h-[20px] w-[150px] bg-gray-200 rounded"></div>
-        <div className="h-[20px] w-[100px] bg-gray-200 rounded"></div>
+    <div className="w-full md:w-[300px] md:h-[200px] rounded-lg bg-[#FBFBFB] shadow-lg p-6 relative">
+      <div className="animate-bounceTwo absolute top-3 -right-5 h-[50px] w-[50px] rounded-full bg-teal-900 shadow flex items-center justify-center">
+        <GiCommercialAirplane className="text-white" size="20px"/>
       </div>
-      <div className="my-4 h-[60px] hidden md:block">
+      <p className="text-gray-800 text-2xl font-bold">Tour the world</p>
+      <div className="my-2 flex flex-col gap-2">
+        <div className="h-[15px] w-[150px] bg-gray-200 rounded"></div>
+        <div className="h-[15px] w-[100px] bg-gray-200 rounded"></div>
+      </div>
+      <div className="my-4 w-[160px]">
         <Swiper
           loop={true}
           autoplay={{
@@ -27,41 +31,47 @@ const Shop = () => {
           spaceBetween={40}
           breakpoints={{
             0: {
-              slidesPerView: 1,
+              slidesPerView: 1.8,
               spaceBetween: 10,
             },
             470: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 10,
             },
             760: {
-              slidesPerView: 3.5,
-              spaceBetween: 10,
+              slidesPerView: 2.5,
+              spaceBetween: 20,
             },
             1100: {
-              slidesPerView: 3.5,
-              spaceBetween: 10,
+              slidesPerView: 3,
+              spaceBetween: 20,
             },
           }}
           className="mySwiper h-full"
         >
           <SwiperSlide className="h-full">
-            <img className="rounded-lg" src="/images/products/1.png"/>
+            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/lagos.jpg"/>
+            <p className="text-small text-black text-center">Lagos</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-lg" src="/images/products/4.png"/>
+            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/paris.jpg"/>
+            <p className="text-small text-black text-center">Paris</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-lg" src="/images/products/3.png"/>
+            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/london.jpg"/>
+            <p className="text-small text-black text-center">London</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-lg" src="/images/products/2.png"/>
+            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/johannesburg.jpg"/>
+            <p className="text-small text-black text-center">Johannesburg</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-lg" src="/images/products/5.png"/>
+            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/dubai.jpg"/>
+            <p className="text-small text-black text-center">Dubai</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-lg" src="/images/products/6.png"/>
+            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/zanzibar.jpg"/>
+            <p className="text-small text-black text-center">Zanzibar</p>
           </SwiperSlide>
         </Swiper>
       </div>

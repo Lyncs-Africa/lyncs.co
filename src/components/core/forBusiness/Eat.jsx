@@ -6,7 +6,7 @@ const Eat = ({handleIsWidgetLoading}) => {
     <div
       className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
       <div
-        className="md:grid grid-cols-12 py-[100px] md:py-[70px] md:pt-0 overflow-hidden md:relative md:z-10">
+        className="md:grid grid-cols-12 py-[100px] md:py-[160px] overflow-hidden md:relative md:z-10">
         <div
           className="container mx-auto px-4 md:px-0 col-span-10 text-center col-start-2 z-50 relative flex flex-col justify-center">
           <h2

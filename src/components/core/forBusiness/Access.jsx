@@ -3,7 +3,7 @@ import {easeInOut, motion, useScroll, useTransform} from "framer-motion";
 import Link from "next/link"
 import Travel from "@/components/core/forBusiness/shared/Travel";
 
-const Access = () => {
+const Access = ({handleIsWidgetLoading}) => {
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: {opacity: 0, x: 450},
     visible: {
@@ -33,6 +33,18 @@ const Access = () => {
   const scaleXProgress = useTransform(scrollYProgress, [0, 1], [0, -150])
   const reverseScaleXProgress = useTransform(scrollYProgress, [0, 1], [0, 150])
 
+  const handleWait= (service) => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        path: `/waitlist/?service=${service}&launchDate=2025-01-01T00:00:00`,
+        onReady: () => {
+          handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
 
   return (
     <div
@@ -46,50 +58,59 @@ const Access = () => {
               variants={headerVariant}
               initial="hidden"
               whileInView="visible"
-              className="text-white leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+              className="text-white leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
             >
-              One API for everything Commerce
+              Your passport to flexible travel
             </motion.h2>
             <motion.p
               className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
-              The only API you’ll ever need to integrate a wide range of services in industries like e-commerce, travel,
-              ride-sharing, food delivery, event management, and bill payment, all within your application
-            </motion.p>
+              Book tours now and pay in affordable monthly installments
+               </motion.p>
             <div>
               <motion.button
+                onClick={() => handleWait('tours')}
                 variants={btnVariant}
                 initial="hidden"
                 whileInView="visible"
                 className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
-                <Link href="http://app.lyncs.africa">Get started</Link>
+                Join the waitlist
               </motion.button>
             </div>
           </div>
-          <motion.div ref={ref} className="col-start-6 col-span-8 grid grid-cols-2 xl:grid-cols-3 gap-4">
+          <motion.div ref={ref} className="col-start-6 col-span-8 my-8 md:my-0 md:grid grid-cols-2 xl:grid-cols-3 gap-4 space-y-4 md:space-y-0">
             <div className="flex flex-col gap-4 justify-center">
               <motion.div
                 style={window.innerWidth > 768 ? {
                   translateX: scaleXProgress,
                 } : {}}
                 className="h-[100px] bg-[#282A30] rounded p-4">
-                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Washing & Cleaning</p>
+                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Book Tours</p>
                 <div className="space-y-2 my-2">
                   <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
-                  <div className="hidden md:block xl:w-full bg-[#1C1D22] h-[15px]"></div>
+                  <div className="xl:w-full bg-[#1C1D22] h-[15px]"></div>
                 </div>
               </motion.div>
-              <div className="h-[150px] bg-[#282A30] rounded p-4">
-                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Bills Payment</p>
-                <div className="my-4 grid grid-cols-3 gap-4">
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
+              <div className="h-[150px] bg-[#FBFBFB] rounded p-4">
+                <p className="md:text-[17px] text-[16px] font-extralight text-black">Travel Airlines</p>
+                <div className="my-4 flex flex-wrap gap-4 items-center">
+                  <div className="h-[30px]">
+                    <img className="w-[30px h-[30px]" src="/images/airlines/emirates.png"/>
+                  </div>
+                  <div className="h-[30px]">
+                    <img className="h-[30px]" src="/images/airlines/royal-air.png"/>
+                  </div>
+                  <div className="h-[30px]">
+                    <img className="h-[30px]" src="/images/airlines/wa.png"/>
+                  </div>
+                  <div className="h-[30px]">
+                    <img className="h-[30px]" src="/images/airlines/klm.png"/>
+                  </div>
+                  <div className="h-[30px]">
+                    <img className="h-[30px]" src="/images/airlines/etihad-airways.png"/>
+                  </div>
+                  <div className="h-[30px]">
+                    <img className="h-[30px]" src="/images/airlines/egypt-air.png"/>
+                  </div>
                 </div>
               </div>
               <motion.div
@@ -122,29 +143,32 @@ const Access = () => {
               </motion.div>
             </div>
             <div className="flex flex-col gap-4 justify-center">
-              <div className="h-[100px] bg-[#282A30] rounded p-4">
-                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Events Booking</p>
+              <div className="h-[100px] bg-[#282A30] rounded p-4 hidden md:block">
+                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Make Payments</p>
                 <div className="space-y-2 my-2">
                   <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
                   <div className="xl:w-full bg-[#1C1D22] h-[15px]"></div>
                 </div>
               </div>
               <div className="bg-[#282A30] rounded p-4">
-                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Good afternoon Nebechi</p>
+                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Your flight has been successfully booked</p>
               </div>
-              <div className="xl:h-[250px] bg-[#282A30] rounded py-4 xl:py-0">
+              <div className="hidden md:block xl:h-[250px] bg-[#282A30] rounded py-4 xl:py-0">
                 <Travel/>
               </div>
-              <div className="h-[120px] bg-[#282A30] rounded p-4">
-                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">iPhone 11</p>
-                <p className="text-small font-extralight text-gray-400">₦750,000</p>
-                <div className="my-2 grid grid-cols-3 md:grid-cols-6 gap-2">
-                  <div className="w-[30px] h-[30px] rounded-full bg-white"></div>
-                  <div className="w-[30px] h-[30px] rounded-full bg-red-300"></div>
-                  <div className="w-[30px] h-[30px] rounded-full bg-purple-300"></div>
-                  <div className="hidden xl:block w-[30px] h-[30px] rounded-full bg-green-300"></div>
-                  <div className="hidden xl:block w-[30px] h-[30px] rounded-full bg-black"></div>
-                  <div className="hidden xl:block w-[30px] h-[30px] rounded-full bg-yellow-300"></div>
+              <div className="min-h-[120px] bg-[#282A30] rounded p-4">
+                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Join the waitlist</p>
+                <p className="text-small font-extralight text-gray-400 leading-[1]">Be the first to be notified when this goes live</p>
+                <div className="flex justify-center my-4">
+                  <img className="w-[50px] h-[50px] rounded-full 1 hover:scale-110 ease-in-out transition-transform duration-300 bg-blue-500 p-[0.1rem]" src="/images/waitlist-icon-one.png"/>
+                  <img className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
+                       src="/images/waitlist-icon-two.png"/>
+                  <img className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
+                       src="/images/waitlist-icon-three.png"/>
+                  <img className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
+                       src="/images/waitlist-icon-five.png"/>
+                  <img className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
+                       src="/images/waitlist-icon-four.png"/>
                 </div>
               </div>
             </div>
@@ -154,7 +178,7 @@ const Access = () => {
                   translateX: reverseScaleXProgress,
                 } : {}}
                 className="h-[180px] w-[80%] bg-[#282A30] rounded p-4">
-                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Book flight</p>
+                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Bus ticketing</p>
                 <div className="my-4 space-y-4">
                   <div className="space-y-2">
                     <p className="text-small font-extralight text-gray-400">Where from</p>
@@ -167,17 +191,20 @@ const Access = () => {
                 </div>
               </motion.div>
               <div
-                className="h-[160px] w-[80%] bg-[#282A30] rounded p-4">
-                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Stream Share</p>
+                className="min-h-[160px] w-[80%] bg-[#FBFBFB] rounded p-4">
+                <p className="md:text-[17px] text-[16px] font-extralight text-black leading-[1.1]">Transport Companies</p>
                 <div className="grid grid-cols-2 gap-2 my-4">
-                  <div className="bg-[#1C1D22] rounded-lg p-2 flex items-center">
-                    <img src="/images/showmax.svg" className="ride-logo w-full" alt="logo"/>
+                  <div className="relative rounded-lg p-2 flex items-center">
+                    <div className="absolute inset-0 bg-black opacity-10 rounded-lg"/>
+                    <img src="/images/airlines/abc.png" className="ride-logo w-full relative z-10" alt="logo"/>
                   </div>
-                  <div className="bg-[#1C1D22] rounded-lg p-2 flex items-center">
-                    <img src="/images/prime-video.svg" className="ride-logo w-full" alt="logo"/>
+                  <div className="relative rounded-lg p-2 flex items-center">
+                    <div className="absolute inset-0 bg-black opacity-10 rounded-lg"/>
+                    <img src="/images/airlines/chisco.png" className="ride-logo w-full relative" alt="logo"/>
                   </div>
-                  <div className="col-span-2 h-[50px] bg-[#1C1D22] rounded-lg flex justify-center items-center">
-                    <img src="/images/netflix.svg" className="ride-logo w-[90px]" alt="logo"/>
+                  <div className="col-span-2 h-[50px] relative rounded-lg flex justify-center items-center">
+                    <div className="absolute inset-0 bg-black opacity-10 rounded-lg"/>
+                    <img src="/images/airlines/gigm.png" className="ride-logo w-[90px] relative" alt="logo"/>
                   </div>
                 </div>
               </div>

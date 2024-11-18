@@ -11,19 +11,17 @@ const Stream = ({handleIsWidgetLoading}) => {
   const scaleYProgress = useTransform(scrollYProgress, [0, 1], [-50, -300])
   const reverseScaleYProgress = useTransform(scrollYProgress, [0, 1], [-150, 180])
 
-  const handleOpen = () => {
-    handleIsWidgetLoading(true);
-    try {
-      window.LyncsWidget.open({
-        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0/?isSelectOpen=true&view=view-one',
+  const handleOpen = (path) => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        path: `${path}`,
         onReady: () => {
-          handleIsWidgetLoading(false);
+          handleIsWidgetLoading(false)
         }
-      });
-    } catch (error) {
-      console.error("Failed to open widget", error);
-      handleIsWidgetLoading(false);
-    }
+      },
+    );
   };
 
   return (
@@ -36,17 +34,18 @@ const Stream = ({handleIsWidgetLoading}) => {
           <div
             className="md:pt-[50px] col-span-5 text-left z-50 relative flex flex-col justify-center">
             <motion.h2
-              className="text-white leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+              className="text-white leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
             >
-             Hear what people are saying about us at Lyncs
+              Book bus tickets for inter city trips
             </motion.h2>
             <p
               className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
-              Our customers' journeys start with trust, ease, and savings. Explore real stories about how we make travel simple and enjoyable!
+              Book bus tickets locally and nationwide at the best rates.
+              Filter by multiple options to find the perfect ride for you.
             </p>
             <div className="my-4">
               <motion.button
-                onClick={handleOpen}
+                onClick={() => handleOpen('/bus')}
                 className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
                 Get started
               </motion.button>
@@ -62,24 +61,40 @@ const Stream = ({handleIsWidgetLoading}) => {
               className="flex flex-col gap-5"
             >
               <div
-                className="bg-[#282A30] bg-cover min-h-[200px] md:w-[200px] rounded-lg relative p-4">
-                <p className="text-white text-md">I was impressed by the variety of choices available! I could pick the flight with my preference, and everything was just as expected. Great experience!</p>
-                <Ratings value={4.5}/>
+                className="bg-slate-800 bg-cover bg-bottom min-h-[150px] md:min-h-[200px] md:w-[200px] rounded-lg relative p-4">
+                <div
+                  className="absolute bg-[url('/images/locations/cross-river.jpeg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
+                  <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
+                  <p className="text-white text-md relative text-center z-10">Cross River, Nigeria</p>
+                </div>
               </div>
               <div
-                className="bg-[#282A30] bg-cover bg-top min-h-[200px] md:w-[200px] rounded-lg relative p-4">
-                <p className="text-white text-md">I got an incredible rate on my flight ticket, and the booking process was so smooth. Their customer service even followed up to make sure everything went well—above and beyond</p>
-                <Ratings value={4.5}/>
+                className="bg-slate-800 bg-cover bg-bottom md:min-h-[200px] min-h-[150px] md:w-[200px] rounded-lg relative p-4">
+                <div
+                  className="absolute bg-[url('/images/locations/warri.jpeg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
+                  <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
+                  <p className="text-white text-md relative text-center z-10">Warri, Nigeria</p>
+                </div>
               </div>
               <div
-                className="bg-[#282A30] bg-cover bg-bottom min-h-[200px] md:w-[200px] rounded-lg relative p-4">
-                <p className="text-white text-md">I loved the user-friendly site and clear options. Customer support was amazing, making sure I had everything I needed for a smooth trip!</p>
-                <Ratings value={4.5}/>
+                className="bg-slate-800 bg-cover bg-bottom min-h-[150px] md:min-h-[200px] md:w-[200px] rounded-lg relative p-4">
+                <div
+                  className="absolute bg-[url('/images/locations/abuja.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
+                  <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
+                  <p className="text-white text-md relative text-center z-10">Abuja, Nigeria</p>
+                </div>
               </div>
               <div
-                className="bg-[#282A30] bg-cover md:w-[200px] rounded-lg relative p-4">
-                <p className="text-white text-md">Effortless booking with unbeatable rates! I booked a bus for a cross-country trip, and it was fast, simple, and stress-free</p>
-                <Ratings value={5}/>
+                className="bg-slate-800 bg-cover bg-bottom min-h-[150px] md:w-[200px] rounded-lg relative p-4">
+                <div
+                  className="absolute bg-[url('/images/locations/lagos.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
+                  <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
+                  <p className="text-white text-md relative text-center z-10">Lagos, Nigeria</p>
+                </div>
               </div>
 
             </motion.div>
@@ -91,24 +106,40 @@ const Stream = ({handleIsWidgetLoading}) => {
               className="hidden md:flex flex-col gap-5"
             >
               <div
-                className="bg-[#282A30] bg-cover w-[200px] rounded-lg relative p-4">
-                <p className="text-white text-md">This site made it so easy to find flights that fits my budget and schedule. The entire process was smooth from booking to boarding!</p>
-                <Ratings value={5}/>
+                className="bg-slate-800 bg-cover bg-bottom min-h-[200px] md:w-[200px] rounded-lg relative p-4">
+                <div
+                  className="absolute bg-[url('/images/locations/togo.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
+                  <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
+                  <p className="text-white text-md relative text-center z-10">Lome, Togo</p>
+                </div>
               </div>
               <div
-                className="bg-[#282A30] bg-cover bg-center min-h-[200px] w-[200px] rounded-lg relative p-4">
-                <p className="text-white text-md">The entire journey from browsing deals to booking my seat was flawless. Plus, the support team was quick to answer my questions. I’ll definitely be using this service again!</p>
-                <Ratings value={4.5}/>
+                className="bg-slate-800 bg-cover bg-bottom min-h-[150px] md:w-[200px] rounded-lg relative p-4">
+                <div
+                  className="absolute bg-[url('/images/locations/benin.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
+                  <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
+                  <p className="text-white text-md relative text-center z-10">Benin, Nigeria</p>
+                </div>
               </div>
               <div
-                className="bg-[#282A30] bg-cover min-h-[200px] w-[200px] rounded-lg relative p-4">
-                <p className="text-white text-md">The filtering options were a lifesaver! I could easily compare buses based on amenities and departure times. My go-to for travel now!</p>
-                <Ratings value={4.5}/>
+                className="bg-slate-800 bg-cover bg-bottom min-h-[180px] md:w-[200px] rounded-lg relative p-4">
+                <div
+                  className="absolute bg-[url('/images/locations/enugu.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
+                  <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
+                  <p className="text-white text-md relative text-center z-10">Enugu, Nigeria</p>
+                </div>
               </div>
               <div
-                className="bg-[#282A30] bg-cover min-h-[200px] w-[200px] rounded-lg relative -mb-10 p-4">
-                <p className="text-white text-md">Great service and affordable prices! I managed to find the perfect bus for my last-minute trip with no hassle. Highly recommend</p>
-              <Ratings value={5}/>
+                className="bg-slate-800 bg-cover bg-bottom min-h-[200px] md:w-[200px] rounded-lg relative p-4">
+                <div
+                  className="absolute bg-[url('/images/locations/accra.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
+                  <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
+                  <p className="text-white text-md relative text-center z-10">Accra, Ghana</p>
+                </div>
               </div>
             </motion.div>
           </div>

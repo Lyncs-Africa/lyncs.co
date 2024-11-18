@@ -3,7 +3,7 @@ import {easeInOut, motion} from "framer-motion";
 import CabHailing from "@/components/core/shared/CabHailing";
 import Link from "next/link";
 
-const Ride = () => {
+const Ride = ({handleIsWidgetLoading}) => {
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: {opacity: 0, x: 450},
     visible: {
@@ -33,6 +33,19 @@ const Ride = () => {
     }
   }, [])
 
+  const handleWait= (service) => {
+    handleIsWidgetLoading(true)
+    window.LyncsWidget.open(
+      {
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+        path: `/waitlist/?service=${service}&launchDate=2025-01-01T00:00:00`,
+        onReady: () => {
+          handleIsWidgetLoading(false)
+        }
+      },
+    );
+  };
+
   return (
     <div
       className="z-10 overflow-hidden relative bg-[#0C0E1A] w-full text-white md:bg-right bg-cover px-5 md:px-0 py-20 md:py-10 font-satoshiMedium">
@@ -41,7 +54,7 @@ const Ride = () => {
         <img src="/images/mocks.png"/>
       </div>
       <div
-        className="md:grid grid-cols-12 py-[100px] xl:pb-[160px] overflow-hidden md:relative md:z-10">
+        className="md:grid grid-cols-12 md:py-[100px] xl:pb-[160px] overflow-hidden md:relative md:z-10">
         <div className="container mx-auto col-start-2 col-span-10 md:grid grid-cols-12">
           <div
             className="px-4 md:px-0 col-span-5 text-left z-50 relative flex flex-col justify-center">
@@ -49,24 +62,25 @@ const Ride = () => {
               variants={headerVariant}
               initial="hidden"
               whileInView="visible"
-              className="text-white leading-[1] text-[3.5rem] md:text-[4.5rem] font-bold"
+              className="text-white leading-[1.1] text-[3.5rem] md:text-[5rem] font-bold"
             >
-              Robust API for cab hailing
+              Simplifying mobility, one journey at a time
             </motion.h2>
             <motion.p
               variants={textVariant}
               initial="hidden"
               whileInView="visible"
               className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
-              We are the only API you will ever need to integarate every form of airline, bus and ride ticketing.
+              Experience the ease of booking, travel, and support in one streamlined platform.
             </motion.p>
             <div>
               <motion.button
+                onClick={() => handleWait('ride sharing')}
                 variants={btnVariant}
                 initial="hidden"
                 whileInView="visible"
                 className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
-                <Link href="http://app.lyncs.africa"> Get started</Link>
+                Get started
               </motion.button>
             </div>
           </div>

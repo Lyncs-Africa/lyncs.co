@@ -7,7 +7,7 @@ import StreamShare from "@/components/core/shared/StreamShare";
 import Travel from "@/components/core/shared/Travel";
 import Typed from "typed.js";
 
-const Hero = () => {
+const Hero = ({handleIsWidgetLoading}) => {
   const el = useRef(null);
 
   useEffect(() => {
@@ -58,11 +58,37 @@ const Hero = () => {
     }
   }, [])
 
+  const handleOpen = () => {
+    handleIsWidgetLoading(true);
+    try {
+      window.LyncsWidget.open({
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0/?isSelectOpen=true&view=view-one',
+        onReady: () => {
+          handleIsWidgetLoading(false);
+        }
+      });
+    } catch (error) {
+      console.error("Failed to open widget", error);
+      handleIsWidgetLoading(false); // Ensure loading state is reset in case of error
+    }
+  };
+
   return (
     <div
       className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-satoshiMedium">
       <div
-        className="md:grid grid-cols-12 py-[100px] xl:py-[160px] overflow-hidden md:relative md:z-10">
+        className="md:grid grid-cols-12 py-[100px] xl:py-[160px]  xl:pb-[300px] overflow-hidden md:relative md:z-10">
+        <div className="md:block md:-bottom-24 hidden absolute xl:bottom-[-10rem] -right-0.5 absolute bottom-[-10rem] w-full z-30">
+          <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path className="cls-1"
+                      d="M.17,10.74C43.4,20,87.41,29.54,125.87,51.36c49.88,28.29,86.24,81.56,141.49,99.85a115.56,115.56,0,0,0,71,.33c20.72-6.65,39.05-19,57.45-30.63,34.42-21.75,71.93-40,112.69-45.4,83.85-11.09,164.77,46.12,248.13,17.9,44.46-15,78-52.21,120.65-71.76A236.83,236.83,0,0,1,1000,1.25l-1.71,264.09H.2C.2,180.48-.23,95.6.17,10.74Z"/>
+              </g>
+            </g>
+          </svg>
+
+        </div>
         <div className="container mx-auto col-span-10 col-start-2 md:grid grid-cols-2">
         <div
           className="px-4 md:px-0 text-left z-50 relative flex flex-col justify-center">
@@ -97,7 +123,7 @@ const Hero = () => {
           </motion.p>
           <div>
             <motion.button
-              onClick={() => window.location.href = "#for"}
+              onClick={handleOpen}
               variants={btnVariant}
               initial="hidden"
               whileInView="visible"
@@ -108,9 +134,9 @@ const Hero = () => {
         </div>
         <div className="flex md:gap-8 gap-4 px-4 mt-10 md:mt-0">
           <SideNav/>
-          <div className="flex flex-col gap-8 pt-[30px]">
+          <div className="flex flex-col gap-8">
             <div className="bg-[#282A30] rounded p-4">
-              <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Good afternoon Nebechi</p>
+              <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Where are you going to today?</p>
             </div>
             <motion.div
               className="h-[180px] w-[80%] bg-[#282A30] rounded p-4">
@@ -126,31 +152,7 @@ const Hero = () => {
                 </div>
               </div>
             </motion.div>
-            <motion.div
-              className="h-[150px] flex">
-              <div className="w-full bg-[#282A30] rounded p-4">
-                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400 leading-[1.1]">Bus ticketing</p>
-                <div className="relative w-full my-2">
-                  <input className="pointer-events-none w-full outline-none ease transition-all py-1 px-4 text-sm rounded bg-[#1C1D22] text-black pl-11"
-                         value=""/>
-                  <svg stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" id="search" x="0px"
-                       y="0px" viewBox="0 0 24 24" className="absolute top-1.5 left-2 fill-gray-400" height="15px"
-                       width="15px" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                      <path d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
-		c0-4.39-3.57-7.96-7.96-7.96s-7.96,3.57-7.96,7.96c0,4.39,3.57,7.96,7.96,7.96c1.98,0,3.81-0.73,5.21-1.94L20.031,20.79z
-		 M4.11,11.02c0-3.84,3.13-6.96,6.96-6.96c3.84,0,6.96,3.12,6.96,6.96c0,3.84-3.12,6.96-6.96,6.96C7.24,17.98,4.11,14.86,4.11,11.02
-		z"></path>
-                    </g>
-                  </svg>
-                </div>
-                <div className="my-4 grid grid-cols-2 gap-4">
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px]"></div>
-                  <div className="bg-[#1C1D22] h-[15px] col-span-2"></div>
-                </div>
-              </div>
-            </motion.div>
+            <Shop/>
           </div>
           <div className="flex flex-col justify-center gap-8">
             <Travel/>

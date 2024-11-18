@@ -87,34 +87,15 @@ function Navbar(mode) {
               !mode.logo && (
                 <>
                   <div className="flex md:order-2">
-                    {
-                      location === '/individuals' ?
-                        <>
-                          <button onClick={handleOpen}
-                                  type="button"
-                                  className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
-                          >
-                            Get Started
-                            <span className="">
+                    <button onClick={handleOpen}
+                            type="button"
+                            className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+                    >
+                      Get Started
+                      <span className="">
                           <i className="fa-solid fa-right-to-bracket"></i>
                         </span>
-                          </button>
-                        </>
-                        :
-                        <>
-                          <Link target="_blank" href="http://app.lyncs.africa">
-                            <button
-                              type="button"
-                              className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
-                            >
-                              Sign in
-                              <span className="">
-                          <i className="fa-solid fa-right-to-bracket"></i>
-                        </span>
-                            </button>
-                          </Link>
-                        </>
-                    }
+                    </button>
 
                     <button
                       onClick={open}
