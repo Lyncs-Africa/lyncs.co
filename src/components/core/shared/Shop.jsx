@@ -18,7 +18,7 @@ const Shop = () => {
         <div className="h-[15px] w-[150px] bg-gray-200 rounded"></div>
         <div className="h-[15px] w-[100px] bg-gray-200 rounded"></div>
       </div>
-      <div className="my-4 w-[160px]">
+      <div className="my-4 w-[160px] md:w-full">
         <Swiper
           loop={true}
           autoplay={{
