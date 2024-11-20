@@ -1,7 +1,6 @@
 import React, {useEffect, useLayoutEffect, useRef, useState} from "react";
 import Link from "next/link";
 import {usePathname} from 'next/navigation';
-import {ProductsDropdown} from "./ProductsDropdowns.jsx";
 import {useDisclosure} from "@mantine/hooks";
 import MobileNavbar from "./MobileNavbar.jsx";
 import {DevelopersDropdown} from "./DevelopersDropdown.jsx";
@@ -87,15 +86,29 @@ function Navbar(mode) {
               !mode.logo && (
                 <>
                   <div className="flex md:order-2">
-                    <button onClick={handleOpen}
-                            type="button"
-                            className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
-                    >
-                      Get Started
-                      <span className="">
+                    {
+                      location === '/affilates' ? (
+                        <button
+                                type="button"
+                                className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+                        >
+                          Get Started
+                          <span className="">
                           <i className="fa-solid fa-right-to-bracket"></i>
                         </span>
-                    </button>
+                        </button>
+                      ) : (
+                        <button onClick={handleOpen}
+                                type="button"
+                                className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+                        >
+                          Get Started
+                          <span className="">
+                          <i className="fa-solid fa-right-to-bracket"></i>
+                        </span>
+                        </button>
+                      )
+                    }
 
                     <button
                       onClick={open}

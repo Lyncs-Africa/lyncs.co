@@ -50,27 +50,27 @@ const Shop = () => {
           className="mySwiper h-full"
         >
           <SwiperSlide className="h-full">
-            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/lagos.jpg"/>
+            <img alt="Lyncs destinations" className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/lagos.jpg"/>
             <p className="text-small text-black text-center">Lagos</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/paris.jpg"/>
+            <img alt="Lyncs destinations" className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/paris.jpg"/>
             <p className="text-small text-black text-center">Paris</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/london.jpg"/>
+            <img alt="Lyncs destinations" className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/london.jpg"/>
             <p className="text-small text-black text-center">London</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/johannesburg.jpg"/>
+            <img alt="Lyncs destinations" className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/johannesburg.jpg"/>
             <p className="text-small text-black text-center">Johannesburg</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/dubai.jpg"/>
+            <img alt="Lyncs destinations" className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/dubai.jpg"/>
             <p className="text-small text-black text-center">Dubai</p>
           </SwiperSlide>
           <SwiperSlide className="h-full">
-            <img className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/zanzibar.jpg"/>
+            <img alt="Lyncs destinations" className="rounded-full w-[60px] h-[60px] mx-auto" src="/images/locations/zanzibar.jpg"/>
             <p className="text-small text-black text-center">Zanzibar</p>
           </SwiperSlide>
         </Swiper>

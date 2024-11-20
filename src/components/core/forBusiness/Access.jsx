@@ -94,22 +94,22 @@ const Access = ({handleIsWidgetLoading}) => {
                 <p className="md:text-[17px] text-[16px] font-extralight text-black">Travel Airlines</p>
                 <div className="my-4 flex flex-wrap gap-4 items-center">
                   <div className="h-[30px]">
-                    <img className="w-[30px h-[30px]" src="/images/airlines/emirates.png"/>
+                    <img alt="Lyncs airline" className="w-[30px h-[30px]" src="/images/airlines/emirates.png"/>
                   </div>
                   <div className="h-[30px]">
-                    <img className="h-[30px]" src="/images/airlines/royal-air.png"/>
+                    <img alt="Lyncs airline" className="h-[30px]" src="/images/airlines/royal-air.png"/>
                   </div>
                   <div className="h-[30px]">
-                    <img className="h-[30px]" src="/images/airlines/wa.png"/>
+                    <img alt="Lyncs airline" className="h-[30px]" src="/images/airlines/wa.png"/>
                   </div>
                   <div className="h-[30px]">
-                    <img className="h-[30px]" src="/images/airlines/klm.png"/>
+                    <img alt="Lyncs airline" className="h-[30px]" src="/images/airlines/klm.png"/>
                   </div>
                   <div className="h-[30px]">
-                    <img className="h-[30px]" src="/images/airlines/etihad-airways.png"/>
+                    <img alt="Lyncs airline" className="h-[30px]" src="/images/airlines/etihad-airways.png"/>
                   </div>
                   <div className="h-[30px]">
-                    <img className="h-[30px]" src="/images/airlines/egypt-air.png"/>
+                    <img alt="Lyncs airline" className="h-[30px]" src="/images/airlines/egypt-air.png"/>
                   </div>
                 </div>
               </div>
@@ -160,14 +160,14 @@ const Access = ({handleIsWidgetLoading}) => {
                 <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Join the waitlist</p>
                 <p className="text-small font-extralight text-gray-400 leading-[1]">Be the first to be notified when this goes live</p>
                 <div className="flex justify-center my-4">
-                  <img className="w-[50px] h-[50px] rounded-full 1 hover:scale-110 ease-in-out transition-transform duration-300 bg-blue-500 p-[0.1rem]" src="/images/waitlist-icon-one.png"/>
-                  <img className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
+                  <img alt="Lyncs waitlist icon" className="w-[50px] h-[50px] rounded-full 1 hover:scale-110 ease-in-out transition-transform duration-300 bg-blue-500 p-[0.1rem]" src="/images/waitlist-icon-one.png"/>
+                  <img alt="Lyncs waitlist icon" className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
                        src="/images/waitlist-icon-two.png"/>
-                  <img className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
+                  <img alt="Lyncs waitlist icon" className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
                        src="/images/waitlist-icon-three.png"/>
-                  <img className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
+                  <img alt="Lyncs waitlist icon" className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
                        src="/images/waitlist-icon-five.png"/>
-                  <img className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
+                  <img alt="Lyncs waitlist icon" className="w-[50px] h-[50px] rounded-full p-[0.1rem] bg-blue-500 -ml-3 hover:scale-110 ease-in-out transition-transform duration-300"
                        src="/images/waitlist-icon-four.png"/>
                 </div>
               </div>
@@ -196,15 +196,15 @@ const Access = ({handleIsWidgetLoading}) => {
                 <div className="grid grid-cols-2 gap-2 my-4">
                   <div className="relative rounded-lg p-2 flex items-center">
                     <div className="absolute inset-0 bg-black opacity-10 rounded-lg"/>
-                    <img src="/images/airlines/abc.png" className="ride-logo w-full relative z-10" alt="logo"/>
+                    <img src="/images/airlines/abc.png" className="ride-logo w-full relative z-10" alt="Lyncs bus logos"/>
                   </div>
                   <div className="relative rounded-lg p-2 flex items-center">
                     <div className="absolute inset-0 bg-black opacity-10 rounded-lg"/>
-                    <img src="/images/airlines/chisco.png" className="ride-logo w-full relative" alt="logo"/>
+                    <img src="/images/airlines/chisco.png" className="ride-logo w-full relative" alt="Lyncs bus logos"/>
                   </div>
                   <div className="col-span-2 h-[50px] relative rounded-lg flex justify-center items-center">
                     <div className="absolute inset-0 bg-black opacity-10 rounded-lg"/>
-                    <img src="/images/airlines/gigm.png" className="ride-logo w-[90px] relative" alt="logo"/>
+                    <img src="/images/airlines/gigm.png" className="ride-logo w-[90px] relative" alt="Lyncs bus logos"/>
                   </div>
                 </div>
               </div>

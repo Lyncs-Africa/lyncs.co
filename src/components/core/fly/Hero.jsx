@@ -107,7 +107,7 @@ const carouselImages =[
       <div className="bg-slate-800 opacity-70 absolute inset-0"></div>
       <div className="flex flex-col min-h-screen">
         <div className="md:w-[80%] w-[90%] mx-auto relative z-10 flex flex-col xl:min-h-[73vh] md:min-h-[70vh]">
-          <img className="w-[100px] pt-5" src="/images/logo-white.svg"/>
+          <img alt="Lyncs logo" className="w-[100px] pt-5" src="/images/logo-white.svg"/>
           <div className="relative z-10 md:text-center py-8 my-auto">
             <h1 className="md:text-[6rem] text-[4rem] leading-[1] font-satoshiMedium text-white">
               <span ref={el} className="text-blue-400">Explore the World</span>
@@ -163,7 +163,7 @@ const carouselImages =[
                     <img
                       className="w-[250px] h-[150px] object-cover rounded-lg"
                       src={image.imgSrc}
-                      alt={`Slide ${index + 1}`}
+                      alt={`Lyncs fly Slide ${index + 1}`}
                     />
                     <div className="absolute bottom-0 left-0 w-full h-[50px] bg-slate-900 opacity-80 rounded-t-xl p-2 flex items-center justify-center">
                       <p className="relative text-white">{image.location}</p>

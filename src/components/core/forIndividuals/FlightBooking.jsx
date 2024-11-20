@@ -68,7 +68,7 @@ const FlightBooking = ({handleIsWidgetLoading}) => {
             </div>
           </div>
           <div className="col-span-8 flex gap-8 pt-[50px] md:pt-0 px-4 md:px-0">
-            <img className="md:object-contain" src="/images/plane.svg" alt=""/>
+            <img className="md:object-contain" src="/images/plane.svg" alt="Lyncs fly"/>
           </div>
         </div>
       </div>

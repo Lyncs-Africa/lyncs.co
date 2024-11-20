@@ -30,7 +30,7 @@ const SectionTwo = () => {
       <div
         className="container mx-auto md:grid grid-cols-12 gap-10 py-[100px] overflow-hidden md:relative md:z-10">
        <div className="col-span-7 hidden md:block">
-          <img className="w-full object-cover object-left h-full" src="/images/dashboard.png"/>
+          <img alt="Lyncs dashboard" className="w-full object-cover object-left h-full" src="/images/dashboard.png"/>
         </div>
         <div
           className="col-span-5 px-4 md:px-0 z-50 relative flex flex-col justify-center">

@@ -49,7 +49,7 @@ function TestimonialsMobile() {
                     <img
                       className="w-[40px] rounded-full"
                       src={`https://ui-avatars.com/api/?name=Femi Bejide&background=000000&color=eeeeee`}
-                      alt=""
+                      alt="Lyncs testimonial"
                     />
                     <div className="ml-8">
                       <p className="text-black font-bold">
@@ -83,7 +83,7 @@ function TestimonialsMobile() {
                   <img
                     className="w-[40px] rounded-full"
                     src={`https://ui-avatars.com/api/?name=Folu Ijagbulu&background=000000&color=eeeeee`}
-                    alt=""
+                    alt="Lyncs testimonial"
                   />
                   <div className="ml-8">
                     <p className="text-black font-bold">

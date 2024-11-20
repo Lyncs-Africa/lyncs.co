@@ -26,7 +26,7 @@ const CabHailing = () => {
           >
             <SwiperSlide>
               <div className="flex items-center gap-5">
-                <img src="/images/face-1.png"/>
+                <img alt="Lyncs icon" src="/images/face-1.png"/>
                 <div>
                   <p className="text-white md:text-[15px]">
                     Good Afternoon,
@@ -164,7 +164,7 @@ const CabHailing = () => {
           </div>
         </div>
       </div>
-      <img alt="img" className="w-full werp" src="/images/picase.png"/>
+      <img  alt="Lyncs img" className="w-full werp" src="/images/picase.png"/>
     </div>
   );
 };

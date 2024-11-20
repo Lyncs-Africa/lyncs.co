@@ -72,7 +72,7 @@ const Page = () => {
 
                         </Timeline>
 
-                        <img src='/images/lyncs-home.png' alt='' />
+                        <img src='/images/lyncs-home.png' alt='Lyncs home' />
                     </div>
                 </section>
 

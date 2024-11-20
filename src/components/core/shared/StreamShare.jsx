@@ -11,13 +11,13 @@ const StreamShare = () => {
           className="absolute bg-[#FBFBFB] shadow-lg rounded-lg w-[150px] bottom-[-6.5rem] md:bottom-[-7rem] right-[-3rem] md:right-[-7rem] p-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-black rounded-lg p-2 flex items-center">
-              <img src="/images/showmax.svg" className="ride-logo w-full" alt="logo"/>
+              <img src="/images/showmax.svg" className="ride-logo w-full" alt="Lyncs providers"/>
             </div>
             <div className="bg-black rounded-lg p-2 flex items-center">
-              <img src="/images/prime-video.svg" className="ride-logo w-full" alt="logo"/>
+              <img src="/images/prime-video.svg" className="ride-logo w-full" alt="Lyncs providers"/>
             </div>
             <div className="col-span-2 h-[50px] bg-black rounded-lg flex justify-center items-center">
-              <img src="/images/netflix.svg" className="ride-logo w-[90px]" alt="logo"/>
+              <img src="/images/netflix.svg" className="ride-logo w-[90px]" alt="Lyncs providers"/>
             </div>
           </div>
         </div>

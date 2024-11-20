@@ -66,7 +66,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-16" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Dolapo Olanreqaju&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Dolapo Olanrewaju
@@ -83,7 +83,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-17" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Richard Obasi&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Richard Obasi
@@ -100,7 +100,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-17" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Abdul Omar&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Abdul Omar
@@ -117,7 +117,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-17" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Tomi Bakare&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Tomi Bakare
@@ -134,7 +134,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-17" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Tara Oke&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Tara Oke
@@ -151,7 +151,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-17" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Kachi Beauty&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Kachi Beauty
@@ -168,7 +168,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-17" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Emeka Chukwudum&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Emeka Chukwudum
@@ -185,7 +185,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-17" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Priscilla Onu&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Ogechi Onu
@@ -202,7 +202,7 @@ const Testimonials = () => {
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
-                      <img alt="img-17" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
+                      <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Richard Obasi&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Femi Salami

@@ -76,7 +76,7 @@ const Eat = ({handleIsWidgetLoading}) => {
            </div>
          </div>
          <div className="col-span-5 col-start-7">
-           <img className="object-contain mt-16 md:mt-0" src="/images/man with food.png" alt=""/>
+           <img className="object-contain mt-16 md:mt-0" src="/images/man with food.png" alt="Lyncs food"/>
          </div>
        </div>
       </div>

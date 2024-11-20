@@ -34,7 +34,7 @@ const Testimonials = () => {
                 <img
                   className="w-[50px] rounded-full"
                   src={`https://ui-avatars.com/api/?name=Femi Bejide&background=000000&color=eeeeee`}
-                  alt=""
+                  alt="Lyncs testimonial"
                 />
                 <div className="ml-8">
                   <p className="text-[18px] text-black font-bold">
@@ -54,7 +54,7 @@ const Testimonials = () => {
                 <img
                   className="w-[50px] rounded-full"
                   src={`https://ui-avatars.com/api/?name=Folu Ijagbulu&background=000000&color=eeeeee`}
-                  alt=""
+                  alt="Lyncs testimonial"
                 />
                 <div className="ml-8">
                   <p className="text-[18px] text-black font-bold">

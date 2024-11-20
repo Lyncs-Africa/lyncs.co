@@ -27,7 +27,7 @@ const Travel = () => {
     <div
       className="min-h-screen md:min-h-full xl:min-h-[80vh] 2xl:min-h-[80vh] z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
       <div className="xl:block hidden absolute bottom-[-5rem] w-full z-30">
-        <img alt="curve" src="/images/long-curve.svg"/>
+        <img alt="Lyncs curve" src="/images/long-curve.svg"/>
       </div>
       <div
         className="md:grid grid-cols-12 pb-[70px] md:pb-[160px] xl:pt-0 xl:pb-[250px] overflow-hidden md:relative md:z-10">
@@ -57,7 +57,7 @@ const Travel = () => {
            </Link>
          </div>
          <div className="col-start-6 col-span-7 flex gap-8 px-4 md:px-0 pt-[50px] md:pt-0">
-           <img className="md:object-contain" src="/images/travel.png" alt="" />
+           <img className="md:object-contain" src="/images/travel.png" alt="Lyncs travel" />
          </div>
        </div>
       </div>

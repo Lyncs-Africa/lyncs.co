@@ -37,7 +37,7 @@ const Travel = () => {
       </div>
       <div className="py-4 rounded-t-[34px] bg-[#282A30]">
         <div className="flex items-center gap-4 p-6">
-          <img className="w-[50px]" src="/images/face-three.png"/>
+          <img alt="Lyncs icon" className="w-[50px]" src="/images/face-three.png"/>
           <div>
             <p className="text-gray-50 text-2xl">Sophia Bakare</p>
             <p className="text-gray-200">Passenger</p>
@@ -63,7 +63,7 @@ const Travel = () => {
           </div>
         </div>
         <div className="px-6 flex flex-col items-center">
-          <img src="/images/serial-number.png"/>
+          <img alt="Lyncs serial number" src="/images/serial-number.png"/>
           <p ref={el} className="text-gray-200 pt-2 tracking-[7px] text-sm min-h-[25px]">87J27309FTQ</p>
         </div>
       </div>

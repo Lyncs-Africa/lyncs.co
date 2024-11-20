@@ -117,7 +117,7 @@ const Ecommerce = ({handleIsWidgetLoading}) => {
                   <div className="relative h-full group">
                     <div className="absolute inset-0 bg-slate-800 opacity-50 rounded-lg"></div>
                     <div className="h-full">
-                      <img className="object-cover rounded-lg h-full w-full" src={category.imgSrc} alt=""/>
+                      <img className="object-cover rounded-lg h-full w-full" src={category.imgSrc} alt="Lyncs category"/>
                     </div>
                     <div className="absolute bottom-0 left-8 space-y-2 my-8">
                       <p

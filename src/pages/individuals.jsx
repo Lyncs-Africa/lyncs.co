@@ -76,7 +76,7 @@ const Individuals = () => {
         )
       }
       <ClientOnly>
-        <Script crossOrigin src="http://localhost:5174/client.js"></Script>
+        <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
         <Head>
           <title>Lyncs | For Individuals</title>
           <meta name="description"

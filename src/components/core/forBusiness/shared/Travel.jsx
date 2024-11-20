@@ -30,7 +30,7 @@ const Travel = () => {
     <div>
       <div>
         <div className="md:flex items-center gap-4 p-6">
-          <img className="w-[50px]" src="/images/face-1.png"/>
+          <img alt="Lyncs icon" className="w-[50px]" src="/images/face-1.png"/>
           <div>
             <p className="text-gray-50 text-2xl flex gap-2"><span className="hidden xl:block">Chidera</span> Ezeh</p>
             <p className="text-gray-200">Passenger</p>
@@ -52,7 +52,7 @@ const Travel = () => {
           </div>
         </div>
         <div className="px-6 flex flex-col items-center">
-          <img className="hidden md:block h-[30px] w-full object-cover" src="/images/serial-number.png"/>
+          <img alt="Lyncs serial number" className="hidden md:block h-[30px] w-full object-cover" src="/images/serial-number.png"/>
           <p ref={el} className="text-gray-200 pt-2 tracking-[7px] md:text-sm min-h-[25px] text-[9px]">87J27309FTQ</p>
         </div>
       </div>

@@ -183,7 +183,7 @@ function FeaturesWeb() {
                        className="bg-no-repeat bg-center object-contain h-[400px] w-full mt-10 rounded-xl"></div>
                   <div
                     className="absolute bottom-0 right-[26px] -z-10 rounded-t-xl bg-yellow-400 h-[120px] overflow-hidden left-[26px]">
-                    <img alt="" src="/images/home-products-pattern.svg"/>
+                    <img alt="Lyncs pattern" src="/images/home-products-pattern.svg"/>
                   </div>
                 </div>
               </SwiperSlide>

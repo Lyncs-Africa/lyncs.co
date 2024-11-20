@@ -104,7 +104,7 @@ const Shop = () => {
                 }}
                 transition={{duration: 2.5, repeat: Infinity, repeatDelay: 12.5}}
                 className="absolute inset-0 z-[-1] rounded-lg"></motion.div>
-              <img className="w-[50%]" src="/images/products/1.png"/>
+              <img alt="Lyncs shop icon" className="w-[50%]" src="/images/products/1.png"/>
               <motion.p
                 whileInView={{
                   color: ['#333', '#fff']
@@ -124,7 +124,7 @@ const Shop = () => {
                 }}
                 transition={{delay: 3, duration: 2.5, repeat: Infinity, repeatDelay: 12.5}}
                 className="absolute inset-0 z-[-1] rounded-lg"></motion.div>
-              <img className="w-[30%]" src="/images/products/9.png"/>
+              <img alt="Lyncs shop icon" className="w-[30%]" src="/images/products/9.png"/>
               <motion.p
                 whileInView={{
                   color: ['#333', '#fff']
@@ -144,7 +144,7 @@ const Shop = () => {
                 }}
                 transition={{delay: 7, duration: 2.5, repeat: Infinity, repeatDelay: 12.5}}
                 className="absolute inset-0 z-[-1] rounded-lg"></motion.div>
-              <img className="w-[25%]" src="/images/products/10.png"/>
+              <img alt="Lyncs shop icon" className="w-[25%]" src="/images/products/10.png"/>
               <motion.p
                 whileInView={{
                   color: ['#333', '#fff']
@@ -164,7 +164,7 @@ const Shop = () => {
                 }}
                 transition={{delay: 11, duration: 2.5, repeat: Infinity, repeatDelay: 12.5}}
                 className="absolute inset-0 z-[-1] rounded-lg"></motion.div>
-              <img className="w-[30%]" src="/images/products/11.png"/>
+              <img alt="Lyncs shop icon" className="w-[30%]" src="/images/products/11.png"/>
               <motion.p
                 whileInView={{
                   color: ['#333', '#fff']

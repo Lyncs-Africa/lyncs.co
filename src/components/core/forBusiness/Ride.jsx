@@ -51,7 +51,7 @@ const Ride = ({handleIsWidgetLoading}) => {
       className="z-10 overflow-hidden relative bg-[#0C0E1A] w-full text-white md:bg-right bg-cover px-5 md:px-0 py-20 md:py-10 font-satoshiMedium">
 
       <div className="animate-wide absolute w-full left-0 top-0 opacity-[0.04]">
-        <img src="/images/mocks.png"/>
+        <img alt="Lyncs ride mockup" src="/images/mocks.png"/>
       </div>
       <div
         className="md:grid grid-cols-12 md:py-[100px] xl:pb-[160px] overflow-hidden md:relative md:z-10">

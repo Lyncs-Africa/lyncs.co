@@ -120,7 +120,7 @@ const Steps = () => {
             </div>
           </div>
           <div className="col-span-5 col-start-8 hidden md:block">
-            <img className="h-full object-cover rounded-tl-lg" src="/images/affiliate-2.jpg"/>
+            <img alt="Lyncs affiliate img" className="h-full object-cover rounded-tl-lg" src="/images/affiliate-2.jpg"/>
           </div>
         </div>
       </div>
