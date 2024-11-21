@@ -71,7 +71,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Lyncs | Lyncs Africa | Simplifying Travel & Mobility Solutions – Lyncs Africa</title>
+        <title>Lyncs | Lyncs Africa | Simplifying Travel & Mobility Solutions</title>
         <meta name="description"
               content="Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
