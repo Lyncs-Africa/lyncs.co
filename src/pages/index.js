@@ -69,73 +69,81 @@ const Index = () => {
   }
 
   return (
-    <div>
-      {
-        isWidgetLoading && (
-          <div className="fixed inset-0 min-h-screen w-full flex justify-center z-50 items-center">
-            <div className="inset-0 absolute bg-white"></div>
-            <div className="relative"><BounceLoader color="#2563EB"/></div>
-          </div>
-        )
-      }
-      <ClientOnly>
-        <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
-        <Head>
-          <title>Lyncs | Simplifying Travel & Mobility Solutions – Lyncs Africa</title>
-          <meta name="description" content="Lyncs simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <>
+      <Head>
+        <title>Lyncs | Lyncs Africa | Simplifying Travel & Mobility Solutions – Lyncs Africa</title>
+        <meta name="description"
+              content="Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-          <meta name="keywords" content="travel, tours, flexible bookings, mobility solutions, bus tickets, delivery bikes, payment plans, Lyncs, Lyncs Africa"/>
-          <meta property="og:title" content="Lyncs | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
-          <meta property="og:description" content="Lyncs simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
-          <meta property="og:url" content="https://www.lyncs.africa"/>
-          <meta property="og:type" content="website"/>
+        <meta name="keywords"
+              content="travel, tours, flexible bookings, mobility solutions, bus tickets, delivery bikes, payment plans, Lyncs, Lyncs Africa"/>
+        <meta property="og:title"
+              content="Lyncs | Lyncs Africa | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+        <meta property="og:description"
+              content="Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+        <meta property="og:url" content="https://www.lyncs.africa"/>
+        <meta property="og:type" content="website"/>
 
-          <meta name="twitter:card" content="summary_large_image"/>
-          <meta name="twitter:title" content="Lyncs | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
-          <meta name="twitter:description" content="Lyncs simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
-          <link rel="canonical" href="https://www.lyncs.africa"/>
-          <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title"
+              content="Lyncs | Lyncs Africa | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+        <meta name="twitter:description"
+              content="Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+        <link rel="canonical" href="https://www.lyncs.africa"/>
+        <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
 
-          <script type="application/ld+json">
-            {`
+        <script type="application/ld+json">
+          {`
             {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Lyncs Africa",
               "url": "https://www.lyncs.africa",
               "logo": "https://www.lyncs.africa/path/to/logo.jpg",
-              "description": "Lyncs simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution.",
+              "description": "Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution.",
               "sameAs": [
                 "https://www.instagram.com/lyncsafrica/",
                 "https://www.twitter.com/lyncsafrica/"
               ]
             }
           `}
-          </script>
+        </script>
 
-        </Head>
-        <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop} isOpen={isWidgetOpen}
-                handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Hero isOpen={isWidgetOpen}
-              handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <FlightBooking handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Ride isOpen={isWidgetOpen}
-              handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <SectionTwo isOpen={isWidgetOpen}
-                    handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Access isOpen={isWidgetOpen}
-                handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Services isOpen={isWidgetOpen}
+      </Head>
+      <div>
+        {
+          isWidgetLoading && (
+            <div className="fixed inset-0 min-h-screen w-full flex justify-center z-50 items-center">
+              <div className="inset-0 absolute bg-white"></div>
+              <div className="relative"><BounceLoader color="#2563EB"/></div>
+            </div>
+          )
+        }
+        <ClientOnly>
+          <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
+          <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop} isOpen={isWidgetOpen}
                   handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Testimonials/>
-        <Strip isOpen={isWidgetOpen}
-               handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-        <Footer dark/>
-        <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop}/>
-      </ClientOnly>
-    </div>
+          <Hero isOpen={isWidgetOpen}
+                handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <FlightBooking handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <Ride isOpen={isWidgetOpen}
+                handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <SectionTwo isOpen={isWidgetOpen}
+                      handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <Access isOpen={isWidgetOpen}
+                  handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <Services isOpen={isWidgetOpen}
+                    handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <Testimonials/>
+          <Strip isOpen={isWidgetOpen}
+                 handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <Footer dark/>
+          <ScrollToTopBtn scrollTop={scrollTop} handleScrollTop={handleScrollTop}/>
+        </ClientOnly>
+      </div>
+    </>
 
   );
 };
