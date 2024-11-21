@@ -93,22 +93,23 @@ const Index = () => {
         <link rel="canonical" href="https://www.lyncs.africa"/>
         <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
 
-        <script type="application/ld+json">
-          {`
-            {
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Lyncs Africa",
               "url": "https://www.lyncs.africa",
-              "logo": "https://www.lyncs.africa/path/to/logo.jpg",
+              "logo": "https://www.lyncs.africa/images/logo.svg",
               "description": "Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution.",
               "sameAs": [
-                "https://www.instagram.com/lyncsafrica/",
-                "https://www.twitter.com/lyncsafrica/"
+                "https://www.instagram.com/lyncsafrica/"
               ]
-            }
-          `}
-        </script>
+            }),
+          }}
+        />
+
 
       </Head>
       <div>
