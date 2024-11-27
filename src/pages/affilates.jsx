@@ -40,7 +40,7 @@ const Affilates = () => {
     <ClientOnly>
       <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
       <Head>
-        <title>Lyncs Africa</title>
+        <title>Lyncs Africa | For Affiliates</title>
       </Head>
       <Navbar transparent scrollTop={scrollTop}/>
       <Hero/>
