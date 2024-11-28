@@ -71,25 +71,25 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Lyncs | Simplifying Travel & Mobility Solutions</title>
+        <title>Lyncs | Lyncs Africa | Simplifying Travel & Mobility Solutions</title>
         <meta name="description"
-              content="Lyncs - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+              content="Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <meta name="keywords"
               content="travel, tours, flexible bookings, mobility solutions, bus tickets, delivery bikes, payment plans, Lyncs, Lyncs Africa"/>
         <meta property="og:title"
-              content="Lyncs | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+              content="Lyncs | Lyncs Africa | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
         <meta property="og:description"
-              content="Lyncs - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+              content="Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
         <meta property="og:url" content="https://www.lyncs.africa"/>
         <meta property="og:type" content="website"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:title"
-              content="Lyncs | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+              content="Lyncs | Lyncs Africa | Simplifying mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
         <meta name="twitter:description"
-              content="Lyncs - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
+              content="Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution."/>
         <link rel="canonical" href="https://www.lyncs.africa"/>
         <meta property="insta:account" content="https://www.instagram.com/lyncsafrica/"/>
 
@@ -102,7 +102,7 @@ const Index = () => {
               "name": "Lyncs Africa",
               "url": "https://www.lyncs.africa",
               "logo": "https://www.lyncs.africa/images/logo.svg",
-              "description": "Lyncs - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution.",
+              "description": "Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution.",
               "sameAs": [
                 "https://www.instagram.com/lyncsafrica/"
               ]
