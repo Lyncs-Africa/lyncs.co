@@ -99,7 +99,7 @@ const Index = () => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Lyncs Africa",
+              "name": "Lyncs | Lyncs Africa",
               "url": "https://www.lyncs.africa",
               "logo": "https://www.lyncs.africa/images/logo.svg",
               "description": "Lyncs | Lyncs Africa - simplifies mobility with top travel deals, flexible bookings, tours, and easy payment plans for trips, bus tickets, and delivery vehicle purchases. Your one-stop travel and transport solution.",
