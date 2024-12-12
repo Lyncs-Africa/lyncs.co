@@ -6,6 +6,32 @@ import 'swiper/swiper-bundle.css';
 import Typed from "typed.js";
 
 const Home = ({isOpen, handleIsWidgetLoading}) => {
+  const [isChristmasSeason, setIsChristmasSeason] = useState(false)
+
+  function isGetChristmasSeason() {
+    const now = new Date();
+    const month = now.getMonth();
+    const day = now.getDate();
+
+    if (month === 11) {
+      return true;
+    }
+
+    if (month === 11 && day >= 1 && day <= 31) {
+      return true;
+    }
+
+    return false;
+  }
+
+  useEffect(() => {
+    if (isGetChristmasSeason()) {
+      setIsChristmasSeason(true)
+    } else {
+      setIsChristmasSeason(false)
+    }
+  }, [])
+
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
@@ -107,7 +133,13 @@ const carouselImages =[
       <div className="bg-slate-800 opacity-70 absolute inset-0"></div>
       <div className="flex flex-col min-h-screen">
         <div className="md:w-[80%] w-[90%] mx-auto relative z-10 flex flex-col xl:min-h-[73vh] md:min-h-[70vh]">
-          <img alt="Lyncs logo" className="w-[100px] pt-5" src="/images/logo-white.svg"/>
+          {
+            isChristmasSeason ? (
+              <img alt="Lyncs logo" className="w-[100px] pt-5" src="/images/christmas-logo.svg"/>
+            ):(
+              <img alt="Lyncs logo" className="w-[100px] pt-5" src="/images/logo-white.svg"/>
+            )
+          }
           <div className="relative z-10 md:text-center py-8 my-auto">
             <h1 className="md:text-[6rem] text-[4rem] leading-[1] font-satoshiMedium text-white">
               <span ref={el} className="text-blue-400">Explore the World</span>

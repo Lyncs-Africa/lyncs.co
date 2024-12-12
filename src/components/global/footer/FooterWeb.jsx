@@ -1,7 +1,34 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Link from "next/link";
 
 function FooterWeb({mode}) {
+  const [isChristmasSeason, setIsChristmasSeason] = useState(false)
+
+  function isGetChristmasSeason() {
+    const now = new Date();
+    const month = now.getMonth();
+    const day = now.getDate();
+
+    if (month === 11) {
+      return true;
+    }
+
+    if (month === 11 && day >= 1 && day <= 31) {
+      return true;
+    }
+
+    return false;
+  }
+
+  useEffect(() => {
+    if (isGetChristmasSeason()) {
+      setIsChristmasSeason(true)
+    } else {
+      setIsChristmasSeason(false)
+    }
+  }, [])
+
+
   let date = new Date()
   let year = date.getFullYear()
   return (
@@ -14,11 +41,24 @@ function FooterWeb({mode}) {
               <Link href="/" className="flex items-center">
                 {
                   mode.dark ?
-                    <img
-                      src="/images/logo-light.svg"
-                      className="h-12 mr-3 xl:h-14"
-                      alt="Lyncs Logo"
-                    /> :
+                    <>
+                      {
+                        isChristmasSeason ? (
+                          <img
+                            src="/images/christmas-logo.svg"
+                            className="h-12 mr-3 xl:h-14"
+                            alt="Lyncs Logo"
+                          />
+                        ) : (
+                          <img
+                            src="/images/logo-light.svg"
+                            className="h-12 mr-3 xl:h-14"
+                            alt="Lyncs Logo"
+                          />
+                        )
+                      }
+                    </>
+                    :
                     <img
                       src="/images/logo.svg"
                       className="h-12 mr-3 xl:h-14"

@@ -7,6 +7,7 @@ import {DevelopersDropdown} from "./DevelopersDropdown.jsx";
 import {WhyUsDropdown} from "./WhyUsDropdown.jsx";
 
 function Navbar(mode) {
+  const [isChristmasSeason, setIsChristmasSeason] = useState(false)
   const [toggle, setToggle] = useState(false);
   const location = usePathname()
   const [opened, {open, close}] = useDisclosure(false);
@@ -52,9 +53,32 @@ function Navbar(mode) {
       });
     } catch (error) {
       console.error("Failed to open widget", error);
-      handleIsWidgetLoading(false); // Ensure loading state is reset in case of error
     }
   };
+
+  function isGetChristmasSeason() {
+    const now = new Date();
+    const month = now.getMonth();
+    const day = now.getDate();
+
+    if (month === 11) {
+      return true;
+    }
+
+    if (month === 11 && day >= 1 && day <= 31) {
+      return true;
+    }
+
+    return false;
+  }
+
+  useEffect(() =>{
+    if (isGetChristmasSeason()) {
+      setIsChristmasSeason(true)
+    } else {
+      setIsChristmasSeason(false)
+    }
+  }, [])
 
   return (
     <>
@@ -65,11 +89,21 @@ function Navbar(mode) {
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <Link className="flex items-center" href="/">
               {mode.scrollTop >= 100 || mode.dark || mode.transparent ? <div className={`${mode.logo ? 'py-4' : ''}`}>
-                  <img
-                    src="/images/logo-light.svg"
-                    className="h-12 mr-3 xl:h-14"
-                    alt="Lyncs Logo"
-                  />
+                  {
+                    isChristmasSeason ? (
+                      <img
+                        src="/images/christmas-logo.svg"
+                        className="h-12 mr-3 xl:h-14"
+                        alt="Lyncs Logo"
+                      />
+                    ):(
+                      <img
+                        src="/images/logo-light.svg"
+                        className="h-12 mr-3 xl:h-14"
+                        alt="Lyncs Logo"
+                      />
+                    )
+                  }
                 </div>
 
                 : <>

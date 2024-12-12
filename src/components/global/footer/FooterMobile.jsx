@@ -1,6 +1,32 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 function LyncsFooterMobile() {
+  const [isChristmasSeason, setIsChristmasSeason] = useState(false)
+
+  function isGetChristmasSeason() {
+    const now = new Date();
+    const month = now.getMonth();
+    const day = now.getDate();
+
+    if (month === 11) {
+      return true;
+    }
+
+    if (month === 11 && day >= 1 && day <= 31) {
+      return true;
+    }
+
+    return false;
+  }
+
+  useEffect(() =>{
+    if (isGetChristmasSeason()) {
+      setIsChristmasSeason(true)
+    } else {
+      setIsChristmasSeason(false)
+    }
+  }, [])
+
   let date = new Date()
   let year = date.getFullYear()
   return (
@@ -9,11 +35,21 @@ function LyncsFooterMobile() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
-              <img
-                src="/images/logo.svg"
-                className="h-12 xl:h-16 mr-3"
-                alt="Lyncs Logo"
-              />
+              {
+                isChristmasSeason ? (
+                  <img
+                    src="/images/christmas-logo.svg"
+                    className="h-12 xl:h-16 mr-3"
+                    alt="Lyncs Logo"
+                  />
+                ):(
+                  <img
+                    src="/images/logo.svg"
+                    className="h-12 xl:h-16 mr-3"
+                    alt="Lyncs Logo"
+                  />
+                )
+              }
             </a>
           </div>
           <div className="grid grid-cols-2 flex flex-col gap-8 sm:gap-6 sm:grid-cols-3">
