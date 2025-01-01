@@ -1,242 +1,88 @@
-import {Accordion, Modal} from '@mantine/core';
-import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
-//Dropdow Icons
-import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
-import ModeOfTravelTwoToneIcon from '@mui/icons-material/ModeOfTravelTwoTone';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import OtherHousesTwoToneIcon from '@mui/icons-material/OtherHousesTwoTone';
-import LocalTaxiTwoToneIcon from '@mui/icons-material/LocalTaxiTwoTone';
-import LocalShippingTwoToneIcon from '@mui/icons-material/LocalShippingTwoTone';
-import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
-
-import IntegrationInstructionsTwoToneIcon from '@mui/icons-material/IntegrationInstructionsTwoTone';
-
+import {Modal} from '@mantine/core';
 import Link from 'next/link';
-import {LocalOffer, Theaters} from '@mui/icons-material';
+import {useEffect, useState} from "react";
 
 const MobileNavbar = ({opened, onClose}) => {
+  const [isChristmasSeason, setIsChristmasSeason] = useState(false)
+
+  function isGetChristmasSeason() {
+    const now = new Date();
+    const month = now.getMonth();
+    const day = now.getDate();
+
+    if (month === 11) {
+      return true;
+    }
+
+    if (month === 11 && day >= 1 && day <= 31) {
+      return true;
+    }
+
+    return false;
+  }
+
+  useEffect(() => {
+    if (isGetChristmasSeason()) {
+      setIsChristmasSeason(true)
+    } else {
+      setIsChristmasSeason(false)
+    }
+  }, [])
   return (
     <Modal
+      className="bg-black"
       centered
       fullScreen
-      title={<img src="/images/logo.svg" className="h-12 xl:h-16 mr-3" alt="Lyncs Logo"/>}
+      title={isChristmasSeason ?
+        <img src="/images/christmas-logo-light.png" className="h-12 xl:h-16 mr-3" alt="Lyncs Logo"/> :
+        <img src="/images/logo.svg" className="h-12 xl:h-16 mr-3" alt="Lyncs Logo"/>}
       opened={opened}
       onClose={onClose}
       closeOnEscape
     >
       <div className='relative font-satoshiMedium'>
-        <Accordion variant='filled' className='my-4 bg-white h-full' chevron={<ExpandMoreIcon/>}>
-
-          <Accordion.Item className='my-7' value='Products'>
-            <Accordion.Control>
-              <p className=' text-xl text-gray-600'>Products</p>
-            </Accordion.Control>
-            <Accordion.Panel className='overflow-y-auto'>
-              <div className='py-5 space-y-10 overflow-y-scroll h-full pl-2 font-satoshiMedium'>
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="p-1 rounded-full bg-blue-400">
-                    <StorefrontTwoToneIcon className="text-white"/>
-                  </div>
-                  <div className='space-y-2'>
-                    <Link
-                      className=' text-lg font-medium'
-                      href="/shop"
-                      role="menuitem"
-                    >
-                      Online Shopping
-                    </Link>
-                    <p className="font-light text-gray-600">
-                      Build a full online store with no backend or database in seconds.
-                    </p>
-                  </div>
-
-                </div>
-
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="p-1 rounded-full bg-orange-500">
-                    <LocalTaxiTwoToneIcon className="text-white"/>
-                  </div>
-                  <div className='space-y-2'>
-                    <Link
-                      className=' text-lg font-medium'
-                      href="/health"
-                      role="menuitem"
-                    >
-                      Cab Hailing
-                    </Link>
-                    <p className="font-light text-gray-600">Build an e-hailing service for your customers</p>
-                  </div>
-
-                </div>
-
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="p-1 rounded-full bg-yellow-500">
-                    <LocalTaxiTwoToneIcon className="text-white"/>
-                  </div>
-                  <div className='space-y-2'>
-                    <Link
-                      className=' text-lg font-medium'
-                      href="/health"
-                      role="menuitem"
-                    >
-                      Food Ordering
-                    </Link>
-                    <p className="font-light text-gray-600">
-                      Create a sweet and swift online food ordering platform for your customers in a matter of seconds
-                    </p>
-                  </div>
-
-                </div>
-
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="p-1 rounded-full bg-purple-500">
-                    <ModeOfTravelTwoToneIcon className="text-white"/>
-                  </div>
-                  <div className='space-y-2'>
-                    <Link
-                      className=' text-lg font-medium'
-                      href="/health"
-                      role="menuitem"
-                    >
-                      Travel
-                    </Link>
-                    <p className="font-light text-gray-600">Build a flight booking and ticket-issuing service</p>
-                  </div>
-
-                </div>
-
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="p-1 rounded-full bg-orange-800">
-                    <LocalShippingTwoToneIcon className="text-white"/>
-                  </div>
-                  <div className='space-y-2'>
-                    <Link
-                      className=' text-lg font-medium'
-                      href="/health"
-                      role="menuitem"
-                    >
-                      Delivery
-                    </Link>
-                    <p className="font-light text-gray-600">Build a full logistics platform end-to-end in minutes</p>
-                  </div>
-
-                </div>
-
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="p-1 rounded-full bg-cyan-500">
-                    <OtherHousesTwoToneIcon className="text-white"/>
-                  </div>
-                  <div className='space-y-2'>
-                    <Link
-                      className=' text-lg font-medium'
-                      href="/health"
-                      role="menuitem"
-                    >
-                      Bus
-                    </Link>
-                    <p className="font-light text-gray-600">Build an Inter-state transport service in your app</p>
-                  </div>
-
-                </div>
-
-              </div>
-            </Accordion.Panel>
-          </Accordion.Item>
-
-          <Accordion.Item value='businesses'>
-            <Accordion.Control chevron={false}>
-              <Link className='text-xl text-gray-600' href="https://lyncs.africa">Why Lyncs</Link>
-            </Accordion.Control>
-            <Accordion.Panel>
-              <div className='py-5 space-y-8'>
-
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="bg-blue-400 p-1 rounded-full">
-                    <FavoriteOutlinedIcon className="text-white"/>
-                  </div>
-
-                  <div className='space-y-2'>
-                    <Link
-                      className='text-lg font-medium'
-                      href="/health"
-                      role="menuitem"
-                    >
-                      Why choose us
-                    </Link>
-                    <p className="font-light text-gray-500">
-                      Experience Lyncs APIs in action
-                    </p>
-                  </div>
-
-                </div>
-
-                <Link href="/pricing"
-                      className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="bg-blue-400 p-1 rounded-full">
-                    <LocalOffer className="text-white"/>
-                  </div>
-
-                  <div className="space-y-1">
-                    <p className='text-black text-lg font-medium'>
-                      Pricing
-                    </p>
-
-                    <p className="text-gray-500 font-light">Affordable pricing for developers, SMEs and enterprises</p>
-
-                  </div>
-                </Link>
-
-                <Link href="/services" role="menuitem"
-                      className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit ">
-                  <div className="bg-blue-400 p-1 rounded-full">
-                    <Theaters className="text-white"/>
-                  </div>
-
-                  <div className="space-y-1">
-                    <p className='font-medium text-lg'>
-                      See a Demo
-                    </p>
-
-                    <p className="text-gray-500 font-light">Experience Lyncs APIs in action</p>
-
-                  </div>
-                </Link>
-
-              </div>
-            </Accordion.Panel>
-          </Accordion.Item>
+        <div className='my-4 bg-white h-full px-3 space-y-6'>
+          <div className='text-xl text-gray-600'>
+            <Link href="/" role="menuitem">For Individuals</Link>
+          </div>
+          <div className='text-xl text-gray-600'>
+            <Link href="/affilates" role="menuitem">For Affiliates </Link>
+          </div>
+        </div>
 
 
-          <Accordion.Item value='Developers' className='my-7'>
-            <Accordion.Control>
-              <p className='text-xl text-gray-600'>Developers</p>
-            </Accordion.Control>
-            <Accordion.Panel>
-              <div className='p-4 space-y-6 text-gray-600'>
+        {/*<Accordion variant='filled' className='my-4 bg-white h-full' chevron={<ExpandMoreIcon/>}>*/}
 
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit">
-                  <IntegrationInstructionsTwoToneIcon className="text-blue-500"/>
-                  <div>
-                    <p className='text-lg font-medium'>
-                      API Reference
-                    </p>
-                  </div>
+        {/*  <Accordion.Item value='Developers' className='my-7'>*/}
+        {/*    <Accordion.Control>*/}
+        {/*      <p className='text-xl text-gray-600'>Developers</p>*/}
+        {/*    </Accordion.Control>*/}
+        {/*    <Accordion.Panel>*/}
+        {/*      <div className='p-4 space-y-6 text-gray-600'>*/}
 
-                </div>
-                <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit">
-                  <MenuBookTwoToneIcon className="text-blue-500"/>
-                  <div>
-                    <p className='text-lg font-medium'>
-                      Documentation
-                    </p>
-                  </div>
+        {/*        <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit">*/}
+        {/*          <IntegrationInstructionsTwoToneIcon className="text-blue-500"/>*/}
+        {/*          <div>*/}
+        {/*            <p className='text-lg font-medium'>*/}
+        {/*              API Reference*/}
+        {/*            </p>*/}
+        {/*          </div>*/}
 
-                </div>
-              </div>
-            </Accordion.Panel>
-          </Accordion.Item>
+        {/*        </div>*/}
+        {/*        <div className="flex-auto flex flex-row items-start justify-start gap-4 w-full cursor-pointer h-fit">*/}
+        {/*          <MenuBookTwoToneIcon className="text-blue-500"/>*/}
+        {/*          <div>*/}
+        {/*            <p className='text-lg font-medium'>*/}
+        {/*              Documentation*/}
+        {/*            </p>*/}
+        {/*          </div>*/}
 
-        </Accordion>
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </Accordion.Panel>*/}
+        {/*  </Accordion.Item>*/}
+
+        {/*</Accordion>*/}
 
       </div>
 
@@ -244,13 +90,7 @@ const MobileNavbar = ({opened, onClose}) => {
         className='px-4 flex flex-col justify-start items-start border-t pt-7 gap-1 text-[#222c3b] text-lg bottom-0 left-0 right-0 bg-white sticky'>
         <button className='w-full py-3 rounded-md bg-blue-600 text-white shadow-md'>
           <Link target="_blank" href="http://app.lyncs.africa/register">
-            Sign up
-          </Link>
-        </button>
-
-        <button className='w-full py-3 rounded-md bg-white'>
-          <Link target="_blank" href="http://app.lyncs.africa/">
-            Login
+            Get started
           </Link>
         </button>
       </div>
