@@ -38,7 +38,7 @@ const Ride = ({handleIsWidgetLoading}) => {
     window.LyncsWidget.open(
       {
         key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
-        path: `/waitlist/?service=${service}&launchDate=2025-01-01T00:00:00`,
+        path: `/waitlist/?service=${service}&launchDate=2025-04-01T00:00:00`,
         onReady: () => {
           handleIsWidgetLoading(false)
         }
