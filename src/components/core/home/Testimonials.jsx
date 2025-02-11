@@ -191,7 +191,7 @@ const Testimonials = () => {
                         Ogechi
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        Traveling was my way of celebrating my achievements and rewarding myself with some new memorie
+                        Traveling was my way of celebrating my achievements and rewarding myself with some new memories
                       </p>
                     </div>
                   </div>
