@@ -91,7 +91,7 @@ function SectionTwo({handleIsWidgetLoading}) {
         </div>
         <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0">
           <h2
-            className="text-slate-900 font-bold text-[4rem] md:text-[6.5rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
+            className="text-slate-900 font-bold text-[4rem] md:text-[7rem] leading-[1.1] font-semibold md:pt-[50px] relative min-h-[160px]"
           >
             A better way to
             <br/>
