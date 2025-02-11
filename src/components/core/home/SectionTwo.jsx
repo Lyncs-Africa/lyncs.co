@@ -63,7 +63,7 @@ function SectionTwo({handleIsWidgetLoading}) {
   return (
     <>
       <div
-        className="md:grid font-satoshiMedium grid-cols-12 py-[70px] md:py-[160px] xl:pt-[100px] xl:pb-[220px] md:gap-8 overflow-hidden bg-[#fff] md:relative md:z-10 px-1 md:px-0">
+        className="md:grid font-satoshiMedium grid-cols-12 py-[70px] md:py-[160px] xl:pt-[100px] xl:pb-[250px] md:gap-8 overflow-hidden bg-[#fff] md:relative md:z-10 px-1 md:px-0">
         <div className="md:block md:-bottom-24 hidden absolute xl:bottom-[-10rem] absolute bottom-[-10rem] w-full z-30">
           <svg fill="#000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
             <g id="Layer_2" data-name="Layer 2">
