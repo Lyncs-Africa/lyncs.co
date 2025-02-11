@@ -43,9 +43,21 @@ function SectionTwo({handleIsWidgetLoading}) {
     };
   }, []);
 
-  const handleOpen = () => window.LyncsWidget.open({
-    key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0'
-  })
+  const handleOpen = () => {
+    handleIsWidgetLoading(true);
+    try {
+      window.LyncsWidget.open({
+        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0/?isSelectOpen=true&view=view-one',
+        onReady: () => {
+          handleIsWidgetLoading(false);
+        }
+      });
+    } catch (error) {
+      console.error("Failed to open widget", error);
+      handleIsWidgetLoading(false); // Ensure loading state is reset in case of error
+    }
+  };
+
 
   const handleWait = (service) => {
     handleIsWidgetLoading(true)
