@@ -40,27 +40,28 @@ const Stream = ({handleIsWidgetLoading}) => {
   return (
     <motion.div
       ref={ref}
-      className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover md:min-h-[100vh] font-satoshiMedium">
+      className="z-10 overflow-hidden relative w-full bg-white md:bg-right bg-cover font-satoshiMedium">
       <div
         className="px-4 md:px-0 py-[100px] md:py-0 mx-auto md:grid grid-cols-12 overflow-hidden md:relative md:z-10">
         <div className="container mx-auto col-span-10 col-start-2 md:grid grid-cols-12">
           <div
             className="md:pt-[50px] col-span-5 text-left z-50 relative flex flex-col justify-center">
             <motion.h2
-              className="text-white leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
+              className="text-black leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
             >
-              Book bus tickets for inter city trips
+              Everyone needs<br/> a break
+              <br/>
+              <span className="text-white bg-black md:leading-[1.3]">But why do <br/>you travel ?</span>
             </motion.h2>
             <p
-              className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
-              Book bus tickets locally and nationwide at the best rates.
-              Filter by multiple options to find the perfect ride for you.
+              className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-600">
+              Whether it’s work, play, or escape—book now, pay in installments.
             </p>
             <div className="my-4">
               <motion.button
                 onClick={() => handleWait('bus ticketing')}
-                className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
-                Get started
+                className="flex gap-2 items-center bg-black text-[16px] text-white px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-black hover:bg-transparent hover:text-black">
+                Book a trip now
               </motion.button>
             </div>
           </div>
@@ -121,28 +122,28 @@ const Stream = ({handleIsWidgetLoading}) => {
               <div
                 className="bg-slate-800 bg-cover bg-bottom min-h-[200px] md:w-[200px] rounded-lg relative p-4">
                 <div
-                  className="absolute bg-[url('/images/locations/togo.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                  className="absolute bg-[url('/images/locations/london.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
                 <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
                   <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
-                  <p className="text-white text-md relative text-center z-10">Lome, Togo</p>
+                  <p className="text-white text-md relative text-center z-10">London, Uk</p>
                 </div>
               </div>
               <div
                 className="bg-slate-800 bg-cover bg-bottom min-h-[150px] md:w-[200px] rounded-lg relative p-4">
                 <div
-                  className="absolute bg-[url('/images/locations/benin.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                  className="absolute bg-[url('/images/locations/paris.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
                 <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
                   <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
-                  <p className="text-white text-md relative text-center z-10">Benin, Nigeria</p>
+                  <p className="text-white text-md relative text-center z-10">Paris France</p>
                 </div>
               </div>
               <div
                 className="bg-slate-800 bg-cover bg-bottom min-h-[180px] md:w-[200px] rounded-lg relative p-4">
                 <div
-                  className="absolute bg-[url('/images/locations/enugu.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
+                  className="absolute bg-[url('/images/locations/toronto.jpg')] inset-0 bg-cover rounded-lg opacity-30"></div>
                 <div className="absolute left-0 bottom-0 rounded-t-lg w-full p-3">
                   <div className="inset-0 absolute bg-white rounded-t-lg opacity-20"></div>
-                  <p className="text-white text-md relative text-center z-10">Enugu, Nigeria</p>
+                  <p className="text-white text-md relative text-center z-10">Toronto, Canada</p>
                 </div>
               </div>
               <div

@@ -1,7 +1,6 @@
 import React, {useMemo} from 'react';
 import {easeInOut, motion} from "framer-motion";
 import CabHailing from "@/components/core/shared/CabHailing";
-import Link from "next/link";
 
 const Ride = ({handleIsWidgetLoading}) => {
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
@@ -33,7 +32,7 @@ const Ride = ({handleIsWidgetLoading}) => {
     }
   }, [])
 
-  const handleWait= (service) => {
+  const handleWait = (service) => {
     handleIsWidgetLoading(true)
     window.LyncsWidget.open(
       {
@@ -64,14 +63,15 @@ const Ride = ({handleIsWidgetLoading}) => {
               whileInView="visible"
               className="text-white leading-[1.1] text-[3.5rem] md:text-[5rem] font-bold"
             >
-              Simplifying mobility, one journey at a time
+              Share the Ride, Split the Bill
             </motion.h2>
             <motion.p
               variants={textVariant}
               initial="hidden"
               whileInView="visible"
               className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
-              Experience the ease of booking, travel, and support in one streamlined platform.
+              Cut down commuting costs by sharing rides with people headed in the same direction. Whether you're driving
+              or looking for a seat, we make the connection seamless.
             </motion.p>
             <div>
               <motion.button
@@ -80,7 +80,7 @@ const Ride = ({handleIsWidgetLoading}) => {
                 initial="hidden"
                 whileInView="visible"
                 className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
-                Get started
+                Join the waitlist
               </motion.button>
             </div>
           </div>

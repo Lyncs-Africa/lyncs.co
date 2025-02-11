@@ -53,8 +53,8 @@ const FlightBooking = ({handleIsWidgetLoading}) => {
               Book local & International flights
             </motion.h2>
             <motion.p
-              className="text-[18px] py-8 text-gray-800">Book flights both local and internationally at the best rates &
-              filter by a bunch of factors
+              className="text-[18px] py-8 text-gray-800">
+              Find affordable options, plan flexible trips, and travel with ease across Africa.
             </motion.p>
             <div>
               <motion.button
@@ -63,7 +63,7 @@ const FlightBooking = ({handleIsWidgetLoading}) => {
                 initial="hidden"
                 whileInView="visible"
                 className="flex gap-2 items-center bg-black text-[17px] text-white px-5 py-3 rounded-lg font-dmSans hover:border hover:border-black hover:bg-transparent hover:text-black">
-                <p> Get started</p>
+                <p> Book a trip</p>
               </motion.button>
             </div>
           </div>

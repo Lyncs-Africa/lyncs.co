@@ -13,7 +13,7 @@ const Shop = () => {
       <div className="animate-bounceTwo absolute top-3 -right-5 h-[50px] w-[50px] rounded-full bg-teal-900 shadow flex items-center justify-center">
         <GiCommercialAirplane className="text-white" size="20px"/>
       </div>
-      <p className="text-gray-800 text-2xl font-bold">Tour the world</p>
+      <p className="text-gray-800 text-2xl font-bold">Explore the world</p>
       <div className="my-2 flex flex-col gap-2">
         <div className="h-[15px] w-[150px] bg-gray-200 rounded"></div>
         <div className="h-[15px] w-[100px] bg-gray-200 rounded"></div>

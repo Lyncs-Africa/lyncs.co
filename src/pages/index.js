@@ -123,20 +123,20 @@ const Index = () => {
         }
         <ClientOnly>
           <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
-          <Navbar transparent={!isWidgetOpen} scrollTop={scrollTop} isOpen={isWidgetOpen}
+          <Navbar scrollTop={scrollTop} isOpen={isWidgetOpen}
                   handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <SectionTwo isOpen={isWidgetOpen}
+                      handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <Hero isOpen={isWidgetOpen}
                 handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <FlightBooking handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <Ride isOpen={isWidgetOpen}
                 handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-          <SectionTwo isOpen={isWidgetOpen}
-                      handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-          <Access isOpen={isWidgetOpen}
-                  handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-          <Services isOpen={isWidgetOpen}
-                    handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          {/*<Access isOpen={isWidgetOpen}*/}
+          {/*        handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>*/}
+          {/*<Services isOpen={isWidgetOpen}*/}
+          {/*          handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>*/}
           <Testimonials/>
           <Strip isOpen={isWidgetOpen}
                  handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>

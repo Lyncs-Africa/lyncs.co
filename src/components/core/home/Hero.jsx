@@ -1,33 +1,13 @@
 import React, {useEffect, useMemo, useRef} from 'react';
 import {easeInOut, motion} from "framer-motion";
-import Link from "next/link"
 import SideNav from "@/components/core/shared/SideNav";
 import Shop from "@/components/core/shared/Shop";
-import StreamShare from "@/components/core/shared/StreamShare";
 import Travel from "@/components/core/shared/Travel";
 import Typed from "typed.js";
 
 const Hero = ({handleIsWidgetLoading}) => {
   const el = useRef(null);
 
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: [
-        "Book flights,",
-        "Buy bus tickets,",
-        "Pay for rides,",
-      ],
-      typeSpeed: 50,
-      backSpeed: 10,
-      backDelay: 3000,
-      smartBackspace: true,
-      loop: true,
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
 
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: {opacity: 0, x: 450},
@@ -78,7 +58,8 @@ const Hero = ({handleIsWidgetLoading}) => {
       className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-satoshiMedium">
       <div
         className="md:grid grid-cols-12 py-[100px] xl:py-[160px]  xl:pb-[300px] overflow-hidden md:relative md:z-10">
-        <div className="md:block md:-bottom-24 hidden absolute xl:bottom-[-10rem] -right-0.5 absolute bottom-[-10rem] w-full z-30">
+        <div
+          className="md:block md:-bottom-24 hidden absolute xl:bottom-[-10rem] -right-0.5 absolute bottom-[-10rem] w-full z-30">
           <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
@@ -90,74 +71,61 @@ const Hero = ({handleIsWidgetLoading}) => {
 
         </div>
         <div className="container mx-auto col-span-10 col-start-2 md:grid grid-cols-2">
-        <div
-          className="px-4 md:px-0 text-left z-50 relative flex flex-col justify-center">
-          <motion.h2
-            variants={headerVariant}
-            initial="hidden"
-            whileInView="visible"
-            className="text-blue-300 font-satoshiBold text-[4rem] md:text-[5.5rem] leading-[1.1] font-semibold relative min-h-[160px]"
-          >
-            <span
-              className={`text-white min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}>
-           Don't just
-            </span>
-            <p className="min-h-[125px] md:min-h-0">
-            <span ref={el}
-                  className={`from-[#00AFEF] to-blue-500 bg-gradient-to-r text-transparent min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}
-            >
-            Book flight tickets,
-            </span>
-            </p>
-            <span
-              className={`text-white min-h-[100px] relative bg-clip-text after:inline after:text-blue-500 w-max text-left`}>
-           Go and prosper
-            </span>
-          </motion.h2>
-          <motion.p
-            variants={textVariant}
-            initial="hidden"
-            whileInView="visible"
-            className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">Access a range of services, all in
-            one place
-          </motion.p>
-          <div>
-            <motion.button
-              onClick={handleOpen}
-              variants={btnVariant}
+          <div
+            className="px-4 md:px-0 text-left z-50 relative flex flex-col justify-center">
+            <motion.h2
+              variants={headerVariant}
               initial="hidden"
               whileInView="visible"
-              className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
-             Get started
-            </motion.button>
-          </div>
-        </div>
-        <div className="flex md:gap-8 gap-4 px-4 mt-10 md:mt-0">
-          <SideNav/>
-          <div className="flex flex-col gap-8">
-            <div className="bg-[#282A30] rounded p-4">
-              <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Where are you going to today?</p>
+              className="text-white font-satoshiBold text-[4rem] md:text-[5.5rem] md:leading-[1.4] font-semibold relative min-h-[160px]"
+            >
+              Revolutionizing Mobility, <span className="bg-white text-black">one trip at a time</span>
+            </motion.h2>
+            <motion.p
+              variants={textVariant}
+              initial="hidden"
+              whileInView="visible"
+              className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-400">
+              From ride-sharing to flexible trip payments, experience the future of travel today.
+            </motion.p>
+            <div>
+              <motion.button
+                onClick={handleOpen}
+                variants={btnVariant}
+                initial="hidden"
+                whileInView="visible"
+                className="flex gap-2 items-center bg-white text-[16px] text-black px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
+                Get started
+              </motion.button>
             </div>
-            <motion.div
-              className="h-[180px] w-[80%] bg-[#282A30] rounded p-4">
-              <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Book flight</p>
-              <div className="my-4 space-y-4">
-                <div className="space-y-2">
-                  <p className="text-small font-extralight text-gray-400">Where from</p>
-                  <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-small font-extralight text-gray-400">Where to</p>
-                  <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
-                </div>
+          </div>
+          <div className="flex md:gap-8 gap-4 px-4 mt-10 md:mt-0">
+            <SideNav/>
+            <div className="flex flex-col gap-8">
+              <div className="bg-[#282A30] rounded p-4">
+                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Where are you going to
+                  today?</p>
               </div>
-            </motion.div>
-            <Shop/>
+              <motion.div
+                className="h-[180px] w-[80%] bg-[#282A30] rounded p-4">
+                <p className="md:text-[17px] text-[16px] font-extralight text-gray-400">Book flight</p>
+                <div className="my-4 space-y-4">
+                  <div className="space-y-2">
+                    <p className="text-small font-extralight text-gray-400">Where from</p>
+                    <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-small font-extralight text-gray-400">Where to</p>
+                    <div className="w-[100px] bg-[#1C1D22] h-[15px]"></div>
+                  </div>
+                </div>
+              </motion.div>
+              <Shop/>
+            </div>
+            <div className="flex flex-col justify-center gap-8">
+              <Travel/>
+            </div>
           </div>
-          <div className="flex flex-col justify-center gap-8">
-            <Travel/>
-          </div>
-        </div>
         </div>
       </div>
     </div>

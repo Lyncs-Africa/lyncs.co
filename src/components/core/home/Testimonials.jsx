@@ -23,11 +23,12 @@ const Testimonials = () => {
           <div className="col-span-12 relative text-center">
             <div className="absolute w-full">
               <div className="md:w-[70%] w-[80%] h-[350px] mx-auto bg-white p-6 rounded-lg shadow-lg relative">
-                <FaQuoteLeft className="absolute md:text-[7rem] text-[2rem] top-10 md:left-[7rem] text-black opacity-10"/>
+                <FaQuoteLeft
+                  className="absolute md:text-[7rem] text-[2rem] top-10 md:left-[7rem] text-black opacity-10"/>
                 <h2
                   className="pt-[50px] text-black leading-[1] text-center text-[2.5rem] md:text-[5rem] font-bold"
                 >
-                  See what people are <br className="hidden md:block"/> saying about lyncs
+                  See why your mates <br className="hidden md:block"/>are travelling
                 </h2>
               </div>
             </div>
@@ -69,11 +70,10 @@ const Testimonials = () => {
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Dolapo Olanreqaju&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Dolapo Olanrewaju
+                        Dolapo
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        They helped me find flexible options for my trip, even made sure I could use
-                        multiple airlines to book. I’ll definitely be using this service again!
+                        Went to avoid family drama... Turns out, it’s much easier to escape in a different time zone
                       </p>
                     </div>
                   </div>
@@ -86,11 +86,11 @@ const Testimonials = () => {
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Richard Obasi&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Richard Obasi
+                        Rosemary
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        Great service and affordable prices! I managed to find the perfect bus for my last-minute trip
-                        with no hassle. Highly recommend
+                        Because life’s too short, and my vacation days were going to waste. I needed to put them to good
+                        use!
                       </p>
                     </div>
                   </div>
@@ -103,11 +103,10 @@ const Testimonials = () => {
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Abdul Omar&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Abdul Omar
+                        Abdul
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        The filtering options were a lifesaver! I could easily compare buses based on amenities and
-                        departure times. My go-to for travel now!
+                        “I traveled to study abroad and avoid another awkward encounter with my ex.
                       </p>
                     </div>
                   </div>
@@ -120,11 +119,11 @@ const Testimonials = () => {
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Tomi Bakare&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Tomi Bakare
+                        Tolani
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        The entire journey from browsing deals to booking my seat was flawless. Plus, the support team
-                        was quick to answer my questions.
+                        Took a trip to visit my daddy, sorry guardian. Ended up staying for the wifi and escaping all
+                        the drama in Lagos.
                       </p>
                     </div>
                   </div>
@@ -137,11 +136,11 @@ const Testimonials = () => {
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Tara Oke&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Tara Oke
+                        Sochi
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        This site made it so easy to find flights that fits my budget and schedule. The entire process
-                        was smooth from booking to boarding!
+                        Because studying abroad was cheaper than therapy. Plus, who needs to explain your life when
+                        you're in a completely different time zone?
                       </p>
                     </div>
                   </div>
@@ -157,8 +156,9 @@ const Testimonials = () => {
                         Kachi Beauty
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        I was impressed by the variety of choices available! I could pick the flight with my preference,
-                        and everything was just as expected. Great experience!
+                        I traveled because my glucose guardian said he was paying for everything... So why not use it to
+                        see
+                        the world, right?
                       </p>
                     </div>
                   </div>
@@ -171,11 +171,11 @@ const Testimonials = () => {
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Emeka Chukwudum&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Emeka Chukwudum
+                        Chelsea
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        I got an incredible rate on my flight ticket, and the flow was so smooth. Their
-                        customer service even followed up to make sure everything went well
+                        I traveled because my best friend got married to my fiancee and I found out on the wedding day
+                        while scrolling through instagram
                       </p>
                     </div>
                   </div>
@@ -188,11 +188,10 @@ const Testimonials = () => {
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Priscilla Onu&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Ogechi Onu
+                        Ogechi
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        I loved the user-friendly site and clear options. Customer support was amazing, making sure I
-                        had everything I needed for a smooth trip!
+                        Traveling was my way of celebrating my achievements and rewarding myself with some new memorie
                       </p>
                     </div>
                   </div>
@@ -205,11 +204,11 @@ const Testimonials = () => {
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Richard Obasi&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Femi Salami
+                        Femi
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        Effortless booking with unbeatable rates! I booked a bus for a cross-country trip, and it was
-                        fast, simple, and stress-free
+                        Traveling was my way of recharging after a long period of work. Nothing beats a getaway to bring
+                        back that spark
                       </p>
                     </div>
                   </div>
