@@ -108,7 +108,7 @@ function SectionTwo({handleIsWidgetLoading}) {
           </p>
 
           <div className="flex flex-row md:justify-center items-center gap-7 z-30 w-full">
-            <button onClick={() => handleWait('Keke Napep')}
+            <button onClick={handleOpen}
                     className="bg-black border text-[16px] text-white px-8 text-center py-4 rounded-lg hover:bg-transparent hover:border-black hover:text-black ease transition-all">
               Start your journey
             </button>

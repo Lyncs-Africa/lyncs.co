@@ -59,7 +59,7 @@ const Stream = ({handleIsWidgetLoading}) => {
             </p>
             <div className="my-4">
               <motion.button
-                onClick={() => handleWait('bus ticketing')}
+                onClick={handleOpen}
                 className="flex gap-2 items-center bg-black text-[16px] text-white px-5 py-3 rounded-lg font-satoshiMedium hover:border hover:border-black hover:bg-transparent hover:text-black">
                 Book a trip now
               </motion.button>
