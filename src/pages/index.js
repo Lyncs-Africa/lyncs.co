@@ -15,6 +15,7 @@ import Ride from "@/components/core/forBusiness/Ride";
 import Access from "@/components/core/forBusiness/Access";
 import Testimonials from "@/components/core/home/Testimonials";
 import Strip from "@/components/core/forBusiness/Strip";
+import Pss from "@/components/core/home/Pss";
 
 const Index = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
@@ -133,6 +134,7 @@ const Index = () => {
           <Ride isOpen={isWidgetOpen}
                 handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <Pss handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           {/*<Access isOpen={isWidgetOpen}*/}
           {/*        handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>*/}
           {/*<Services isOpen={isWidgetOpen}*/}

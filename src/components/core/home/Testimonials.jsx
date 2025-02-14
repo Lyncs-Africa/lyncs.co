@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 const Testimonials = () => {
   return (
-    <div className="relative w-full overflow-hidden font-satoshiMedium bg-[#F1F1F8]">
+    <div className="relative w-full overflow-hidden font-satoshiMedium bg-[#F1F1F8] -mt-16">
       <div className="xl:block hidden absolute bottom-[-10rem] right-0 w-full z-30">
         <svg fill="#000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
           <g id="Layer_2" data-name="Layer 2">
@@ -18,11 +18,11 @@ const Testimonials = () => {
           </g>
         </svg>
       </div>
-      <div className="container mx-auto md:block pt-[160px] xl:pb-[18rem] pb-0 relative">
+      <div className="mx-auto md:block pt-[160px] xl:pb-[18rem] pb-0 relative">
         <div className="grid grid-cols-12">
           <div className="col-span-12 relative text-center">
             <div className="absolute w-full">
-              <div className="md:w-[70%] w-[80%] h-[350px] mx-auto bg-white p-6 rounded-lg shadow-lg relative">
+              <div className="container md:w-[70%] w-[80%] h-[350px] mx-auto bg-white p-6 rounded-lg shadow-lg relative">
                 <FaQuoteLeft
                   className="absolute md:text-[7rem] text-[2rem] top-10 md:left-[7rem] text-black opacity-10"/>
                 <h2
@@ -52,18 +52,18 @@ const Testimonials = () => {
                     spaceBetween: 20,
                   },
                   760: {
-                    slidesPerView: 3.5,
+                    slidesPerView: 3.2,
                     spaceBetween: 20,
                   },
                   1100: {
-                    slidesPerView: 3.5,
+                    slidesPerView: 3.2,
                     spaceBetween: 20,
                   },
                 }}
                 className="mySwiper h-full"
               >
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
@@ -79,7 +79,7 @@ const Testimonials = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
@@ -96,7 +96,7 @@ const Testimonials = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
@@ -106,13 +106,13 @@ const Testimonials = () => {
                         Abdul
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
-                        “I traveled to study abroad and avoid another awkward encounter with my ex.
+                        I traveled to study abroad and avoid another awkward encounter with my ex.
                       </p>
                     </div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
@@ -129,7 +129,7 @@ const Testimonials = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
@@ -146,14 +146,14 @@ const Testimonials = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
                            src="https://ui-avatars.com/api/?name=Kachi Beauty&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
-                        Kachi Beauty
+                        Beauty
                       </p>
                       <p className="text-[16px] text-gray-500 text-left my-10">
                         I traveled because my glucose guardian said he was paying for everything... So why not use it to
@@ -164,7 +164,7 @@ const Testimonials = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
@@ -181,7 +181,7 @@ const Testimonials = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
@@ -197,7 +197,7 @@ const Testimonials = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="h-full">
-                  <div className="bg-white min-h-[250px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
+                  <div className="bg-white min-h-[280px] w-full rounded-lg my-[5rem] p-6 shadow-lg">
                     <div className="relative z-50">
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>

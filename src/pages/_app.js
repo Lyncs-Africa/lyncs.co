@@ -4,6 +4,7 @@ import {QueryClient, QueryClientProvider} from "react-query";
 import {AuthProvider} from "@/hooks/use-auth";
 import '@mantine/core/styles.css';
 import Head from "next/head";
+import {HeroUIProvider} from "@heroui/system";
 
 const queryClient = new QueryClient();
 export default function App({Component, pageProps}) {
@@ -18,11 +19,13 @@ export default function App({Component, pageProps}) {
         <title>Lyncs Africa </title>
       </Head>
       <MantineProvider>
+        <HeroUIProvider>
         <QueryClientProvider client={queryClient}>
           <AuthProvider>
             <Component {...pageProps} />
           </AuthProvider>
         </QueryClientProvider>
+        </HeroUIProvider>
       </MantineProvider>
     </>
   )

@@ -11,17 +11,20 @@ const Stream = ({handleIsWidgetLoading}) => {
   const scaleYProgress = useTransform(scrollYProgress, [0, 1], [-50, -300])
   const reverseScaleYProgress = useTransform(scrollYProgress, [0, 1], [-150, 180])
 
-  const handleOpen = (path) => {
-    handleIsWidgetLoading(true)
-    window.LyncsWidget.open(
-      {
+  const handleOpen = () => {
+    handleIsWidgetLoading(true);
+    try {
+      window.LyncsWidget.open({
         key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
-        path: `${path}`,
+        path: '/flights/local-flight',
         onReady: () => {
-          handleIsWidgetLoading(false)
+          handleIsWidgetLoading(false);
         }
-      },
-    );
+      });
+    } catch (error) {
+      console.error("Failed to open widget", error);
+      handleIsWidgetLoading(false); // Ensure loading state is reset in case of error
+    }
   };
 
   const handleWait= (service) => {

@@ -48,7 +48,7 @@ const FlightBooking = ({handleIsWidgetLoading}) => {
               variants={headerVariant}
               initial="hidden"
               whileInView="visible"
-              className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
+              className="text-bold font-satoshiBold leading-[1] text-[3.5rem] md:text-[5.5rem] font-bold"
             >
               Book local & International flights
             </motion.h2>
