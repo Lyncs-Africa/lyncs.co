@@ -77,7 +77,7 @@ const Hero = ({handleIsWidgetLoading}) => {
               variants={headerVariant}
               initial="hidden"
               whileInView="visible"
-              className="text-white font-satoshiBold text-[4rem] md:text-[5.5rem] md:leading-[1.4] font-semibold relative min-h-[160px]"
+              className="text-white font-satoshiBold text-[3rem] md:text-[5.5rem] md:leading-[1.4] font-semibold relative min-h-[160px]"
             >
               Revolutionizing Mobility, <span className="bg-white text-black">one trip at a time</span>
             </motion.h2>

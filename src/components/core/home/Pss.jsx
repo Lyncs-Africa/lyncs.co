@@ -207,7 +207,7 @@ const Pss = ({handleIsWidgetLoading}) => {
       <div
         className="container mx-auto px-4 md:px-0 md:grid grid-cols-12 overflow-hidden md:relative md:z-10">
         <div
-          className="col-span-5 p-10 pt-0 space-y-4 flex flex-col justify-center">
+          className="col-span-5 md:p-10 py-4 pt-0 space-y-4 flex flex-col justify-center">
           <div className="rounded-lg p-4 md:p-6 bg-slate-200 space-y-4">
             <div className="flex items-start justify-between gap-2">
               <div className="space-y-2">
@@ -290,7 +290,7 @@ const Pss = ({handleIsWidgetLoading}) => {
           </div>
         </div>
         <div
-          className="col-span-7 w-full py-[100px] px-10 pt-[50px] mx-auto rounded-l-xl bg-slate-900 text-left z-50 relative">
+          className="col-span-7 w-full py-[100px] px-10 pt-[50px] mx-auto md:rounded-none md:rounded-l-xl rounded bg-slate-900 text-left z-50 relative">
           <img className="animate-wide w-48 h-48 object-contain -ml-12 " src="/images/airline.png"/>
           <motion.h2
             className="text-white leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
@@ -302,7 +302,7 @@ const Pss = ({handleIsWidgetLoading}) => {
             But don’t worry, we got you! Secure your seat today with Pay Small Small and sort out the payments later.
             Your adventure is long overdue!
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex md:flex-row flex-col items-center gap-4">
             <Controller
               name="amount"
               control={control}
@@ -361,7 +361,7 @@ const Pss = ({handleIsWidgetLoading}) => {
             />
             <motion.button
               onClick={handleOpen}
-              className="flex gap-2 items-center border border-blue-500 bg-blue-500 text-[16px] text-white px-5 py-5 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
+              className="w-full md:w-auto text-center md:text-left border border-blue-500 bg-blue-500 text-[16px] text-white px-5 py-5 rounded-lg font-satoshiMedium hover:border hover:border-white hover:bg-transparent hover:text-white">
               Book am for me biko
             </motion.button>
           </div>
