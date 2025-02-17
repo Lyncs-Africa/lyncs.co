@@ -1,9 +1,8 @@
-import React, {useEffect, useMemo, useRef} from 'react';
+import React, {useMemo, useRef} from 'react';
 import {easeInOut, motion} from "framer-motion";
 import SideNav from "@/components/core/shared/SideNav";
 import Shop from "@/components/core/shared/Shop";
 import Travel from "@/components/core/shared/Travel";
-import Typed from "typed.js";
 
 const Hero = ({handleIsWidgetLoading}) => {
   const el = useRef(null);

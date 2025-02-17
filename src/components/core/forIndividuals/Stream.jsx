@@ -1,6 +1,5 @@
 import React, {useRef} from 'react';
 import {motion, useScroll, useTransform} from "framer-motion";
-import Ratings from "@/components/global/Ratings";
 
 const Stream = ({handleIsWidgetLoading}) => {
   const ref = useRef(null)
@@ -27,7 +26,7 @@ const Stream = ({handleIsWidgetLoading}) => {
     }
   };
 
-  const handleWait= (service) => {
+  const handleWait = (service) => {
     handleIsWidgetLoading(true)
     window.LyncsWidget.open(
       {
