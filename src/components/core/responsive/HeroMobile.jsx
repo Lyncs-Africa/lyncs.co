@@ -46,8 +46,8 @@ const HeroMobile = ({handleOpen}) => {
           className="mySwiper"
         >
           {
-            options.map((option) => (
-              <SwiperSlide className="relative">
+            options.map((option, id) => (
+              <SwiperSlide key={id} className="relative">
                 <div className="absolute inset-0 bg-slate-950 rounded-lg opacity-50"></div>
                 <div className="p-8 space-y-4 relative">
                   <h2 className="text-[3rem] text-white font-[900] leading-[1.1] relative">

@@ -5,8 +5,6 @@ import Shop from "@/components/core/shared/Shop";
 import Travel from "@/components/core/shared/Travel";
 
 const Hero = ({handleIsWidgetLoading}) => {
-  const el = useRef(null);
-
 
   const headerVariant = useMemo(() => window.innerWidth < 768 ? {} : {
     hidden: {opacity: 0, x: 450},
