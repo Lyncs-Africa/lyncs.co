@@ -353,7 +353,7 @@ const Pss = ({handleIsWidgetLoading}) => {
                       value={handleDisplayValue(field.value)}
                       onChange={handleInputChange}
                       type="text" id="voice-search"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block ps-16 px-16 py-5 rounded-lg"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block ps-16 px-16 py-5 rounded-lg w-full md:w-auto"
                       placeholder="How much is the money sef" required/>
                   </div>
                 );

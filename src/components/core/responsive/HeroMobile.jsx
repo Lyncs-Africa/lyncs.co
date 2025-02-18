@@ -32,7 +32,7 @@ const HeroMobile = ({handleOpen}) => {
   return (
     <div className="font-satoshiMedium md:hidden pt-[70px] bg-slate-800 relative px-4 min-h-screen relative">
       <div className="absolute inset-0 bg-cover bg-[url('/images/2.jpg')] bg-center opacity-80"/>
-      <div className="absolute bottom-0 w-full left-0 p-4">
+      <div className="absolute bottom-8 w-full left-0 p-4">
         <Swiper
           loop={true}
           spaceBetween={30}

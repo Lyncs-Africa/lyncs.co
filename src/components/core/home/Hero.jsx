@@ -1,4 +1,4 @@
-import React, {useMemo, useRef} from 'react';
+import React, {useMemo} from 'react';
 import {easeInOut, motion} from "framer-motion";
 import SideNav from "@/components/core/shared/SideNav";
 import Shop from "@/components/core/shared/Shop";

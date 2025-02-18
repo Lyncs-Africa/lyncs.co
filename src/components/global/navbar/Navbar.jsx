@@ -5,6 +5,7 @@ import {useDisclosure} from "@mantine/hooks";
 import MobileNavbar from "./MobileNavbar.jsx";
 import {DevelopersDropdown} from "./DevelopersDropdown.jsx";
 import {WhyUsDropdown} from "./WhyUsDropdown.jsx";
+import classNames from "classnames";
 
 function Navbar(mode) {
   const [isChristmasSeason, setIsChristmasSeason] = useState(false)
@@ -72,7 +73,7 @@ function Navbar(mode) {
     return false;
   }
 
-  useEffect(() =>{
+  useEffect(() => {
     if (isGetChristmasSeason()) {
       setIsChristmasSeason(true)
     } else {
@@ -84,11 +85,20 @@ function Navbar(mode) {
     <>
       <MobileNavbar opened={opened} onClose={close}/>
       <div ref={wrapperRef}
-           className={`z-40 md:grid md:grid-cols-12 font-satoshiMedium ${mode.dark ? 'bg-black' : 'ease-in duration-200 transition-all'} ${mode.transparent && mode.scrollTop <= 100 ? 'md:bg-transparent' : ''} ${mode.scrollTop >= 100 ? 'bg-black fixed' : 'absolute'} py-2 w-full`}>
+           className={classNames(
+             "z-40 md:grid md:grid-cols-12 font-satoshiMedium ease-in duration-200 transition-all py-2 w-full",
+             {
+               "bg-black": mode.dark,
+               "md:bg-transparent": mode.transparent,
+               "bg-black fixed": mode.scrollTop >= 100,
+               "absolute": mode.scrollTop <= 100
+             }
+           )}>
         <nav className="border-gray-200 px-2 md:px-0 rounded col-start-2 col-span-10 py-4 md:py-0">
           <div className="container flex flex-wrap items-center justify-between mx-auto">
             <Link className="flex items-center" href="/">
-              {mode.scrollTop >= 100 || mode.dark || mode.transparent ? <div className={`${mode.logo ? 'py-4' : ''}`}>
+              {mode.scrollTop >= 100 || mode.dark || mode.transparent ?
+                <div>
                   {
                     isChristmasSeason ? (
                       <img
@@ -96,7 +106,7 @@ function Navbar(mode) {
                         className="h-12 mr-3 xl:h-14"
                         alt="Lyncs Logo"
                       />
-                    ):(
+                    ) : (
                       <img
                         src="/images/logo-light.svg"
                         className="h-12 mr-3 xl:h-14"
@@ -109,7 +119,12 @@ function Navbar(mode) {
                 : <>
                   <img
                     src="/images/logo.svg"
-                    className="h-12 mr-3 xl:h-14"
+                    className="h-12 mr-3 xl:h-14 hidden md:block"
+                    alt="Lyncs Logo"
+                  />
+                  <img
+                    src="/images/logo-light.svg"
+                    className="h-12 mr-3 xl:h-14 md:hidden"
                     alt="Lyncs Logo"
                   />
                 </>
@@ -123,8 +138,8 @@ function Navbar(mode) {
                     {
                       location === '/affilates' ? (
                         <button
-                                type="button"
-                                className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
+                          type="button"
+                          className={`hidden xl:block text-white bg-blue-500 hover:bg-blue-800 md:border md:bg-transparent ${mode.transparent || mode.dark || mode.scrollTop >= 100 ? 'border-white md:text-white' : 'md:border-blue-500 md:text-blue-500'} md:hover:bg-blue-500 md:hover:border-none md:hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[14px] px-8 py-2.5 text-center mr-3 md:mr-0`}
                         >
                           Get Started
                           <span className="">
@@ -153,7 +168,13 @@ function Navbar(mode) {
                     >
                       <span className="sr-only">Open main menu</span>
                       <svg
-                        className={`w-6 h-6 ${mode.transparent ? 'fill-white' : ''} ${mode.scrollTop >= 200 ? 'fill-white' : ''}`}
+                        className={classNames(
+                          "fill-white w-6 h-6",
+                          {
+                            "fill-white": mode.scrollTop >= 200,
+                            "fill-black": mode.dark
+                          }
+                        )}
                         aria-hidden="true"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
