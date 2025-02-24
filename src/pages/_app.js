@@ -5,6 +5,7 @@ import {AuthProvider} from "@/hooks/use-auth";
 import '@mantine/core/styles.css';
 import Head from "next/head";
 import {HeroUIProvider} from "@heroui/system";
+import ChatWidget from "@/components/core/shared/ChatWidget";
 
 const queryClient = new QueryClient();
 export default function App({Component, pageProps}) {
@@ -23,6 +24,7 @@ export default function App({Component, pageProps}) {
         <QueryClientProvider client={queryClient}>
           <AuthProvider>
             <Component {...pageProps} />
+            <ChatWidget />
           </AuthProvider>
         </QueryClientProvider>
         </HeroUIProvider>

@@ -14,6 +14,7 @@ import Ride from "@/components/core/forBusiness/Ride";
 import Testimonials from "@/components/core/home/Testimonials";
 import Strip from "@/components/core/forBusiness/Strip";
 import Pss from "@/components/core/home/Pss";
+import ChatWidget from "@/components/core/shared/ChatWidget";
 
 const Index = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
