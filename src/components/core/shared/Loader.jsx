@@ -49,7 +49,7 @@ const Loader = () => {
     <div className="fixed inset-0 min-h-screen w-full flex justify-center z-50 items-center">
       <div className="inset-0 absolute bg-white"></div>
       <div className="relative flex flex-col items-center">
-        <p className="text-black text-[18px] p-3 cursor-pointer">
+        <p className="text-black text-[18px] p-3 cursor-pointer text-center">
           {messages[currentMessage]}
         </p>
         <BounceLoader color="#2563EB"/>
