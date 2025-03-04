@@ -6,6 +6,7 @@ import MobileNavbar from "./MobileNavbar.jsx";
 import {DevelopersDropdown} from "./DevelopersDropdown.jsx";
 import {WhyUsDropdown} from "./WhyUsDropdown.jsx";
 import classNames from "classnames";
+import {BsLuggage} from "react-icons/bs";
 
 function Navbar(mode) {
   const [isChristmasSeason, setIsChristmasSeason] = useState(false)
@@ -95,7 +96,7 @@ function Navbar(mode) {
              }
            )}>
         <nav className="border-gray-200 px-2 md:px-0 rounded col-start-2 col-span-10 py-4 md:py-0">
-          <div className="container flex flex-wrap items-center justify-between mx-auto">
+          <div className="md:container flex flex-wrap items-center justify-between mx-auto">
             <Link className="flex items-center" href="/">
               {mode.scrollTop >= 100 || mode.dark || mode.transparent ?
                 <div>
@@ -200,6 +201,18 @@ function Navbar(mode) {
                       {/*<ProductsDropdown mode={mode}/>*/}
 
                       <DevelopersDropdown mode={mode}/>
+                      {/*<button*/}
+                      {/*  className={classNames(*/}
+                      {/*    "flex flex-row justify-start items-center cursor-pointer ease transition-all text-lg hover:text-blue-700",*/}
+                      {/*    {*/}
+                      {/*      "text-white": mode.transparent || mode.dark || mode.scrollTop >= 100,*/}
+                      {/*      "text-gray-300 md:text-gray-700" : mode.transparent || mode.dark || mode.scrollTop < 100,*/}
+                      {/*      "md:hover:text-blue-300": mode.transparent,*/}
+                      {/*      "mode.transparent": !mode.transparent*/}
+                      {/*    }*/}
+                      {/*  )}>*/}
+                      {/*  Referrals*/}
+                      {/*</button>*/}
 
                       <Link target="_blank" href="http://app.lyncs.africa">
                         <button

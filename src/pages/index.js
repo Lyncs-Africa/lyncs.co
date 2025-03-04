@@ -123,6 +123,7 @@ const Index = () => {
         }
         <ClientOnly>
           <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
+          {/*<Script crossOrigin src="http://localhost:5174/client.js"></Script>*/}
           <Navbar scrollTop={scrollTop} isOpen={isWidgetOpen}
                   handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <SectionTwo isOpen={isWidgetOpen}

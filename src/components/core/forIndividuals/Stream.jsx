@@ -40,7 +40,7 @@ const Stream = ({handleIsWidgetLoading}) => {
             >
               Everyone needs<br/> a break
               <br/>
-              <span className="text-white bg-black md:leading-[1.3]">But why do <br/>you travel ?</span>
+              <span className="text-white bg-black leading-[1.3]">But why do <br/>you travel ?</span>
             </motion.h2>
             <p
               className="md:text-[17px] text-[16px] font-extralight py-8 text-gray-600">

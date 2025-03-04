@@ -46,7 +46,7 @@ const Hero = ({handleIsWidgetLoading}) => {
       });
     } catch (error) {
       console.error("Failed to open widget", error);
-      handleIsWidgetLoading(false); // Ensure loading state is reset in case of error
+      handleIsWidgetLoading(false);
     }
   };
 
@@ -54,9 +54,9 @@ const Hero = ({handleIsWidgetLoading}) => {
     <div
       className="z-10 overflow-hidden relative w-full bg-black md:bg-right bg-cover font-satoshiMedium">
       <div
-        className="md:grid grid-cols-12 py-[100px] xl:py-[160px]  xl:pb-[300px] overflow-hidden md:relative md:z-10">
+        className="md:grid grid-cols-12 py-[100px] xl:pt-[160px]  md:pb-[300px] xl:pb-[350px] overflow-hidden md:relative md:z-10">
         <div
-          className="md:block md:-bottom-24 hidden absolute xl:bottom-[-10rem] -right-0.5 absolute bottom-[-10rem] w-full z-30">
+          className="md:block md:-bottom-24 hidden absolute xl:bottom-[-10rem] -right-0.5 bottom-[-10rem] w-full z-30">
           <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
@@ -74,9 +74,9 @@ const Hero = ({handleIsWidgetLoading}) => {
               variants={headerVariant}
               initial="hidden"
               whileInView="visible"
-              className="text-white font-satoshiBold text-[3rem] md:text-[5.5rem] md:leading-[1.4] font-semibold relative min-h-[160px]"
+              className="text-white font-satoshiBold text-[3rem] md:text-[4rem] xl:text-[5.5rem] md:leading-[1.4] font-semibold relative min-h-[160px]"
             >
-              Revolutionizing Mobility, <span className="bg-white text-black">one trip at a time</span>
+              Revolutionizing mobility, <span className="bg-white text-black">one trip at a time</span>
             </motion.h2>
             <motion.p
               variants={textVariant}

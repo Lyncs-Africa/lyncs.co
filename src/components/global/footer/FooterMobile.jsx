@@ -1,4 +1,8 @@
 import React, {useEffect, useState} from "react";
+import {FaRegEnvelope} from "react-icons/fa";
+import Link from "next/link";
+import {MdOutlineLocalPhone} from "react-icons/md";
+import {IoHomeOutline} from "react-icons/io5";
 
 function LyncsFooterMobile() {
   const [isChristmasSeason, setIsChristmasSeason] = useState(false)
@@ -44,13 +48,32 @@ function LyncsFooterMobile() {
                   />
                 ):(
                   <img
-                    src="/images/logo.svg"
+                    src="/images/logo-white.svg"
                     className="h-12 xl:h-16 mr-3"
                     alt="Lyncs Logo"
                   />
                 )
               }
             </a>
+          </div>
+          <div className="space-y-2 mt-4">
+            <div className="flex items-center gap-2">
+              <FaRegEnvelope size="20px" className="text-white"/>
+              <Link href="mailto:support@lyncs.africa"
+                    className="text-[16px] text-slate-400">support@lyncs.africa</Link>
+            </div>
+            <div className="flex items-center gap-2">
+              <MdOutlineLocalPhone size="20px" className="text-white"/>
+              <Link href="tel:+2349055552055"
+                    className="text-[16px] text-slate-400"> 0905 555 2055</Link>
+            </div>
+            <div className="flex start gap-2">
+              <IoHomeOutline size="20px" className="text-white"/>
+              <Link
+                href="https://www.google.com/maps/dir/6.6643973,3.1679267/lyncs+africa/@6.5572913,3.1362302,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x103bf535911a2da3:0x391ea8aac93bf5f8!2m2!1d3.4356802!2d6.4288632?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                className="text-[16px] text-slate-400">77, Samuel Adedoyin,
+                Victoria Island, Lagos</Link>
+            </div>
           </div>
           {/*<div className="grid grid-cols-2 flex flex-col gap-8 sm:gap-6 sm:grid-cols-3">*/}
           {/*  <div>*/}

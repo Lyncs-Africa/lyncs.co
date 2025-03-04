@@ -1,5 +1,8 @@
 import React, {useEffect, useState} from "react";
 import Link from "next/link";
+import {FaRegEnvelope} from "react-icons/fa";
+import {MdOutlineLocalPhone} from "react-icons/md";
+import {IoHomeOutline} from "react-icons/io5";
 
 function FooterWeb({mode}) {
   const [isChristmasSeason, setIsChristmasSeason] = useState(false)
@@ -38,32 +41,63 @@ function FooterWeb({mode}) {
         <div className="grid grid-cols-12 gap-8">
           <div className="container mx-auto col-start-2 col-span-10 grid grid-cols-10">
             <div className="col-span-2">
+              <Link href="/" className="flex items-center">
+                {
+                  mode.dark ?
+                    <>
+                      {
+                        isChristmasSeason ? (
+                          <img
+                            src="/images/christmas-logo.svg"
+                            className="h-12 mr-3 xl:h-14"
+                            alt="Lyncs Logo"
+                          />
+                        ) : (
+                          <img
+                            src="/images/logo-light.svg"
+                            className="h-12 mr-3 xl:h-14"
+                            alt="Lyncs Logo"
+                          />
+                        )
+                      }
+                    </>
+                    :
+                    <img
+                      src="/images/logo.svg"
+                      className="h-12 mr-3 xl:h-14"
+                      alt="Lyncs Logo"
+                    />
+                }
 
+              </Link>
+              <p className="text-slate-400 text-[16px]">Lyncs is simplifying mobility solutions across Africa with top
+                travel deals, flexible bookings, and easy payment plans for trips,
+              </p>
             </div>
-            {/*<div className={`col-span-4 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>*/}
-            {/*  <h5 className="font-bold text-[18px] uppercase flex items-center">*/}
-            {/*    Resources*/}
-            {/*  </h5>*/}
-            {/*  <Link href="https://doc.lyncs.africa"*/}
-            {/*        className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>*/}
-            {/*    <h5 className="text-[16px]">*/}
-            {/*      Documentation*/}
-            {/*    </h5>*/}
-            {/*  </Link>*/}
-            {/*  <h5 className="text-[16px]">*/}
-            {/*    <Link href="https://doc.lyncs.africa/api"*/}
-            {/*          className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>*/}
-            {/*      API Reference*/}
-            {/*    </Link>*/}
-            {/*  </h5>*/}
-
-            {/*  <Link href="/services"*/}
-            {/*        className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>*/}
-            {/*    <h5 className="text-[16px]">*/}
-            {/*      Demo*/}
-            {/*    </h5>*/}
-            {/*  </Link>*/}
-            {/*</div>*/}
+            <div className={`col-span-4 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
+              <h5 className="font-bold text-[18px] uppercase flex items-center">
+                Contact us
+              </h5>
+              <div className="space-y-2 mt-4">
+                <div className="flex items-center gap-2">
+                  <FaRegEnvelope size="20px" className="text-white"/>
+                  <Link href="mailto:support@lyncs.africa"
+                        className="text-[16px] text-slate-400">support@lyncs.africa</Link>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MdOutlineLocalPhone size="20px" className="text-white"/>
+                  <Link href="tel:+2349055552055"
+                        className="text-[16px] text-slate-400"> 0905 555 2055</Link>
+                </div>
+                <div className="flex start gap-2">
+                  <IoHomeOutline size="20px" className="text-white"/>
+                  <Link
+                    href="https://www.google.com/maps/dir/6.6643973,3.1679267/lyncs+africa/@6.5572913,3.1362302,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x103bf535911a2da3:0x391ea8aac93bf5f8!2m2!1d3.4356802!2d6.4288632?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                    className="text-[16px] text-slate-400">77, Samuel Adedoyin,
+                    Victoria Island, Lagos</Link>
+                </div>
+              </div>
+            </div>
             {/*<div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>*/}
             {/*  <h5 className="font-bold text-[18px] uppercase text-center">*/}
             {/*    Company*/}
@@ -94,40 +128,12 @@ function FooterWeb({mode}) {
         <hr className={`my-6 ${mode.dark ? 'md:border-gray-500' : 'md:border-gray-200'} sm:mx-auto lg:my-8`}/>
         <div className="grid grid-cols-12">
           <div className="container mx-auto col-start-2 col-span-10">
-           <div className="col-start-2 col-span-5">
-             <Link href="/" className="flex items-center">
-               {
-                 mode.dark ?
-                   <>
-                     {
-                       isChristmasSeason ? (
-                         <img
-                           src="/images/christmas-logo.svg"
-                           className="h-12 mr-3 xl:h-14"
-                           alt="Lyncs Logo"
-                         />
-                       ) : (
-                         <img
-                           src="/images/logo-light.svg"
-                           className="h-12 mr-3 xl:h-14"
-                           alt="Lyncs Logo"
-                         />
-                       )
-                     }
-                   </>
-                   :
-                   <img
-                     src="/images/logo.svg"
-                     className="h-12 mr-3 xl:h-14"
-                     alt="Lyncs Logo"
-                   />
-               }
+            <div className="col-start-2 col-span-5">
 
-             </Link>
-           </div>
-          <span className="col-start-2 col-span-5 text-sm text-gray-500">
+            </div>
+            <span className="col-start-2 col-span-5 text-sm text-gray-500">
             © {year}{" "}
-            <Link href="/" className="hover:underline">
+              <Link href="/" className="hover:underline">
               Lyncs™
             </Link>
             . All Rights Reserved.

@@ -51,9 +51,7 @@ const Pss = ({handleIsWidgetLoading}) => {
     formState: {errors},
   } = useForm({
     mode: 'onChange',
-    defaultValues: {
-      amount: 1000000
-    },
+    defaultValues: {},
   });
 
   const [installments, setInstallments] = useState([])
@@ -205,7 +203,7 @@ const Pss = ({handleIsWidgetLoading}) => {
   return (
     <div className="z-10 relative w-full font-satoshiMedium">
       <div
-        className="container mx-auto px-4 md:px-0 md:grid grid-cols-12 overflow-hidden md:relative md:z-10">
+        className="container mx-auto px-4 md:px-0 md:grid grid-cols-12 flex flex-col-reverse md:flex-row overflow-hidden md:relative md:z-10 gap-8 md:gap-0">
         <div
           className="col-span-5 md:p-10 py-4 pt-0 space-y-4 flex flex-col justify-center">
           <div className="rounded-lg p-4 md:p-6 bg-slate-200 space-y-4">
@@ -291,7 +289,7 @@ const Pss = ({handleIsWidgetLoading}) => {
         </div>
         <div
           className="col-span-7 w-full py-[100px] px-10 pt-[50px] mx-auto md:rounded-none md:rounded-l-xl rounded bg-slate-900 text-left z-50 relative">
-          <img className="animate-wide w-48 h-48 object-contain -ml-12 " src="/images/airline.png"/>
+          <img className="animate-wide duration-700 w-48 h-48 object-contain -ml-12 " src="/images/airline.png"/>
           <motion.h2
             className="text-white leading-[1] text-[3.5rem] md:text-[5rem] font-bold"
           >
