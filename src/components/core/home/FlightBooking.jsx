@@ -32,14 +32,14 @@ const FlightBooking = ({handleIsWidgetLoading}) => {
         onReady: () => {
           handleIsWidgetLoading(false)
         },
-        data: {
-          name: "Seun Suleman",
-          company: 'Lyncs Africa',
-          phone: '2348123456789',
-          dateOfBirth: '1990-01-01',
-          email: 'sulemanseun@gmail.com',
-          maxLoanAmount: 150000,
-        }
+        // data: {
+        //   name: "Seun Suleman",
+        //   company: 'Lyncs Africa',
+        //   phone: '2348123456789',
+        //   dateOfBirth: '1990-01-01',
+        //   email: 'sulemanseun@gmail.com',
+        //   maxLoanAmount: 150000,
+        // }
       },
     );
   };
