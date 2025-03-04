@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
 import {easeInOut, motion} from "framer-motion";
 import Link from "next/link";
-import Travel from "@/components/core/shared/Travel";
+import TravelCard from "@/components/core/shared/TravelCard";
 
 
 const SectionTwo = () => {

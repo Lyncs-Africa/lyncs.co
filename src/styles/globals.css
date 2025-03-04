@@ -359,36 +359,6 @@ html {
         animation-duration: 40s;
     }
 
-    .circles li:nth-child(9) {
-        left: 50%;
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        animation-delay: 28s;
-        animation-duration: 32s;
-        background-image: url("/images/hero-icons/travel.svg");
-    }
-
-    .circles li:nth-child(10) {
-        left: 85%;
-        width: 35px;
-        height: 35px;
-        background-size: cover;
-        animation-delay: 0s;
-        animation-duration: 8s;
-        background-image: url("/images/opay.png");
-    }
-
-    .circles li:nth-child(11) {
-        left: 29%;
-        width: 40px;
-        height: 40px;
-        background-size: cover;
-        animation-delay: 0s;
-        animation-duration: 8s;
-        background-image: url("/images/firstbank.png");
-    }
-
     @keyframes animate {
 
         0% {
@@ -427,93 +397,6 @@ html {
 
     }
 
-    .circles-two li:nth-child(1) {
-        left: 25%;
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        animation-delay: 0s;
-        background-image: url("/images/hero-icons/calls.svg");
-    }
-
-
-    .circles-two li:nth-child(2) {
-        left: 10%;
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        animation-delay: 15s;
-        animation-duration: 20s;
-        background-image: url("/images/hero-icons/eat.svg");
-    }
-
-
-    .circles-two li:nth-child(5) {
-        left: 65%;
-        width: 50px;
-        height: 51px;
-        background-size: cover;
-        animation-delay: 0s;
-        background-image: url("/images/hero-icons/cart.svg");
-    }
-
-    .circles-two li:nth-child(6) {
-        left: 75%;
-        width: 37px;
-        height: 50px;
-        background-size: cover;
-        animation-delay: 12s;
-        background-image: url("/images/hero-icons/lightbulb.svg");
-    }
-
-    .circles-two li:nth-child(7) {
-        left: 35%;
-        width: 40px;
-        height: 50px;
-        background-size: cover;
-        animation-delay: 20s;
-        background-image: url("/images/hero-icons/sim.svg");
-    }
-
-    .circles-two li:nth-child(8) {
-        left: 80%;
-        width: 50px;
-        height: 40px;
-        background-size: cover;
-        animation-delay: 35s;
-        animation-duration: 40s;
-        background-image: url("/images/hero-icons/movie.svg");
-    }
-
-    .circles-two li:nth-child(9) {
-        left: 50%;
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        animation-delay: 28s;
-        animation-duration: 32s;
-        background-image: url("/images/hero-icons/travel.svg");
-    }
-
-    .circles-two li:nth-child(10) {
-        left: 85%;
-        width: 35px;
-        height: 35px;
-        background-size: cover;
-        animation-delay: 0s;
-        animation-duration: 8s;
-        background-image: url("/images/opay.png");
-    }
-
-    .circles-two li:nth-child(11) {
-        left: 29%;
-        width: 40px;
-        height: 40px;
-        background-size: cover;
-        animation-delay: 0s;
-        animation-duration: 8s;
-        background-image: url("/images/firstbank.png");
-    }
 
     @keyframes animateTwo {
 
@@ -579,7 +462,7 @@ html {
     opacity: 0;
     pointer-events: none;
     content: attr(data-tooltip);
-    left: 10;
+    left: 10px;
     top: calc(100% + 10px);
     /* border-radius: 40%; */
     /* box-shadow: 0 0 5px 2px rgba(10, 10, 10, 0.6); */
@@ -608,18 +491,6 @@ html {
     left: 0;
 }
 
-.bubble {
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
-    height: 152px;
-    margin-right: 20px;
-    width: 152px;
-    background-image: url(/images/spritesheet.png);
-    background-size: 1076px 1076px;
-    position: absolute;
-    transition: opacity ease-in-out 1s;
-}
 
 .bubbles {
     height: 600px;
@@ -683,21 +554,6 @@ html {
     background-position: -1848px 0;
 }
 
-/* @keyframes rise {
-    0% {
-        bottom: -100px;
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translate(100px);
-    }
-
-    100% {
-        bottom: 1080px;
-        transform: translateX(-200px);
-    }
-} */
 
 .heart::after {
     content: "";
@@ -757,7 +613,7 @@ html {
     background: darksalmon;
     height: 43px;
     margin-bottom: 16px;
-    left: -1;
+    left: -1px;
     bottom: 0;
     position: absolute;
     width: 39px;
@@ -807,116 +663,6 @@ html {
 
 }
 
-.logo-circles li:nth-child(1) {
-    border-radius: 50%;
-    left: 25%;
-    width: 150px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 0s;
-    background-image: url("/images/countries/nigeria.png");
-}
-
-
-.logo-circles li:nth-child(2) {
-    left: 10%;
-    width: 150px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 5s;
-    animation-duration: 40s;
-    background-image: url("/images/countries/kenya.png");
-}
-
-
-.logo-circles li:nth-child(5) {
-    left: 75%;
-    width: 150px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 10s;
-    animation-duration: 32s;
-    background-image: url("/images/countries/uganda.png");
-}
-
-.logo-circles li:nth-child(6) {
-    left: 50%;
-    width: 150px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 0s;
-    animation-duration: 32s;
-    background-image: url("/images/countries/angola.png");
-}
-
-.logo-circles li:nth-child(7) {
-    left: 30%;
-    width: 150px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 12s;
-    background-image: url("/images/countries/zambia.svg");
-}
-
-.logo-circles li:nth-child(8) {
-    left: 65%;
-    width: 150px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 20s;
-    /* animation-duration: 40s; */
-    background-image: url("/images/countries/ghana.png");
-}
-
-.logo-circles li:nth-child(9) {
-    left: 45%;
-    width: 150px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 30s;
-    animation-duration: 42s;
-    background-image: url("/images/countries/benin.png");
-}
-
-.logo-circles li:nth-child(10) {
-    left: 70%;
-    width: 150px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 28s;
-    animation-duration: 40s;
-    background-image: url("/images/countries/nigeria.png");
-}
-
-/* .logo-circles li:nth-child(11) {
-    left: 49%;
-    width: 140px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 8s;
-    animation-duration: 30s;
-    background-image: url("/images/companies/indrive.png");
-} */
-
-/* .logo-circles li:nth-child(12) {
-    left: 76%;
-    width: 140px;
-    height: 140px;
-    background-size: cover;
-    animation-delay: 0s;
-    animation-duration: 40s;
-    background-image: url("/images/companies/Bolt_logo.png");
-} */
-
-.logo-circles li:nth-child(13) {
-    /* left: 29%; */
-    /* width: 140px; */
-    /* height: 140px; */
-    /* background-size: cover; */
-    /* animation-delay: 8s; */
-    /* animation-duration: 40s; */
-    /* background-image: url("/images/companies/travelbeta.jpeg"); */
-}
 
 @keyframes rise {
 

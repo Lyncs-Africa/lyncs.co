@@ -4,7 +4,7 @@ import {BounceLoader} from "react-spinners";
 import ClientOnly from "@/components/global/ClientOnly";
 import Footer from "@/components/global/footer/Footer";
 import Hero from "@/components/core/fly/Hero";
-import FlightBooking from "@/components/core/forIndividuals/FlightBooking";
+import FlightBooking from "@/components/core/home/FlightBooking";
 
 const Fly = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)

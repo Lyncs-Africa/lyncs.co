@@ -5,16 +5,15 @@ import Footer from "@/components/global/footer/Footer";
 import ScrollToTopBtn from "@/components/global/ScrollToTopBtn";
 import Head from 'next/head';
 import Script from 'next/script';
-import FlightBooking from "@/components/core/forIndividuals/FlightBooking";
-import Stream from "@/components/core/forIndividuals/Stream";
-import {BounceLoader} from "react-spinners";
+import FlightBooking from "@/components/core/home/FlightBooking";
+import WhyDoYou from "@/components/core/home/WhyDoYou";
+import Revolutionizing from "@/components/core/home/Revolutionizing";
 import Hero from "@/components/core/home/Hero";
-import SectionTwo from "@/components/core/home/SectionTwo";
-import Ride from "@/components/core/forBusiness/Ride";
-import Testimonials from "@/components/core/home/Testimonials";
-import Strip from "@/components/core/forBusiness/Strip";
+import RideSharing from "@/components/core/home/RideSharing";
+import SeeWhy from "@/components/core/home/SeeWhy";
+import Strip from "@/components/core/home/Strip";
 import Pss from "@/components/core/home/Pss";
-import ChatWidget from "@/components/core/shared/ChatWidget";
+import Loader from "@/components/core/shared/Loader";
 
 const Index = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
@@ -115,31 +114,24 @@ const Index = () => {
       <div>
         {
           isWidgetLoading && (
-            <div className="fixed inset-0 min-h-screen w-full flex justify-center z-50 items-center">
-              <div className="inset-0 absolute bg-white"></div>
-              <div className="relative"><BounceLoader color="#2563EB"/></div>
-            </div>
+            <Loader/>
           )
         }
         <ClientOnly>
-          <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
-          {/*<Script crossOrigin src="http://localhost:5174/client.js"></Script>*/}
+          {/*<Script strategy={'beforeInteractive'}  crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>*/}
+          <Script strategy={'beforeInteractive'} crossOrigin src="http://localhost:5174/client.js"></Script>
           <Navbar scrollTop={scrollTop} isOpen={isWidgetOpen}
                   handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-          <SectionTwo isOpen={isWidgetOpen}
-                      handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <Hero isOpen={isWidgetOpen}
                 handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <Revolutionizing isOpen={isWidgetOpen}
+                           handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <FlightBooking handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-          <Ride isOpen={isWidgetOpen}
-                handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-          <Stream handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <RideSharing isOpen={isWidgetOpen}
+                       handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
+          <WhyDoYou handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <Pss handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
-          {/*<Access isOpen={isWidgetOpen}*/}
-          {/*        handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>*/}
-          {/*<Services isOpen={isWidgetOpen}*/}
-          {/*          handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>*/}
-          <Testimonials/>
+          <SeeWhy/>
           <Strip isOpen={isWidgetOpen}
                  handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <Footer dark/>

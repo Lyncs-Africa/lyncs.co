@@ -4604,7 +4604,7 @@ export const countries = [
                 common: "Algieria"
             },
             por: {
-                official: "República Argelina Democrática e Testimonials",
+                official: "República Argelina Democrática e SeeWhy",
                 common: "Argélia"
             },
             rus: {
@@ -4616,7 +4616,7 @@ export const countries = [
                 common: "Alžírsko"
             },
             spa: {
-                official: "República Argelina Democrática y Testimonials",
+                official: "República Argelina Democrática y SeeWhy",
                 common: "Argelia"
             },
             srp: {
