@@ -118,8 +118,8 @@ const Index = () => {
           )
         }
         <ClientOnly>
-          {/*<Script strategy={'beforeInteractive'}  crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>*/}
-          <Script strategy={'beforeInteractive'} crossOrigin src="http://localhost:5174/client.js"></Script>
+          {/*<Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>*/}
+          <Script crossOrigin src="http://localhost:5174/client.js"></Script>
           <Navbar scrollTop={scrollTop} isOpen={isWidgetOpen}
                   handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
           <Hero isOpen={isWidgetOpen}
