@@ -14,6 +14,7 @@ import SeeWhy from "@/components/core/home/SeeWhy";
 import Strip from "@/components/core/home/Strip";
 import Pss from "@/components/core/home/Pss";
 import Loader from "@/components/core/shared/Loader";
+import {BounceLoader} from "react-spinners";
 
 const Index = () => {
   const [isWidgetOpen, setIsWidgetOpen] = useState(false)
@@ -118,7 +119,7 @@ const Index = () => {
           )
         }
         <ClientOnly>
-          <Script crossOrigin src="https://lyncs-web-widget.netlify.app/client.js"></Script>
+          <Script src="/js/client.js" strategy="beforeInteractive" />
           {/*<Script crossOrigin src="http://localhost:5174/client.js"></Script>*/}
           <Navbar scrollTop={scrollTop} isOpen={isWidgetOpen}
                   handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
