@@ -44,18 +44,15 @@ function Hero({handleIsWidgetLoading}) {
   }, []);
 
   const handleOpen = () => {
-    handleIsWidgetLoading(true)
-    window.LyncsWidget.open(
-      {
-        key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
-        path: '/flights/local-flight',
-        onReady: () => {
-          handleIsWidgetLoading(false)
-        },
+    handleIsWidgetLoading(true);
+    window.LyncsWidget.open({
+      key: 'a3a2d99285894aa88b4340436fb7733151cffe74dc6870c214ecc0',
+      path: '/flights/local-flight',
+      onReady: () => {
+        handleIsWidgetLoading(false)
       },
-    );
+    });
   };
-
 
   const handleWait = (service) => {
     handleIsWidgetLoading(true)
