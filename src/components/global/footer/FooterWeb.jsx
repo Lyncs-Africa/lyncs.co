@@ -98,21 +98,21 @@ function FooterWeb({mode}) {
                 </div>
               </div>
             </div>
-            {/*<div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>*/}
-            {/*  <h5 className="font-bold text-[18px] uppercase text-center">*/}
-            {/*    Company*/}
-            {/*  </h5>*/}
-            {/*  <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>*/}
-            {/*    <h5 className="text-[16px]">*/}
-            {/*      About us*/}
-            {/*    </h5>*/}
-            {/*  </Link>*/}
-            {/*  <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>*/}
-            {/*    <h5 className="text-[16px]">*/}
-            {/*      Contact*/}
-            {/*    </h5>*/}
-            {/*  </Link>*/}
-            {/*</div>*/}
+            <div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>
+              <h5 className="font-bold text-[18px] uppercase text-center">
+                Use Cases
+              </h5>
+              <Link href="/" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+                <h5 className="text-[16px]">
+                  For Individuals
+                </h5>
+              </Link>
+              <Link href="/affilates" className={`flex items-center ${mode.dark ? 'md:text-gray-500' : 'md:text-black'}`}>
+                <h5 className="text-[16px]">
+                  For Affiliates
+                </h5>
+              </Link>
+            </div>
             {/*<div className={`col-span-2 mx-auto flex flex-col gap-4 ${mode.dark ? 'md:text-white' : 'md:text-black'}`}>*/}
             {/*  <h5 className="font-bold text-[18px] uppercase">*/}
             {/*    Legal*/}

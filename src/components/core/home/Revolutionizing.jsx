@@ -56,7 +56,7 @@ const Revolutionizing = ({handleIsWidgetLoading}) => {
       <div
         className="md:grid grid-cols-12 py-[100px] xl:pt-[160px]  md:pb-[300px] xl:pb-[350px] overflow-hidden md:relative md:z-10">
         <div
-          className="md:block md:-bottom-24 hidden absolute xl:bottom-[-10rem] -right-0.5 bottom-[-10rem] w-full z-30">
+          className="md:block md:-bottom-24 hidden absolute xl:bottom-[-9rem] -right-0.5 bottom-[-10rem] w-full z-30">
           <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">

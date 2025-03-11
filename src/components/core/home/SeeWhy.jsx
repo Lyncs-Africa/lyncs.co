@@ -58,7 +58,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Dolapo Olanreqaju&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Dolapo&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Dolapo
                       </p>
@@ -74,7 +74,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Rosemary Obasi&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Rosemary&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Rosemary
                       </p>
@@ -91,7 +91,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Abdul Omar&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Abdul&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Abdul
                       </p>
@@ -107,7 +107,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Tolani Bakare&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Tolani&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Tolani
                       </p>
@@ -124,7 +124,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Sochi Oke&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Sochi&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Sochi
                       </p>
@@ -141,7 +141,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Kachi Beauty&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Kachi&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Kachi
                       </p>
@@ -159,7 +159,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Chelsea Bourges&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Chelsea&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Chelsea
                       </p>
@@ -176,7 +176,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Ogechi Onu&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Ogechi&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Ogechi
                       </p>
@@ -192,7 +192,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Feyisayo Akinde&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Feyisayo&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Feyisayo
                       </p>
@@ -209,7 +209,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Amara Okoye&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Amara&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Amara
                       </p>
@@ -225,7 +225,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Busola Maculay&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Busola&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Busola
                       </p>
@@ -241,7 +241,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Tony Opara&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Tony&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Tony
                       </p>
@@ -257,7 +257,7 @@ const SeeWhy = () => {
                       <FaQuoteLeft className="absolute text-5xl top-[6rem] left-0 text-black opacity-10 z-[-1]"/>
                       <FaQuoteRight className="absolute text-5xl bottom-[-3rem] right-0 text-black opacity-10 z-[-1]"/>
                       <img alt="Lyncs testimonial" className="h-[50px] w-[50px] rounded-full object-cover mx-auto"
-                           src="https://ui-avatars.com/api/?name=Mide Alakija&background=000000&color=eeeeee"/>
+                           src="https://ui-avatars.com/api/?name=Mide&background=000000&color=eeeeee"/>
                       <p className="text-2xl font-bold text-black mt-2">
                         Mide
                       </p>

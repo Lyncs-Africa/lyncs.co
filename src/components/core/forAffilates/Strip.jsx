@@ -1,12 +1,14 @@
 import React from 'react';
+import {FaPlus} from "react-icons/fa6";
+import CountUp from 'react-countup';
 
 const Strip = () => {
   return (
     <div
-      className="min-h-screen md:min-h-full xl:min-h-[80vh] 2xl:min-h-[70vh] md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[220px] bg-slate-950 md:gap-8 overflow-hidden relative md:z-10 px-1 md:px-0">
-      <div className="bg-view-three bg-cover bg-bottom absolute opacity-50 inset-0"></div>
-      <div className="xl:block hidden absolute bottom-[-10rem] right-[-2px] w-full z-30">
-        <svg fill="#F1F1F8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
+      className="md:min-h-full md:grid font-satoshiMedium grid-cols-12 py-[100px] md:py-[160px] xl:pt-[110px] xl:pb-[280px] bg-[url('/images/8.jpg')] bg-cover bg-center md:gap-8 overflow-hidden relative px-1 md:px-0">
+      <div className="absolute inset-0 bg-slate-800 opacity-90"/>
+      <div className="xl:block hidden absolute bottom-[-10rem] right-0 w-full z-30">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265.34">
           <g id="Layer_2" data-name="Layer 2">
             <g id="Layer_1-2" data-name="Layer 1">
               <path className="cls-1"
@@ -16,28 +18,46 @@ const Strip = () => {
         </svg>
 
       </div>
-      <div className="col-span-10 col-start-2 z-30 relative md:text-center w-full px-4 md:px-0 z-10">
+      <div className="col-span-10 col-start-2 relative md:text-center px-4 md:px-0 md:w-[80%] mx-auto">
         <h2
-          className="text-blue-300 font-satoshiBold text-[4rem] md:text-[5rem] leading-[1.1] font-semibold relative min-h-[160px]"
+          className="py-[50px] text-white leading-[1.3] text-center text-[3.5rem] md:text-[5rem] font-bold"
         >
-               <span
-                     className="min-h-[100px] relative bg-clip-text text-white after:inline after:text-blue-500 w-max text-left"
-               >
-            Monetize your influence<br className="hidden md:block"/> by becoming an affiliate
-            </span>
+          Start Booking, <br className="md:hidden block"/> <span className="bg-white text-black p-2 rounded">Start Earning</span>
         </h2>
-
-        <p className="md:text-[17px] text-[16px] py-5 text-slate-300 mb-10 md:px-4">
-          Increase your earnings with each referral you make
-        </p>
-
-        <div className="flex flex-row md:justify-center items-center gap-7 z-30 w-full">
-          <div
-               className="cursor-pointer bg-white border text-[17px] text-black px-8 text-center py-3 rounded border ease transition-all hover:border-white hover:bg-transparent hover:text-white">
-            Get started
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
+          <div>
+            <p className="md:text-[3.5rem] text-[2.5rem] text-white flex items-center justify-center gap-2">
+              <CountUp start={0} end={150}  duration={5} /> <span><FaPlus /></span>
+            </p>
+            <p className="md:text-[20px] text-[16px] text-white text-center">
+              Existing affiliates
+            </p>
+          </div>
+          <div>
+            <p className="md:text-[3.5rem] text-[2.5rem] text-white flex items-center justify-center gap-2">
+              <CountUp start={0} end={200}  duration={5} /> <span><FaPlus /></span>
+            </p>
+            <p className="md:text-[20px] text-[16px] text-white text-center">
+              Active airlines
+            </p>
+          </div>
+          <div>
+            <p className="md:text-[3.5rem] text-[2.5rem] text-white flex items-center justify-center gap-2">
+              <CountUp start={0} end={5}  duration={5} />K <span><FaPlus /></span>
+            </p>
+            <p className="md:text-[20px] text-[16px] text-white text-center">
+              Travel destinations
+            </p>
+          </div>
+          <div>
+            <p className="md:text-[3.5rem] text-[2.5rem] text-white flex items-center justify-center gap-2">
+              <CountUp start={0} end={200}  duration={5} /> <span><FaPlus /></span>
+            </p>
+            <p className="md:text-[20px] text-[16px] text-white text-center">
+              Travel deals
+            </p>
           </div>
         </div>
-
       </div>
     </div>
 
