@@ -81,7 +81,7 @@ const Affilates = () => {
       <Head>
         <title>Lyncs Africa | For Affiliates</title>
       </Head>
-      <Navbar light scrollTop={scrollTop}/>
+      <Navbar light scrollTop={scrollTop} isOpen={isWidgetOpen} handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
       <Hero handleIsWidgetLoading={(e) => handleIsWidgetLoading(e)}/>
       <div className="md:hidden block">
         <SectionTwo/>
