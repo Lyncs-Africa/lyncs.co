@@ -115,21 +115,21 @@ const Steps = ({handleIsWidgetLoading}) => {
                 <div className="bg-slate-600 rounded p-6">
                   <div className="bg-white w-[45px] h-[45px] rounded-full flex items-center justify-center">2</div>
                   <p className="md:text-[18px] text-[16px] leading-[1.3] font-extralight py-2 text-white">
-                    Book Flights at Lower Rates
+                    Book flights at lower rates
                   </p>
                   <p className="text-[15px] leading-[1.1] text-slate-300">Get exclusive discounts that regular customers don’t see.</p>
                 </div>
                 <div className="bg-slate-600 rounded p-6">
                   <div className="bg-white w-[45px] h-[45px] rounded-full flex items-center justify-center">3</div>
                   <p className="md:text-[18px] text-[16px] leading-[1.3] font-extralight py-2 text-white">
-                    Set Your Price & Make a Profit
+                    Set your price & make a profit
                   </p>
                   <p className="text-[15px] leading-[1.1] text-slate-300">You decide how much you want to charge your customers.</p>
                 </div>
                 <div className="bg-slate-600 rounded p-6">
                   <div className="bg-white w-[45px] h-[45px] rounded-full flex items-center justify-center">4</div>
                   <p className="md:text-[18px] text-[16px] leading-[1.3] font-extralight py-2 text-white">
-                    Complete the Booking
+                    Complete the booking
                   </p>
                   <p className="text-[15px] leading-[1.1] text-slate-300">Process the payment, confirm the booking, and cash out the difference</p>
                 </div>

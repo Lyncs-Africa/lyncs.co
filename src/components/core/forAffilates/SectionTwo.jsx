@@ -64,14 +64,14 @@ const SectionTwo = () => {
               <div className="bg-[url('/images/bg-affilates.jpg')] bg-cover bg-center min-h-[200px] rounded md:w-[60%] p-6 relative">
                 <div className="absolute inset-0 bg-slate-800 opacity-70 rounded"/>
                <div className="relative">
-                 <p className="text-white text-[20px] font-semibold">Hassle-Free Refunds</p>
+                 <p className="text-white text-[20px] font-semibold">Hassle-free refunds</p>
                  <p className="text-slate-200 text-[14px] leading-[1.1]">Enjoy a clear and fair refund policy that ensures you and your customers are always covered.</p>
                </div>
               </div>
               <div className="bg-[url('/images/2.jpg')] bg-cover bg-center min-h-[200px] rounded relative p-6">
                 <div className="absolute inset-0 bg-slate-800 opacity-60 rounded"/>
                 <div className="relative">
-                  <p className="text-white text-[20px] font-semibold">Leaderboards with Perks</p>
+                  <p className="text-white text-[20px] font-semibold">Leaderboards with perks</p>
                   <p className="text-slate-200 text-[14px] leading-[1.1]">Top the leaderboard and unlock exclusive gifts for your achievements.</p>
                 </div>
               </div>
